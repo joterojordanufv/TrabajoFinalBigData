@@ -26,6 +26,264 @@
             "details": {
                 "output_file": "data/raw/rightmove_london_raw.csv"
             }
+        },
+        {
+            "timestamp": "2026-05-19T21:28:03.678120",
+            "phase": "MERGE_RAW",
+            "source": "Idealista + Rightmove",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Unificación inicial de fuentes raw",
+            "details": {
+                "files": [
+                    "idealista_madrid_raw.csv",
+                    "rightmove_london_raw.csv"
+                ]
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:28:03.680877",
+            "phase": "T03_BLANCOS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Eliminación de espacios y cadenas vacías",
+            "details": {
+                "blank_values_corrected": 0
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.113723",
+            "phase": "EXTRACT",
+            "source": "Idealista Madrid",
+            "input_rows": 5,
+            "output_rows": 5,
+            "discarded_rows": 0,
+            "reason": "Extracción inicial simulada",
+            "details": {
+                "output_file": "data/raw/idealista_madrid_raw.csv"
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.114618",
+            "phase": "EXTRACT",
+            "source": "Rightmove London",
+            "input_rows": 5,
+            "output_rows": 5,
+            "discarded_rows": 0,
+            "reason": "Extracción inicial simulada",
+            "details": {
+                "output_file": "data/raw/rightmove_london_raw.csv"
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.356253",
+            "phase": "MERGE_RAW",
+            "source": "Idealista + Rightmove",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Unificación inicial de fuentes raw",
+            "details": {
+                "files": [
+                    "idealista_madrid_raw.csv",
+                    "rightmove_london_raw.csv"
+                ]
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.358195",
+            "phase": "T03_BLANCOS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Eliminación de espacios y cadenas vacías",
+            "details": {
+                "blank_values_corrected": 0
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.359026",
+            "phase": "T01_DUPLICADOS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Eliminación de duplicados exactos y duplicados por clave source + property_id",
+            "details": {
+                "duplicate_criteria": "source + property_id"
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.360736",
+            "phase": "T02_NULOS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Tratamiento de nulos: eliminación en campos críticos e imputación por mediana en campos secundarios",
+            "details": {
+                "missing_before": {
+                    "property_id": 0,
+                    "source": 0,
+                    "city": 0,
+                    "country": 0,
+                    "neighborhood": 0,
+                    "property_type": 0,
+                    "price_eur": 0,
+                    "area_m2": 0,
+                    "bedrooms": 0,
+                    "bathrooms": 0,
+                    "listing_url": 0,
+                    "scraping_date": 0,
+                    "price_per_m2": 0
+                },
+                "missing_after": {
+                    "property_id": 0,
+                    "source": 0,
+                    "city": 0,
+                    "country": 0,
+                    "neighborhood": 0,
+                    "property_type": 0,
+                    "price_eur": 0,
+                    "area_m2": 0,
+                    "bedrooms": 0,
+                    "bathrooms": 0,
+                    "listing_url": 0,
+                    "scraping_date": 0,
+                    "price_per_m2": 0
+                }
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.362972",
+            "phase": "T04_TIPOS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Conversión de tipos de datos según semántica de negocio",
+            "details": {
+                "numeric_columns": [
+                    "price_eur",
+                    "area_m2",
+                    "bedrooms",
+                    "bathrooms",
+                    "price_per_m2"
+                ],
+                "datetime_columns": [
+                    "scraping_date"
+                ]
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.364239",
+            "phase": "T05_FECHAS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Normalización de fechas a formato ISO-8601",
+            "details": {
+                "date_format": "YYYY-MM-DD HH:MM:SS UTC"
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.364959",
+            "phase": "T06_TEXTO",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Normalización de texto: minúsculas y eliminación de espacios",
+            "details": {
+                "normalized_columns": [
+                    "city",
+                    "country",
+                    "neighborhood",
+                    "property_type",
+                    "source"
+                ]
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.365721",
+            "phase": "T07_RANGOS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Validación de rangos de negocio: precios, superficies, habitaciones y baños positivos y coherentes",
+            "details": {
+                "criteria": {
+                    "price_eur": "> 0",
+                    "area_m2": "> 0",
+                    "bedrooms": "0-20",
+                    "bathrooms": "0-20",
+                    "price_per_m2": "> 0"
+                }
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.367318",
+            "phase": "T08_OUTLIERS",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Detección de outliers mediante IQR. No se eliminan automáticamente por tratarse de mercado premium",
+            "details": {
+                "method": "IQR",
+                "outliers_detected": {
+                    "price_eur": 0,
+                    "area_m2": 0,
+                    "price_per_m2": 0
+                }
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.369416",
+            "phase": "T09_SEUDONIMIZACION",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Seudonimización de identificadores de propiedad mediante hash",
+            "details": {
+                "fields_pseudonymized": [
+                    "source",
+                    "property_id"
+                ],
+                "new_field": "property_hash"
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.369784",
+            "phase": "T10_VALIDACION_REFERENCIAL",
+            "source": "Dataset unificado",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Validación referencial básica previa al modelo dimensional",
+            "details": {
+                "orphan_neighborhoods": 0,
+                "orphan_cities": 0
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:29:27.370777",
+            "phase": "SAVE_PROCESSED",
+            "source": "Dataset limpio",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Guardado del dataset limpio en data/processed",
+            "details": {
+                "output_file": "data/processed/properties_clean.csv"
+            }
         }
     ]
 }

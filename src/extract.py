@@ -12,13 +12,9 @@ def create_directories():
 
 
 def extract_idealista():
-    """
-    Simulación inicial de extracción de Idealista Madrid.
-    Más adelante se sustituirá por scraping real.
-    """
-
     data = {
         "property_id": [1, 2, 3, 4, 5],
+        "source": ["Idealista"] * 5,
         "city": ["Madrid"] * 5,
         "country": ["Spain"] * 5,
         "neighborhood": [
@@ -74,13 +70,9 @@ def extract_idealista():
     }
 
     df = pd.DataFrame(data)
-
-    df["price_per_m2"] = (
-        df["price_eur"] / df["area_m2"]
-    ).round(2)
+    df["price_per_m2"] = (df["price_eur"] / df["area_m2"]).round(2)
 
     output_file = RAW_PATH / "idealista_madrid_raw.csv"
-
     df.to_csv(output_file, index=False)
 
     log_step(
@@ -99,12 +91,9 @@ def extract_idealista():
 
 
 def extract_rightmove():
-    """
-    Simulación inicial de extracción de Rightmove Londres.
-    """
-
     data = {
         "property_id": [101, 102, 103, 104, 105],
+        "source": ["Rightmove"] * 5,
         "city": ["London"] * 5,
         "country": ["United Kingdom"] * 5,
         "neighborhood": [
@@ -160,13 +149,9 @@ def extract_rightmove():
     }
 
     df = pd.DataFrame(data)
-
-    df["price_per_m2"] = (
-        df["price_eur"] / df["area_m2"]
-    ).round(2)
+    df["price_per_m2"] = (df["price_eur"] / df["area_m2"]).round(2)
 
     output_file = RAW_PATH / "rightmove_london_raw.csv"
-
     df.to_csv(output_file, index=False)
 
     log_step(
@@ -186,11 +171,8 @@ def extract_rightmove():
 
 def main():
     create_directories()
-
     extract_idealista()
-
     extract_rightmove()
-
     print("\nExtracción completada correctamente.")
 
 
