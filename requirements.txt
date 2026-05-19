@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+requests
+beautifulsoup4
+lxml
+sqlalchemy
+psycopg2-binary
+python-dotenv
+scipy
+jupyter
+notebook
+openpyxl

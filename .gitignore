@@ -1,0 +1,31 @@
+# Entornos virtuales
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema Mac
+.DS_Store
+
+# Bases de datos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Archivos temporales
+tmp/
+temp/
+
+# Credenciales
+credentials.json
+secrets.json
