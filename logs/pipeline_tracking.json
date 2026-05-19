@@ -1,6 +1,31 @@
 {
-  "project": "Proyecto Big Data Inmobiliario Premium Europeo",
-  "version": "1.0",
-  "created_at": "",
-  "pipeline_runs": []
+    "project": "Proyecto Big Data Inmobiliario Premium Europeo",
+    "version": "1.0",
+    "created_at": "",
+    "pipeline_runs": [
+        {
+            "timestamp": "2026-05-19T21:25:17.581256",
+            "phase": "EXTRACT",
+            "source": "Idealista Madrid",
+            "input_rows": 5,
+            "output_rows": 5,
+            "discarded_rows": 0,
+            "reason": "Extracción inicial simulada",
+            "details": {
+                "output_file": "data/raw/idealista_madrid_raw.csv"
+            }
+        },
+        {
+            "timestamp": "2026-05-19T21:25:17.582157",
+            "phase": "EXTRACT",
+            "source": "Rightmove London",
+            "input_rows": 5,
+            "output_rows": 5,
+            "discarded_rows": 0,
+            "reason": "Extracción inicial simulada",
+            "details": {
+                "output_file": "data/raw/rightmove_london_raw.csv"
+            }
+        }
+    ]
 }
