@@ -183,3 +183,32 @@ timestamp,phase,source,input_rows,output_rows,discarded_rows,reason
 2026-05-21T18:14:32.517687,LOAD_SQL,dim_source,3,3,0,Carga de dim_source.csv en tabla SQL dim_source
 2026-05-21T18:14:32.520346,LOAD_SQL,dim_time,420,420,0,Carga de dim_time.csv en tabla SQL dim_time
 2026-05-21T18:14:32.524121,LOAD_SQL,fact_properties,983,983,0,Carga de fact_properties.csv en tabla SQL fact_properties
+2026-05-21T19:05:36.586673,EXTRACT,Idealista Madrid,915,915,0,Normalización de dataset real Idealista Madrid
+2026-05-21T19:05:36.608923,EXTRACT,Rightmove London,1019,1019,0,Normalización de dataset real Rightmove London
+2026-05-21T19:05:36.643646,EXTRACT,Funda Amsterdam,5555,5555,0,Normalización de dataset real Funda Amsterdam
+2026-05-21T19:05:36.645806,EXTRACT,Eurostat HPI,180,180,0,Carga de serie HPI Eurostat
+2026-05-21T19:05:36.894058,MERGE_RAW,Idealista + Rightmove + Funda,7489,7489,0,Unificación de fuentes inmobiliarias
+2026-05-21T19:05:36.901412,T03_BLANCOS,Dataset unificado,7489,7489,0,Eliminación de espacios en blanco
+2026-05-21T19:05:36.905424,T01_DUPLICADOS,Dataset unificado,7489,7489,0,Eliminación de duplicados
+2026-05-21T19:05:36.909059,T02_NULOS,Dataset unificado,7489,7489,0,Tratamiento de valores nulos
+2026-05-21T19:05:36.910662,T04_TIPOS,Dataset unificado,7489,7489,0,Validación de tipos de dato
+2026-05-21T19:05:36.915934,T05_FECHAS,Dataset unificado,7489,7489,0,Normalización de fechas ISO-8601
+2026-05-21T19:05:36.920511,T06_TEXTO,Dataset unificado,7489,7489,0,Normalización textual
+2026-05-21T19:05:36.922683,T07_RANGOS,Dataset unificado,7489,7489,0,Validación de rangos
+2026-05-21T19:05:36.926506,T08_OUTLIERS,Dataset unificado,7489,5507,1982,Eliminación de outliers
+2026-05-21T19:05:36.929043,T09_SEUDONIMIZACION,Dataset unificado,5507,5507,0,Seudonimización de identificadores
+2026-05-21T19:05:36.931492,T10_VALIDACION_REFERENCIAL,Dataset unificado,5507,5507,0,Validación referencial
+2026-05-21T19:05:36.949112,SAVE_PROCESSED,Dataset limpio,5507,5507,0,Exportación dataset inmobiliario limpio
+2026-05-21T19:05:36.950501,SAVE_PROCESSED,Eurostat HPI,180,180,0,Exportación Eurostat limpio
+2026-05-21T19:05:37.201278,DIMENSION,DIM_CITY,5507,2,0,Creación de dimensión ciudad
+2026-05-21T19:05:37.205422,DIMENSION,DIM_NEIGHBORHOOD,5507,1087,0,Creación de dimensión barrio
+2026-05-21T19:05:37.207539,DIMENSION,DIM_PROPERTY_TYPE,5507,115,0,Creación de dimensión tipo de propiedad
+2026-05-21T19:05:37.209581,DIMENSION,DIM_SOURCE,5507,2,0,Creación de dimensión fuente
+2026-05-21T19:05:37.215066,DIMENSION,DIM_TIME,5507,3,0,Creación de dimensión temporal
+2026-05-21T19:05:37.240751,FACT,FACT_PROPERTIES,5507,5507,0,Creación de tabla de hechos fact_properties con trazabilidad source_record_id y load_timestamp
+2026-05-21T19:05:37.492632,LOAD_SQL,dim_city,2,2,0,Carga de dim_city.csv en tabla SQL dim_city
+2026-05-21T19:05:37.495614,LOAD_SQL,dim_neighborhood,1087,1087,0,Carga de dim_neighborhood.csv en tabla SQL dim_neighborhood
+2026-05-21T19:05:37.497830,LOAD_SQL,dim_property_type,115,115,0,Carga de dim_property_type.csv en tabla SQL dim_property_type
+2026-05-21T19:05:37.499946,LOAD_SQL,dim_source,2,2,0,Carga de dim_source.csv en tabla SQL dim_source
+2026-05-21T19:05:37.502269,LOAD_SQL,dim_time,3,3,0,Carga de dim_time.csv en tabla SQL dim_time
+2026-05-21T19:05:37.513650,LOAD_SQL,fact_properties,5507,5507,0,Carga de fact_properties.csv en tabla SQL fact_properties

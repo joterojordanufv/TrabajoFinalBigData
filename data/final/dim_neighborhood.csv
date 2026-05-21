@@ -1,16 +1,1088 @@
 neighborhood_id,neighborhood,city_id
-1,Salamanca,1
-2,Chamartin,1
-3,Centro,1
-4,Retiro,1
-5,Chamberi,1
-6,Chelsea,2
-7,Canary Wharf,2
-8,Camden,2
-9,Westminster,2
-10,Kensington,2
-11,Centrum,3
-12,Oud Zuid,3
-13,De Pijp,3
-14,Jordaan,3
-15,Zuidas,3
+1,"3 Bedroom Terraced House For Sale In Aileen Walk, Stratford, E15",1
+2,"1 Bedroom Apartment For Sale In Rich Street, Limehouse E14 8Al, E14",1
+3,"2 Bedroom Apartment For Sale In Viscount House, Lakeside Drive, London, Nw10",1
+4,"2 Bedroom Apartment For Sale In Forge Square, Westferry Road, Isle Of Dogs E14",1
+5,"2 Bedroom Flat For Sale In Bromyard Avenue, Acton, W3",1
+6,"1 Bedroom Apartment For Sale In Cambridge Avenue, London, Nw6",1
+7,"6 Bedroom Character Property For Sale In Trafalgar Street, London, Se17",1
+8,"1 Bedroom Apartment For Sale In Ruckholt Road, Leyton, London, E10",1
+9,"2 Bedroom End Of Terrace House For Sale In Wilfred Owen Close, London, Sw19",1
+10,"2 Bedroom Flat For Sale In Wastdale Road, Forest Hill, Se23",1
+11,"2 Bedroom Ground Floor Flat For Sale In Steerforth Street, London, Sw18",1
+12,"3 Bedroom End Of Terrace House For Sale In Waltham Way, Chingford, E4",1
+13,"2 Bedroom Apartment For Sale In Landcroft Road, East Dulwich, London, Se22",1
+14,"3 Bedroom Flat For Sale In The Grange, East Finchley, N2",1
+15,"Plot For Sale In 10-14 Hollybush Gardens, E2 6Qp, E2",1
+16,"3 Bedroom Semi-Detached House For Sale In Second Avenue, En1",1
+17,"2 Bedroom Flat For Sale In Bow Road, Bow, E3",1
+18,Sint Pancras,2
+19,Waddinxveen,2
+20,Houten,2
+21,Pannerden,2
+22,Sassenheim,2
+23,Oudewater,2
+24,Utrecht,2
+25,Dordrecht,2
+26,Zuidveen,2
+27,Amstelveen,2
+28,Nieuwlande,2
+29,Rhoon,2
+30,Ede,2
+31,Terheijden,2
+32,Schaijk,2
+33,Nieuwleusen,2
+34,Linden,2
+35,Ermelo,2
+36,Veghel,2
+37,Veenendaal,2
+38,Holten,2
+39,Helmond,2
+40,Gilze,2
+41,Assendelft,2
+42,Nuenen,2
+43,Apeldoorn,2
+44,Linne,2
+45,Arnhem,2
+46,Eindhoven,2
+47,Hillegom,2
+48,'S-Gravenzande,2
+49,Nijkerk,2
+50,Gorinchem,2
+51,Spijkenisse,2
+52,Purmerend,2
+53,Nijmegen,2
+54,Almere,2
+55,St. Willebrord,2
+56,Rijssen,2
+57,Delfzijl,2
+58,Surhuisterveen,2
+59,Oosterhout (Nb),2
+60,Tegelen,2
+61,Hoeven,2
+62,Lage Mierde,2
+63,Alphen Aan Den Rijn,2
+64,Oss,2
+65,Sliedrecht,2
+66,Wanroij,2
+67,Leeuwarden,2
+68,Lelystad,2
+69,Kesteren,2
+70,Den Haag,2
+71,Nieuw Heeten,2
+72,Oisterwijk,2
+73,Emmen,2
+74,Maasbommel,2
+75,Venray,2
+76,Zaandam,2
+77,Emst,2
+78,Castricum,2
+79,Middenbeemster,2
+80,Breda,2
+81,Valthe,2
+82,Meteren,2
+83,Akersloot,2
+84,Leusden,2
+85,Deurne,2
+86,Heemskerk,2
+87,Nuland,2
+88,Putten,2
+89,Zieuwent,2
+90,Kapel Avezaath (Gem. Tiel),2
+91,Assen,2
+92,Rotterdam,2
+93,Vlissingen,2
+94,Made,2
+95,Poortvliet,2
+96,Emmeloord,2
+97,Afferden (Li),2
+98,Amersfoort,2
+99,Wageningen,2
+100,Elp,2
+101,Maarssen,2
+102,Doetinchem,2
+103,Blokker,2
+104,Riel,2
+105,Heiloo,2
+106,Heeze,2
+107,Zeeland,2
+108,Voorschoten,2
+109,Best,2
+110,Lopik,2
+111,Wijster,2
+112,Wijchen,2
+113,Harderwijk,2
+114,Nieuw-Amsterdam,2
+115,De Woude,2
+116,Vianen (Ut),2
+117,Oostkapelle,2
+118,Groot-Ammers,2
+119,Ijmuiden,2
+120,Oosthuizen,2
+121,Dronten,2
+122,Dedemsvaart,2
+123,Krimpen Aan Den Ijssel,2
+124,Neede,2
+125,Sittard,2
+126,Malden,2
+127,Aalsmeer,2
+128,Lathum,2
+129,Groningen,2
+130,Achterveld (Ut),2
+131,Zwolle,2
+132,Lexmond,2
+133,Gouda,2
+134,Harlingen,2
+135,Beuningen (Ge),2
+136,Hoorn (Nh),2
+137,Kerkrade,2
+138,Sint Anthonis,2
+139,Voorhout,2
+140,Wieringerwaard,2
+141,Enkhuizen,2
+142,Gendringen,2
+143,Capelle Aan Den Ijssel,2
+144,Nieuw-Buinen,2
+145,Maastricht,2
+146,Kats,2
+147,'S Gravenmoer,2
+148,Valthermond,2
+149,Raamsdonksveer,2
+150,Zevenaar,2
+151,Zutphen,2
+152,Giethoorn,2
+153,Odijk,2
+154,Beverwijk,2
+155,Oosterbeek,2
+156,Dongen,2
+157,Zierikzee,2
+158,Amsterdam,2
+159,Barneveld,2
+160,Hoevelaken,2
+161,Enschede,2
+162,Uithoorn,2
+163,Mijdrecht,2
+164,Renswoude,2
+165,Hoogvliet Rotterdam,2
+166,Wormerveer,2
+167,Roermond,2
+168,Stein,2
+169,Vught,2
+170,Nijverdal,2
+171,Hilversum,2
+172,Monster,2
+173,Tilburg,2
+174,Erica,2
+175,Hooge Zwaluwe,2
+176,Haarlem,2
+177,Hellevoetsluis,2
+178,'S-Heerenberg,2
+179,Leiderdorp,2
+180,Roosendaal,2
+181,Huissen,2
+182,Pijnacker,2
+183,Noordwijk (Zh),2
+184,Lunteren,2
+185,'S-Heerenhoek,2
+186,Hoogezand,2
+187,Heerhugowaard,2
+188,Panningen,2
+189,Lochem,2
+190,Ellemeet,2
+191,Zwartewaal,2
+192,Tiel,2
+193,Alkmaar,2
+194,Lisse,2
+195,Epe,2
+196,Kudelstaart,2
+197,Beek En Donk,2
+198,Wehl,2
+199,Ootmarsum,2
+200,Bergen (Li),2
+201,Borne,2
+202,Hardinxveld-Giessendam,2
+203,Grave,2
+204,Zevenbergen,2
+205,Borger,2
+206,Otterlo,2
+207,Warmenhuizen,2
+208,Herten,2
+209,Delft,2
+210,Burgum,2
+211,Goes,2
+212,Zuid-Beijerland,2
+213,Westervoort,2
+214,Beinsdorp,2
+215,Oost West En Middelbeers,2
+216,Schijndel,2
+217,Koudekerk Aan Den Rijn,2
+218,Prinsenbeek,2
+219,Geldrop,2
+220,Berkel En Rodenrijs,2
+221,Haarsteeg,2
+222,Etten-Leur,2
+223,Numansdorp,2
+224,Den Bosch,2
+225,Nieuw-Vennep,2
+226,Kampen,2
+227,Angeren,2
+228,Meerstad,2
+229,Marknesse,2
+230,Leiden,2
+231,Werkendam,2
+232,Tholen,2
+233,Dalfsen,2
+234,Bergambacht,2
+235,Schoonhoven,2
+236,Dreischor,2
+237,Sleen,2
+238,Ruurlo,2
+239,Zoetermeer,2
+240,Duiven,2
+241,Swalmen,2
+242,Sint Jansteen,2
+243,Oentsjerk,2
+244,Uden,2
+245,Almelo,2
+246,Zwartsluis,2
+247,Langbroek,2
+248,Oost-Souburg,2
+249,Berghem,2
+250,Ijsselstein,2
+251,Hoofddorp,2
+252,Blije,2
+253,Horst,2
+254,Groet,2
+255,Berkhout,2
+256,Slagharen,2
+257,Balkbrug,2
+258,Moordrecht,2
+259,Bladel,2
+260,Nieuwerkerk Aan Den Ijssel,2
+261,Stadskanaal,2
+262,Woudenberg,2
+263,Brunssum,2
+264,Oldelamer,2
+265,Middelharnis,2
+266,Hengelo (Ov),2
+267,Valkenburg (Li),2
+268,Alteveer (Gr),2
+269,Rijsenhout,2
+270,Puttershoek,2
+271,Sprundel,2
+272,Ridderkerk,2
+273,Wijngaarden,2
+274,Gennep,2
+275,Volendam,2
+276,Wormer,2
+277,Oeffelt,2
+278,Bavel (Gem. Breda),2
+279,Hendrik-Ido-Ambacht,2
+280,Halle,2
+281,Schiedam,2
+282,Stad Aan 'T Haringvliet,2
+283,Rijen,2
+284,Wenum Wiesel,2
+285,Warnsveld,2
+286,Kootstertille,2
+287,Middelburg,2
+288,Hollandscheveld,2
+289,Den Ham (Ov),2
+290,Herpen,2
+291,Hoogland,2
+292,Gemert,2
+293,Rijpwetering,2
+294,Marum,2
+295,Pernis Rotterdam,2
+296,Culemborg,2
+297,Ees,2
+298,Opheusden,2
+299,Gemonde,2
+300,Rosmalen,2
+301,Buurmalsen (Gem. West Betuwe),2
+302,Geleen,2
+303,Eerbeek,2
+304,Driebergen-Rijsenburg,2
+305,Klazienaveen,2
+306,Wateringen,2
+307,Winschoten,2
+308,Papendrecht,2
+309,Doorwerth,2
+310,Krommenie,2
+311,Wijk Bij Duurstede,2
+312,Landhorst,2
+313,Lippenhuizen,2
+314,Vleuten,2
+315,Bergschenhoek,2
+316,Nieuwegein,2
+317,Elst (Ge),2
+318,Oldebroek,2
+319,Nieuwkuijk,2
+320,Woerden,2
+321,Weesp,2
+322,Fijnaart,2
+323,Swifterbant,2
+324,Egmond-Binnen,2
+325,Geertruidenberg,2
+326,Elst (Ut),2
+327,Maurik,2
+328,Dodewaard,2
+329,Eelde,2
+330,Vroomshoop,2
+331,Heerjansdam,2
+332,Helden,2
+333,Hoogeveen,2
+334,Den Bommel,2
+335,Goirle,2
+336,Domburg,2
+337,Hoensbroek,2
+338,Oudebildtzijl,2
+339,Vinkeveen,2
+340,Ursem (Gem. Koggenland),2
+341,Vaassen,2
+342,De Goorn,2
+343,Heusden (Gem. Heusden),2
+344,Willemstad,2
+345,Waalre,2
+346,Ijsselmuiden,2
+347,Herwen,2
+348,Hardenberg,2
+349,Bovenkarspel,2
+350,Heemstede,2
+351,Meppel,2
+352,Hengelo (Ge),2
+353,De Meern,2
+354,Denekamp,2
+355,Beers,2
+356,Haaksbergen,2
+357,Terneuzen,2
+358,Reeuwijk,2
+359,Herkenbosch,2
+360,Britsum,2
+361,Bleiswijk,2
+362,Dirksland,2
+363,Losser,2
+364,Gieten,2
+365,Dreumel,2
+366,Oosterwolde (Fr),2
+367,Raalte,2
+368,Roswinkel,2
+369,Westerbork,2
+370,Lottum,2
+371,Koewacht,2
+372,Dalmsholte,2
+373,Rijswijk (Zh),2
+374,Noord-Sleen,2
+375,Groenlo,2
+376,Blaricum,2
+377,Limmen,2
+378,Bennekom,2
+379,Koudekerke,2
+380,Gorssel,2
+381,Zuidhorn,2
+382,Rijnsburg,2
+383,Steenbergen (Nb),2
+384,Almkerk,2
+385,Geldermalsen,2
+386,Uitgeest,2
+387,Elburg,2
+388,Toldijk,2
+389,Eibergen,2
+390,Noord-Scharwoude,2
+391,Velsen-Noord,2
+392,Valkenswaard,2
+393,Kaatsheuvel,2
+394,Nunspeet,2
+395,Koedijk (Gem. Alkmaar),2
+396,Landgraaf,2
+397,Boxtel,2
+398,Horssen,2
+399,Zwijndrecht,2
+400,Lutjebroek,2
+401,Egmond Aan Zee,2
+402,Oudenbosch,2
+403,Vierlingsbeek,2
+404,Heesch,2
+405,Breukelen,2
+406,Stiens,2
+407,Doorn,2
+408,Maasbree,2
+409,Zaandijk,2
+410,Lopikerkapel,2
+411,Rozendaal,2
+412,Zuidlaren,2
+413,Naarden,2
+414,Eygelshoven,2
+415,Den Dolder,2
+416,Lekkerkerk,2
+417,Oud Gastel,2
+418,Winterswijk,2
+419,Loosdrecht,2
+420,Bunde,2
+421,Sint-Oedenrode,2
+422,Emmer-Compascuum,2
+423,Dinxperlo,2
+424,Heinenoord,2
+425,Brielle,2
+426,Wons,2
+427,Barendrecht,2
+428,Deest,2
+429,Veendam,2
+430,Drachten,2
+431,Oostvoorne,2
+432,Loenen Aan De Vecht,2
+433,Tubbergen,2
+434,Stavenisse,2
+435,Nieuwer Ter Aa,2
+436,Montfoort,2
+437,Vianen (Nb),2
+438,Hapert,2
+439,Geerdijk,2
+440,Zeist,2
+441,Ommen,2
+442,Alblasserdam,2
+443,Echten (Fr),2
+444,Maasbracht,2
+445,Leende,2
+446,Beilen,2
+447,Dirkshorn,2
+448,Wissenkerke,2
+449,Wassenaar,2
+450,Smilde,2
+451,Ovezande,2
+452,Steenderen,2
+453,Terborg,2
+454,Didam,2
+455,Udenhout,2
+456,Benthuizen,2
+457,De Kwakel,2
+458,Sellingen,2
+459,Goudswaard,2
+460,Hilvarenbeek,2
+461,Druten,2
+462,Soest,2
+463,Veldhoven,2
+464,Breedenbroek,2
+465,Boekel,2
+466,Honselersdijk,2
+467,Bleskensgraaf Ca,2
+468,Buren (Ge),2
+469,Nieuwkoop,2
+470,Huizen,2
+471,Vinkel (Gem. Den Bosch),2
+472,Cothen,2
+473,Elsloo (Li),2
+474,Ell,2
+475,Bedum,2
+476,Bruinisse,2
+477,De Rijp,2
+478,Nieuwendijk,2
+479,Heerewaarden,2
+480,Waalwijk,2
+481,Rijsbergen,2
+482,Venlo,2
+483,Bergen (Nh),2
+484,Vriezenveen,2
+485,Oosterwolde (Ge),2
+486,Noordwijkerhout,2
+487,Vlaardingen,2
+488,Beekbergen,2
+489,Peize,2
+490,Zeewolde,2
+491,Driebruggen,2
+492,Deventer,2
+493,Kloetinge (Gem. Goes),2
+494,Oosteind,2
+495,Valburg,2
+496,Petten,2
+497,Katwijk (Zh),2
+498,Amen,2
+499,Boven-Leeuwen,2
+500,Vlijmen,2
+501,Punthorst,2
+502,Edam,2
+503,Vlagtwedde,2
+504,Heikant,2
+505,Meeden,2
+506,Drunen,2
+507,Nieuwe Wetering,2
+508,Bodegraven,2
+509,Rhenen,2
+510,'S-Gravenpolder,2
+511,Herpt,2
+512,Bakel,2
+513,Doornspijk,2
+514,Diemen,2
+515,Rijswijk (Ge),2
+516,Echt,2
+517,Horn,2
+518,Zuidwolde (Dr),2
+519,Sevenum,2
+520,Garderen,2
+521,Cuijk,2
+522,Ferwert,2
+523,Lewedorp,2
+524,Berlicum,2
+525,Wierden,2
+526,Bussum,2
+527,Meijel,2
+528,Moerdijk,2
+529,Arnemuiden,2
+530,Eersel,2
+531,Riethoven,2
+532,Meliskerke,2
+533,Appingedam,2
+534,Wijhe,2
+535,Waspik,2
+536,Gouderak,2
+537,Sneek,2
+538,Schijf,2
+539,Rottum (Fr),2
+540,Erp,2
+541,Wervershoof,2
+542,Silvolde,2
+543,Rheden,2
+544,Hulst,2
+545,Bennebroek,2
+546,Harskamp,2
+547,'T Goy,2
+548,Twello,2
+549,Laren (Nh),2
+550,Exloo,2
+551,Biddinghuizen,2
+552,Boxmeer,2
+553,Enter,2
+554,Annen,2
+555,Weert,2
+556,Abbekerk,2
+557,Liessel,2
+558,Schoonloo,2
+559,Grou,2
+560,Leidschendam,2
+561,Anna Paulowna,2
+562,Borculo,2
+563,Berkel-Enschot,2
+564,De Knipe,2
+565,Overasselt,2
+566,Thorn,2
+567,Aalten,2
+568,Voorthuizen,2
+569,Boskoop,2
+570,Eemnes,2
+571,Hoogersmilde (Gem. Midden-Drenthe),2
+572,Haren (Gr),2
+573,Hasselt,2
+574,Doesburg,2
+575,Hindeloopen,2
+576,Diessen,2
+577,Oudkarspel (Gem. Dijk En Waard),2
+578,Odiliapeel,2
+579,Giesbeek,2
+580,Pesse (Gem. Hoogeveen),2
+581,Koog Aan De Zaan,2
+582,Oud-Beijerland,2
+583,Loenen,2
+584,Driel,2
+585,Axel,2
+586,Lepelstraat,2
+587,Eethen,2
+588,Zoutelande,2
+589,Heel,2
+590,Geffen,2
+591,Coevorden,2
+592,Wachtum,2
+593,Lutten,2
+594,Loon Op Zand,2
+595,Son En Breugel,2
+596,Hazerswoude-Rijndijk,2
+597,Nieuwdorp,2
+598,Den Dungen,2
+599,Musselkanaal,2
+600,Baarn,2
+601,Neerkant,2
+602,Bunschoten-Spakenburg,2
+603,Vledder,2
+604,Avenhorn,2
+605,Den Helder,2
+606,Wilhelminaoord,2
+607,Leunen,2
+608,Heukelum,2
+609,Ouderkerk Aan Den Ijssel,2
+610,Mariahout,2
+611,Purmer (Gem. Waterland),2
+612,Vorden,2
+613,Maassluis,2
+614,Schoonoord,2
+615,Heijen,2
+616,Abcoude,2
+617,Fluitenberg,2
+618,Krewerd,2
+619,Hedel,2
+620,Melick,2
+621,Houtigehage,2
+622,Nederweert,2
+623,Heinkenszand,2
+624,Borgercompagnie (Gem. Veendam),2
+625,Grafhorst,2
+626,Wedde,2
+627,Hoek Van Holland,2
+628,Leersum,2
+629,Oudemirdum,2
+630,Vogelwaarde,2
+631,Oostzaan,2
+632,Genderen,2
+633,Oldenzaal,2
+634,Sluiskil,2
+635,Amerongen,2
+636,Sprang-Capelle,2
+637,Terschuur,2
+638,Wolfheze,2
+639,Sappemeer,2
+640,'S-Graveland,2
+641,Genemuiden,2
+642,Ter Apel,2
+643,Velserbroek,2
+644,Sint-Michielsgestel,2
+645,Valkenburg (Zh),2
+646,Sleeuwijk,2
+647,Leerdam,2
+648,Groesbeek,2
+649,Anjum,2
+650,Nieuw-Lekkerland,2
+651,Stramproy,2
+652,Ijzendoorn,2
+653,Velp (Ge),2
+654,Hattem,2
+655,Oudorp,2
+656,Hooghalen,2
+657,Hoef En Haag,2
+658,Reusel,2
+659,Kootwijkerbroek,2
+660,Baarle-Nassau,2
+661,Veen,2
+662,Wamel,2
+663,Zuiddorpe,2
+664,Ruinen (Gem. De Wolden),2
+665,Zuiderwoude,2
+666,Diever,2
+667,Well (Li),2
+668,Ewijk,2
+669,Wagenberg,2
+670,Westzaan,2
+671,Rijkevoort,2
+672,Grootegast,2
+673,Veere,2
+674,Neerijnen,2
+675,De Zilk,2
+676,Susteren,2
+677,Lieshout,2
+678,Nieuw-Dordrecht,2
+679,Steenwijk,2
+680,Gapinge,2
+681,Arkel,2
+682,Loenersloot,2
+683,Overloon,2
+684,Braamt,2
+685,Purmerland,2
+686,Ederveen,2
+687,Vrouwenpolder,2
+688,Harkema,2
+689,Huis Ter Heide (Ut),2
+690,Den Hout,2
+691,Doornenburg,2
+692,Dinteloord,2
+693,Ulvenhout (Gem. Alphen-Chaam),2
+694,Lichtenvoorde,2
+695,Norg,2
+696,Sint Nicolaasga,2
+697,Ooij,2
+698,Grootebroek,2
+699,Scherpenzeel (Ge),2
+700,Herkingen,2
+701,Wilnis,2
+702,Bergen Op Zoom,2
+703,Zuilichem,2
+704,Lith,2
+705,Noordwolde (Fr),2
+706,Oudenhoorn,2
+707,Sint Odiliënberg,2
+708,Stellendam,2
+709,Eefde,2
+710,Oegstgeest,2
+711,Peins,2
+712,Nijkerkerveen,2
+713,Groeningen,2
+714,Zuidoostbeemster,2
+715,Oosterhout (Ge),2
+716,Molenhoek,2
+717,Oldemarkt,2
+718,Westerhoven,2
+719,Nispen,2
+720,Rolde,2
+721,Santpoort-Zuid,2
+722,Heeswijk-Dinther,2
+723,Weerselo,2
+724,Hellendoorn,2
+725,Zuid-Scharwoude,2
+726,Zuidland,2
+727,Franeker,2
+728,Maarn,2
+729,Haastrecht,2
+730,Heerenveen,2
+731,Beneden-Leeuwen,2
+732,Broek Op Langedijk,2
+733,Hooglanderveen,2
+734,Mariënheem,2
+735,Mijnsheerenland,2
+736,Overdinkel,2
+737,Hoogmade,2
+738,Milsbeek,2
+739,Elspeet,2
+740,Achtmaal,2
+741,Zwaag,2
+742,Hagestein,2
+743,Nootdorp,2
+744,Burgh-Haamstede,2
+745,Tiendeveen (Gem. Hoogeveen),2
+746,Alphen (Ge),2
+747,Ulft,2
+748,Hierden,2
+749,Bathmen,2
+750,Hooge Mierde,2
+751,Rouveen,2
+752,Heenvliet,2
+753,Winsum (Fr),2
+754,Bergeijk,2
+755,Krimpen Aan De Lek,2
+756,Landsmeer,2
+757,Uithuizermeeden,2
+758,Haulerwijk,2
+759,Brummen,2
+760,Ossenzijl,2
+761,Hulshorst,2
+762,Wognum,2
+763,Chaam,2
+764,Oranjewoud,2
+765,Gieterveen,2
+766,Bemmel,2
+767,Vijfhuizen,2
+768,Goor,2
+769,Delden,2
+770,De Bilt,2
+771,Alphen (Nb),2
+772,Dorst,2
+773,Aalden,2
+774,Wolphaartsdijk,2
+775,Ouderkerk Aan De Amstel,2
+776,Zetten,2
+777,Mook,2
+778,Bilthoven,2
+779,Gasselte,2
+780,Een,2
+781,Nieuwe-Tonge,2
+782,'T Harde,2
+783,Mierlo,2
+784,Everdingen,2
+785,Schuinesloot,2
+786,Warmond,2
+787,Steenwijkerwold,2
+788,Sterksel,2
+789,Monnickendam,2
+790,Beusichem,2
+791,Babyloniënbroek,2
+792,Olst,2
+793,Zandvoort,2
+794,Wouwse Plantage,2
+795,Badhoevedorp,2
+796,Rockanje,2
+797,Maarsbergen,2
+798,Reek,2
+799,Peest,2
+800,Kerkenveld,2
+801,Philippine,2
+802,Scheemda,2
+803,Renesse,2
+804,Ittervoort,2
+805,Dieren,2
+806,Velsen-Zuid,2
+807,Stolwijk,2
+808,Oude Wetering,2
+809,Bosschenhoofd,2
+810,Kwintsheul,2
+811,Wijk En Aalburg,2
+812,Wellerlooi,2
+813,Raamsdonk,2
+814,Appelscha,2
+815,Cadier En Keer,2
+816,Stompetoren,2
+817,Mill,2
+818,Nieuwe Niedorp,2
+819,Oud-Vossemeer,2
+820,Vollenhove,2
+821,Werkhoven,2
+822,Est,2
+823,Gellicum,2
+824,Rijnsaterwoude,2
+825,Nijeveen,2
+826,Nigtevecht,2
+827,Nieuw-Schoonebeek,2
+828,Gaanderen,2
+829,Strijen,2
+830,Rozenburg (Zh),2
+831,Roden,2
+832,Maasdam,2
+833,Jubbega,2
+834,Klarenbeek (Gem. Voorst),2
+835,Zwanenburg,2
+836,Spier (Gem. Midden-Drenthe),2
+837,Hulten,2
+838,Schalkwijk,2
+839,Teteringen,2
+840,Menaam,2
+841,Montfort,2
+842,Lieren,2
+843,Ouddorp,2
+844,Grijpskerke,2
+845,Varsseveld,2
+846,De Lier,2
+847,Ter Apelkanaal,2
+848,Roggel,2
+849,Roelofarendsveen,2
+850,Randwijk,2
+851,Nieuwe Pekela,2
+852,Serooskerke (Gem. Veere),2
+853,Overveen,2
+854,Oud Ade,2
+855,Hurdegaryp,2
+856,Aardenburg,2
+857,Hank,2
+858,Milheeze,2
+859,Westkapelle,2
+860,Heteren,2
+861,Scharendijke,2
+862,Ochten,2
+863,Schoorl,2
+864,Heythuysen,2
+865,Bunnik,2
+866,Ternaard,2
+867,Hippolytushoef,2
+868,Den Horn,2
+869,Woerdense Verlaat,2
+870,Lithoijen,2
+871,Someren,2
+872,Wolvega,2
+873,Wijk Aan Zee,2
+874,Spaubeek,2
+875,Lienden,2
+876,Streefkerk,2
+877,Netersel,2
+878,Winssen,2
+879,Klarenbeek (Gem. Apeldoorn),2
+880,Wilbertoord,2
+881,Damwâld,2
+882,Poeldijk,2
+883,Wildervank,2
+884,Wilsum,2
+885,Bentveld,2
+886,Poortugaal,2
+887,Wanneperveen,2
+888,Almen,2
+889,Krabbendijke,2
+890,Dwingeloo,2
+891,Kolhorn,2
+892,Schermerhorn,2
+893,Sambeek,2
+894,Venhuizen,2
+895,Batenburg,2
+896,Voorburg,2
+897,Zevenhuizen (Zh),2
+898,Tienhoven Aan De Lek,2
+899,Hoogkarspel,2
+900,Ammerzoden,2
+901,Stampersgat,2
+902,Wezep,2
+903,Bloemendaal,2
+904,Grashoek,2
+905,Beerzerveld,2
+906,Zwaanshoek,2
+907,Beets,2
+908,Vries,2
+909,Beegden,2
+910,Andijk,2
+911,Wijdewormer,2
+912,Kortenhoef,2
+913,Rotsterhaule,2
+914,'S-Gravendeel,2
+915,Den Ilp,2
+916,Kortgene,2
+917,Nieuw-Weerdinge,2
+918,Hansweert,2
+919,Delwijnen,2
+920,Uithuizen,2
+921,Grijpskerk,2
+922,Vrouwenparochie,2
+923,Kerkdriel,2
+924,Aarle-Rixtel,2
+925,Lent,2
+926,Zwiggelte,2
+927,Lobith,2
+928,Naaldwijk,2
+929,Augustinusga,2
+930,Nieuwerbrug Aan Den Rijn,2
+931,Linschoten,2
+932,Westendorp,2
+933,Molenaarsgraaf,2
+934,Broek In Waterland,2
+935,Eemdijk,2
+936,Waarder,2
+937,Nederhorst Den Berg,2
+938,Schoondijke,2
+939,Castenray,2
+940,Standdaarbuiten,2
+941,Esbeek,2
+942,Diepenheim,2
+943,Midwoud,2
+944,Nieuwveen,2
+945,Nijeholtpade,2
+946,Gasselternijveenschemond,2
+947,Geesteren (Ov),2
+948,Meerssen,2
+949,Nieuw-Balinge,2
+950,Wijdenes,2
+951,Buitenkaag,2
+952,Siebengewald,2
+953,Maasland,2
+954,Meterik,2
+955,Spierdijk,2
+956,Vortum-Mullem,2
+957,Breukeleveen,2
+958,Haarlo,2
+959,Zaamslag,2
+960,Brakel,2
+961,Piershil,2
+962,Stevensweert,2
+963,Lisserbroek,2
+964,Muiden,2
+965,Waardenburg,2
+966,Tzum,2
+967,Schagerbrug,2
+968,Hallum,2
+969,Wier,2
+970,Maashees,2
+971,Westdorpe,2
+972,Zwartebroek,2
+973,Appeltern,2
+974,Kaag,2
+975,Winterswijk Kotten,2
+976,Zegveld,2
+977,Joure,2
+978,Stokkum,2
+979,Heino,2
+980,Kilder,2
+981,Froombosch,2
+982,Eijsden,2
+983,Rossum (Ov),2
+984,Duizel,2
+985,Schelluinen,2
+986,Ballum,2
+987,Plasmolen,2
+988,Lemelerveld,2
+989,Baambrugge,2
+990,Ijzendijke,2
+991,Katlijk,2
+992,Rotstergaast,2
+993,Soesterberg,2
+994,Wapenveld,2
+995,Blijham,2
+996,Renkum,2
+997,Schagen,2
+998,Jisp,2
+999,Bergharen,2
+1000,Volkel,2
+1001,Lengel,2
+1002,Marsum,2
+1003,Lijnden,2
+1004,Herveld,2
+1005,Oud Zuilen,2
+1006,Kloosterzande,2
+1007,Sas Van Gent,2
+1008,Ottersum,2
+1009,Ugchelen,2
+1010,St.-Annaparochie,2
+1011,Posterholt,2
+1012,Elshout,2
+1013,Roosteren,2
+1014,Ophemert,2
+1015,Wapse,2
+1016,Nijland,2
+1017,Hoornaar,2
+1018,'S-Heer Arendskerke,2
+1019,Meerlo,2
+1020,Vierhouten,2
+1021,Sommelsdijk,2
+1022,Veeningen,2
+1023,Buinen,2
+1024,De Wilp,2
+1025,Noordwijk (Gr),2
+1026,Heijningen,2
+1027,Klaaswaal,2
+1028,Wilp,2
+1029,Schinveld,2
+1030,Obdam,2
+1031,Oude-Tonge,2
+1032,Zoelmond,2
+1033,Dalem,2
+1034,Noordlaren,2
+1035,Opende,2
+1036,Langenboom,2
+1037,Vinkenbuurt,2
+1038,Hoofdplaat,2
+1039,Polsbroek,2
+1040,Breezand,2
+1041,Garmerwolde,2
+1042,Tjalleberd,2
+1043,Blauwestad,2
+1044,Havelte,2
+1045,Meedhuizen,2
+1046,Ouwsterhaule,2
+1047,Hekelingen,2
+1048,Kollum,2
+1049,Idsegahuizum,2
+1050,Vessem,2
+1051,Oijen,2
+1052,Molkwerum,2
+1053,Echteld,2
+1054,Ameide,2
+1055,Rekken,2
+1056,Heide,2
+1057,Laren (Ge),2
+1058,Groede,2
+1059,Rossum (Ge),2
+1060,Schipluiden,2
+1061,Gramsbergen,2
+1062,Haalderen,2
+1063,Geulle,2
+1064,Goedereede,2
+1065,Oldeberkoop,2
+1066,Meerkerk,2
+1067,De Wijk,2
+1068,Daarle,2
+1069,Tonden,2
+1070,Elim,2
+1071,Spaarndam Gem. Haarlem,2
+1072,Biest-Houtakker,2
+1073,Hijken,2
+1074,Rottevalle,2
+1075,Zwammerdam,2
+1076,Haps,2
+1077,Klundert,2
+1078,Albergen,2
+1079,Escharen,2
+1080,Holwerd,2
+1081,Ter Aar,2
+1082,Buggenum,2
+1083,Ilpendam,2
+1084,Jirnsum,2
+1085,Cadzand,2
+1086,Woudsend,2
+1087,Bitgum,2

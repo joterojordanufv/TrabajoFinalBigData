@@ -2209,6 +2209,296 @@
             "discarded_rows": 0,
             "reason": "Carga de fact_properties.csv en tabla SQL fact_properties",
             "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.586673",
+            "phase": "EXTRACT",
+            "source": "Idealista Madrid",
+            "input_rows": 915,
+            "output_rows": 915,
+            "discarded_rows": 0,
+            "reason": "Normalización de dataset real Idealista Madrid",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.608923",
+            "phase": "EXTRACT",
+            "source": "Rightmove London",
+            "input_rows": 1019,
+            "output_rows": 1019,
+            "discarded_rows": 0,
+            "reason": "Normalización de dataset real Rightmove London",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.643646",
+            "phase": "EXTRACT",
+            "source": "Funda Amsterdam",
+            "input_rows": 5555,
+            "output_rows": 5555,
+            "discarded_rows": 0,
+            "reason": "Normalización de dataset real Funda Amsterdam",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.645806",
+            "phase": "EXTRACT",
+            "source": "Eurostat HPI",
+            "input_rows": 180,
+            "output_rows": 180,
+            "discarded_rows": 0,
+            "reason": "Carga de serie HPI Eurostat",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.894058",
+            "phase": "MERGE_RAW",
+            "source": "Idealista + Rightmove + Funda",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Unificación de fuentes inmobiliarias",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.901412",
+            "phase": "T03_BLANCOS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Eliminación de espacios en blanco",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.905424",
+            "phase": "T01_DUPLICADOS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Eliminación de duplicados",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.909059",
+            "phase": "T02_NULOS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Tratamiento de valores nulos",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.910662",
+            "phase": "T04_TIPOS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Validación de tipos de dato",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.915934",
+            "phase": "T05_FECHAS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Normalización de fechas ISO-8601",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.920511",
+            "phase": "T06_TEXTO",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Normalización textual",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.922683",
+            "phase": "T07_RANGOS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 7489,
+            "discarded_rows": 0,
+            "reason": "Validación de rangos",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.926506",
+            "phase": "T08_OUTLIERS",
+            "source": "Dataset unificado",
+            "input_rows": 7489,
+            "output_rows": 5507,
+            "discarded_rows": 1982,
+            "reason": "Eliminación de outliers",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.929043",
+            "phase": "T09_SEUDONIMIZACION",
+            "source": "Dataset unificado",
+            "input_rows": 5507,
+            "output_rows": 5507,
+            "discarded_rows": 0,
+            "reason": "Seudonimización de identificadores",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.931492",
+            "phase": "T10_VALIDACION_REFERENCIAL",
+            "source": "Dataset unificado",
+            "input_rows": 5507,
+            "output_rows": 5507,
+            "discarded_rows": 0,
+            "reason": "Validación referencial",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.949112",
+            "phase": "SAVE_PROCESSED",
+            "source": "Dataset limpio",
+            "input_rows": 5507,
+            "output_rows": 5507,
+            "discarded_rows": 0,
+            "reason": "Exportación dataset inmobiliario limpio",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:36.950501",
+            "phase": "SAVE_PROCESSED",
+            "source": "Eurostat HPI",
+            "input_rows": 180,
+            "output_rows": 180,
+            "discarded_rows": 0,
+            "reason": "Exportación Eurostat limpio",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.201278",
+            "phase": "DIMENSION",
+            "source": "DIM_CITY",
+            "input_rows": 5507,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión ciudad",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.205422",
+            "phase": "DIMENSION",
+            "source": "DIM_NEIGHBORHOOD",
+            "input_rows": 5507,
+            "output_rows": 1087,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión barrio",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.207539",
+            "phase": "DIMENSION",
+            "source": "DIM_PROPERTY_TYPE",
+            "input_rows": 5507,
+            "output_rows": 115,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión tipo de propiedad",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.209581",
+            "phase": "DIMENSION",
+            "source": "DIM_SOURCE",
+            "input_rows": 5507,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión fuente",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.215066",
+            "phase": "DIMENSION",
+            "source": "DIM_TIME",
+            "input_rows": 5507,
+            "output_rows": 3,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión temporal",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.240751",
+            "phase": "FACT",
+            "source": "FACT_PROPERTIES",
+            "input_rows": 5507,
+            "output_rows": 5507,
+            "discarded_rows": 0,
+            "reason": "Creación de tabla de hechos fact_properties con trazabilidad source_record_id y load_timestamp",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.492632",
+            "phase": "LOAD_SQL",
+            "source": "dim_city",
+            "input_rows": 2,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_city.csv en tabla SQL dim_city",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.495614",
+            "phase": "LOAD_SQL",
+            "source": "dim_neighborhood",
+            "input_rows": 1087,
+            "output_rows": 1087,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_neighborhood.csv en tabla SQL dim_neighborhood",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.497830",
+            "phase": "LOAD_SQL",
+            "source": "dim_property_type",
+            "input_rows": 115,
+            "output_rows": 115,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_property_type.csv en tabla SQL dim_property_type",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.499946",
+            "phase": "LOAD_SQL",
+            "source": "dim_source",
+            "input_rows": 2,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_source.csv en tabla SQL dim_source",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.502269",
+            "phase": "LOAD_SQL",
+            "source": "dim_time",
+            "input_rows": 3,
+            "output_rows": 3,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_time.csv en tabla SQL dim_time",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T19:05:37.513650",
+            "phase": "LOAD_SQL",
+            "source": "fact_properties",
+            "input_rows": 5507,
+            "output_rows": 5507,
+            "discarded_rows": 0,
+            "reason": "Carga de fact_properties.csv en tabla SQL fact_properties",
+            "details": {}
         }
     ]
 }

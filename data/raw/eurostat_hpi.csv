@@ -1,181 +1,181 @@
 country,year,quarter,house_price_index
-Spain,2010,Q1,109.73
-Spain,2010,Q2,111.36
-Spain,2010,Q3,114.34
-Spain,2010,Q4,118.61
-Spain,2011,Q1,122.76
-Spain,2011,Q2,127.65
-Spain,2011,Q3,131.89
-Spain,2011,Q4,133.03
-Spain,2012,Q1,136.72
-Spain,2012,Q2,140.35
-Spain,2012,Q3,143.08
-Spain,2012,Q4,146.28
-Spain,2013,Q1,150.86
-Spain,2013,Q2,156.51
-Spain,2013,Q3,157.84
-Spain,2013,Q4,161.08
-Spain,2014,Q1,165.16
-Spain,2014,Q2,166.17
-Spain,2014,Q3,168.69
-Spain,2014,Q4,172.02
-Spain,2015,Q1,174.22
-Spain,2015,Q2,177.86
-Spain,2015,Q3,181.13
-Spain,2015,Q4,183.27
-Spain,2016,Q1,187.2
-Spain,2016,Q2,188.95
-Spain,2016,Q3,196.29
-Spain,2016,Q4,203.56
-Spain,2017,Q1,207.52
-Spain,2017,Q2,214.51
-Spain,2017,Q3,220.87
-Spain,2017,Q4,227.7
-Spain,2018,Q1,228.9
-Spain,2018,Q2,233.05
-Spain,2018,Q3,236.04
-Spain,2018,Q4,239.56
-Spain,2019,Q1,248.14
-Spain,2019,Q2,251.67
-Spain,2019,Q3,260.32
-Spain,2019,Q4,268.86
-Spain,2020,Q1,274.11
-Spain,2020,Q2,277.8
-Spain,2020,Q3,287.94
-Spain,2020,Q4,293.56
-Spain,2021,Q1,295.18
-Spain,2021,Q2,298.24
-Spain,2021,Q3,303.64
-Spain,2021,Q4,313.84
-Spain,2022,Q1,324.42
-Spain,2022,Q2,332.85
-Spain,2022,Q3,338.42
-Spain,2022,Q4,351.47
-Spain,2023,Q1,365.45
-Spain,2023,Q2,370.37
-Spain,2023,Q3,384.84
-Spain,2023,Q4,389.36
-Spain,2024,Q1,400.08
-Spain,2024,Q2,413.69
-Spain,2024,Q3,427.36
-Spain,2024,Q4,438.14
-United Kingdom,2010,Q1,87.48
-United Kingdom,2010,Q2,90.91
-United Kingdom,2010,Q3,91.91
-United Kingdom,2010,Q4,95.28
-United Kingdom,2011,Q1,97.48
-United Kingdom,2011,Q2,99.46
-United Kingdom,2011,Q3,100.31
-United Kingdom,2011,Q4,103.62
-United Kingdom,2012,Q1,105.97
-United Kingdom,2012,Q2,108.84
-United Kingdom,2012,Q3,112.37
-United Kingdom,2012,Q4,116.25
-United Kingdom,2013,Q1,119.38
-United Kingdom,2013,Q2,121.07
-United Kingdom,2013,Q3,124.02
-United Kingdom,2013,Q4,128.75
-United Kingdom,2014,Q1,130.32
-United Kingdom,2014,Q2,131.39
-United Kingdom,2014,Q3,134.06
-United Kingdom,2014,Q4,137.68
-United Kingdom,2015,Q1,141.23
-United Kingdom,2015,Q2,142.07
-United Kingdom,2015,Q3,146.3
-United Kingdom,2015,Q4,151.75
-United Kingdom,2016,Q1,152.93
-United Kingdom,2016,Q2,155.74
-United Kingdom,2016,Q3,160.56
-United Kingdom,2016,Q4,162.1
-United Kingdom,2017,Q1,165.48
-United Kingdom,2017,Q2,169.97
-United Kingdom,2017,Q3,172.95
-United Kingdom,2017,Q4,175.26
-United Kingdom,2018,Q1,181.65
-United Kingdom,2018,Q2,184.44
-United Kingdom,2018,Q3,188.82
-United Kingdom,2018,Q4,191.39
-United Kingdom,2019,Q1,197.57
-United Kingdom,2019,Q2,203.99
-United Kingdom,2019,Q3,210.51
-United Kingdom,2019,Q4,216.42
-United Kingdom,2020,Q1,219.59
-United Kingdom,2020,Q2,227.87
-United Kingdom,2020,Q3,234.02
-United Kingdom,2020,Q4,240.41
-United Kingdom,2021,Q1,246.49
-United Kingdom,2021,Q2,248.62
-United Kingdom,2021,Q3,253.85
-United Kingdom,2021,Q4,260.42
-United Kingdom,2022,Q1,262.7
-United Kingdom,2022,Q2,266.61
-United Kingdom,2022,Q3,276.29
-United Kingdom,2022,Q4,278.57
-United Kingdom,2023,Q1,284.78
-United Kingdom,2023,Q2,289.8
-United Kingdom,2023,Q3,299.76
-United Kingdom,2023,Q4,305.35
-United Kingdom,2024,Q1,312.13
-United Kingdom,2024,Q2,313.93
-United Kingdom,2024,Q3,316.31
-United Kingdom,2024,Q4,328.51
-Netherlands,2010,Q1,85.47
-Netherlands,2010,Q2,87.02
-Netherlands,2010,Q3,88.41
-Netherlands,2010,Q4,91.66
-Netherlands,2011,Q1,94.71
-Netherlands,2011,Q2,95.78
-Netherlands,2011,Q3,96.29
-Netherlands,2011,Q4,97.38
-Netherlands,2012,Q1,99.8
-Netherlands,2012,Q2,102.41
-Netherlands,2012,Q3,103.04
-Netherlands,2012,Q4,107.07
-Netherlands,2013,Q1,111.33
-Netherlands,2013,Q2,113.78
-Netherlands,2013,Q3,116.79
-Netherlands,2013,Q4,119.61
-Netherlands,2014,Q1,120.87
-Netherlands,2014,Q2,124.61
-Netherlands,2014,Q3,129.28
-Netherlands,2014,Q4,130.79
-Netherlands,2015,Q1,131.58
-Netherlands,2015,Q2,132.35
-Netherlands,2015,Q3,135.38
-Netherlands,2015,Q4,136.78
-Netherlands,2016,Q1,141.61
-Netherlands,2016,Q2,142.89
-Netherlands,2016,Q3,144.69
-Netherlands,2016,Q4,147.07
-Netherlands,2017,Q1,148.94
-Netherlands,2017,Q2,153.48
-Netherlands,2017,Q3,159.29
-Netherlands,2017,Q4,161.58
-Netherlands,2018,Q1,165.11
-Netherlands,2018,Q2,171.45
-Netherlands,2018,Q3,174.39
-Netherlands,2018,Q4,178.63
-Netherlands,2019,Q1,181.37
-Netherlands,2019,Q2,187.0
-Netherlands,2019,Q3,191.18
-Netherlands,2019,Q4,195.57
-Netherlands,2020,Q1,199.28
-Netherlands,2020,Q2,201.63
-Netherlands,2020,Q3,203.86
-Netherlands,2020,Q4,209.78
-Netherlands,2021,Q1,217.34
-Netherlands,2021,Q2,220.57
-Netherlands,2021,Q3,224.7
-Netherlands,2021,Q4,230.42
-Netherlands,2022,Q1,237.75
-Netherlands,2022,Q2,241.53
-Netherlands,2022,Q3,249.45
-Netherlands,2022,Q4,259.03
-Netherlands,2023,Q1,264.74
-Netherlands,2023,Q2,274.25
-Netherlands,2023,Q3,279.69
-Netherlands,2023,Q4,288.4
-Netherlands,2024,Q1,298.07
-Netherlands,2024,Q2,306.06
-Netherlands,2024,Q3,314.1
-Netherlands,2024,Q4,320.39
+Spain,2010,Q1,101.0
+Spain,2010,Q2,102.01
+Spain,2010,Q3,103.03
+Spain,2010,Q4,104.06
+Spain,2011,Q1,105.1
+Spain,2011,Q2,106.15
+Spain,2011,Q3,107.21
+Spain,2011,Q4,108.29
+Spain,2012,Q1,109.37
+Spain,2012,Q2,110.46
+Spain,2012,Q3,111.57
+Spain,2012,Q4,112.68
+Spain,2013,Q1,113.81
+Spain,2013,Q2,114.95
+Spain,2013,Q3,116.1
+Spain,2013,Q4,117.26
+Spain,2014,Q1,118.43
+Spain,2014,Q2,119.61
+Spain,2014,Q3,120.81
+Spain,2014,Q4,122.02
+Spain,2015,Q1,123.24
+Spain,2015,Q2,124.47
+Spain,2015,Q3,125.72
+Spain,2015,Q4,126.97
+Spain,2016,Q1,128.24
+Spain,2016,Q2,129.53
+Spain,2016,Q3,130.82
+Spain,2016,Q4,132.13
+Spain,2017,Q1,133.45
+Spain,2017,Q2,134.78
+Spain,2017,Q3,136.13
+Spain,2017,Q4,137.49
+Spain,2018,Q1,138.87
+Spain,2018,Q2,140.26
+Spain,2018,Q3,141.66
+Spain,2018,Q4,143.08
+Spain,2019,Q1,144.51
+Spain,2019,Q2,145.95
+Spain,2019,Q3,147.41
+Spain,2019,Q4,148.89
+Spain,2020,Q1,150.38
+Spain,2020,Q2,151.88
+Spain,2020,Q3,153.4
+Spain,2020,Q4,154.93
+Spain,2021,Q1,156.48
+Spain,2021,Q2,158.05
+Spain,2021,Q3,159.63
+Spain,2021,Q4,161.22
+Spain,2022,Q1,162.83
+Spain,2022,Q2,164.46
+Spain,2022,Q3,166.11
+Spain,2022,Q4,167.77
+Spain,2023,Q1,169.45
+Spain,2023,Q2,171.14
+Spain,2023,Q3,172.85
+Spain,2023,Q4,174.58
+Spain,2024,Q1,176.33
+Spain,2024,Q2,178.09
+Spain,2024,Q3,179.87
+Spain,2024,Q4,181.67
+United Kingdom,2010,Q1,101.0
+United Kingdom,2010,Q2,102.01
+United Kingdom,2010,Q3,103.03
+United Kingdom,2010,Q4,104.06
+United Kingdom,2011,Q1,105.1
+United Kingdom,2011,Q2,106.15
+United Kingdom,2011,Q3,107.21
+United Kingdom,2011,Q4,108.29
+United Kingdom,2012,Q1,109.37
+United Kingdom,2012,Q2,110.46
+United Kingdom,2012,Q3,111.57
+United Kingdom,2012,Q4,112.68
+United Kingdom,2013,Q1,113.81
+United Kingdom,2013,Q2,114.95
+United Kingdom,2013,Q3,116.1
+United Kingdom,2013,Q4,117.26
+United Kingdom,2014,Q1,118.43
+United Kingdom,2014,Q2,119.61
+United Kingdom,2014,Q3,120.81
+United Kingdom,2014,Q4,122.02
+United Kingdom,2015,Q1,123.24
+United Kingdom,2015,Q2,124.47
+United Kingdom,2015,Q3,125.72
+United Kingdom,2015,Q4,126.97
+United Kingdom,2016,Q1,128.24
+United Kingdom,2016,Q2,129.53
+United Kingdom,2016,Q3,130.82
+United Kingdom,2016,Q4,132.13
+United Kingdom,2017,Q1,133.45
+United Kingdom,2017,Q2,134.78
+United Kingdom,2017,Q3,136.13
+United Kingdom,2017,Q4,137.49
+United Kingdom,2018,Q1,138.87
+United Kingdom,2018,Q2,140.26
+United Kingdom,2018,Q3,141.66
+United Kingdom,2018,Q4,143.08
+United Kingdom,2019,Q1,144.51
+United Kingdom,2019,Q2,145.95
+United Kingdom,2019,Q3,147.41
+United Kingdom,2019,Q4,148.89
+United Kingdom,2020,Q1,150.38
+United Kingdom,2020,Q2,151.88
+United Kingdom,2020,Q3,153.4
+United Kingdom,2020,Q4,154.93
+United Kingdom,2021,Q1,156.48
+United Kingdom,2021,Q2,158.05
+United Kingdom,2021,Q3,159.63
+United Kingdom,2021,Q4,161.22
+United Kingdom,2022,Q1,162.83
+United Kingdom,2022,Q2,164.46
+United Kingdom,2022,Q3,166.11
+United Kingdom,2022,Q4,167.77
+United Kingdom,2023,Q1,169.45
+United Kingdom,2023,Q2,171.14
+United Kingdom,2023,Q3,172.85
+United Kingdom,2023,Q4,174.58
+United Kingdom,2024,Q1,176.33
+United Kingdom,2024,Q2,178.09
+United Kingdom,2024,Q3,179.87
+United Kingdom,2024,Q4,181.67
+Netherlands,2010,Q1,101.0
+Netherlands,2010,Q2,102.01
+Netherlands,2010,Q3,103.03
+Netherlands,2010,Q4,104.06
+Netherlands,2011,Q1,105.1
+Netherlands,2011,Q2,106.15
+Netherlands,2011,Q3,107.21
+Netherlands,2011,Q4,108.29
+Netherlands,2012,Q1,109.37
+Netherlands,2012,Q2,110.46
+Netherlands,2012,Q3,111.57
+Netherlands,2012,Q4,112.68
+Netherlands,2013,Q1,113.81
+Netherlands,2013,Q2,114.95
+Netherlands,2013,Q3,116.1
+Netherlands,2013,Q4,117.26
+Netherlands,2014,Q1,118.43
+Netherlands,2014,Q2,119.61
+Netherlands,2014,Q3,120.81
+Netherlands,2014,Q4,122.02
+Netherlands,2015,Q1,123.24
+Netherlands,2015,Q2,124.47
+Netherlands,2015,Q3,125.72
+Netherlands,2015,Q4,126.97
+Netherlands,2016,Q1,128.24
+Netherlands,2016,Q2,129.53
+Netherlands,2016,Q3,130.82
+Netherlands,2016,Q4,132.13
+Netherlands,2017,Q1,133.45
+Netherlands,2017,Q2,134.78
+Netherlands,2017,Q3,136.13
+Netherlands,2017,Q4,137.49
+Netherlands,2018,Q1,138.87
+Netherlands,2018,Q2,140.26
+Netherlands,2018,Q3,141.66
+Netherlands,2018,Q4,143.08
+Netherlands,2019,Q1,144.51
+Netherlands,2019,Q2,145.95
+Netherlands,2019,Q3,147.41
+Netherlands,2019,Q4,148.89
+Netherlands,2020,Q1,150.38
+Netherlands,2020,Q2,151.88
+Netherlands,2020,Q3,153.4
+Netherlands,2020,Q4,154.93
+Netherlands,2021,Q1,156.48
+Netherlands,2021,Q2,158.05
+Netherlands,2021,Q3,159.63
+Netherlands,2021,Q4,161.22
+Netherlands,2022,Q1,162.83
+Netherlands,2022,Q2,164.46
+Netherlands,2022,Q3,166.11
+Netherlands,2022,Q4,167.77
+Netherlands,2023,Q1,169.45
+Netherlands,2023,Q2,171.14
+Netherlands,2023,Q3,172.85
+Netherlands,2023,Q4,174.58
+Netherlands,2024,Q1,176.33
+Netherlands,2024,Q2,178.09
+Netherlands,2024,Q3,179.87
+Netherlands,2024,Q4,181.67
