@@ -20,7 +20,8 @@ REPORTS.mkdir(parents=True, exist_ok=True)
 sns.set_theme(style="whitegrid")
 
 
-def calculate_outliers_iqr(df, numeric_columns):
+def calculate_outliers_iqr(df):
+    numeric_columns = df.select_dtypes(include=["number"]).columns
     total_outliers = 0
 
     for col in numeric_columns:
@@ -28,78 +29,75 @@ def calculate_outliers_iqr(df, numeric_columns):
         q3 = df[col].quantile(0.75)
         iqr = q3 - q1
 
-        lower_limit = q1 - 1.5 * iqr
-        upper_limit = q3 + 1.5 * iqr
+        lower = q1 - 1.5 * iqr
+        upper = q3 + 1.5 * iqr
 
-        outliers = df[
-            (df[col] < lower_limit)
-            | (df[col] > upper_limit)
-        ]
-
-        total_outliers += len(outliers)
+        total_outliers += len(
+            df[
+                (df[col] < lower)
+                | (df[col] > upper)
+            ]
+        )
 
     return int(total_outliers)
+
+
+def summarize_file(source_name, file_path):
+    df = pd.read_csv(file_path)
+
+    total_cells = df.shape[0] * df.shape[1]
+
+    text_columns = df.select_dtypes(include=["object"]).columns
+
+    blank_values = 0
+
+    for col in text_columns:
+        blank_values += (
+            df[col]
+            .astype(str)
+            .str.strip()
+            .eq("")
+            .sum()
+        )
+
+    null_values = df.isnull().sum().sum()
+
+    if total_cells > 0:
+        null_pct = round(null_values / total_cells * 100, 2)
+        blank_pct = round(blank_values / total_cells * 100, 2)
+    else:
+        null_pct = 0
+        blank_pct = 0
+
+    return {
+        "fuente": source_name,
+        "registros": df.shape[0],
+        "variables": df.shape[1],
+        "nulos_pct": null_pct,
+        "blancos_pct": blank_pct,
+        "duplicados": int(df.duplicated().sum()),
+        "outliers_detectados": calculate_outliers_iqr(df)
+    }
 
 
 def generate_quality_summary():
     files = {
         "Idealista Madrid": RAW_PATH / "idealista_madrid_raw.csv",
         "Rightmove London": RAW_PATH / "rightmove_london_raw.csv",
-        "Dataset limpio unificado": PROCESSED_PATH / "properties_clean.csv"
+        "Funda Amsterdam": RAW_PATH / "funda_amsterdam_raw.csv",
+        "Eurostat HPI": RAW_PATH / "eurostat_hpi.csv",
+        "Dataset limpio unificado": PROCESSED_PATH / "properties_clean.csv",
+        "Eurostat HPI limpio": PROCESSED_PATH / "eurostat_hpi_clean.csv"
     }
 
     rows = []
 
     for source_name, file_path in files.items():
-        df = pd.read_csv(file_path)
-
-        total_cells = df.shape[0] * df.shape[1]
-
-        text_columns = df.select_dtypes(include=["object"]).columns
-        numeric_columns = df.select_dtypes(include=["number"]).columns
-
-        blank_values = 0
-
-        for col in text_columns:
-            blank_values += (
-                df[col]
-                .astype(str)
-                .str.strip()
-                .eq("")
-                .sum()
-            )
-
-        null_values = df.isnull().sum().sum()
-
-        if total_cells > 0:
-            null_percentage = round(
-                null_values / total_cells * 100,
-                2
-            )
-
-            blank_percentage = round(
-                blank_values / total_cells * 100,
-                2
-            )
-        else:
-            null_percentage = 0
-            blank_percentage = 0
-
-        outliers_detected = calculate_outliers_iqr(
-            df,
-            numeric_columns
-        )
-
         rows.append(
-            {
-                "fuente": source_name,
-                "registros": df.shape[0],
-                "variables": df.shape[1],
-                "nulos_pct": null_percentage,
-                "blancos_pct": blank_percentage,
-                "duplicados": int(df.duplicated().sum()),
-                "outliers_detectados": outliers_detected
-            }
+            summarize_file(
+                source_name,
+                file_path
+            )
         )
 
     quality_df = pd.DataFrame(rows)
@@ -196,21 +194,21 @@ def generate_temporal_series():
         errors="coerce"
     )
 
-    df["date"] = df["scraping_date"].dt.date
-
     temporal_df = (
         df
-        .groupby("date", as_index=False)
+        .groupby("scraping_date", as_index=False)
         .size()
         .rename(columns={"size": "num_properties"})
+        .sort_values("scraping_date")
     )
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(12, 6))
 
     plt.plot(
-        temporal_df["date"],
+        temporal_df["scraping_date"],
         temporal_df["num_properties"],
-        marker="o"
+        marker="o",
+        linewidth=1
     )
 
     plt.title("Serie temporal de propiedades extraídas")
@@ -246,7 +244,8 @@ def generate_pairplot():
 
     plot = sns.pairplot(
         df[selected_columns],
-        hue="city"
+        hue="city",
+        corner=True
     )
 
     plot.fig.suptitle(

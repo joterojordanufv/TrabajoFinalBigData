@@ -1,11 +1,984 @@
-property_id,source,city,country,neighborhood,property_type,price_eur,area_m2,bedrooms,bathrooms,listing_url,scraping_date,price_per_m2,property_hash
-1,idealista,madrid,spain,salamanca,apartment,1250000,120,3,2,idealista_1,2026-05-21 16:55:36,10416.67,16227767690043111597
-2,idealista,madrid,spain,chamberí,penthouse,2400000,210,5,4,idealista_2,2026-05-21 16:55:36,11428.57,1523316688968288165
-3,idealista,madrid,spain,salamanca,apartment,1800000,150,4,3,idealista_3,2026-05-21 16:55:36,12000.0,778212546876465143
-4,idealista,madrid,spain,chamartín,duplex,3200000,300,6,5,idealista_4,2026-05-21 16:55:36,10666.67,5185738137208126607
-5,idealista,madrid,spain,retiro,apartment,950000,95,2,2,idealista_5,2026-05-21 16:55:36,10000.0,11190764761202608822
-101,rightmove,london,united kingdom,kensington,apartment,4200000,180,4,3,rightmove_1,2026-05-21 16:55:36,23333.33,13120907778699325914
-102,rightmove,london,united kingdom,chelsea,townhouse,5100000,240,5,5,rightmove_2,2026-05-21 16:55:36,21250.0,16012256105406598054
-103,rightmove,london,united kingdom,mayfair,penthouse,8900000,420,7,7,rightmove_3,2026-05-21 16:55:36,21190.48,1327330989237336854
-104,rightmove,london,united kingdom,notting hill,apartment,3400000,160,3,2,rightmove_4,2026-05-21 16:55:36,21250.0,14242366108392978440
-105,rightmove,london,united kingdom,westminster,duplex,6200000,310,5,5,rightmove_5,2026-05-21 16:55:36,20000.0,6824428455045764307
+property_id,source,country,city,neighborhood,property_type,price_eur,area_m2,price_per_m2,bedrooms,bathrooms,floor,scraping_date
+PROP_317679,Idealista,Spain,Madrid,Salamanca,Penthouse,1300392.0,160.0,8127.45,5,2,7,2025-10-30
+PROP_842715,Idealista,Spain,Madrid,Chamartin,Penthouse,3270556.4,240.09,13622.21,1,1,6,2025-12-26
+PROP_452638,Idealista,Spain,Madrid,Centro,Duplex,5205394.5,736.11,7071.49,4,4,8,2025-06-24
+PROP_445975,Idealista,Spain,Madrid,Retiro,Luxury Apartment,965730.27,119.76,8063.88,4,3,3,2026-02-18
+PROP_336708,Idealista,Spain,Madrid,Salamanca,Duplex,8299545.89,514.75,16123.45,2,4,2,2025-10-23
+PROP_917276,Idealista,Spain,Madrid,Chamberi,Penthouse,12572541.21,704.84,17837.44,1,6,7,2025-07-14
+PROP_494570,Idealista,Spain,Madrid,Retiro,Duplex,4965932.97,345.53,14371.93,6,2,11,2025-02-06
+PROP_593988,Idealista,Spain,Madrid,Centro,Luxury Apartment,6551724.13,366.33,17884.76,4,2,14,2025-12-17
+PROP_636320,Idealista,Spain,Madrid,Retiro,Penthouse,2975306.95,385.0,7728.07,4,1,10,2026-01-03
+PROP_912962,Idealista,Spain,Madrid,Retiro,Luxury Apartment,1390246.92,162.87,8535.93,8,4,14,2026-01-18
+PROP_81736,Idealista,Spain,Madrid,Centro,Duplex,7649885.21,897.7,8521.65,7,3,7,2026-03-17
+PROP_861449,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6210528.4,552.91,11232.44,3,6,13,2025-05-09
+PROP_676477,Idealista,Spain,Madrid,Centro,Penthouse,7529985.51,700.99,10741.93,2,6,8,2025-01-02
+PROP_132248,Idealista,Spain,Madrid,Retiro,Loft,8109601.2,788.65,10282.89,3,5,3,2025-03-20
+PROP_567284,Idealista,Spain,Madrid,Retiro,Luxury Apartment,3787694.51,460.2,8230.54,1,5,10,2026-02-18
+PROP_126571,Idealista,Spain,Madrid,Retiro,Luxury Apartment,1403234.99,113.66,12345.9,1,2,2,2026-01-28
+PROP_936533,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4447101.84,267.95,16596.76,8,5,5,2025-10-04
+PROP_205865,Idealista,Spain,Madrid,Chamberi,Villa,5290199.14,416.77,12693.33,7,6,11,2025-06-23
+PROP_998032,Idealista,Spain,Madrid,Salamanca,Loft,682829.03,46.18,14786.25,4,5,7,2025-01-17
+PROP_944976,Idealista,Spain,Madrid,Retiro,Penthouse,1896045.62,224.24,8455.43,4,3,15,2025-08-31
+PROP_292911,Idealista,Spain,Madrid,Chamberi,Duplex,1448438.84,123.36,11741.56,7,2,3,2026-01-09
+PROP_875938,Idealista,Spain,Madrid,Salamanca,Penthouse,5975209.88,728.51,8201.96,1,4,10,2025-03-13
+PROP_409008,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,6201219.91,792.06,7829.23,5,4,7,2025-02-20
+PROP_670881,Idealista,Spain,Madrid,Salamanca,Loft,2258965.41,183.03,12342.05,1,1,7,2025-01-31
+PROP_14049,Idealista,Spain,Madrid,Chamberi,Duplex,13084712.62,836.81,15636.42,1,4,8,2026-01-10
+PROP_361355,Idealista,Spain,Madrid,Centro,Duplex,1736715.17,227.22,7643.32,3,2,9,2025-06-10
+PROP_541733,Idealista,Spain,Madrid,Salamanca,Penthouse,1119156.9,88.92,12586.11,8,5,5,2025-02-04
+PROP_443665,Idealista,Spain,Madrid,Chamberi,Duplex,4000225.25,537.87,7437.16,2,5,7,2025-10-17
+PROP_926496,Idealista,Spain,Madrid,Centro,Villa,2784707.28,245.27,11353.64,5,2,10,2025-06-11
+PROP_71720,Idealista,Spain,Madrid,Salamanca,Penthouse,962504.1,103.0,9344.7,8,5,3,2026-03-28
+PROP_741564,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,5408665.74,416.84,12975.4,6,3,5,2026-02-18
+PROP_233307,Idealista,Spain,Madrid,Centro,Penthouse,7184257.46,847.48,8477.2,5,6,3,2025-10-11
+PROP_642594,Idealista,Spain,Madrid,Chamberi,Villa,6071783.43,657.15,9239.57,5,5,6,2025-09-08
+PROP_337164,Idealista,Spain,Madrid,Retiro,Penthouse,5637963.74,753.24,7484.95,2,6,13,2026-05-17
+PROP_551168,Idealista,Spain,Madrid,Retiro,Luxury Apartment,4299506.05,522.38,8230.61,8,5,13,2025-03-18
+PROP_465091,Idealista,Spain,Madrid,Centro,Penthouse,3055814.35,409.62,7460.12,6,5,4,2026-05-13
+PROP_738287,Idealista,Spain,Madrid,Salamanca,Villa,6681950.64,613.56,10890.46,4,6,7,2026-05-14
+PROP_101203,Idealista,Spain,Madrid,Centro,Luxury Apartment,5803720.15,798.02,7272.65,4,2,5,2026-04-22
+PROP_429679,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,2740108.67,368.99,7425.97,5,2,3,2026-04-16
+PROP_966087,Idealista,Spain,Madrid,Chamartin,Villa,550659.35,60.35,9124.43,5,2,7,2026-05-11
+PROP_525855,Idealista,Spain,Madrid,Retiro,Villa,7009758.6,847.74,8268.76,7,6,10,2026-05-08
+PROP_716980,Idealista,Spain,Madrid,Retiro,Penthouse,5278827.98,337.29,15650.71,2,5,13,2025-03-01
+PROP_548950,Idealista,Spain,Madrid,Chamartin,Loft,4559001.82,649.56,7018.6,4,3,1,2026-01-04
+PROP_338393,Idealista,Spain,Madrid,Chamberi,Villa,8233935.01,575.91,14297.26,7,1,10,2025-09-17
+PROP_530056,Idealista,Spain,Madrid,Retiro,Duplex,4708080.93,516.79,9110.24,6,4,9,2026-01-19
+PROP_393945,Idealista,Spain,Madrid,Chamberi,Loft,2805987.97,301.33,9312.01,5,4,0,2025-06-14
+PROP_737631,Idealista,Spain,Madrid,Chamartin,Duplex,7544788.07,479.61,15731.09,8,6,6,2025-12-04
+PROP_979848,Idealista,Spain,Madrid,Salamanca,Villa,5858791.53,618.6,9471.05,6,1,7,2025-05-06
+PROP_102737,Idealista,Spain,Madrid,Chamartin,Loft,10693635.35,802.08,13332.38,2,4,13,2025-07-24
+PROP_923073,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,3615876.92,228.2,15845.21,1,1,13,2025-10-13
+PROP_4140,Idealista,Spain,Madrid,Chamberi,Penthouse,10972371.5,614.12,17866.82,8,2,14,2026-04-02
+PROP_838424,Idealista,Spain,Madrid,Chamartin,Loft,12320258.44,811.6,15180.21,7,5,14,2025-05-07
+PROP_176903,Idealista,Spain,Madrid,Retiro,Loft,2168418.17,276.15,7852.32,8,6,7,2025-06-13
+PROP_271139,Idealista,Spain,Madrid,Centro,Penthouse,3206796.49,369.41,8680.86,3,2,7,2025-06-19
+PROP_323430,Idealista,Spain,Madrid,Centro,Duplex,8534157.87,756.29,11284.24,7,1,6,2025-01-11
+PROP_642714,Idealista,Spain,Madrid,Centro,Duplex,3350940.38,296.81,11289.85,8,1,11,2025-10-03
+PROP_230711,Idealista,Spain,Madrid,Centro,Loft,3390610.72,274.72,12342.06,4,4,7,2026-02-13
+PROP_83321,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,11078331.97,819.96,13510.82,8,2,0,2025-08-08
+PROP_603027,Idealista,Spain,Madrid,Chamberi,Duplex,3414423.01,366.03,9328.26,3,1,8,2025-07-14
+PROP_921074,Idealista,Spain,Madrid,Retiro,Duplex,732947.68,56.67,12933.61,5,1,15,2025-11-29
+PROP_650206,Idealista,Spain,Madrid,Salamanca,Penthouse,10538436.76,761.74,13834.69,1,2,6,2025-02-28
+PROP_779390,Idealista,Spain,Madrid,Centro,Luxury Apartment,6187818.53,699.53,8845.68,8,6,8,2025-02-28
+PROP_477217,Idealista,Spain,Madrid,Chamberi,Villa,11184891.24,838.84,13333.76,2,5,0,2026-04-28
+PROP_265874,Idealista,Spain,Madrid,Chamberi,Penthouse,10492493.76,771.25,13604.53,4,1,9,2026-02-05
+PROP_857106,Idealista,Spain,Madrid,Salamanca,Villa,1402411.91,99.3,14122.98,7,6,11,2025-09-08
+PROP_865637,Idealista,Spain,Madrid,Salamanca,Duplex,7643572.48,648.29,11790.36,6,6,14,2025-05-19
+PROP_494862,Idealista,Spain,Madrid,Centro,Loft,10139672.24,750.13,13517.22,8,4,13,2026-04-24
+PROP_775973,Idealista,Spain,Madrid,Salamanca,Villa,7606541.6,530.07,14350.07,8,2,14,2025-06-16
+PROP_808706,Idealista,Spain,Madrid,Chamberi,Duplex,5550440.27,332.69,16683.52,4,3,8,2025-01-06
+PROP_302772,Idealista,Spain,Madrid,Centro,Luxury Apartment,7059073.77,460.18,15339.81,2,2,13,2025-09-09
+PROP_238819,Idealista,Spain,Madrid,Chamartin,Penthouse,3752298.88,387.78,9676.36,2,3,7,2025-10-11
+PROP_126278,Idealista,Spain,Madrid,Centro,Villa,4107705.47,342.56,11991.2,7,6,10,2026-01-05
+PROP_809836,Idealista,Spain,Madrid,Chamberi,Villa,3096469.59,204.73,15124.65,2,6,5,2026-01-25
+PROP_742548,Idealista,Spain,Madrid,Centro,Loft,3233535.52,294.77,10969.69,5,1,6,2025-03-06
+PROP_550346,Idealista,Spain,Madrid,Retiro,Penthouse,5367159.2,639.78,8389.07,1,5,9,2026-03-23
+PROP_959527,Idealista,Spain,Madrid,Salamanca,Loft,3780926.4,418.8,9028.0,5,4,15,2025-09-02
+PROP_142209,Idealista,Spain,Madrid,Salamanca,Penthouse,7802806.79,536.24,14550.96,7,4,2,2026-05-01
+PROP_262239,Idealista,Spain,Madrid,Retiro,Penthouse,8813412.35,561.43,15698.15,4,1,13,2025-08-19
+PROP_55915,Idealista,Spain,Madrid,Chamartin,Villa,8543752.19,564.28,15140.98,7,3,1,2025-04-19
+PROP_565040,Idealista,Spain,Madrid,Retiro,Penthouse,4489228.56,514.71,8721.86,3,2,5,2025-08-29
+PROP_136379,Idealista,Spain,Madrid,Retiro,Penthouse,7731191.73,644.57,11994.34,4,3,9,2026-02-08
+PROP_170709,Idealista,Spain,Madrid,Centro,Luxury Apartment,10144030.63,596.97,16992.53,7,1,7,2025-03-26
+PROP_554854,Idealista,Spain,Madrid,Retiro,Loft,4583662.6,443.08,10345.0,5,4,3,2025-10-04
+PROP_553212,Idealista,Spain,Madrid,Chamartin,Duplex,12137787.36,804.9,15079.87,2,5,1,2025-04-28
+PROP_192048,Idealista,Spain,Madrid,Centro,Loft,8244671.69,535.57,15394.2,1,6,8,2025-08-15
+PROP_11546,Idealista,Spain,Madrid,Retiro,Luxury Apartment,10629252.37,873.39,12170.11,7,6,15,2025-02-23
+PROP_332438,Idealista,Spain,Madrid,Chamberi,Villa,5008111.81,287.87,17397.13,7,6,15,2025-08-21
+PROP_531427,Idealista,Spain,Madrid,Salamanca,Villa,10007863.35,874.36,11445.93,5,3,3,2025-12-03
+PROP_621872,Idealista,Spain,Madrid,Centro,Duplex,6728660.56,485.86,13848.97,7,1,6,2025-01-27
+PROP_588601,Idealista,Spain,Madrid,Chamberi,Villa,9835004.38,797.53,12331.83,3,3,14,2026-02-14
+PROP_962257,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4132547.98,514.94,8025.3,5,5,0,2025-08-25
+PROP_945473,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,4779963.42,477.63,10007.67,8,6,9,2025-05-05
+PROP_317396,Idealista,Spain,Madrid,Chamartin,Loft,10485619.23,832.81,12590.65,3,4,6,2025-05-22
+PROP_737182,Idealista,Spain,Madrid,Chamartin,Villa,10771412.26,664.4,16212.24,5,1,9,2026-03-20
+PROP_65051,Idealista,Spain,Madrid,Chamberi,Duplex,6678988.74,514.65,12977.73,8,3,10,2025-04-07
+PROP_256116,Idealista,Spain,Madrid,Chamberi,Loft,1177969.07,77.54,15191.76,7,2,13,2025-07-17
+PROP_112910,Idealista,Spain,Madrid,Chamberi,Duplex,13092481.95,787.94,16616.09,1,2,10,2025-08-22
+PROP_48335,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,1627523.99,104.35,15596.78,7,6,4,2025-07-23
+PROP_120428,Idealista,Spain,Madrid,Salamanca,Villa,5843811.82,790.25,7394.89,7,3,15,2026-04-17
+PROP_383027,Idealista,Spain,Madrid,Retiro,Luxury Apartment,10230323.78,693.92,14742.8,2,4,3,2025-06-03
+PROP_722639,Idealista,Spain,Madrid,Salamanca,Penthouse,4087953.91,348.28,11737.55,6,1,9,2025-12-16
+PROP_475029,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,5528469.03,572.95,9649.13,3,1,12,2025-08-25
+PROP_82303,Idealista,Spain,Madrid,Retiro,Duplex,9852490.34,813.06,12117.79,5,6,0,2025-02-07
+PROP_483595,Idealista,Spain,Madrid,Chamartin,Villa,7620002.15,633.67,12025.19,5,6,13,2026-03-13
+PROP_948390,Idealista,Spain,Madrid,Chamartin,Penthouse,9575164.41,534.34,17919.61,4,4,11,2025-12-04
+PROP_387329,Idealista,Spain,Madrid,Chamartin,Villa,12509016.07,823.13,15196.89,1,5,1,2026-02-02
+PROP_29937,Idealista,Spain,Madrid,Chamberi,Loft,8296971.68,573.97,14455.41,6,2,6,2026-03-06
+PROP_436859,Idealista,Spain,Madrid,Chamberi,Penthouse,756515.25,68.69,11013.47,1,3,14,2025-06-17
+PROP_942770,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,8465022.19,496.53,17048.36,4,2,11,2026-02-27
+PROP_986151,Idealista,Spain,Madrid,Chamartin,Villa,7420719.79,868.09,8548.33,6,1,14,2026-01-06
+PROP_761607,Idealista,Spain,Madrid,Chamartin,Loft,670532.53,51.97,12902.3,6,1,12,2025-12-11
+PROP_68503,Idealista,Spain,Madrid,Retiro,Loft,1274804.29,133.18,9572.04,7,6,11,2025-10-15
+PROP_277069,Idealista,Spain,Madrid,Retiro,Loft,7100114.96,586.45,12106.94,4,6,2,2025-03-01
+PROP_519709,Idealista,Spain,Madrid,Chamberi,Penthouse,1340250.41,139.86,9582.8,1,3,15,2025-07-09
+PROP_851123,Idealista,Spain,Madrid,Centro,Duplex,10425257.25,756.98,13772.17,3,4,3,2025-12-20
+PROP_513779,Idealista,Spain,Madrid,Retiro,Luxury Apartment,6277581.6,775.69,8092.9,8,4,7,2026-05-16
+PROP_107331,Idealista,Spain,Madrid,Retiro,Penthouse,15000000.0,872.66,17188.82,7,3,6,2025-04-19
+PROP_172326,Idealista,Spain,Madrid,Centro,Penthouse,13940622.54,890.39,15656.76,1,3,7,2025-10-11
+PROP_707046,Idealista,Spain,Madrid,Chamberi,Loft,11065979.48,705.96,15675.08,4,2,10,2026-05-19
+PROP_468592,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4432131.27,608.51,7283.58,5,2,3,2025-05-02
+PROP_321618,Idealista,Spain,Madrid,Centro,Villa,1289416.03,85.06,15158.9,1,2,8,2025-09-01
+PROP_926914,Idealista,Spain,Madrid,Chamartin,Villa,6378346.68,853.06,7477.02,2,4,7,2025-09-24
+PROP_992529,Idealista,Spain,Madrid,Retiro,Duplex,8985108.21,768.68,11689.01,1,1,15,2025-08-16
+PROP_784920,Idealista,Spain,Madrid,Salamanca,Penthouse,967329.62,96.49,10025.18,6,5,4,2025-06-16
+PROP_703076,Idealista,Spain,Madrid,Chamartin,Loft,1844214.93,125.29,14719.57,5,4,13,2026-01-29
+PROP_427445,Idealista,Spain,Madrid,Centro,Luxury Apartment,6374305.37,395.88,16101.61,7,4,7,2025-06-10
+PROP_897314,Idealista,Spain,Madrid,Chamartin,Villa,7704863.86,630.67,12216.95,5,3,4,2025-08-10
+PROP_52503,Idealista,Spain,Madrid,Salamanca,Villa,7173276.68,544.36,13177.45,3,5,1,2025-07-01
+PROP_834377,Idealista,Spain,Madrid,Chamartin,Penthouse,4573738.18,342.42,13357.1,5,5,9,2025-04-25
+PROP_247514,Idealista,Spain,Madrid,Salamanca,Villa,8475333.51,533.73,15879.44,6,1,8,2026-02-24
+PROP_233022,Idealista,Spain,Madrid,Centro,Loft,649387.45,64.9,10005.97,1,5,8,2025-06-29
+PROP_80391,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,1512641.89,99.84,15150.66,3,5,12,2025-09-29
+PROP_899368,Idealista,Spain,Madrid,Chamberi,Duplex,1828760.11,175.37,10428.01,7,4,10,2025-11-02
+PROP_270720,Idealista,Spain,Madrid,Salamanca,Penthouse,6191843.28,619.61,9993.13,3,2,1,2025-08-15
+PROP_251953,Idealista,Spain,Madrid,Chamartin,Villa,2768836.26,336.85,8219.79,4,5,3,2025-09-27
+PROP_323749,Idealista,Spain,Madrid,Retiro,Penthouse,500000.0,46.61,10727.31,4,4,1,2025-05-11
+PROP_744199,Idealista,Spain,Madrid,Retiro,Villa,6095901.52,682.43,8932.64,2,1,15,2025-09-14
+PROP_373973,Idealista,Spain,Madrid,Centro,Villa,5005588.09,415.15,12057.3,2,4,1,2025-08-08
+PROP_961315,Idealista,Spain,Madrid,Centro,Duplex,6845558.91,388.33,17628.2,7,3,3,2025-08-24
+PROP_331189,Idealista,Spain,Madrid,Retiro,Penthouse,4729404.67,414.68,11404.95,7,1,7,2026-01-17
+PROP_610330,Idealista,Spain,Madrid,Retiro,Luxury Apartment,3953970.0,479.02,8254.29,6,2,2,2025-06-28
+PROP_13200,Idealista,Spain,Madrid,Retiro,Luxury Apartment,2317365.5,260.13,8908.49,4,1,4,2025-02-08
+PROP_423539,Idealista,Spain,Madrid,Chamberi,Duplex,10451942.2,625.77,16702.53,8,5,14,2025-06-15
+PROP_980067,Idealista,Spain,Madrid,Retiro,Luxury Apartment,4342127.71,420.3,10331.02,8,1,15,2025-09-17
+PROP_111011,Idealista,Spain,Madrid,Salamanca,Villa,1436100.33,88.93,16148.66,8,4,1,2026-03-14
+PROP_200679,Idealista,Spain,Madrid,Salamanca,Loft,6789048.62,426.77,15907.98,7,4,1,2025-09-01
+PROP_830889,Idealista,Spain,Madrid,Centro,Luxury Apartment,11954588.34,737.43,16211.15,1,4,3,2025-11-27
+PROP_744891,Idealista,Spain,Madrid,Chamberi,Penthouse,11389348.19,892.25,12764.75,4,6,14,2026-04-15
+PROP_928582,Idealista,Spain,Madrid,Retiro,Duplex,10148867.55,718.74,14120.36,7,3,1,2025-12-14
+PROP_431645,Idealista,Spain,Madrid,Chamartin,Villa,4380955.37,326.69,13410.13,5,6,4,2026-05-11
+PROP_633009,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,6297896.62,593.4,10613.24,2,3,12,2026-04-30
+PROP_826937,Idealista,Spain,Madrid,Centro,Penthouse,578934.47,55.68,10397.53,7,5,11,2026-01-28
+PROP_992392,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,1732467.2,106.36,16288.71,4,2,4,2026-03-04
+PROP_235887,Idealista,Spain,Madrid,Centro,Penthouse,4814798.31,553.63,8696.78,6,5,4,2025-11-16
+PROP_72491,Idealista,Spain,Madrid,Chamberi,Duplex,5976008.03,621.67,9612.83,1,4,11,2026-01-19
+PROP_648102,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,7466461.42,817.42,9134.18,4,3,15,2025-08-14
+PROP_752063,Idealista,Spain,Madrid,Chamartin,Villa,13923471.94,870.99,15985.8,7,5,13,2025-05-09
+PROP_317964,Idealista,Spain,Madrid,Salamanca,Duplex,8261565.0,651.8,12675.0,6,5,3,2025-03-24
+PROP_580596,Idealista,Spain,Madrid,Retiro,Duplex,8063071.29,853.92,9442.42,3,4,2,2025-01-14
+PROP_639702,Idealista,Spain,Madrid,Chamartin,Penthouse,4355240.39,242.77,17939.78,7,5,11,2026-04-22
+PROP_313603,Idealista,Spain,Madrid,Salamanca,Villa,4624042.39,286.72,16127.38,3,2,1,2025-12-28
+PROP_686444,Idealista,Spain,Madrid,Chamartin,Duplex,4209450.01,260.09,16184.59,1,1,0,2025-09-28
+PROP_423016,Idealista,Spain,Madrid,Chamartin,Penthouse,1393289.56,144.79,9622.83,5,2,9,2025-02-02
+PROP_120192,Idealista,Spain,Madrid,Salamanca,Duplex,6713715.22,657.95,10203.99,1,6,7,2025-10-20
+PROP_918056,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,1255649.03,98.2,12786.65,2,5,11,2025-10-11
+PROP_75598,Idealista,Spain,Madrid,Salamanca,Duplex,8651457.65,883.69,9790.15,8,1,12,2025-06-26
+PROP_442435,Idealista,Spain,Madrid,Chamberi,Penthouse,3678124.38,342.98,10724.02,6,2,1,2025-12-17
+PROP_112167,Idealista,Spain,Madrid,Chamartin,Duplex,11397581.03,655.8,17379.66,3,2,2,2026-02-10
+PROP_724896,Idealista,Spain,Madrid,Chamberi,Penthouse,11554705.27,890.65,12973.34,6,3,12,2025-04-08
+PROP_718073,Idealista,Spain,Madrid,Retiro,Villa,4342537.97,274.97,15792.77,1,6,10,2025-08-14
+PROP_227925,Idealista,Spain,Madrid,Chamartin,Villa,5612929.58,355.92,15770.2,3,4,15,2025-08-06
+PROP_941229,Idealista,Spain,Madrid,Salamanca,Duplex,2492211.54,316.24,7880.76,3,5,9,2025-11-05
+PROP_25,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,1266476.44,76.43,16570.41,8,3,14,2025-05-21
+PROP_390791,Idealista,Spain,Madrid,Salamanca,Penthouse,7365547.86,859.4,8570.57,7,3,5,2025-01-18
+PROP_490929,Idealista,Spain,Madrid,Chamberi,Penthouse,6130743.0,351.45,17444.14,4,6,11,2025-08-19
+PROP_655468,Idealista,Spain,Madrid,Retiro,Villa,5636161.8,495.34,11378.37,8,1,4,2025-02-28
+PROP_86879,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6849072.24,825.65,8295.37,8,5,12,2025-04-20
+PROP_515215,Idealista,Spain,Madrid,Centro,Villa,1224777.56,156.73,7814.57,8,2,3,2025-02-14
+PROP_483871,Idealista,Spain,Madrid,Retiro,Villa,13199174.62,806.55,16364.98,2,5,9,2025-11-23
+PROP_399432,Idealista,Spain,Madrid,Chamberi,Villa,6926284.84,721.18,9604.1,4,1,6,2025-10-21
+PROP_932072,Idealista,Spain,Madrid,Retiro,Duplex,1098602.03,96.54,11379.76,3,5,2,2025-07-30
+PROP_918438,Idealista,Spain,Madrid,Chamartin,Loft,7079133.63,592.41,11949.72,2,2,10,2026-03-26
+PROP_885034,Idealista,Spain,Madrid,Centro,Loft,7819368.91,472.46,16550.33,3,2,13,2025-06-05
+PROP_626383,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,5856992.75,337.58,17349.94,6,6,7,2025-05-09
+PROP_660902,Idealista,Spain,Madrid,Chamberi,Loft,4563030.64,568.41,8027.71,5,2,9,2025-10-25
+PROP_482737,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,5481888.87,749.7,7312.11,6,5,1,2025-10-23
+PROP_489423,Idealista,Spain,Madrid,Retiro,Luxury Apartment,6508947.03,468.31,13898.8,7,5,0,2025-09-05
+PROP_75506,Idealista,Spain,Madrid,Chamberi,Duplex,5524807.32,632.21,8738.88,5,4,2,2025-06-24
+PROP_179406,Idealista,Spain,Madrid,Centro,Luxury Apartment,11057149.16,671.41,16468.55,6,6,10,2025-07-09
+PROP_62113,Idealista,Spain,Madrid,Centro,Loft,4386195.96,441.17,9942.19,2,3,7,2025-05-29
+PROP_344837,Idealista,Spain,Madrid,Chamartin,Loft,12773658.58,739.59,17271.27,7,2,5,2025-03-23
+PROP_80046,Idealista,Spain,Madrid,Chamartin,Loft,3737495.18,467.74,7990.54,8,4,9,2025-05-04
+PROP_774880,Idealista,Spain,Madrid,Chamberi,Loft,3827097.04,281.97,13572.71,6,1,1,2025-05-27
+PROP_965152,Idealista,Spain,Madrid,Centro,Penthouse,11985719.18,798.91,15002.59,2,4,4,2025-07-25
+PROP_81554,Idealista,Spain,Madrid,Salamanca,Loft,1295332.66,103.24,12546.81,4,3,9,2025-11-16
+PROP_467037,Idealista,Spain,Madrid,Centro,Penthouse,6444639.53,360.95,17854.66,3,1,12,2025-03-15
+PROP_991203,Idealista,Spain,Madrid,Chamberi,Loft,671744.3,78.96,8507.4,7,5,1,2025-08-22
+PROP_504719,Idealista,Spain,Madrid,Chamberi,Loft,3216944.41,179.75,17896.77,3,3,10,2025-06-22
+PROP_453375,Idealista,Spain,Madrid,Centro,Loft,3220933.51,448.41,7183.01,8,6,9,2025-08-02
+PROP_312055,Idealista,Spain,Madrid,Centro,Villa,3813798.14,268.36,14211.5,1,5,15,2025-04-27
+PROP_555638,Idealista,Spain,Madrid,Salamanca,Loft,2420799.92,167.09,14488.0,8,2,12,2025-02-26
+PROP_855439,Idealista,Spain,Madrid,Chamberi,Penthouse,2484591.96,170.23,14595.5,8,3,13,2026-04-17
+PROP_707883,Idealista,Spain,Madrid,Chamartin,Penthouse,9391693.27,522.36,17979.35,3,5,6,2026-05-05
+PROP_282304,Idealista,Spain,Madrid,Chamberi,Duplex,10278084.25,621.25,16544.2,6,5,11,2025-05-16
+PROP_549262,Idealista,Spain,Madrid,Centro,Duplex,4925767.12,519.95,9473.54,4,2,8,2025-05-28
+PROP_318255,Idealista,Spain,Madrid,Chamberi,Duplex,9020161.07,522.02,17279.34,6,4,11,2025-10-21
+PROP_101541,Idealista,Spain,Madrid,Centro,Duplex,2945405.27,289.79,10163.93,7,3,4,2025-08-15
+PROP_402489,Idealista,Spain,Madrid,Retiro,Duplex,12347798.11,842.4,14657.88,4,2,8,2025-10-28
+PROP_189209,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4460284.96,588.63,7577.4,1,6,7,2025-02-21
+PROP_341269,Idealista,Spain,Madrid,Chamberi,Penthouse,4142917.35,450.61,9194.02,3,4,15,2025-11-27
+PROP_664866,Idealista,Spain,Madrid,Salamanca,Penthouse,7367102.52,825.38,8925.71,4,5,1,2026-04-16
+PROP_885650,Idealista,Spain,Madrid,Salamanca,Duplex,5638940.36,794.0,7101.94,8,2,9,2026-05-19
+PROP_858622,Idealista,Spain,Madrid,Retiro,Villa,6821306.71,804.76,8476.2,8,6,15,2026-02-19
+PROP_33163,Idealista,Spain,Madrid,Salamanca,Villa,8905933.69,597.53,14904.58,3,6,14,2025-06-01
+PROP_605006,Idealista,Spain,Madrid,Centro,Luxury Apartment,9516395.89,751.21,12668.09,3,5,12,2025-04-05
+PROP_206038,Idealista,Spain,Madrid,Chamberi,Duplex,2534638.12,264.28,9590.73,6,2,0,2025-06-04
+PROP_817608,Idealista,Spain,Madrid,Centro,Loft,4884932.98,635.78,7683.37,1,3,11,2025-07-27
+PROP_607201,Idealista,Spain,Madrid,Centro,Villa,3357693.68,356.09,9429.34,2,6,9,2025-08-21
+PROP_808940,Idealista,Spain,Madrid,Centro,Villa,10938023.56,691.32,15821.94,7,6,15,2025-12-15
+PROP_154640,Idealista,Spain,Madrid,Centro,Penthouse,1415272.02,107.17,13205.86,8,5,11,2025-09-16
+PROP_440012,Idealista,Spain,Madrid,Chamberi,Loft,9190033.31,774.86,11860.25,3,2,10,2025-09-08
+PROP_159431,Idealista,Spain,Madrid,Salamanca,Loft,1775597.25,153.47,11569.67,8,1,14,2025-12-11
+PROP_279739,Idealista,Spain,Madrid,Retiro,Penthouse,9104337.97,681.39,13361.42,7,3,0,2025-02-02
+PROP_34180,Idealista,Spain,Madrid,Centro,Penthouse,2576301.75,286.9,8979.79,2,4,1,2026-01-09
+PROP_471087,Idealista,Spain,Madrid,Chamartin,Villa,5268011.49,363.06,14510.03,7,4,12,2025-12-01
+PROP_179214,Idealista,Spain,Madrid,Retiro,Penthouse,7425186.51,494.8,15006.44,3,5,12,2025-01-12
+PROP_399267,Idealista,Spain,Madrid,Retiro,Duplex,7273402.28,748.09,9722.63,7,5,12,2026-04-25
+PROP_665616,Idealista,Spain,Madrid,Salamanca,Penthouse,1911597.19,246.97,7740.2,7,5,0,2025-12-11
+PROP_835212,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,2267957.04,241.53,9389.96,1,4,14,2025-09-15
+PROP_522772,Idealista,Spain,Madrid,Retiro,Luxury Apartment,4055550.86,243.74,16638.84,6,5,10,2025-07-31
+PROP_215301,Idealista,Spain,Madrid,Retiro,Villa,6766238.1,578.35,11699.21,1,5,5,2026-04-28
+PROP_495888,Idealista,Spain,Madrid,Chamartin,Loft,4027848.95,391.1,10298.77,6,6,13,2025-05-04
+PROP_621647,Idealista,Spain,Madrid,Chamberi,Villa,9240144.62,523.65,17645.65,3,4,1,2025-05-05
+PROP_327118,Idealista,Spain,Madrid,Retiro,Luxury Apartment,13595080.54,833.11,16318.47,6,6,2,2025-04-08
+PROP_483082,Idealista,Spain,Madrid,Salamanca,Villa,7177023.44,791.31,9069.8,7,6,1,2025-10-14
+PROP_111695,Idealista,Spain,Madrid,Chamberi,Duplex,6186848.96,863.04,7168.67,4,3,9,2025-03-02
+PROP_314881,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,7995023.31,514.79,15530.65,4,4,7,2025-07-03
+PROP_171295,Idealista,Spain,Madrid,Retiro,Villa,6977662.74,440.76,15830.98,6,5,15,2025-06-13
+PROP_216117,Idealista,Spain,Madrid,Chamberi,Villa,4941256.66,523.77,9434.02,6,4,1,2026-04-24
+PROP_749277,Idealista,Spain,Madrid,Centro,Loft,1989143.34,208.72,9530.2,7,3,4,2025-10-09
+PROP_929948,Idealista,Spain,Madrid,Retiro,Villa,6571042.39,436.31,15060.49,8,6,15,2025-10-07
+PROP_948449,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,5953907.01,761.6,7817.63,1,5,1,2025-01-04
+PROP_985828,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,601268.05,47.86,12563.06,4,1,4,2025-12-08
+PROP_88440,Idealista,Spain,Madrid,Centro,Duplex,5735853.14,497.7,11524.72,8,1,0,2025-10-02
+PROP_604524,Idealista,Spain,Madrid,Retiro,Penthouse,10591510.44,829.52,12768.24,7,2,3,2025-05-10
+PROP_429753,Idealista,Spain,Madrid,Retiro,Villa,10422367.7,865.0,12048.98,7,1,11,2025-06-03
+PROP_254308,Idealista,Spain,Madrid,Salamanca,Penthouse,4458453.18,364.37,12236.06,2,4,12,2025-02-12
+PROP_723829,Idealista,Spain,Madrid,Chamartin,Duplex,13851429.58,809.52,17110.67,6,5,3,2025-12-21
+PROP_266092,Idealista,Spain,Madrid,Centro,Duplex,6338966.1,628.61,10084.1,5,1,2,2025-04-02
+PROP_237927,Idealista,Spain,Madrid,Retiro,Penthouse,10194072.82,686.94,14839.83,4,5,4,2025-03-25
+PROP_124574,Idealista,Spain,Madrid,Centro,Luxury Apartment,5602429.09,370.11,15137.2,7,6,10,2025-02-10
+PROP_786482,Idealista,Spain,Madrid,Centro,Villa,1877866.97,239.64,7836.2,1,1,13,2025-11-01
+PROP_582772,Idealista,Spain,Madrid,Chamartin,Villa,8534826.29,713.85,11956.05,1,6,8,2025-07-12
+PROP_907862,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,10781780.52,726.33,14844.19,7,1,9,2025-12-31
+PROP_931579,Idealista,Spain,Madrid,Chamberi,Duplex,2062296.6,118.71,17372.56,6,3,3,2025-02-22
+PROP_968250,Idealista,Spain,Madrid,Chamberi,Penthouse,6558651.52,519.01,12636.85,3,4,14,2025-10-11
+PROP_838250,Idealista,Spain,Madrid,Salamanca,Loft,3278235.14,290.99,11265.8,6,4,0,2026-04-09
+PROP_533015,Idealista,Spain,Madrid,Chamberi,Loft,1849918.09,185.77,9958.11,3,6,12,2025-03-27
+PROP_120515,Idealista,Spain,Madrid,Chamartin,Villa,7824287.32,713.09,10972.37,7,3,15,2025-09-11
+PROP_563950,Idealista,Spain,Madrid,Centro,Loft,1107291.35,156.52,7074.44,4,4,3,2025-07-14
+PROP_204108,Idealista,Spain,Madrid,Retiro,Duplex,4068370.43,298.37,13635.32,6,4,4,2025-04-01
+PROP_613773,Idealista,Spain,Madrid,Chamartin,Villa,13609068.32,872.28,15601.72,5,6,15,2026-02-07
+PROP_410838,Idealista,Spain,Madrid,Chamartin,Villa,7142214.69,549.32,13001.92,2,5,6,2026-05-03
+PROP_17387,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,11724542.31,744.31,15752.23,8,3,2,2025-11-21
+PROP_354895,Idealista,Spain,Madrid,Retiro,Luxury Apartment,10271863.18,655.1,15679.84,5,6,4,2025-09-03
+PROP_549305,Idealista,Spain,Madrid,Centro,Duplex,7887689.5,720.02,10954.82,7,5,1,2025-11-23
+PROP_605679,Idealista,Spain,Madrid,Salamanca,Penthouse,2515008.15,183.05,13739.46,4,6,11,2025-11-28
+PROP_63683,Idealista,Spain,Madrid,Chamartin,Villa,1178362.85,124.8,9442.01,7,1,0,2025-12-19
+PROP_182858,Idealista,Spain,Madrid,Centro,Luxury Apartment,6343427.46,438.23,14475.11,8,3,12,2025-01-13
+PROP_904633,Idealista,Spain,Madrid,Chamartin,Penthouse,2425519.06,139.82,17347.44,5,4,2,2025-08-22
+PROP_849719,Idealista,Spain,Madrid,Chamberi,Loft,1852201.64,123.96,14941.93,8,3,15,2025-01-23
+PROP_649294,Idealista,Spain,Madrid,Salamanca,Penthouse,5481508.49,622.34,8807.9,6,6,3,2025-03-31
+PROP_953357,Idealista,Spain,Madrid,Centro,Luxury Apartment,8254228.35,864.28,9550.41,6,5,13,2025-11-24
+PROP_139160,Idealista,Spain,Madrid,Chamartin,Duplex,5002270.88,426.63,11725.08,1,6,6,2025-05-23
+PROP_354994,Idealista,Spain,Madrid,Salamanca,Loft,3250725.62,354.58,9167.82,2,5,5,2025-09-08
+PROP_280043,Idealista,Spain,Madrid,Centro,Villa,5898858.76,544.82,10827.17,7,5,12,2026-02-21
+PROP_700913,Idealista,Spain,Madrid,Retiro,Loft,2977180.96,309.34,9624.3,2,6,4,2025-03-14
+PROP_601920,Idealista,Spain,Madrid,Centro,Duplex,6226777.25,534.33,11653.43,7,5,4,2026-04-16
+PROP_971318,Idealista,Spain,Madrid,Chamberi,Loft,1680564.65,160.66,10460.38,3,4,9,2025-07-03
+PROP_973197,Idealista,Spain,Madrid,Salamanca,Duplex,10913102.0,868.89,12559.82,3,2,12,2025-08-01
+PROP_527074,Idealista,Spain,Madrid,Chamartin,Duplex,6828629.56,724.46,9425.82,3,1,0,2025-05-28
+PROP_871761,Idealista,Spain,Madrid,Chamberi,Duplex,5296958.75,532.53,9946.78,8,5,3,2025-10-05
+PROP_847086,Idealista,Spain,Madrid,Salamanca,Duplex,9549422.95,672.95,14190.39,4,4,3,2025-01-17
+PROP_745989,Idealista,Spain,Madrid,Chamartin,Villa,6501583.69,784.15,8291.25,6,1,14,2026-01-13
+PROP_39463,Idealista,Spain,Madrid,Centro,Villa,11402934.99,714.97,15948.83,7,2,4,2025-09-30
+PROP_841178,Idealista,Spain,Madrid,Retiro,Loft,2871192.6,288.83,9940.77,3,3,9,2025-12-14
+PROP_711672,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6596220.66,785.66,8395.77,7,1,8,2025-12-31
+PROP_819746,Idealista,Spain,Madrid,Retiro,Luxury Apartment,5342231.02,536.59,9955.89,7,4,4,2025-11-21
+PROP_874673,Idealista,Spain,Madrid,Salamanca,Duplex,5331313.93,431.04,12368.49,5,6,11,2026-03-10
+PROP_765696,Idealista,Spain,Madrid,Salamanca,Duplex,2665687.49,227.33,11726.07,6,1,12,2026-03-01
+PROP_114472,Idealista,Spain,Madrid,Retiro,Villa,12087022.46,717.94,16835.7,3,5,15,2025-11-17
+PROP_335717,Idealista,Spain,Madrid,Chamartin,Penthouse,7748140.27,432.61,17910.22,2,2,14,2026-04-11
+PROP_75254,Idealista,Spain,Madrid,Chamberi,Villa,5881343.13,602.95,9754.28,3,3,2,2025-03-26
+PROP_109338,Idealista,Spain,Madrid,Salamanca,Duplex,3274425.16,409.14,8003.19,5,6,7,2025-02-09
+PROP_209704,Idealista,Spain,Madrid,Chamberi,Loft,703128.84,47.99,14651.57,4,5,14,2025-08-05
+PROP_587846,Idealista,Spain,Madrid,Chamberi,Duplex,1853411.21,116.82,15865.53,2,2,12,2025-06-03
+PROP_106640,Idealista,Spain,Madrid,Chamberi,Duplex,1304180.45,98.83,13196.2,3,6,4,2025-06-29
+PROP_850755,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,6200364.56,779.57,7953.57,7,5,14,2025-10-29
+PROP_325702,Idealista,Spain,Madrid,Chamartin,Villa,3566389.07,253.1,14090.83,7,3,4,2026-01-05
+PROP_901038,Idealista,Spain,Madrid,Centro,Villa,2963359.02,216.68,13676.2,1,6,9,2025-11-27
+PROP_119573,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,3467297.01,247.33,14018.91,8,4,3,2025-01-07
+PROP_728161,Idealista,Spain,Madrid,Retiro,Villa,5141003.53,354.25,14512.36,3,4,13,2026-01-30
+PROP_623778,Idealista,Spain,Madrid,Salamanca,Penthouse,3867643.37,225.54,17148.37,2,1,8,2025-05-27
+PROP_273120,Idealista,Spain,Madrid,Centro,Duplex,1430726.07,110.89,12902.21,7,6,12,2025-06-08
+PROP_98419,Idealista,Spain,Madrid,Salamanca,Loft,5255861.56,376.03,13977.24,4,2,10,2025-02-03
+PROP_998803,Idealista,Spain,Madrid,Retiro,Duplex,1344491.58,114.14,11779.32,4,1,7,2025-06-08
+PROP_33604,Idealista,Spain,Madrid,Chamberi,Penthouse,5662341.51,643.29,8802.16,1,6,4,2026-02-05
+PROP_672916,Idealista,Spain,Madrid,Retiro,Luxury Apartment,5562730.96,670.32,8298.62,6,2,8,2025-08-08
+PROP_240210,Idealista,Spain,Madrid,Retiro,Loft,5888974.43,466.69,12618.6,2,3,2,2025-03-27
+PROP_900921,Idealista,Spain,Madrid,Retiro,Luxury Apartment,2978325.26,236.43,12597.07,5,1,3,2025-05-06
+PROP_918195,Idealista,Spain,Madrid,Salamanca,Duplex,3405788.7,193.91,17563.76,6,4,4,2026-01-01
+PROP_536577,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,8706185.18,827.64,10519.29,6,2,13,2025-03-03
+PROP_912708,Idealista,Spain,Madrid,Centro,Penthouse,6676000.08,860.51,7758.19,3,2,1,2026-03-09
+PROP_815447,Idealista,Spain,Madrid,Retiro,Villa,500000.0,46.85,10672.36,2,5,14,2025-11-15
+PROP_67138,Idealista,Spain,Madrid,Chamberi,Duplex,13951758.97,898.1,15534.75,6,5,15,2026-02-12
+PROP_551181,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,2598666.45,240.38,10810.66,1,4,0,2026-05-02
+PROP_423771,Idealista,Spain,Madrid,Retiro,Penthouse,1659938.02,129.4,12827.96,7,6,9,2025-01-31
+PROP_680630,Idealista,Spain,Madrid,Chamberi,Villa,10322291.47,811.67,12717.35,2,1,7,2026-05-14
+PROP_882078,Idealista,Spain,Madrid,Salamanca,Loft,6666775.06,588.01,11337.86,2,5,4,2025-12-06
+PROP_242057,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,9470122.27,836.4,11322.48,5,3,10,2025-08-20
+PROP_416542,Idealista,Spain,Madrid,Retiro,Luxury Apartment,9546644.74,710.75,13431.79,2,2,4,2025-08-27
+PROP_635074,Idealista,Spain,Madrid,Retiro,Duplex,8073273.56,869.59,9284.0,2,5,11,2025-03-03
+PROP_298479,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,3693705.97,224.92,16422.31,5,6,1,2026-05-11
+PROP_868054,Idealista,Spain,Madrid,Retiro,Duplex,4720270.83,263.74,17897.44,1,6,9,2025-08-20
+PROP_300179,Idealista,Spain,Madrid,Centro,Loft,2008020.99,127.64,15731.91,4,1,14,2026-02-04
+PROP_294256,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,10911027.4,630.21,17313.32,4,4,11,2026-04-15
+PROP_132174,Idealista,Spain,Madrid,Salamanca,Penthouse,5896662.72,736.0,8011.77,2,2,14,2025-03-04
+PROP_496704,Idealista,Spain,Madrid,Salamanca,Duplex,8470736.78,746.65,11344.99,1,2,13,2025-03-30
+PROP_973566,Idealista,Spain,Madrid,Retiro,Luxury Apartment,3657505.77,423.57,8634.95,3,3,8,2025-11-28
+PROP_500395,Idealista,Spain,Madrid,Retiro,Duplex,931567.8,92.44,10077.54,7,5,15,2026-03-29
+PROP_734904,Idealista,Spain,Madrid,Centro,Luxury Apartment,7057562.85,452.53,15595.79,1,4,11,2025-06-14
+PROP_217765,Idealista,Spain,Madrid,Chamartin,Villa,4053061.64,553.52,7322.34,3,1,10,2026-02-19
+PROP_138919,Idealista,Spain,Madrid,Chamartin,Loft,7110020.88,877.62,8101.48,6,5,7,2026-02-22
+PROP_99284,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,2587965.58,191.45,13517.71,7,3,5,2026-04-13
+PROP_71082,Idealista,Spain,Madrid,Centro,Penthouse,4755427.73,524.27,9070.57,6,5,4,2025-09-10
+PROP_990801,Idealista,Spain,Madrid,Centro,Villa,1124313.11,117.62,9558.86,3,4,1,2025-01-01
+PROP_613178,Idealista,Spain,Madrid,Retiro,Loft,11231673.8,656.57,17106.59,4,2,10,2025-01-12
+PROP_38180,Idealista,Spain,Madrid,Chamberi,Loft,9621715.76,866.08,11109.5,3,1,11,2025-02-21
+PROP_47832,Idealista,Spain,Madrid,Retiro,Villa,7907593.5,669.82,11805.55,6,2,5,2025-06-12
+PROP_684909,Idealista,Spain,Madrid,Chamberi,Loft,5508168.42,365.41,15073.94,6,2,5,2025-01-01
+PROP_238203,Idealista,Spain,Madrid,Centro,Duplex,14680439.06,832.09,17642.85,1,2,10,2026-04-25
+PROP_724168,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,4356816.12,244.68,17806.18,6,6,2,2025-02-15
+PROP_723675,Idealista,Spain,Madrid,Retiro,Duplex,1972142.86,254.61,7745.74,1,3,6,2025-01-01
+PROP_291932,Idealista,Spain,Madrid,Salamanca,Duplex,14612545.04,873.43,16730.07,8,6,13,2025-10-07
+PROP_165589,Idealista,Spain,Madrid,Chamartin,Penthouse,1405006.7,179.88,7810.8,8,5,7,2025-06-13
+PROP_597552,Idealista,Spain,Madrid,Retiro,Penthouse,7047707.22,803.62,8769.95,2,3,5,2026-05-16
+PROP_221218,Idealista,Spain,Madrid,Salamanca,Villa,5831234.49,410.94,14189.99,8,6,0,2025-01-28
+PROP_252060,Idealista,Spain,Madrid,Salamanca,Villa,9557022.41,639.59,14942.42,4,2,13,2025-05-25
+PROP_368154,Idealista,Spain,Madrid,Retiro,Luxury Apartment,8634282.05,531.72,16238.4,2,1,12,2025-08-07
+PROP_205616,Idealista,Spain,Madrid,Salamanca,Villa,551661.59,62.13,8879.15,8,2,3,2026-03-09
+PROP_967703,Idealista,Spain,Madrid,Salamanca,Villa,8027125.33,809.59,9915.05,7,4,15,2025-07-09
+PROP_438713,Idealista,Spain,Madrid,Chamartin,Villa,3227969.97,266.43,12115.64,3,4,1,2025-02-01
+PROP_310481,Idealista,Spain,Madrid,Chamberi,Penthouse,8492426.37,735.03,11553.85,2,6,11,2025-02-01
+PROP_4790,Idealista,Spain,Madrid,Chamartin,Loft,5108059.71,532.53,9592.06,7,5,15,2026-03-14
+PROP_921695,Idealista,Spain,Madrid,Salamanca,Loft,3363796.47,188.68,17828.05,3,1,14,2025-03-06
+PROP_867324,Idealista,Spain,Madrid,Salamanca,Duplex,3428697.93,213.65,16048.2,2,6,13,2025-06-13
+PROP_687256,Idealista,Spain,Madrid,Salamanca,Penthouse,8454000.79,514.77,16422.87,7,5,12,2025-01-07
+PROP_652225,Idealista,Spain,Madrid,Centro,Loft,2232195.49,168.69,13232.53,7,1,13,2025-02-21
+PROP_356468,Idealista,Spain,Madrid,Salamanca,Loft,7874773.45,794.99,9905.5,2,3,11,2025-08-31
+PROP_144468,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,8283182.11,571.69,14488.94,5,4,4,2026-03-27
+PROP_31685,Idealista,Spain,Madrid,Retiro,Luxury Apartment,14032277.49,831.92,16867.34,1,6,15,2025-06-05
+PROP_34169,Idealista,Spain,Madrid,Retiro,Villa,8331923.92,876.35,9507.53,8,6,3,2026-02-01
+PROP_719669,Idealista,Spain,Madrid,Retiro,Villa,1880166.99,201.62,9325.3,7,5,2,2026-01-24
+PROP_559814,Idealista,Spain,Madrid,Centro,Villa,1427671.22,96.43,14805.26,1,5,5,2025-09-26
+PROP_450557,Idealista,Spain,Madrid,Centro,Penthouse,7403787.52,759.8,9744.39,3,2,6,2025-12-27
+PROP_663457,Idealista,Spain,Madrid,Chamberi,Villa,4904246.77,586.45,8362.6,6,4,12,2025-11-01
+PROP_388644,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,5448778.55,336.05,16214.19,8,5,11,2025-02-16
+PROP_367079,Idealista,Spain,Madrid,Retiro,Penthouse,12061990.28,774.29,15578.13,7,1,5,2025-04-26
+PROP_249561,Idealista,Spain,Madrid,Chamberi,Villa,13821191.5,783.58,17638.52,7,5,0,2025-03-09
+PROP_280460,Idealista,Spain,Madrid,Chamberi,Loft,9784154.3,563.18,17373.05,1,2,8,2025-05-21
+PROP_11366,Idealista,Spain,Madrid,Chamartin,Duplex,2350270.78,227.66,10323.6,6,4,8,2025-10-27
+PROP_279981,Idealista,Spain,Madrid,Salamanca,Penthouse,2429638.91,296.69,8189.15,6,5,9,2025-11-24
+PROP_469667,Idealista,Spain,Madrid,Retiro,Villa,2563299.56,201.99,12690.23,5,6,9,2026-03-15
+PROP_76109,Idealista,Spain,Madrid,Centro,Duplex,9382473.42,660.3,14209.41,6,6,4,2025-08-03
+PROP_300037,Idealista,Spain,Madrid,Chamartin,Duplex,4975546.75,335.12,14847.06,1,5,6,2025-09-01
+PROP_813701,Idealista,Spain,Madrid,Retiro,Loft,3564064.36,292.65,12178.59,5,2,5,2025-10-14
+PROP_622667,Idealista,Spain,Madrid,Chamberi,Villa,3848889.15,232.06,16585.75,2,2,11,2025-07-10
+PROP_311719,Idealista,Spain,Madrid,Retiro,Loft,7350376.54,444.66,16530.33,5,4,3,2025-02-06
+PROP_36685,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,5721988.26,495.66,11544.18,2,6,12,2025-04-13
+PROP_938265,Idealista,Spain,Madrid,Retiro,Duplex,7022370.91,781.66,8983.92,8,2,10,2026-05-21
+PROP_261884,Idealista,Spain,Madrid,Chamberi,Villa,4231146.57,275.23,15373.13,1,1,14,2025-09-08
+PROP_117595,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6816992.58,386.92,17618.61,7,6,13,2025-04-13
+PROP_504502,Idealista,Spain,Madrid,Retiro,Penthouse,500000.0,55.41,9023.64,6,5,6,2026-03-26
+PROP_687507,Idealista,Spain,Madrid,Retiro,Villa,4902370.96,472.87,10367.27,3,1,12,2026-05-01
+PROP_147028,Idealista,Spain,Madrid,Retiro,Duplex,5662369.9,334.75,16915.22,6,4,4,2026-05-01
+PROP_393118,Idealista,Spain,Madrid,Chamartin,Penthouse,1604761.5,221.62,7241.05,4,2,4,2025-12-31
+PROP_155245,Idealista,Spain,Madrid,Salamanca,Duplex,4145954.22,550.77,7527.56,5,5,1,2025-01-25
+PROP_36261,Idealista,Spain,Madrid,Salamanca,Duplex,6239427.72,510.66,12218.36,8,4,3,2025-11-19
+PROP_212582,Idealista,Spain,Madrid,Salamanca,Villa,6078955.37,609.74,9969.75,7,6,3,2026-03-02
+PROP_264062,Idealista,Spain,Madrid,Salamanca,Loft,8918345.69,714.89,12475.13,2,3,3,2026-03-02
+PROP_406858,Idealista,Spain,Madrid,Centro,Luxury Apartment,2185437.24,294.0,7433.46,6,6,13,2026-04-23
+PROP_220243,Idealista,Spain,Madrid,Chamartin,Villa,10484179.97,617.6,16975.68,4,1,0,2025-03-18
+PROP_894427,Idealista,Spain,Madrid,Salamanca,Loft,11525288.25,818.11,14087.7,2,6,3,2025-05-16
+PROP_225820,Idealista,Spain,Madrid,Chamartin,Penthouse,8473136.91,772.93,10962.36,2,2,1,2025-03-01
+PROP_357787,Idealista,Spain,Madrid,Salamanca,Penthouse,5433361.47,322.65,16839.8,1,2,5,2026-01-11
+PROP_337276,Idealista,Spain,Madrid,Salamanca,Villa,6764579.66,384.67,17585.41,6,2,3,2026-03-12
+PROP_669598,Idealista,Spain,Madrid,Chamartin,Duplex,4883008.21,638.71,7645.11,3,1,4,2025-08-02
+PROP_383376,Idealista,Spain,Madrid,Centro,Duplex,9745805.4,710.08,13724.94,8,2,12,2026-01-08
+PROP_27312,Idealista,Spain,Madrid,Chamberi,Duplex,3224840.33,418.99,7696.7,8,1,13,2026-03-21
+PROP_68831,Idealista,Spain,Madrid,Centro,Loft,7087606.14,486.43,14570.66,4,6,10,2026-01-08
+PROP_326397,Rightmove,United Kingdom,London,Chelsea,Detached House,5693356.93,216.7,26272.99,6,6,12,2025-01-06
+PROP_911221,Rightmove,United Kingdom,London,Chelsea,Duplex,2084360.88,131.47,15854.27,8,4,5,2025-01-26
+PROP_962423,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,2879982.59,136.05,21168.56,7,4,7,2025-09-13
+PROP_444826,Rightmove,United Kingdom,London,Camden,Townhouse,3420501.06,163.55,20914.1,2,4,0,2025-02-16
+PROP_15558,Rightmove,United Kingdom,London,Canary Wharf,Duplex,13981436.89,801.06,17453.67,5,5,6,2026-02-23
+PROP_204894,Rightmove,United Kingdom,London,Chelsea,Detached House,16791971.42,872.74,19240.52,6,5,15,2025-12-04
+PROP_937057,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,9283631.99,677.58,13701.16,6,3,9,2025-09-10
+PROP_420735,Rightmove,United Kingdom,London,Chelsea,Detached House,4783889.41,261.61,18286.34,2,3,6,2026-02-05
+PROP_941384,Rightmove,United Kingdom,London,Camden,Duplex,17731329.02,657.57,26964.93,3,4,0,2025-09-05
+PROP_609208,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,3571584.62,164.6,21698.57,3,6,4,2026-03-28
+PROP_71878,Rightmove,United Kingdom,London,Canary Wharf,Duplex,19183838.59,867.21,22121.33,5,6,10,2025-11-16
+PROP_151530,Rightmove,United Kingdom,London,Westminster,Townhouse,10758128.7,627.0,17158.1,3,6,5,2025-06-30
+PROP_643476,Rightmove,United Kingdom,London,Canary Wharf,Detached House,12918161.26,1058.49,12204.33,7,6,9,2025-07-15
+PROP_154574,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,15117338.84,911.46,16585.85,1,2,8,2026-03-06
+PROP_88676,Rightmove,United Kingdom,London,Kensington,Townhouse,10038822.83,459.28,21857.74,4,5,1,2025-10-15
+PROP_358816,Rightmove,United Kingdom,London,Chelsea,Duplex,15305151.21,845.34,18105.32,7,2,9,2026-02-08
+PROP_607960,Rightmove,United Kingdom,London,Westminster,Duplex,7203713.74,279.57,25767.12,1,1,8,2025-04-26
+PROP_719550,Rightmove,United Kingdom,London,Westminster,Duplex,8820134.94,384.78,22922.54,4,6,6,2025-03-30
+PROP_682723,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,5354366.32,367.37,14574.86,7,1,13,2025-01-03
+PROP_29625,Rightmove,United Kingdom,London,Westminster,Detached House,13251508.35,651.83,20329.7,6,1,10,2025-03-23
+PROP_647428,Rightmove,United Kingdom,London,Camden,Duplex,5201350.87,300.48,17310.14,7,1,11,2025-04-22
+PROP_109833,Rightmove,United Kingdom,London,Canary Wharf,Duplex,2812588.67,177.5,15845.57,8,5,0,2026-04-16
+PROP_325700,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,6706549.15,485.49,13813.98,1,6,10,2026-01-06
+PROP_514229,Rightmove,United Kingdom,London,Westminster,Luxury Flat,13617471.51,607.26,22424.45,6,5,14,2025-02-12
+PROP_320597,Rightmove,United Kingdom,London,Kensington,Penthouse,4445245.26,288.45,15410.8,1,6,2,2026-03-04
+PROP_875904,Rightmove,United Kingdom,London,Kensington,Penthouse,17561042.62,907.66,19347.6,7,6,2,2025-02-14
+PROP_846962,Rightmove,United Kingdom,London,Kensington,Luxury Flat,11443395.4,709.08,16138.37,3,3,2,2025-11-19
+PROP_779113,Rightmove,United Kingdom,London,Camden,Detached House,18314682.14,822.66,22262.76,6,1,12,2026-01-23
+PROP_362713,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,8242709.79,379.76,21705.05,2,3,3,2026-04-20
+PROP_718098,Rightmove,United Kingdom,London,Camden,Detached House,8402326.97,592.46,14182.1,7,6,0,2026-02-13
+PROP_713595,Rightmove,United Kingdom,London,Kensington,Duplex,10501209.24,396.92,26456.74,7,5,2,2025-07-31
+PROP_21712,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,10479224.7,757.5,13833.96,3,2,7,2025-10-18
+PROP_507380,Rightmove,United Kingdom,London,Kensington,Duplex,5166571.07,380.7,13571.24,8,6,2,2025-09-07
+PROP_458036,Rightmove,United Kingdom,London,Westminster,Townhouse,4238825.05,160.55,26401.9,3,6,7,2025-08-19
+PROP_272610,Rightmove,United Kingdom,London,Westminster,Duplex,11912391.22,698.21,17061.33,5,6,4,2025-01-03
+PROP_551084,Rightmove,United Kingdom,London,Westminster,Penthouse,8338911.69,364.57,22873.28,4,6,13,2025-09-03
+PROP_552051,Rightmove,United Kingdom,London,Camden,Detached House,14807426.37,682.18,21706.04,6,3,15,2026-03-16
+PROP_412094,Rightmove,United Kingdom,London,Chelsea,Townhouse,2684795.92,199.63,13448.86,7,2,9,2025-01-06
+PROP_886870,Rightmove,United Kingdom,London,Chelsea,Detached House,15004366.89,924.5,16229.71,6,1,7,2025-12-09
+PROP_115751,Rightmove,United Kingdom,London,Chelsea,Duplex,13967795.33,1105.18,12638.48,6,4,15,2025-02-22
+PROP_109416,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,10274228.91,480.04,21402.86,5,5,5,2025-02-09
+PROP_925566,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,8956858.95,452.6,19789.79,7,2,12,2025-11-06
+PROP_803496,Rightmove,United Kingdom,London,Kensington,Duplex,5123369.99,310.64,16492.95,3,4,5,2025-03-22
+PROP_883208,Rightmove,United Kingdom,London,Westminster,Duplex,7236574.47,523.88,13813.42,2,6,7,2025-09-03
+PROP_642151,Rightmove,United Kingdom,London,Chelsea,Duplex,1501998.08,70.93,21175.78,3,6,13,2025-11-19
+PROP_651229,Rightmove,United Kingdom,London,Kensington,Townhouse,14692125.66,745.54,19706.69,2,2,14,2025-07-30
+PROP_100602,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,6387581.43,238.72,26757.63,3,5,8,2025-02-05
+PROP_60654,Rightmove,United Kingdom,London,Chelsea,Detached House,1702614.95,64.13,26549.43,7,2,3,2026-02-28
+PROP_359178,Rightmove,United Kingdom,London,Kensington,Luxury Flat,13062346.37,1086.79,12019.2,8,6,4,2025-12-14
+PROP_714947,Rightmove,United Kingdom,London,Camden,Townhouse,9003507.59,338.97,26561.37,2,4,4,2025-11-03
+PROP_590040,Rightmove,United Kingdom,London,Canary Wharf,Detached House,18359577.91,864.07,21247.79,5,2,0,2025-01-04
+PROP_86950,Rightmove,United Kingdom,London,Camden,Penthouse,3591611.15,168.1,21365.92,6,4,11,2025-10-02
+PROP_380087,Rightmove,United Kingdom,London,Camden,Duplex,18166416.32,1190.53,15259.1,6,5,8,2025-10-13
+PROP_238032,Rightmove,United Kingdom,London,Camden,Penthouse,5920204.67,338.11,17509.7,6,5,15,2026-01-12
+PROP_937747,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,3952521.39,160.82,24577.3,4,4,5,2025-11-11
+PROP_859081,Rightmove,United Kingdom,London,Kensington,Penthouse,19039463.14,974.05,19546.7,7,6,0,2025-02-15
+PROP_946607,Rightmove,United Kingdom,London,Kensington,Townhouse,20126001.19,748.43,26890.96,4,3,2,2025-12-02
+PROP_110912,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,12425827.9,552.01,22510.15,1,2,15,2025-05-27
+PROP_443142,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,18512535.29,823.5,22480.31,4,5,5,2025-02-14
+PROP_122969,Rightmove,United Kingdom,London,Westminster,Detached House,6285799.94,513.3,12245.86,6,6,12,2026-04-16
+PROP_765346,Rightmove,United Kingdom,London,Kensington,Duplex,6972000.42,446.33,15620.73,5,6,11,2025-08-21
+PROP_986929,Rightmove,United Kingdom,London,Camden,Duplex,6779620.66,515.24,13158.18,1,3,5,2026-04-30
+PROP_841580,Rightmove,United Kingdom,London,Kensington,Duplex,17791650.65,846.79,21010.7,5,5,8,2026-01-23
+PROP_221220,Rightmove,United Kingdom,London,Westminster,Detached House,10904108.25,601.68,18122.77,8,5,0,2025-04-23
+PROP_458781,Rightmove,United Kingdom,London,Chelsea,Townhouse,14180990.5,854.45,16596.63,7,3,0,2026-01-19
+PROP_277099,Rightmove,United Kingdom,London,Westminster,Luxury Flat,7391803.9,453.34,16305.21,3,4,10,2025-12-16
+PROP_310777,Rightmove,United Kingdom,London,Chelsea,Detached House,16052510.67,1053.02,15244.26,4,2,7,2025-11-13
+PROP_33911,Rightmove,United Kingdom,London,Westminster,Penthouse,18014734.64,825.56,21821.23,2,1,2,2025-10-05
+PROP_548671,Rightmove,United Kingdom,London,Kensington,Detached House,16170904.8,613.65,26352.0,6,5,10,2025-09-09
+PROP_730786,Rightmove,United Kingdom,London,Chelsea,Duplex,18604307.77,911.45,20411.77,5,4,7,2026-04-27
+PROP_592560,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,11628120.92,573.06,20291.28,6,4,5,2025-01-05
+PROP_17991,Rightmove,United Kingdom,London,Kensington,Penthouse,6799404.78,420.88,16155.21,7,5,3,2025-05-02
+PROP_606227,Rightmove,United Kingdom,London,Westminster,Detached House,14416136.31,621.08,23211.4,6,3,5,2026-03-14
+PROP_668920,Rightmove,United Kingdom,London,Chelsea,Duplex,3072136.76,213.45,14392.77,7,4,6,2025-04-01
+PROP_792653,Rightmove,United Kingdom,London,Camden,Detached House,19987757.09,952.06,20994.22,3,6,10,2025-07-23
+PROP_809825,Rightmove,United Kingdom,London,Kensington,Penthouse,11430298.67,595.4,19197.68,1,2,8,2025-07-04
+PROP_729893,Rightmove,United Kingdom,London,Westminster,Duplex,11907418.95,520.58,22873.37,5,3,0,2025-10-23
+PROP_932999,Rightmove,United Kingdom,London,Canary Wharf,Duplex,10257992.24,420.48,24395.91,3,3,11,2025-02-10
+PROP_908907,Rightmove,United Kingdom,London,Canary Wharf,Detached House,9919639.52,441.89,22448.21,2,1,5,2025-11-06
+PROP_13287,Rightmove,United Kingdom,London,Camden,Townhouse,6471290.4,523.16,12369.62,8,3,14,2025-12-05
+PROP_218606,Rightmove,United Kingdom,London,Westminster,Luxury Flat,4273164.66,163.98,26059.06,4,2,12,2025-01-14
+PROP_652403,Rightmove,United Kingdom,London,Camden,Duplex,20418799.88,758.91,26905.43,2,1,8,2025-04-28
+PROP_194065,Rightmove,United Kingdom,London,Chelsea,Townhouse,2449447.44,196.63,12457.14,8,6,4,2026-03-17
+PROP_171931,Rightmove,United Kingdom,London,Canary Wharf,Detached House,17116325.23,1094.81,15634.06,7,5,9,2025-06-07
+PROP_954690,Rightmove,United Kingdom,London,Westminster,Detached House,1380149.11,57.19,24132.7,5,2,9,2025-05-27
+PROP_922724,Rightmove,United Kingdom,London,Camden,Duplex,13831272.69,1138.74,12146.12,1,6,15,2025-05-30
+PROP_43977,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,4991544.36,262.8,18993.7,1,5,11,2026-01-02
+PROP_299167,Rightmove,United Kingdom,London,Camden,Detached House,12908469.02,532.69,24232.61,4,3,2,2026-02-18
+PROP_505353,Rightmove,United Kingdom,London,Westminster,Townhouse,17145333.41,1030.77,16633.52,5,4,6,2025-11-13
+PROP_10515,Rightmove,United Kingdom,London,Camden,Townhouse,1385712.32,67.4,20559.53,8,2,10,2025-02-22
+PROP_177238,Rightmove,United Kingdom,London,Westminster,Townhouse,12750943.82,884.81,14410.94,3,6,14,2025-06-25
+PROP_107464,Rightmove,United Kingdom,London,Camden,Townhouse,11290503.16,849.96,13283.57,8,3,14,2025-03-16
+PROP_247227,Rightmove,United Kingdom,London,Kensington,Townhouse,4076323.53,254.75,16001.27,7,1,15,2025-01-07
+PROP_875625,Rightmove,United Kingdom,London,Kensington,Penthouse,17376926.28,896.95,19373.35,7,4,7,2025-09-24
+PROP_212296,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,7087958.3,274.53,25818.52,5,4,9,2025-02-27
+PROP_554614,Rightmove,United Kingdom,London,Chelsea,Detached House,17645811.78,962.52,18332.93,6,1,5,2026-05-12
+PROP_71691,Rightmove,United Kingdom,London,Kensington,Duplex,6883551.62,473.97,14523.18,8,6,4,2025-11-13
+PROP_849750,Rightmove,United Kingdom,London,Westminster,Luxury Flat,11981740.6,855.03,14013.24,1,3,4,2026-05-18
+PROP_748766,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,1643306.57,69.66,23590.39,8,6,6,2025-01-21
+PROP_382854,Rightmove,United Kingdom,London,Camden,Detached House,4639871.22,264.19,17562.63,5,5,15,2025-05-21
+PROP_134908,Rightmove,United Kingdom,London,Canary Wharf,Duplex,11656281.43,564.04,20665.7,3,1,4,2026-02-02
+PROP_586658,Rightmove,United Kingdom,London,Camden,Penthouse,16758943.65,753.06,22254.46,8,5,4,2025-09-25
+PROP_79002,Rightmove,United Kingdom,London,Kensington,Luxury Flat,3780688.7,278.4,13580.06,3,2,1,2026-03-05
+PROP_29913,Rightmove,United Kingdom,London,Camden,Detached House,3661959.34,299.93,12209.38,5,1,11,2025-12-02
+PROP_869706,Rightmove,United Kingdom,London,Camden,Luxury Flat,12122651.08,461.87,26246.89,8,6,1,2026-02-11
+PROP_816542,Rightmove,United Kingdom,London,Kensington,Duplex,11831133.85,893.12,13246.97,5,5,1,2025-09-23
+PROP_410227,Rightmove,United Kingdom,London,Kensington,Luxury Flat,4216058.8,263.83,15980.21,4,5,12,2025-04-02
+PROP_423555,Rightmove,United Kingdom,London,Kensington,Penthouse,12898990.09,627.92,20542.41,3,5,12,2026-04-23
+PROP_146992,Rightmove,United Kingdom,London,Westminster,Duplex,20038519.36,1192.39,16805.34,1,5,4,2026-03-15
+PROP_664826,Rightmove,United Kingdom,London,Westminster,Luxury Flat,2231197.57,153.9,14497.71,5,5,4,2026-04-01
+PROP_227824,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,4033605.53,151.15,26686.11,4,3,9,2026-01-06
+PROP_504481,Rightmove,United Kingdom,London,Westminster,Detached House,17354614.55,732.49,23692.63,3,4,3,2025-02-10
+PROP_232573,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,13688981.98,650.66,21038.61,7,1,9,2025-12-24
+PROP_914073,Rightmove,United Kingdom,London,Westminster,Detached House,1794805.45,140.34,12788.98,3,2,10,2025-02-13
+PROP_605790,Rightmove,United Kingdom,London,Camden,Duplex,14034284.96,925.15,15169.74,7,6,4,2025-10-20
+PROP_535026,Rightmove,United Kingdom,London,Chelsea,Duplex,8092611.7,352.53,22955.81,4,2,2,2025-02-27
+PROP_734761,Rightmove,United Kingdom,London,Camden,Detached House,5146307.94,415.45,12387.31,6,3,6,2026-05-21
+PROP_864192,Rightmove,United Kingdom,London,Westminster,Duplex,8713558.5,553.74,15735.83,8,5,4,2025-03-21
+PROP_295891,Rightmove,United Kingdom,London,Kensington,Luxury Flat,12811287.13,1048.41,12219.73,1,2,4,2025-02-26
+PROP_583464,Rightmove,United Kingdom,London,Westminster,Detached House,4370851.46,286.41,15260.82,8,1,10,2025-05-13
+PROP_553486,Rightmove,United Kingdom,London,Canary Wharf,Detached House,9805410.62,479.98,20428.79,3,6,0,2025-01-31
+PROP_370993,Rightmove,United Kingdom,London,Westminster,Penthouse,14597428.9,801.25,18218.32,5,1,14,2026-03-13
+PROP_129253,Rightmove,United Kingdom,London,Camden,Duplex,16716562.2,623.25,26821.6,2,2,6,2025-05-07
+PROP_925657,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,20763548.63,904.77,22948.98,6,4,12,2025-06-04
+PROP_607113,Rightmove,United Kingdom,London,Westminster,Penthouse,14560361.57,803.76,18115.31,3,3,12,2025-11-10
+PROP_131254,Rightmove,United Kingdom,London,Chelsea,Detached House,11657689.26,537.57,21685.9,4,5,4,2025-03-09
+PROP_115776,Rightmove,United Kingdom,London,Chelsea,Duplex,9569352.37,688.73,13894.2,3,3,2,2026-03-27
+PROP_867979,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,9942440.56,395.37,25147.18,6,4,13,2026-01-14
+PROP_483329,Rightmove,United Kingdom,London,Westminster,Penthouse,5630542.03,258.38,21791.71,4,1,4,2025-10-18
+PROP_328573,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,9026813.12,459.95,19625.64,4,2,0,2025-11-06
+PROP_231852,Rightmove,United Kingdom,London,Camden,Townhouse,9251788.95,592.29,15620.37,3,4,15,2026-05-12
+PROP_273599,Rightmove,United Kingdom,London,Canary Wharf,Detached House,11707094.75,538.83,21726.88,6,4,7,2026-01-04
+PROP_329656,Rightmove,United Kingdom,London,Westminster,Detached House,7183849.88,566.61,12678.65,1,5,3,2025-09-23
+PROP_875479,Rightmove,United Kingdom,London,Canary Wharf,Detached House,8199238.46,641.13,12788.73,1,5,12,2025-07-23
+PROP_824385,Rightmove,United Kingdom,London,Westminster,Townhouse,8871263.21,385.05,23039.25,8,2,13,2025-08-26
+PROP_61787,Rightmove,United Kingdom,London,Camden,Luxury Flat,6186772.42,498.99,12398.59,2,2,4,2026-04-05
+PROP_635640,Rightmove,United Kingdom,London,Kensington,Luxury Flat,3391611.03,143.53,23629.98,8,6,11,2025-11-10
+PROP_603013,Rightmove,United Kingdom,London,Chelsea,Penthouse,7703710.92,402.49,19140.13,1,4,9,2025-03-02
+PROP_673660,Rightmove,United Kingdom,London,Chelsea,Penthouse,1180716.35,59.1,19978.28,1,5,8,2025-11-08
+PROP_79805,Rightmove,United Kingdom,London,Camden,Penthouse,12302991.79,569.07,21619.47,4,5,15,2026-03-28
+PROP_573414,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,2721929.65,216.24,12587.54,4,1,5,2025-12-08
+PROP_227530,Rightmove,United Kingdom,London,Canary Wharf,Duplex,1509405.71,101.63,14851.97,5,3,2,2025-11-09
+PROP_950637,Rightmove,United Kingdom,London,Canary Wharf,Duplex,18817793.49,1120.86,16788.71,3,4,11,2025-07-14
+PROP_56175,Rightmove,United Kingdom,London,Kensington,Detached House,3284696.28,200.4,16390.7,2,3,15,2025-09-26
+PROP_48219,Rightmove,United Kingdom,London,Chelsea,Penthouse,16263162.44,603.63,26942.27,1,1,2,2025-05-28
+PROP_246970,Rightmove,United Kingdom,London,Camden,Penthouse,14563832.39,1176.04,12383.79,4,6,9,2025-03-02
+PROP_229648,Rightmove,United Kingdom,London,Chelsea,Duplex,9557791.83,430.53,22200.06,7,4,1,2025-04-14
+PROP_618956,Rightmove,United Kingdom,London,Westminster,Townhouse,7624585.56,630.23,12098.1,2,3,9,2025-06-24
+PROP_86184,Rightmove,United Kingdom,London,Camden,Duplex,9712418.9,426.74,22759.57,1,2,6,2026-02-13
+PROP_421505,Rightmove,United Kingdom,London,Kensington,Penthouse,18669610.63,1075.33,17361.75,8,2,14,2025-07-31
+PROP_813479,Rightmove,United Kingdom,London,Kensington,Duplex,14574399.78,686.23,21238.36,5,5,10,2026-04-15
+PROP_511636,Rightmove,United Kingdom,London,Westminster,Luxury Flat,8973884.15,436.72,20548.37,3,3,0,2025-11-07
+PROP_972595,Rightmove,United Kingdom,London,Camden,Penthouse,11579536.86,864.87,13388.76,2,3,10,2025-07-10
+PROP_319890,Rightmove,United Kingdom,London,Camden,Townhouse,3113548.8,247.14,12598.32,4,5,9,2025-02-17
+PROP_386700,Rightmove,United Kingdom,London,Camden,Duplex,6278197.99,264.69,23719.06,1,4,4,2026-02-02
+PROP_928393,Rightmove,United Kingdom,London,Westminster,Penthouse,5132615.61,281.99,18201.41,2,5,4,2025-03-01
+PROP_331051,Rightmove,United Kingdom,London,Kensington,Townhouse,5868667.02,429.95,13649.65,1,6,2,2026-01-17
+PROP_45288,Rightmove,United Kingdom,London,Westminster,Luxury Flat,6827136.21,415.62,16426.39,5,6,6,2025-08-14
+PROP_8773,Rightmove,United Kingdom,London,Kensington,Townhouse,3713050.57,177.2,20954.01,3,2,8,2025-10-05
+PROP_570303,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,1005244.98,78.49,12807.3,8,1,4,2025-02-14
+PROP_372077,Rightmove,United Kingdom,London,Camden,Detached House,18980843.34,756.84,25079.07,3,6,14,2025-12-10
+PROP_386553,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,3530410.51,152.32,23177.59,8,5,4,2025-06-08
+PROP_520997,Rightmove,United Kingdom,London,Westminster,Townhouse,2368840.81,120.5,19658.43,8,4,0,2025-05-25
+PROP_547516,Rightmove,United Kingdom,London,Westminster,Duplex,7041917.77,513.57,13711.7,3,5,3,2025-02-06
+PROP_524279,Rightmove,United Kingdom,London,Westminster,Duplex,4662181.78,320.55,14544.32,8,4,13,2025-02-03
+PROP_740668,Rightmove,United Kingdom,London,Westminster,Penthouse,15232031.07,673.93,22601.8,7,4,10,2026-04-22
+PROP_791085,Rightmove,United Kingdom,London,Canary Wharf,Detached House,8047343.2,420.81,19123.46,2,5,14,2025-07-27
+PROP_787847,Rightmove,United Kingdom,London,Kensington,Duplex,5494190.96,423.16,12983.72,2,6,12,2025-03-13
+PROP_162881,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,12414468.54,568.19,21849.15,3,6,4,2025-04-16
+PROP_341724,Rightmove,United Kingdom,London,Kensington,Penthouse,14189050.42,767.12,18496.52,7,6,12,2025-04-19
+PROP_404448,Rightmove,United Kingdom,London,Chelsea,Detached House,19031356.66,1019.04,18675.77,3,2,12,2026-03-23
+PROP_327598,Rightmove,United Kingdom,London,Chelsea,Penthouse,4760369.72,211.32,22526.83,1,1,0,2025-03-11
+PROP_482394,Rightmove,United Kingdom,London,Kensington,Penthouse,14368464.45,764.85,18785.99,7,4,13,2025-07-16
+PROP_979389,Rightmove,United Kingdom,London,Westminster,Penthouse,11249265.76,712.52,15788.0,3,4,0,2025-07-30
+PROP_961108,Rightmove,United Kingdom,London,Canary Wharf,Duplex,9684151.86,701.21,13810.63,6,1,1,2025-12-20
+PROP_854849,Rightmove,United Kingdom,London,Kensington,Penthouse,10342124.68,649.48,15923.7,5,4,2,2025-12-06
+PROP_781813,Rightmove,United Kingdom,London,Kensington,Duplex,13251503.06,1088.64,12172.53,5,5,1,2026-04-09
+PROP_944640,Rightmove,United Kingdom,London,Camden,Duplex,19195765.21,1154.47,16627.34,6,4,11,2026-04-18
+PROP_563528,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,16037673.28,712.75,22501.12,5,1,15,2026-01-13
+PROP_667746,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,4698959.41,191.48,24540.21,5,4,2,2025-11-12
+PROP_581235,Rightmove,United Kingdom,London,Westminster,Townhouse,17686789.79,742.41,23823.48,5,1,3,2025-07-09
+PROP_100425,Rightmove,United Kingdom,London,Chelsea,Townhouse,16930752.86,968.27,17485.57,4,4,5,2025-03-16
+PROP_390558,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,7100606.6,319.83,22201.19,8,4,12,2026-01-11
+PROP_278304,Rightmove,United Kingdom,London,Westminster,Luxury Flat,4013361.74,238.58,16821.87,5,1,1,2026-01-21
+PROP_56990,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,15377081.59,593.15,25924.44,7,6,12,2026-04-20
+PROP_834106,Rightmove,United Kingdom,London,Camden,Detached House,2780940.43,157.46,17661.25,6,5,1,2025-11-09
+PROP_572976,Rightmove,United Kingdom,London,Westminster,Townhouse,6586881.38,339.92,19377.74,5,3,3,2025-05-04
+PROP_383381,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,4937134.28,406.83,12135.62,6,6,5,2025-07-30
+PROP_794939,Rightmove,United Kingdom,London,Kensington,Duplex,7229683.34,451.0,16030.34,2,6,14,2025-11-14
+PROP_937734,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,9108080.02,337.6,26978.91,2,6,5,2026-04-18
+PROP_858384,Rightmove,United Kingdom,London,Westminster,Detached House,12305915.87,946.74,12998.2,6,3,5,2025-01-31
+PROP_484802,Rightmove,United Kingdom,London,Westminster,Townhouse,13340534.9,612.94,21764.83,3,4,2,2025-09-09
+PROP_149113,Rightmove,United Kingdom,London,Kensington,Penthouse,15005015.57,1099.06,13652.59,7,2,3,2025-10-20
+PROP_951688,Rightmove,United Kingdom,London,Westminster,Detached House,10072446.95,799.06,12605.37,1,4,4,2025-03-19
+PROP_191153,Rightmove,United Kingdom,London,Westminster,Detached House,14121546.23,597.25,23644.28,1,5,15,2025-02-05
+PROP_139455,Rightmove,United Kingdom,London,Camden,Luxury Flat,3346751.45,137.93,24264.13,2,3,10,2025-04-01
+PROP_828261,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,5348974.76,390.2,13708.29,7,6,6,2025-09-07
+PROP_736544,Rightmove,United Kingdom,London,Kensington,Detached House,5758980.58,268.02,21487.13,4,2,1,2025-02-02
+PROP_721973,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,20241355.3,1161.39,17428.56,8,5,14,2026-01-05
+PROP_765199,Rightmove,United Kingdom,London,Kensington,Luxury Flat,7502947.41,589.26,12732.83,3,4,0,2025-03-08
+PROP_321501,Rightmove,United Kingdom,London,Kensington,Penthouse,12270860.73,571.89,21456.68,1,3,3,2025-02-24
+PROP_596808,Rightmove,United Kingdom,London,Kensington,Duplex,16112001.9,927.68,17368.06,3,3,6,2025-03-14
+PROP_305067,Rightmove,United Kingdom,London,Camden,Penthouse,6979023.45,551.65,12651.18,6,5,5,2026-03-10
+PROP_814684,Rightmove,United Kingdom,London,Canary Wharf,Detached House,3707078.4,138.23,26818.19,3,1,15,2025-10-31
+PROP_844889,Rightmove,United Kingdom,London,Westminster,Detached House,5766981.7,283.12,20369.39,8,6,4,2026-04-26
+PROP_137872,Rightmove,United Kingdom,London,Chelsea,Duplex,11710307.82,873.36,13408.34,1,5,5,2025-06-04
+PROP_314593,Rightmove,United Kingdom,London,Canary Wharf,Duplex,9014156.21,364.27,24745.81,4,4,6,2026-05-11
+PROP_826583,Rightmove,United Kingdom,London,Camden,Detached House,1648959.46,107.4,15353.44,3,2,1,2025-11-12
+PROP_919384,Rightmove,United Kingdom,London,Kensington,Penthouse,13952352.32,529.02,26373.96,8,5,10,2025-02-26
+PROP_683755,Rightmove,United Kingdom,London,Westminster,Penthouse,16302781.43,1049.72,15530.6,2,2,13,2025-09-06
+PROP_398739,Rightmove,United Kingdom,London,Kensington,Detached House,4843713.73,250.66,19323.84,3,2,14,2025-07-03
+PROP_57302,Rightmove,United Kingdom,London,Westminster,Penthouse,11978404.89,844.5,14184.02,6,2,1,2025-08-23
+PROP_462551,Rightmove,United Kingdom,London,Camden,Penthouse,16482770.18,742.2,22207.99,6,2,9,2025-03-29
+PROP_446030,Rightmove,United Kingdom,London,Camden,Townhouse,15431880.95,895.29,17236.74,1,6,13,2026-04-02
+PROP_361868,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,2217651.08,91.27,24297.7,1,4,1,2025-09-29
+PROP_769529,Rightmove,United Kingdom,London,Camden,Detached House,3937640.97,322.79,12198.77,2,4,15,2026-05-02
+PROP_343823,Rightmove,United Kingdom,London,Chelsea,Penthouse,15603881.82,793.02,19676.53,6,3,7,2025-12-27
+PROP_845603,Rightmove,United Kingdom,London,Camden,Duplex,17311369.03,936.47,18485.77,1,4,14,2025-07-09
+PROP_17978,Rightmove,United Kingdom,London,Camden,Luxury Flat,15827455.88,658.21,24046.21,2,4,10,2025-11-10
+PROP_426239,Rightmove,United Kingdom,London,Canary Wharf,Duplex,20499949.3,761.63,26915.89,4,6,2,2026-04-11
+PROP_335133,Rightmove,United Kingdom,London,Westminster,Luxury Flat,10404799.47,582.48,17862.93,2,4,11,2025-12-27
+PROP_571795,Rightmove,United Kingdom,London,Kensington,Duplex,6302074.66,320.62,19655.9,4,2,10,2025-10-25
+PROP_979005,Rightmove,United Kingdom,London,Chelsea,Penthouse,8065451.6,626.62,12871.36,6,3,8,2025-08-20
+PROP_640624,Rightmove,United Kingdom,London,Camden,Duplex,12913145.22,567.04,22772.9,2,4,9,2026-05-16
+PROP_317499,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,9292996.81,557.66,16664.27,8,3,13,2026-03-23
+PROP_288428,Rightmove,United Kingdom,London,Chelsea,Duplex,15870164.09,802.4,19778.37,6,4,10,2025-09-29
+PROP_758276,Rightmove,United Kingdom,London,Westminster,Luxury Flat,15310940.48,571.6,26786.11,3,3,9,2025-05-27
+PROP_204718,Rightmove,United Kingdom,London,Chelsea,Penthouse,3815479.7,180.04,21192.4,3,2,7,2025-07-09
+PROP_775984,Rightmove,United Kingdom,London,Chelsea,Duplex,12665954.53,890.04,14230.77,8,3,3,2025-06-07
+PROP_416003,Rightmove,United Kingdom,London,Kensington,Detached House,3379665.02,151.82,22261.0,4,4,11,2025-04-24
+PROP_761871,Rightmove,United Kingdom,London,Westminster,Duplex,9499885.61,504.18,18842.25,1,6,11,2025-01-07
+PROP_211378,Rightmove,United Kingdom,London,Chelsea,Townhouse,2924511.44,121.36,24097.82,8,5,10,2025-07-29
+PROP_134966,Rightmove,United Kingdom,London,Westminster,Detached House,12279892.83,865.34,14190.83,3,5,14,2025-07-15
+PROP_463244,Rightmove,United Kingdom,London,Kensington,Penthouse,3128341.03,188.42,16603.02,5,3,15,2026-04-10
+PROP_276130,Rightmove,United Kingdom,London,Camden,Townhouse,5846236.76,476.05,12280.72,8,6,3,2025-10-25
+PROP_476951,Rightmove,United Kingdom,London,Kensington,Penthouse,8138696.66,457.78,17778.62,6,4,4,2026-05-05
+PROP_525891,Rightmove,United Kingdom,London,Westminster,Luxury Flat,9534355.1,638.52,14931.96,5,3,2,2026-01-21
+PROP_17756,Rightmove,United Kingdom,London,Chelsea,Duplex,6382141.07,358.54,17800.36,6,3,9,2025-06-30
+PROP_494330,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,8300859.11,475.83,17445.01,3,5,9,2025-02-22
+PROP_621169,Rightmove,United Kingdom,London,Chelsea,Penthouse,7307297.3,527.03,13865.05,4,2,3,2025-01-09
+PROP_926290,Rightmove,United Kingdom,London,Westminster,Penthouse,4309310.5,301.82,14277.75,5,1,3,2025-03-06
+PROP_577367,Rightmove,United Kingdom,London,Chelsea,Penthouse,3250535.09,134.78,24117.34,2,4,3,2025-02-25
+PROP_819536,Rightmove,United Kingdom,London,Kensington,Duplex,18413894.24,1094.35,16826.33,1,4,3,2025-02-19
+PROP_383349,Rightmove,United Kingdom,London,Kensington,Duplex,3476387.3,258.42,13452.47,4,5,6,2026-04-28
+PROP_284785,Rightmove,United Kingdom,London,Kensington,Duplex,12857047.75,871.76,14748.38,1,5,6,2025-01-03
+PROP_850592,Rightmove,United Kingdom,London,Kensington,Penthouse,8233319.96,552.81,14893.58,8,3,5,2025-07-14
+PROP_955884,Rightmove,United Kingdom,London,Camden,Penthouse,17984258.72,924.43,19454.43,4,4,3,2025-09-11
+PROP_248375,Rightmove,United Kingdom,London,Westminster,Townhouse,11880979.62,615.24,19311.13,1,1,10,2025-12-18
+PROP_551116,Rightmove,United Kingdom,London,Camden,Penthouse,6696445.44,263.05,25456.93,7,3,13,2025-12-14
+PROP_744338,Rightmove,United Kingdom,London,Westminster,Penthouse,16723192.5,821.27,20362.6,1,6,15,2025-03-03
+PROP_973293,Rightmove,United Kingdom,London,Chelsea,Detached House,13249457.42,901.35,14699.57,7,6,3,2025-04-12
+PROP_567064,Rightmove,United Kingdom,London,Westminster,Penthouse,16670550.9,1013.02,16456.29,7,1,7,2025-10-25
+PROP_956897,Rightmove,United Kingdom,London,Camden,Luxury Flat,8766112.68,619.35,14153.73,2,3,15,2025-01-28
+PROP_323421,Rightmove,United Kingdom,London,Kensington,Detached House,12520006.49,743.29,16844.04,1,2,12,2026-01-25
+PROP_570164,Rightmove,United Kingdom,London,Kensington,Duplex,7710865.85,384.07,20076.72,8,4,6,2026-02-19
+PROP_952716,Rightmove,United Kingdom,London,Canary Wharf,Duplex,20383723.87,1061.55,19201.85,1,1,13,2025-08-15
+PROP_440595,Rightmove,United Kingdom,London,Camden,Luxury Flat,20153378.85,1066.83,18890.9,1,2,9,2025-07-19
+PROP_843949,Rightmove,United Kingdom,London,Camden,Luxury Flat,11957206.97,594.68,20106.96,8,6,15,2025-09-11
+PROP_75105,Rightmove,United Kingdom,London,Canary Wharf,Detached House,1629092.65,115.94,14051.17,6,3,10,2026-02-19
+PROP_417015,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,10029960.27,539.51,18590.87,6,4,3,2025-05-06
+PROP_427095,Rightmove,United Kingdom,London,Chelsea,Penthouse,18507384.9,1096.5,16878.6,5,5,2,2025-01-11
+PROP_340467,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,11404022.49,701.1,16265.9,1,4,13,2025-10-29
+PROP_310169,Rightmove,United Kingdom,London,Kensington,Townhouse,8270255.08,417.4,19813.74,7,5,12,2025-04-16
+PROP_967852,Rightmove,United Kingdom,London,Westminster,Detached House,9270339.02,464.65,19951.23,6,2,9,2026-02-08
+PROP_544621,Rightmove,United Kingdom,London,Kensington,Duplex,1841400.76,99.9,18432.44,4,3,8,2026-01-16
+PROP_6488,Rightmove,United Kingdom,London,Kensington,Duplex,7394094.99,360.74,20497.02,2,5,10,2025-06-27
+PROP_371905,Rightmove,United Kingdom,London,Kensington,Townhouse,6073819.87,276.09,21999.42,5,4,10,2026-01-26
+PROP_893566,Rightmove,United Kingdom,London,Westminster,Duplex,9310967.26,648.22,14363.9,7,5,1,2025-12-17
+PROP_245888,Rightmove,United Kingdom,London,Westminster,Detached House,12645627.4,777.19,16270.96,7,3,2,2025-03-24
+PROP_578210,Rightmove,United Kingdom,London,Westminster,Duplex,2806121.34,176.16,15929.39,4,4,7,2025-08-26
+PROP_402937,Rightmove,United Kingdom,London,Camden,Duplex,3469362.94,278.3,12466.27,7,4,1,2025-05-23
+PROP_121163,Rightmove,United Kingdom,London,Kensington,Detached House,12828900.44,503.41,25484.0,6,6,2,2025-10-20
+PROP_567826,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,7969741.86,319.98,24907.0,5,4,2,2025-10-27
+PROP_529296,Rightmove,United Kingdom,London,Camden,Penthouse,2760049.0,168.37,16392.76,7,2,4,2026-03-18
+PROP_331750,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,17685571.68,853.06,20731.92,8,5,11,2025-05-07
+PROP_226163,Rightmove,United Kingdom,London,Kensington,Penthouse,7161622.55,402.21,17805.68,5,5,12,2025-03-04
+PROP_265268,Rightmove,United Kingdom,London,Chelsea,Townhouse,18788412.15,774.21,24267.85,4,2,14,2025-01-18
+PROP_830490,Rightmove,United Kingdom,London,Chelsea,Townhouse,17625855.81,740.44,23804.57,2,3,13,2025-01-15
+PROP_983620,Rightmove,United Kingdom,London,Kensington,Penthouse,819949.3,48.55,16888.76,8,6,4,2025-02-26
+PROP_630730,Rightmove,United Kingdom,London,Chelsea,Penthouse,18877522.92,960.5,19653.85,3,5,13,2025-05-14
+PROP_211627,Rightmove,United Kingdom,London,Chelsea,Duplex,2606801.26,142.48,18295.91,6,3,6,2026-03-04
+PROP_434575,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,16574328.55,1092.41,15172.26,1,1,7,2025-03-28
+PROP_635475,Rightmove,United Kingdom,London,Kensington,Detached House,3200409.06,217.39,14721.97,7,5,8,2025-01-08
+PROP_912428,Rightmove,United Kingdom,London,Canary Wharf,Detached House,2737059.37,181.88,15048.71,8,6,15,2026-02-05
+PROP_645651,Rightmove,United Kingdom,London,Westminster,Townhouse,8391316.86,543.16,15449.07,8,4,4,2026-01-08
+PROP_694840,Rightmove,United Kingdom,London,Chelsea,Detached House,1233512.65,78.23,15767.77,3,4,4,2025-05-08
+PROP_370549,Rightmove,United Kingdom,London,Camden,Detached House,18514032.66,688.33,26897.03,5,1,3,2025-07-01
+PROP_835344,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,16326633.57,626.83,26046.35,3,3,5,2025-06-12
+PROP_104912,Rightmove,United Kingdom,London,Canary Wharf,Detached House,8131461.74,406.83,19987.37,3,3,3,2025-05-24
+PROP_795859,Rightmove,United Kingdom,London,Westminster,Detached House,9400177.05,642.1,14639.74,5,3,8,2025-09-09
+PROP_148592,Rightmove,United Kingdom,London,Chelsea,Duplex,2724239.51,216.66,12573.8,8,1,6,2025-12-28
+PROP_567211,Rightmove,United Kingdom,London,Camden,Detached House,11639547.9,554.96,20973.67,2,4,1,2025-02-27
+PROP_176514,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,15394150.45,1047.74,14692.72,6,1,6,2025-05-20
+PROP_713450,Rightmove,United Kingdom,London,Canary Wharf,Duplex,12178344.88,652.55,18662.7,4,5,0,2026-01-29
+PROP_830130,Rightmove,United Kingdom,London,Camden,Luxury Flat,15229726.5,831.92,18306.72,6,1,9,2026-05-03
+PROP_564439,Rightmove,United Kingdom,London,Kensington,Townhouse,11345559.96,576.57,19677.68,3,1,2,2025-05-18
+PROP_790323,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,9981275.95,420.28,23749.11,6,1,14,2025-10-19
+PROP_954207,Rightmove,United Kingdom,London,Chelsea,Penthouse,5492418.83,418.26,13131.59,1,6,9,2025-07-15
+PROP_224111,Rightmove,United Kingdom,London,Kensington,Detached House,15570363.61,1159.63,13427.01,5,2,7,2025-03-25
+PROP_971887,Rightmove,United Kingdom,London,Camden,Detached House,3486537.64,184.3,18917.73,5,6,4,2025-06-08
+PROP_399499,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,19953370.5,1006.02,19833.97,6,6,3,2025-09-01
+PROP_935509,Rightmove,United Kingdom,London,Westminster,Duplex,18598983.87,981.7,18945.69,7,1,13,2025-01-21
+PROP_181307,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,2293386.33,136.46,16806.29,5,4,13,2025-12-17
+PROP_672273,Rightmove,United Kingdom,London,Westminster,Penthouse,13774248.88,681.4,20214.63,7,3,1,2025-07-31
+PROP_272304,Rightmove,United Kingdom,London,Kensington,Detached House,8843722.2,721.33,12260.3,5,3,8,2025-08-25
+PROP_934926,Rightmove,United Kingdom,London,Chelsea,Penthouse,8950256.32,525.77,17023.14,7,1,2,2026-01-23
+PROP_328747,Rightmove,United Kingdom,London,Kensington,Detached House,3529393.46,179.76,19633.92,1,1,12,2026-03-21
+PROP_548232,Rightmove,United Kingdom,London,Canary Wharf,Detached House,19215170.04,842.71,22801.64,5,5,11,2025-02-14
+PROP_366967,Rightmove,United Kingdom,London,Chelsea,Penthouse,14822995.06,987.44,15011.54,1,2,3,2025-09-04
+PROP_722968,Rightmove,United Kingdom,London,Chelsea,Penthouse,2075696.69,144.44,14370.65,7,6,6,2025-03-01
+PROP_648532,Rightmove,United Kingdom,London,Chelsea,Penthouse,1074739.68,67.67,15882.07,8,4,15,2026-03-01
+PROP_604490,Rightmove,United Kingdom,London,Canary Wharf,Duplex,11953342.09,506.63,23593.83,5,1,15,2026-04-09
+PROP_10924,Rightmove,United Kingdom,London,Camden,Penthouse,6930069.23,532.42,13016.17,1,5,0,2025-08-02
+PROP_895130,Rightmove,United Kingdom,London,Camden,Luxury Flat,8206664.15,562.82,14581.33,8,5,11,2025-08-29
+PROP_130794,Rightmove,United Kingdom,London,Westminster,Detached House,19358698.54,723.75,26747.77,4,5,7,2026-01-02
+PROP_49891,Rightmove,United Kingdom,London,Camden,Penthouse,12388112.54,815.45,15191.75,4,3,2,2025-02-21
+PROP_570336,Rightmove,United Kingdom,London,Camden,Detached House,12208009.6,688.14,17740.59,5,2,6,2025-12-13
+PROP_834438,Rightmove,United Kingdom,London,Chelsea,Penthouse,7555761.89,542.37,13931.01,1,1,10,2025-05-13
+PROP_194872,Rightmove,United Kingdom,London,Kensington,Duplex,15250481.64,1050.85,14512.52,2,2,3,2025-08-15
+PROP_273352,Rightmove,United Kingdom,London,Canary Wharf,Detached House,11035932.55,431.47,25577.52,2,2,11,2025-08-01
+PROP_403463,Rightmove,United Kingdom,London,Kensington,Penthouse,11283627.13,628.3,17958.98,8,3,9,2025-07-04
+PROP_449766,Rightmove,United Kingdom,London,Chelsea,Penthouse,18011772.41,971.04,18548.95,7,2,4,2026-03-13
+PROP_600019,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,18950006.84,934.53,20277.58,1,4,4,2025-06-23
+PROP_458895,Rightmove,United Kingdom,London,Westminster,Detached House,13359276.97,499.22,26760.3,3,4,1,2025-10-22
+PROP_730399,Rightmove,United Kingdom,London,Westminster,Luxury Flat,13048502.42,853.84,15282.14,5,5,4,2026-02-08
+PROP_70759,Rightmove,United Kingdom,London,Canary Wharf,Detached House,12555456.21,940.59,13348.49,6,6,12,2025-07-19
+PROP_713745,Rightmove,United Kingdom,London,Chelsea,Duplex,11098703.21,635.98,17451.34,5,2,2,2025-01-12
+PROP_308820,Rightmove,United Kingdom,London,Kensington,Duplex,12171741.93,884.12,13767.07,5,2,9,2025-07-10
+PROP_593795,Rightmove,United Kingdom,London,Westminster,Duplex,17622966.45,918.83,19179.79,6,1,1,2025-01-03
+PROP_457918,Rightmove,United Kingdom,London,Camden,Townhouse,11041643.11,449.64,24556.63,4,6,7,2025-12-11
+PROP_45761,Rightmove,United Kingdom,London,Chelsea,Detached House,15689030.79,641.5,24456.79,4,1,10,2025-03-17
+PROP_712066,Rightmove,United Kingdom,London,Camden,Detached House,8269977.3,535.74,15436.55,2,1,1,2025-12-13
+PROP_800421,Rightmove,United Kingdom,London,Canary Wharf,Detached House,17961478.87,780.11,23024.29,7,3,15,2026-01-10
+PROP_977846,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,10000000.0,531.42,18817.51,8,4,1,2025-11-05
+PROP_474856,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,1229141.51,61.79,19892.24,2,3,9,2025-06-05
+PROP_943885,Funda,Netherlands,Amsterdam,De Pijp,Villa,6486620.95,556.22,11661.97,1,2,4,2025-05-26
+PROP_227535,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,5497389.03,399.11,13774.12,8,1,3,2025-06-08
+PROP_835146,Funda,Netherlands,Amsterdam,Zuidas,Villa,5699966.32,589.92,9662.27,6,4,15,2025-11-22
+PROP_170603,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,1193733.34,94.39,12646.82,8,2,10,2026-04-06
+PROP_579961,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,8645190.87,524.38,16486.5,1,6,14,2025-10-20
+PROP_227614,Funda,Netherlands,Amsterdam,De Pijp,Loft,1407076.49,162.96,8634.49,2,6,2,2025-10-19
+PROP_95622,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,946100.92,114.99,8227.68,8,5,0,2026-02-07
+PROP_860870,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,2501962.15,302.2,8279.16,8,1,10,2025-08-12
+PROP_70339,Funda,Netherlands,Amsterdam,Jordaan,Villa,4191470.2,289.04,14501.35,1,5,10,2025-05-27
+PROP_755766,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,3674624.16,239.02,15373.71,5,1,4,2025-06-16
+PROP_582343,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1116843.84,100.66,11095.21,1,3,12,2026-04-28
+PROP_814850,Funda,Netherlands,Amsterdam,Centrum,Canal House,3403700.97,362.83,9380.98,4,2,7,2025-02-01
+PROP_790777,Funda,Netherlands,Amsterdam,De Pijp,Villa,445876.54,54.22,8223.47,7,1,15,2025-10-11
+PROP_280102,Funda,Netherlands,Amsterdam,Zuidas,Canal House,3713121.7,237.57,15629.59,4,5,4,2025-04-15
+PROP_356733,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,10000000.0,674.3,14830.19,3,2,13,2026-05-08
+PROP_814010,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,10000000.0,655.78,15249.02,3,1,1,2025-07-14
+PROP_205591,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,6710301.61,526.56,12743.66,5,1,5,2025-03-04
+PROP_26847,Funda,Netherlands,Amsterdam,Jordaan,Loft,7136868.35,440.95,16185.21,5,4,6,2025-06-25
+PROP_437012,Funda,Netherlands,Amsterdam,De Pijp,Villa,2147385.29,262.18,8190.5,5,2,10,2025-12-21
+PROP_762610,Funda,Netherlands,Amsterdam,Jordaan,Canal House,7929641.06,482.35,16439.6,8,1,0,2026-01-26
+PROP_851892,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,5246121.58,393.2,13342.12,2,6,2,2025-03-05
+PROP_771054,Funda,Netherlands,Amsterdam,De Pijp,Villa,5632106.73,593.03,9497.17,6,4,5,2025-07-09
+PROP_637907,Funda,Netherlands,Amsterdam,Jordaan,Villa,5554301.81,539.35,10298.14,1,2,0,2026-02-22
+PROP_619440,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,10000000.0,678.25,14743.83,4,2,15,2025-11-07
+PROP_975223,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1092774.51,108.78,10045.73,4,6,12,2025-04-10
+PROP_958990,Funda,Netherlands,Amsterdam,Zuidas,Loft,9700391.85,531.07,18265.75,3,1,4,2026-03-28
+PROP_97273,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,7665497.48,694.65,11035.05,4,6,0,2025-10-14
+PROP_369772,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7765834.68,602.82,12882.51,7,6,1,2025-03-04
+PROP_849299,Funda,Netherlands,Amsterdam,Zuidas,Villa,8120860.02,622.73,13040.74,8,3,1,2025-08-18
+PROP_786692,Funda,Netherlands,Amsterdam,De Pijp,Canal House,1506330.1,89.4,16849.33,7,2,10,2026-05-16
+PROP_827135,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,2116371.97,253.93,8334.47,4,2,5,2025-08-10
+PROP_183553,Funda,Netherlands,Amsterdam,Centrum,Loft,923381.9,106.71,8653.19,6,3,7,2025-06-20
+PROP_662083,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,4902519.49,543.13,9026.42,2,5,14,2025-02-01
+PROP_354912,Funda,Netherlands,Amsterdam,Centrum,Villa,4808878.29,555.46,8657.47,6,6,2,2025-11-09
+PROP_760862,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,3723210.22,406.91,9149.96,2,6,1,2026-01-21
+PROP_8219,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,3167312.36,343.7,9215.34,1,4,12,2025-11-30
+PROP_730524,Funda,Netherlands,Amsterdam,Centrum,Villa,1614545.84,106.82,15114.64,6,5,6,2026-03-07
+PROP_543283,Funda,Netherlands,Amsterdam,Jordaan,Loft,2776101.25,271.34,10231.08,3,6,8,2025-03-12
+PROP_472265,Funda,Netherlands,Amsterdam,Centrum,Canal House,5644951.16,376.23,15003.99,3,3,13,2025-10-05
+PROP_255092,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,3632302.95,228.56,15892.12,8,3,10,2025-03-16
+PROP_293216,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,2873951.89,164.95,17423.17,1,4,11,2025-06-24
+PROP_289534,Funda,Netherlands,Amsterdam,Jordaan,Villa,6975784.97,601.59,11595.58,8,5,10,2025-06-18
+PROP_171811,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1947079.16,180.9,10763.29,8,1,15,2025-11-16
+PROP_426799,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,10000000.0,571.84,17487.41,8,6,10,2025-01-04
+PROP_25791,Funda,Netherlands,Amsterdam,De Pijp,Canal House,6290683.16,403.87,15576.01,2,3,0,2026-04-13
+PROP_166132,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2259769.44,223.93,10091.41,1,2,6,2026-03-10
+PROP_281202,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,2734175.16,152.09,17977.35,3,2,0,2025-03-12
+PROP_947265,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,3402857.56,338.38,10056.32,6,2,9,2025-09-27
+PROP_760664,Funda,Netherlands,Amsterdam,Zuidas,Villa,8951134.43,622.01,14390.66,2,1,4,2025-12-22
+PROP_969285,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,10000000.0,647.47,15444.73,7,6,7,2025-05-31
+PROP_179077,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,10000000.0,615.45,16248.27,4,1,8,2025-04-18
+PROP_989391,Funda,Netherlands,Amsterdam,Centrum,Villa,7475618.19,534.62,13983.05,2,2,12,2025-08-26
+PROP_933232,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,6545446.83,510.91,12811.35,6,5,15,2026-04-17
+PROP_731019,Funda,Netherlands,Amsterdam,Zuidas,Canal House,4396843.62,335.63,13100.27,4,2,6,2025-07-13
+PROP_568595,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,1519175.84,124.33,12218.9,6,3,2,2025-10-26
+PROP_435780,Funda,Netherlands,Amsterdam,Centrum,Villa,4083326.16,345.92,11804.25,6,4,14,2025-07-15
+PROP_679677,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,8406513.16,464.16,18111.24,8,2,8,2025-09-20
+PROP_385322,Funda,Netherlands,Amsterdam,Zuidas,Canal House,1366899.55,113.86,12005.09,5,2,3,2025-12-12
+PROP_386311,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,2954101.18,161.78,18259.99,5,6,8,2026-01-02
+PROP_711907,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,7487757.14,581.84,12869.1,1,3,9,2025-10-24
+PROP_351385,Funda,Netherlands,Amsterdam,Centrum,Villa,2638044.31,185.91,14189.9,3,4,7,2026-02-07
+PROP_302966,Funda,Netherlands,Amsterdam,Zuidas,Villa,3982309.21,243.19,16375.3,8,3,2,2025-04-18
+PROP_634572,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,3400999.88,419.04,8116.17,1,3,4,2026-02-19
+PROP_582952,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,7095997.29,491.03,14451.25,4,4,13,2025-06-16
+PROP_175077,Funda,Netherlands,Amsterdam,Zuidas,Canal House,10000000.0,684.87,14601.31,1,2,4,2026-04-13
+PROP_487779,Funda,Netherlands,Amsterdam,Zuidas,Loft,9120778.1,665.88,13697.33,7,4,6,2025-06-18
+PROP_395760,Funda,Netherlands,Amsterdam,Zuidas,Villa,1697921.43,104.37,16268.29,5,1,5,2025-09-08
+PROP_861366,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,1977805.67,223.74,8839.75,4,1,12,2025-01-30
+PROP_180031,Funda,Netherlands,Amsterdam,De Pijp,Loft,5659955.12,606.71,9328.93,1,2,10,2025-10-02
+PROP_773584,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,2005049.68,121.4,16516.06,2,4,6,2025-09-01
+PROP_152475,Funda,Netherlands,Amsterdam,Jordaan,Loft,2986172.48,369.15,8089.32,5,5,6,2025-03-15
+PROP_611751,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,5201951.29,384.69,13522.45,7,5,7,2025-10-22
+PROP_149523,Funda,Netherlands,Amsterdam,Centrum,Canal House,3371408.98,265.61,12693.08,5,6,14,2026-02-26
+PROP_934710,Funda,Netherlands,Amsterdam,Jordaan,Villa,5031944.57,339.46,14823.38,4,2,13,2025-07-21
+PROP_896700,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9005432.81,478.33,18826.82,3,3,9,2026-04-11
+PROP_149374,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,6943050.74,537.34,12921.15,2,3,2,2025-03-26
+PROP_592532,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,1052181.44,83.68,12573.87,1,4,0,2026-01-17
+PROP_952224,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,3235181.86,201.65,16043.55,7,1,0,2025-08-26
+PROP_726904,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,5783012.64,509.53,11349.7,2,1,7,2025-03-24
+PROP_787408,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1887626.83,117.56,16056.71,2,2,9,2025-01-06
+PROP_320046,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,1897279.46,179.09,10594.0,8,3,5,2025-12-23
+PROP_644027,Funda,Netherlands,Amsterdam,Centrum,Loft,4137619.69,330.25,12528.75,2,4,9,2025-04-14
+PROP_968777,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,815041.43,45.67,17846.32,4,2,2,2025-12-15
+PROP_301902,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9186704.96,516.47,17787.49,2,6,5,2025-06-15
+PROP_395750,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,8096474.27,659.38,12278.92,4,5,12,2025-03-30
+PROP_452729,Funda,Netherlands,Amsterdam,Centrum,Villa,2001659.57,176.49,11341.49,6,1,12,2025-11-16
+PROP_666630,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2171908.92,235.52,9221.76,2,2,13,2025-10-02
+PROP_57452,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,10000000.0,687.64,14542.49,5,1,10,2025-12-22
+PROP_931142,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,5628196.63,685.38,8211.79,3,6,10,2026-04-12
+PROP_503991,Funda,Netherlands,Amsterdam,Zuidas,Villa,3052288.65,369.77,8254.56,7,5,7,2026-01-24
+PROP_149511,Funda,Netherlands,Amsterdam,Centrum,Penthouse,6729044.38,538.57,12494.28,4,6,13,2025-06-01
+PROP_434431,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,2575799.69,193.31,13324.71,7,2,1,2026-03-26
+PROP_644077,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,4371171.61,381.38,11461.46,5,3,1,2025-01-13
+PROP_878521,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,4322190.82,393.64,10980.06,6,2,6,2025-12-18
+PROP_614818,Funda,Netherlands,Amsterdam,Jordaan,Loft,2183088.45,157.06,13899.71,7,5,10,2026-05-04
+PROP_315148,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1841831.64,96.02,19181.75,3,2,4,2025-05-01
+PROP_390068,Funda,Netherlands,Amsterdam,Zuidas,Canal House,2449583.73,242.12,10117.23,7,6,14,2025-05-08
+PROP_795653,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,4244731.72,215.79,19670.66,8,6,6,2025-07-23
+PROP_559386,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,6617234.46,371.02,17835.25,8,4,13,2026-02-11
+PROP_28850,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,5306593.11,539.64,9833.58,7,4,2,2026-01-08
+PROP_420660,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,2983823.21,336.65,8863.28,7,4,9,2025-03-11
+PROP_673934,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,604955.56,43.53,13897.44,3,2,0,2026-04-19
+PROP_522884,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,4463025.4,239.69,18619.99,6,4,15,2026-04-17
+PROP_693267,Funda,Netherlands,Amsterdam,Centrum,Villa,8180478.72,671.47,12182.94,3,2,13,2025-12-30
+PROP_380493,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,5478666.42,651.13,8414.09,1,6,12,2026-02-21
+PROP_156950,Funda,Netherlands,Amsterdam,De Pijp,Canal House,9904389.89,662.94,14940.1,3,3,14,2025-12-06
+PROP_678252,Funda,Netherlands,Amsterdam,Jordaan,Canal House,4258909.66,299.45,14222.44,2,1,12,2025-04-07
+PROP_302922,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,5531076.97,367.93,15032.96,7,3,9,2026-01-11
+PROP_699136,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,9787991.04,576.46,16979.48,2,6,11,2025-12-24
+PROP_297358,Funda,Netherlands,Amsterdam,De Pijp,Canal House,1292669.78,99.42,13002.11,3,4,0,2025-05-28
+PROP_833841,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,9752727.94,503.19,19381.8,3,3,5,2025-08-19
+PROP_655144,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,10000000.0,533.69,18737.47,3,2,1,2026-03-23
+PROP_731784,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,772475.18,88.07,8771.15,2,6,5,2025-01-16
+PROP_285135,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,660453.51,41.32,15983.87,8,4,3,2026-02-09
+PROP_420227,Funda,Netherlands,Amsterdam,Centrum,Canal House,3187144.34,284.82,11190.03,4,5,0,2025-09-06
+PROP_116536,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,5311863.15,488.44,10875.16,7,3,11,2025-07-04
+PROP_380083,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,7323370.39,571.17,12821.7,1,3,10,2026-03-04
+PROP_521059,Funda,Netherlands,Amsterdam,Jordaan,Canal House,8959328.93,667.46,13423.02,2,5,8,2025-12-18
+PROP_309373,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,439998.7,37.08,11866.2,7,6,6,2025-11-21
+PROP_827170,Funda,Netherlands,Amsterdam,De Pijp,Canal House,3335837.61,190.32,17527.52,6,6,14,2025-06-28
+PROP_768414,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,3281330.57,230.42,14240.65,2,6,12,2025-10-20
+PROP_309800,Funda,Netherlands,Amsterdam,Zuidas,Canal House,4354295.02,235.4,18497.43,3,4,2,2025-03-28
+PROP_480006,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,3227797.46,196.83,16398.91,8,6,7,2025-02-24
+PROP_825452,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7469532.1,544.6,13715.63,3,3,12,2026-04-05
+PROP_395227,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9350578.95,614.84,15208.15,8,1,10,2025-11-26
+PROP_864032,Funda,Netherlands,Amsterdam,De Pijp,Villa,5183447.86,572.62,9052.16,7,6,13,2025-02-15
+PROP_901285,Funda,Netherlands,Amsterdam,De Pijp,Loft,5225179.7,415.94,12562.34,4,6,3,2026-01-13
+PROP_209363,Funda,Netherlands,Amsterdam,Centrum,Penthouse,7407498.92,598.33,12380.29,1,5,6,2025-12-14
+PROP_458934,Funda,Netherlands,Amsterdam,Jordaan,Loft,731502.3,41.11,17793.78,4,1,12,2025-06-01
+PROP_490704,Funda,Netherlands,Amsterdam,Jordaan,Villa,2169499.2,132.0,16435.6,8,2,9,2025-11-03
+PROP_715011,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,8910599.93,454.67,19597.95,2,3,15,2025-01-31
+PROP_184285,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,5081934.14,500.77,10148.24,4,6,7,2025-09-07
+PROP_94760,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,4433470.81,259.38,17092.57,3,1,12,2025-07-20
+PROP_229618,Funda,Netherlands,Amsterdam,Centrum,Loft,5955242.46,501.24,11881.02,5,3,6,2026-02-10
+PROP_474348,Funda,Netherlands,Amsterdam,Zuidas,Canal House,7859648.12,418.81,18766.62,5,4,5,2025-04-18
+PROP_287328,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,9432275.46,486.08,19404.78,1,3,3,2025-08-07
+PROP_869854,Funda,Netherlands,Amsterdam,Jordaan,Canal House,2440648.72,154.46,15801.17,2,3,15,2025-10-31
+PROP_621891,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,1727541.18,114.0,15153.87,7,2,1,2025-03-30
+PROP_661701,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,2058108.8,218.02,9440.0,8,6,12,2025-02-12
+PROP_44567,Funda,Netherlands,Amsterdam,Centrum,Villa,2207880.91,217.03,10173.16,4,1,15,2025-09-05
+PROP_925428,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,789188.66,77.23,10218.68,3,1,10,2026-02-21
+PROP_984028,Funda,Netherlands,Amsterdam,Centrum,Villa,5043392.39,536.08,9407.91,8,1,3,2026-03-18
+PROP_775997,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,5942750.34,567.34,10474.76,1,5,14,2025-03-24
+PROP_804833,Funda,Netherlands,Amsterdam,Centrum,Loft,9979173.71,686.65,14533.13,5,1,2,2025-08-05
+PROP_358457,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,7734953.07,473.34,16341.22,5,1,9,2025-09-25
+PROP_654979,Funda,Netherlands,Amsterdam,De Pijp,Loft,4613712.76,475.64,9700.01,4,6,3,2026-03-15
+PROP_247375,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,3203862.56,219.47,14598.18,4,5,11,2025-05-14
+PROP_298635,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,6446080.32,663.25,9718.93,7,4,2,2025-04-15
+PROP_122407,Funda,Netherlands,Amsterdam,Centrum,Penthouse,4085298.87,409.82,9968.52,4,6,11,2026-02-25
+PROP_489079,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,9720291.07,676.07,14377.64,7,4,0,2025-12-17
+PROP_838310,Funda,Netherlands,Amsterdam,Zuidas,Villa,5090622.85,276.27,18426.26,2,3,2,2025-04-26
+PROP_136525,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2899097.02,286.79,10108.78,2,4,7,2026-01-08
+PROP_873194,Funda,Netherlands,Amsterdam,De Pijp,Loft,7657031.68,500.8,15289.6,8,1,11,2026-04-05
+PROP_988570,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,3804135.46,264.54,14380.19,6,4,5,2025-11-01
+PROP_244933,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,4774730.23,491.63,9712.04,3,3,0,2025-10-18
+PROP_234509,Funda,Netherlands,Amsterdam,De Pijp,Canal House,6448147.4,486.01,13267.52,6,6,7,2025-07-01
+PROP_514641,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,4096058.8,381.2,10745.17,5,3,13,2025-11-22
+PROP_749375,Funda,Netherlands,Amsterdam,Centrum,Penthouse,4170032.62,457.06,9123.6,7,3,2,2025-10-22
+PROP_592755,Funda,Netherlands,Amsterdam,Centrum,Canal House,9232025.22,572.55,16124.4,5,5,15,2026-04-23
+PROP_472350,Funda,Netherlands,Amsterdam,Jordaan,Villa,5163955.69,304.64,16951.01,8,5,3,2026-01-01
+PROP_117494,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,8156153.31,438.9,18583.17,6,2,1,2025-09-26
+PROP_692780,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,4726006.12,376.6,12549.14,2,3,4,2025-07-11
+PROP_452171,Funda,Netherlands,Amsterdam,Centrum,Penthouse,1829229.73,227.89,8026.81,4,5,3,2025-11-20
+PROP_251029,Funda,Netherlands,Amsterdam,Zuidas,Villa,5709738.22,657.05,8689.96,4,3,1,2025-01-04
+PROP_913450,Funda,Netherlands,Amsterdam,Zuidas,Villa,1362765.37,106.26,12824.82,6,3,11,2025-01-05
+PROP_937254,Funda,Netherlands,Amsterdam,Centrum,Villa,7333635.37,386.85,18957.31,8,2,2,2025-01-04
+PROP_619759,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,4098989.95,283.92,14437.13,4,4,12,2025-05-18
+PROP_620109,Funda,Netherlands,Amsterdam,Centrum,Villa,4984892.98,270.24,18446.17,8,2,4,2025-04-12
+PROP_577777,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,2951025.54,297.37,9923.75,5,1,4,2025-04-12
+PROP_209846,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,4769335.88,400.83,11898.65,2,4,15,2026-01-27
+PROP_382300,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,8149292.28,671.86,12129.45,7,2,3,2025-01-07
+PROP_123944,Funda,Netherlands,Amsterdam,Jordaan,Canal House,5547466.96,323.83,17130.8,6,4,0,2025-05-07
+PROP_939023,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,5976270.38,544.87,10968.25,3,2,8,2026-02-25
+PROP_937979,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,9980397.38,501.26,19910.62,8,6,3,2025-10-30
+PROP_44937,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,793627.38,60.51,13115.64,2,2,12,2025-11-12
+PROP_282788,Funda,Netherlands,Amsterdam,Jordaan,Canal House,4095111.94,384.11,10661.3,1,4,13,2025-08-07
+PROP_671359,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,2898587.03,237.35,12212.29,7,6,1,2025-08-03
+PROP_852068,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,403945.57,35.36,11423.8,1,2,1,2025-05-24
+PROP_113434,Funda,Netherlands,Amsterdam,Zuidas,Canal House,6099026.35,665.64,9162.65,7,2,8,2025-01-07
+PROP_233590,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,5744969.82,529.05,10859.03,6,3,11,2025-05-22
+PROP_321184,Funda,Netherlands,Amsterdam,Jordaan,Loft,1831267.37,121.77,15038.74,7,1,3,2026-04-13
+PROP_285346,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,9053585.2,661.31,13690.38,8,1,2,2026-01-25
+PROP_547894,Funda,Netherlands,Amsterdam,Jordaan,Loft,3009925.75,162.48,18524.9,3,1,4,2026-03-13
+PROP_864409,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,10000000.0,640.71,15607.69,6,4,3,2025-09-15
+PROP_422447,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,4477214.84,227.62,19669.69,5,6,4,2025-04-08
+PROP_620563,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,6843587.8,534.23,12810.19,2,2,14,2025-05-20
+PROP_279619,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,6068334.56,428.75,14153.55,1,2,6,2025-09-15
+PROP_797924,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,4324873.63,505.99,8547.35,5,2,9,2025-05-02
+PROP_370909,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2360683.4,214.84,10988.1,3,3,4,2026-02-26
+PROP_11356,Funda,Netherlands,Amsterdam,Jordaan,Loft,8821624.85,455.73,19357.13,2,1,11,2026-03-29
+PROP_501029,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,4487535.72,250.88,17887.18,3,4,9,2025-04-23
+PROP_822440,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,5716268.81,515.53,11088.14,5,1,3,2025-11-17
+PROP_379106,Funda,Netherlands,Amsterdam,Zuidas,Loft,4586193.16,250.63,18298.66,4,4,7,2025-07-22
+PROP_495269,Funda,Netherlands,Amsterdam,Jordaan,Villa,2851411.52,280.15,10178.16,4,6,13,2025-04-05
+PROP_425707,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,4718140.32,465.63,10132.81,8,6,5,2025-07-21
+PROP_110965,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,4087012.43,318.55,12830.05,2,2,2,2026-01-06
+PROP_48177,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,4913122.89,286.29,17161.35,1,5,3,2025-11-26
+PROP_741683,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,2544583.45,129.85,19596.33,4,1,8,2026-05-06
+PROP_891877,Funda,Netherlands,Amsterdam,Centrum,Loft,2260292.02,169.54,13331.91,6,6,2,2025-03-25
+PROP_985247,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,683853.83,72.16,9476.91,8,2,7,2026-02-27
+PROP_642059,Funda,Netherlands,Amsterdam,Centrum,Canal House,1697406.47,129.32,13125.63,5,1,13,2025-03-17
+PROP_810180,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,6835539.65,491.7,13901.85,4,6,12,2025-02-26
+PROP_929017,Funda,Netherlands,Amsterdam,Jordaan,Canal House,8461462.05,444.44,19038.48,5,3,2,2026-04-04
+PROP_937003,Funda,Netherlands,Amsterdam,Centrum,Loft,3801169.71,387.77,9802.64,3,2,13,2025-12-08
+PROP_760184,Funda,Netherlands,Amsterdam,De Pijp,Loft,2407865.9,215.28,11184.81,5,3,3,2026-04-10
+PROP_792598,Funda,Netherlands,Amsterdam,Centrum,Canal House,4321261.6,247.97,17426.55,3,6,4,2025-09-02
+PROP_689243,Funda,Netherlands,Amsterdam,Centrum,Canal House,2258007.1,131.2,17210.42,7,6,8,2025-06-30
+PROP_530940,Funda,Netherlands,Amsterdam,De Pijp,Villa,8410929.14,435.16,19328.36,7,4,13,2026-04-17
+PROP_635113,Funda,Netherlands,Amsterdam,Jordaan,Villa,4232123.98,393.27,10761.37,7,5,15,2025-02-12
+PROP_828145,Funda,Netherlands,Amsterdam,Zuidas,Villa,1570601.6,191.4,8205.86,4,6,2,2025-10-13
+PROP_699015,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,2659562.08,274.97,9672.19,2,1,11,2025-08-24
+PROP_806616,Funda,Netherlands,Amsterdam,Jordaan,Loft,10000000.0,585.5,17079.42,7,2,6,2025-12-27
+PROP_49058,Funda,Netherlands,Amsterdam,Jordaan,Villa,2507148.17,282.17,8885.24,1,6,13,2026-03-05
+PROP_293206,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,2317595.14,128.95,17972.82,1,2,11,2025-08-02
+PROP_642022,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,6889499.39,532.49,12938.27,8,6,4,2025-06-22
+PROP_888075,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,755213.7,74.9,10082.96,5,1,4,2025-03-24
+PROP_476206,Funda,Netherlands,Amsterdam,Centrum,Villa,5658206.87,403.51,14022.47,7,6,14,2025-12-30
+PROP_935037,Funda,Netherlands,Amsterdam,Jordaan,Villa,4025076.87,381.8,10542.37,3,3,2,2025-11-13
+PROP_888046,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9076311.85,578.01,15702.69,7,2,2,2026-02-28
+PROP_945950,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,2506697.06,164.5,15238.28,1,3,13,2026-03-10
+PROP_24544,Funda,Netherlands,Amsterdam,De Pijp,Canal House,6748303.66,395.14,17078.26,4,3,5,2025-06-08
+PROP_815489,Funda,Netherlands,Amsterdam,Jordaan,Loft,1663468.62,194.82,8538.49,4,6,1,2026-05-21
+PROP_241042,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7544302.66,662.43,11388.83,1,3,2,2025-07-23
+PROP_131578,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,8797095.42,682.61,12887.44,6,4,11,2026-01-15
+PROP_307295,Funda,Netherlands,Amsterdam,Zuidas,Canal House,3498696.26,352.17,9934.68,3,1,12,2025-12-16
+PROP_123703,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,10000000.0,623.13,16048.02,2,6,7,2025-03-24
+PROP_242297,Funda,Netherlands,Amsterdam,Zuidas,Loft,3430340.07,260.45,13170.82,6,4,4,2026-04-02
+PROP_331941,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,6162214.15,672.08,9168.87,4,5,2,2025-01-08
+PROP_855959,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,2975613.85,337.45,8817.94,2,4,3,2025-10-23
+PROP_644012,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,10000000.0,507.59,19700.94,2,1,5,2026-01-26
+PROP_977716,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,1121358.33,61.33,18284.01,2,5,15,2026-04-15
+PROP_560670,Funda,Netherlands,Amsterdam,Jordaan,Villa,3162139.16,283.5,11153.93,6,5,10,2026-03-25
+PROP_622378,Funda,Netherlands,Amsterdam,Centrum,Loft,4634846.98,500.33,9263.58,1,6,7,2025-07-12
+PROP_699173,Funda,Netherlands,Amsterdam,Jordaan,Loft,3984335.68,293.17,13590.53,7,1,7,2025-11-25
+PROP_802332,Funda,Netherlands,Amsterdam,Zuidas,Villa,8981738.32,521.63,17218.6,2,1,5,2025-04-13
+PROP_657892,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,9567737.33,697.63,13714.63,2,3,10,2025-05-23
+PROP_922923,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7009205.37,460.74,15212.93,3,4,4,2025-07-14
+PROP_779967,Funda,Netherlands,Amsterdam,Centrum,Penthouse,1149840.1,70.96,16204.06,7,4,6,2025-05-19
+PROP_55184,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,2913512.41,217.15,13417.05,2,2,2,2025-08-03
+PROP_650845,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,1643666.47,96.47,17038.11,5,2,1,2025-03-26
+PROP_473676,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,5178847.87,391.11,13241.41,7,4,15,2026-04-13
+PROP_14772,Funda,Netherlands,Amsterdam,Zuidas,Villa,1030886.68,86.74,11884.79,1,5,6,2026-05-21
+PROP_952300,Funda,Netherlands,Amsterdam,De Pijp,Canal House,5906145.13,367.13,16087.34,3,4,4,2025-05-15
+PROP_41338,Funda,Netherlands,Amsterdam,Zuidas,Canal House,7794271.58,459.88,16948.49,8,2,14,2025-04-07
+PROP_435165,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,2887479.66,178.73,16155.54,3,5,12,2026-05-05
+PROP_890190,Funda,Netherlands,Amsterdam,Centrum,Penthouse,10000000.0,631.28,15840.83,6,1,9,2025-11-29
+PROP_700254,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,7046405.34,585.74,12029.92,7,3,11,2026-04-20
+PROP_251203,Funda,Netherlands,Amsterdam,Jordaan,Villa,4597600.48,402.58,11420.34,7,3,5,2025-12-04

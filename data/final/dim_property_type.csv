@@ -1,5 +1,10 @@
 property_type_id,property_type
-1,apartment
-2,penthouse
-3,duplex
-4,townhouse
+1,Penthouse
+2,Duplex
+3,Luxury Apartment
+4,Loft
+5,Villa
+6,Detached House
+7,Townhouse
+8,Luxury Flat
+9,Canal House

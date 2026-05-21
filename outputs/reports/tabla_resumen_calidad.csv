@@ -1,5 +1,8 @@
 fuente,registros,variables,nulos_pct,blancos_pct,duplicados,outliers_detectados
-Idealista Madrid,5,13.0,0.0,0.0,0,0
-Rightmove London,5,13.0,0.0,0.0,0,3
-Dataset limpio unificado,10,14.0,0.0,0.0,0,0
-TOTAL / MEDIA,20,13.33,0.0,0.0,0,3
+Idealista Madrid,400,13.0,0.0,0.0,0,0
+Rightmove London,400,13.0,0.0,0.0,0,0
+Funda Amsterdam,250,13.0,0.0,0.0,0,0
+Eurostat HPI,180,4.0,0.0,0.0,0,1
+Dataset limpio unificado,983,13.0,0.0,0.0,0,24
+Eurostat HPI limpio,180,4.0,0.0,0.0,0,1
+TOTAL / MEDIA,2393,10.0,0.0,0.0,0,26

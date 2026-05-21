@@ -1,6 +1,401 @@
-property_id,source,city,country,neighborhood,property_type,price_eur,area_m2,bedrooms,bathrooms,listing_url,scraping_date,price_per_m2
-101,Rightmove,London,United Kingdom,Kensington,Apartment,4200000,180,4,3,rightmove_1,2026-05-21 16:55:36.530507,23333.33
-102,Rightmove,London,United Kingdom,Chelsea,Townhouse,5100000,240,5,5,rightmove_2,2026-05-21 16:55:36.530507,21250.0
-103,Rightmove,London,United Kingdom,Mayfair,Penthouse,8900000,420,7,7,rightmove_3,2026-05-21 16:55:36.530507,21190.48
-104,Rightmove,London,United Kingdom,Notting Hill,Apartment,3400000,160,3,2,rightmove_4,2026-05-21 16:55:36.530507,21250.0
-105,Rightmove,London,United Kingdom,Westminster,Duplex,6200000,310,5,5,rightmove_5,2026-05-21 16:55:36.530507,20000.0
+property_id,source,country,city,neighborhood,property_type,price_eur,area_m2,price_per_m2,bedrooms,bathrooms,floor,scraping_date
+RIG_LON_1,Rightmove,United Kingdom,London,Chelsea,Detached House,5693356.93,216.7,26272.99,6,6,12,2025-01-06
+RIG_LON_2,Rightmove,United Kingdom,London,Chelsea,Duplex,2084360.88,131.47,15854.27,8,4,5,2025-01-26
+RIG_LON_3,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,2879982.59,136.05,21168.56,7,4,7,2025-09-13
+RIG_LON_4,Rightmove,United Kingdom,London,Camden,Townhouse,3420501.06,163.55,20914.1,2,4,0,2025-02-16
+RIG_LON_5,Rightmove,United Kingdom,London,Canary Wharf,Duplex,13981436.89,801.06,17453.67,5,5,6,2026-02-23
+RIG_LON_6,Rightmove,United Kingdom,London,Chelsea,Detached House,16791971.42,872.74,19240.52,6,5,15,2025-12-04
+RIG_LON_7,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,9283631.99,677.58,13701.16,6,3,9,2025-09-10
+RIG_LON_8,Rightmove,United Kingdom,London,Chelsea,Detached House,4783889.41,261.61,18286.34,2,3,6,2026-02-05
+RIG_LON_9,Rightmove,United Kingdom,London,Chelsea,Townhouse,23889747.95,1115.25,21420.98,2,4,1,2025-08-19
+RIG_LON_10,Rightmove,United Kingdom,London,Camden,Duplex,17731329.02,657.57,26964.93,3,4,0,2025-09-05
+RIG_LON_11,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,3571584.62,164.6,21698.57,3,6,4,2026-03-28
+RIG_LON_12,Rightmove,United Kingdom,London,Camden,Detached House,22285361.46,1157.95,19245.53,4,3,12,2025-07-31
+RIG_LON_13,Rightmove,United Kingdom,London,Canary Wharf,Duplex,19183838.59,867.21,22121.33,5,6,10,2025-11-16
+RIG_LON_14,Rightmove,United Kingdom,London,Westminster,Townhouse,10758128.7,627.0,17158.1,3,6,5,2025-06-30
+RIG_LON_15,Rightmove,United Kingdom,London,Canary Wharf,Detached House,12918161.26,1058.49,12204.33,7,6,9,2025-07-15
+RIG_LON_16,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,15117338.84,911.46,16585.85,1,2,8,2026-03-06
+RIG_LON_17,Rightmove,United Kingdom,London,Kensington,Townhouse,10038822.83,459.28,21857.74,4,5,1,2025-10-15
+RIG_LON_18,Rightmove,United Kingdom,London,Chelsea,Duplex,15305151.21,845.34,18105.32,7,2,9,2026-02-08
+RIG_LON_19,Rightmove,United Kingdom,London,Westminster,Duplex,7203713.74,279.57,25767.12,1,1,8,2025-04-26
+RIG_LON_20,Rightmove,United Kingdom,London,Westminster,Duplex,8820134.94,384.78,22922.54,4,6,6,2025-03-30
+RIG_LON_21,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,5354366.32,367.37,14574.86,7,1,13,2025-01-03
+RIG_LON_22,Rightmove,United Kingdom,London,Westminster,Detached House,25000000.0,1117.57,22369.96,3,1,4,2026-03-08
+RIG_LON_23,Rightmove,United Kingdom,London,Westminster,Detached House,13251508.35,651.83,20329.7,6,1,10,2025-03-23
+RIG_LON_24,Rightmove,United Kingdom,London,Camden,Duplex,5201350.87,300.48,17310.14,7,1,11,2025-04-22
+RIG_LON_25,Rightmove,United Kingdom,London,Canary Wharf,Duplex,2812588.67,177.5,15845.57,8,5,0,2026-04-16
+RIG_LON_26,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,6706549.15,485.49,13813.98,1,6,10,2026-01-06
+RIG_LON_27,Rightmove,United Kingdom,London,Westminster,Luxury Flat,13617471.51,607.26,22424.45,6,5,14,2025-02-12
+RIG_LON_28,Rightmove,United Kingdom,London,Kensington,Penthouse,4445245.26,288.45,15410.8,1,6,2,2026-03-04
+RIG_LON_29,Rightmove,United Kingdom,London,Kensington,Penthouse,17561042.62,907.66,19347.6,7,6,2,2025-02-14
+RIG_LON_30,Rightmove,United Kingdom,London,Kensington,Luxury Flat,11443395.4,709.08,16138.37,3,3,2,2025-11-19
+RIG_LON_31,Rightmove,United Kingdom,London,Camden,Detached House,18314682.14,822.66,22262.76,6,1,12,2026-01-23
+RIG_LON_32,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,8242709.79,379.76,21705.05,2,3,3,2026-04-20
+RIG_LON_33,Rightmove,United Kingdom,London,Camden,Detached House,8402326.97,592.46,14182.1,7,6,0,2026-02-13
+RIG_LON_34,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,25000000.0,1150.79,21724.21,3,3,11,2025-01-22
+RIG_LON_35,Rightmove,United Kingdom,London,Kensington,Duplex,10501209.24,396.92,26456.74,7,5,2,2025-07-31
+RIG_LON_36,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,10479224.7,757.5,13833.96,3,2,7,2025-10-18
+RIG_LON_37,Rightmove,United Kingdom,London,Kensington,Duplex,5166571.07,380.7,13571.24,8,6,2,2025-09-07
+RIG_LON_38,Rightmove,United Kingdom,London,Westminster,Townhouse,4238825.05,160.55,26401.9,3,6,7,2025-08-19
+RIG_LON_39,Rightmove,United Kingdom,London,Westminster,Duplex,11912391.22,698.21,17061.33,5,6,4,2025-01-03
+RIG_LON_40,Rightmove,United Kingdom,London,Westminster,Penthouse,8338911.69,364.57,22873.28,4,6,13,2025-09-03
+RIG_LON_41,Rightmove,United Kingdom,London,Camden,Detached House,14807426.37,682.18,21706.04,6,3,15,2026-03-16
+RIG_LON_42,Rightmove,United Kingdom,London,Chelsea,Duplex,22654765.81,885.18,25593.4,4,3,2,2026-02-21
+RIG_LON_43,Rightmove,United Kingdom,London,Canary Wharf,Duplex,22594943.91,1091.78,20695.51,7,5,6,2025-08-30
+RIG_LON_44,Rightmove,United Kingdom,London,Chelsea,Townhouse,2684795.92,199.63,13448.86,7,2,9,2025-01-06
+RIG_LON_45,Rightmove,United Kingdom,London,Chelsea,Duplex,15230786.57,560.38,27179.39,3,5,4,2026-05-11
+RIG_LON_46,Rightmove,United Kingdom,London,Chelsea,Detached House,15004366.89,924.5,16229.71,6,1,7,2025-12-09
+RIG_LON_47,Rightmove,United Kingdom,London,Chelsea,Duplex,13967795.33,1105.18,12638.48,6,4,15,2025-02-22
+RIG_LON_48,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,10274228.91,480.04,21402.86,5,5,5,2025-02-09
+RIG_LON_49,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,8956858.95,452.6,19789.79,7,2,12,2025-11-06
+RIG_LON_50,Rightmove,United Kingdom,London,Kensington,Duplex,5123369.99,310.64,16492.95,3,4,5,2025-03-22
+RIG_LON_51,Rightmove,United Kingdom,London,Westminster,Duplex,7236574.47,523.88,13813.42,2,6,7,2025-09-03
+RIG_LON_52,Rightmove,United Kingdom,London,Chelsea,Duplex,1501998.08,70.93,21175.78,3,6,13,2025-11-19
+RIG_LON_53,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,9382737.05,343.29,27331.81,3,1,5,2025-10-16
+RIG_LON_54,Rightmove,United Kingdom,London,Kensington,Townhouse,14692125.66,745.54,19706.69,2,2,14,2025-07-30
+RIG_LON_55,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,6387581.43,238.72,26757.63,3,5,8,2025-02-05
+RIG_LON_56,Rightmove,United Kingdom,London,Chelsea,Detached House,1702614.95,64.13,26549.43,7,2,3,2026-02-28
+RIG_LON_57,Rightmove,United Kingdom,London,Chelsea,Duplex,25000000.0,1086.36,23012.63,2,2,15,2026-01-21
+RIG_LON_58,Rightmove,United Kingdom,London,Kensington,Luxury Flat,13062346.37,1086.79,12019.2,8,6,4,2025-12-14
+RIG_LON_59,Rightmove,United Kingdom,London,Camden,Duplex,22983609.0,850.78,27014.75,7,3,1,2026-01-29
+RIG_LON_60,Rightmove,United Kingdom,London,Camden,Townhouse,9003507.59,338.97,26561.37,2,4,4,2025-11-03
+RIG_LON_61,Rightmove,United Kingdom,London,Canary Wharf,Detached House,18359577.91,864.07,21247.79,5,2,0,2025-01-04
+RIG_LON_62,Rightmove,United Kingdom,London,Camden,Penthouse,3591611.15,168.1,21365.92,6,4,11,2025-10-02
+RIG_LON_63,Rightmove,United Kingdom,London,Camden,Duplex,18166416.32,1190.53,15259.1,6,5,8,2025-10-13
+RIG_LON_64,Rightmove,United Kingdom,London,Camden,Penthouse,5920204.67,338.11,17509.7,6,5,15,2026-01-12
+RIG_LON_65,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,3952521.39,160.82,24577.3,4,4,5,2025-11-11
+RIG_LON_66,Rightmove,United Kingdom,London,Kensington,Penthouse,19039463.14,974.05,19546.7,7,6,0,2025-02-15
+RIG_LON_67,Rightmove,United Kingdom,London,Kensington,Townhouse,20126001.19,748.43,26890.96,4,3,2,2025-12-02
+RIG_LON_68,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,12425827.9,552.01,22510.15,1,2,15,2025-05-27
+RIG_LON_69,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,18512535.29,823.5,22480.31,4,5,5,2025-02-14
+RIG_LON_70,Rightmove,United Kingdom,London,Westminster,Detached House,6285799.94,513.3,12245.86,6,6,12,2026-04-16
+RIG_LON_71,Rightmove,United Kingdom,London,Kensington,Duplex,6972000.42,446.33,15620.73,5,6,11,2025-08-21
+RIG_LON_72,Rightmove,United Kingdom,London,Camden,Duplex,6779620.66,515.24,13158.18,1,3,5,2026-04-30
+RIG_LON_73,Rightmove,United Kingdom,London,Kensington,Duplex,17791650.65,846.79,21010.7,5,5,8,2026-01-23
+RIG_LON_74,Rightmove,United Kingdom,London,Westminster,Detached House,10904108.25,601.68,18122.77,8,5,0,2025-04-23
+RIG_LON_75,Rightmove,United Kingdom,London,Chelsea,Townhouse,14180990.5,854.45,16596.63,7,3,0,2026-01-19
+RIG_LON_76,Rightmove,United Kingdom,London,Westminster,Luxury Flat,7391803.9,453.34,16305.21,3,4,10,2025-12-16
+RIG_LON_77,Rightmove,United Kingdom,London,Chelsea,Detached House,16052510.67,1053.02,15244.26,4,2,7,2025-11-13
+RIG_LON_78,Rightmove,United Kingdom,London,Westminster,Penthouse,18014734.64,825.56,21821.23,2,1,2,2025-10-05
+RIG_LON_79,Rightmove,United Kingdom,London,Kensington,Detached House,16170904.8,613.65,26352.0,6,5,10,2025-09-09
+RIG_LON_80,Rightmove,United Kingdom,London,Chelsea,Duplex,18604307.77,911.45,20411.77,5,4,7,2026-04-27
+RIG_LON_81,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,11628120.92,573.06,20291.28,6,4,5,2025-01-05
+RIG_LON_82,Rightmove,United Kingdom,London,Kensington,Penthouse,6799404.78,420.88,16155.21,7,5,3,2025-05-02
+RIG_LON_83,Rightmove,United Kingdom,London,Westminster,Detached House,14416136.31,621.08,23211.4,6,3,5,2026-03-14
+RIG_LON_84,Rightmove,United Kingdom,London,Camden,Townhouse,25000000.0,1176.06,21257.42,8,2,4,2026-02-16
+RIG_LON_85,Rightmove,United Kingdom,London,Chelsea,Duplex,3072136.76,213.45,14392.77,7,4,6,2025-04-01
+RIG_LON_86,Rightmove,United Kingdom,London,Camden,Detached House,19987757.09,952.06,20994.22,3,6,10,2025-07-23
+RIG_LON_87,Rightmove,United Kingdom,London,Kensington,Penthouse,11430298.67,595.4,19197.68,1,2,8,2025-07-04
+RIG_LON_88,Rightmove,United Kingdom,London,Westminster,Duplex,11907418.95,520.58,22873.37,5,3,0,2025-10-23
+RIG_LON_89,Rightmove,United Kingdom,London,Canary Wharf,Duplex,10257992.24,420.48,24395.91,3,3,11,2025-02-10
+RIG_LON_90,Rightmove,United Kingdom,London,Camden,Duplex,25000000.0,1047.84,23858.6,5,4,4,2025-11-10
+RIG_LON_91,Rightmove,United Kingdom,London,Canary Wharf,Detached House,9919639.52,441.89,22448.21,2,1,5,2025-11-06
+RIG_LON_92,Rightmove,United Kingdom,London,Camden,Townhouse,6471290.4,523.16,12369.62,8,3,14,2025-12-05
+RIG_LON_93,Rightmove,United Kingdom,London,Westminster,Luxury Flat,4273164.66,163.98,26059.06,4,2,12,2025-01-14
+RIG_LON_94,Rightmove,United Kingdom,London,Camden,Duplex,20418799.88,758.91,26905.43,2,1,8,2025-04-28
+RIG_LON_95,Rightmove,United Kingdom,London,Chelsea,Townhouse,2449447.44,196.63,12457.14,8,6,4,2026-03-17
+RIG_LON_96,Rightmove,United Kingdom,London,Westminster,Detached House,18440669.03,678.57,27175.78,8,5,8,2025-10-30
+RIG_LON_97,Rightmove,United Kingdom,London,Canary Wharf,Detached House,17116325.23,1094.81,15634.06,7,5,9,2025-06-07
+RIG_LON_98,Rightmove,United Kingdom,London,Westminster,Detached House,1380149.11,57.19,24132.7,5,2,9,2025-05-27
+RIG_LON_99,Rightmove,United Kingdom,London,Camden,Duplex,13831272.69,1138.74,12146.12,1,6,15,2025-05-30
+RIG_LON_100,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,4991544.36,262.8,18993.7,1,5,11,2026-01-02
+RIG_LON_101,Rightmove,United Kingdom,London,Camden,Detached House,12908469.02,532.69,24232.61,4,3,2,2026-02-18
+RIG_LON_102,Rightmove,United Kingdom,London,Westminster,Townhouse,17145333.41,1030.77,16633.52,5,4,6,2025-11-13
+RIG_LON_103,Rightmove,United Kingdom,London,Camden,Townhouse,1385712.32,67.4,20559.53,8,2,10,2025-02-22
+RIG_LON_104,Rightmove,United Kingdom,London,Westminster,Townhouse,12750943.82,884.81,14410.94,3,6,14,2025-06-25
+RIG_LON_105,Rightmove,United Kingdom,London,Camden,Townhouse,11290503.16,849.96,13283.57,8,3,14,2025-03-16
+RIG_LON_106,Rightmove,United Kingdom,London,Kensington,Townhouse,4076323.53,254.75,16001.27,7,1,15,2025-01-07
+RIG_LON_107,Rightmove,United Kingdom,London,Kensington,Penthouse,17376926.28,896.95,19373.35,7,4,7,2025-09-24
+RIG_LON_108,Rightmove,United Kingdom,London,Chelsea,Detached House,25000000.0,1126.33,22195.98,7,6,9,2025-10-09
+RIG_LON_109,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,7087958.3,274.53,25818.52,5,4,9,2025-02-27
+RIG_LON_110,Rightmove,United Kingdom,London,Chelsea,Detached House,17645811.78,962.52,18332.93,6,1,5,2026-05-12
+RIG_LON_111,Rightmove,United Kingdom,London,Kensington,Duplex,6883551.62,473.97,14523.18,8,6,4,2025-11-13
+RIG_LON_112,Rightmove,United Kingdom,London,Westminster,Luxury Flat,11981740.6,855.03,14013.24,1,3,4,2026-05-18
+RIG_LON_113,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,1643306.57,69.66,23590.39,8,6,6,2025-01-21
+RIG_LON_114,Rightmove,United Kingdom,London,Camden,Detached House,4639871.22,264.19,17562.63,5,5,15,2025-05-21
+RIG_LON_115,Rightmove,United Kingdom,London,Canary Wharf,Duplex,11656281.43,564.04,20665.7,3,1,4,2026-02-02
+RIG_LON_116,Rightmove,United Kingdom,London,Canary Wharf,Detached House,22154493.28,941.3,23536.06,3,1,11,2025-10-03
+RIG_LON_117,Rightmove,United Kingdom,London,Camden,Penthouse,16758943.65,753.06,22254.46,8,5,4,2025-09-25
+RIG_LON_118,Rightmove,United Kingdom,London,Kensington,Luxury Flat,3780688.7,278.4,13580.06,3,2,1,2026-03-05
+RIG_LON_119,Rightmove,United Kingdom,London,Camden,Detached House,3661959.34,299.93,12209.38,5,1,11,2025-12-02
+RIG_LON_120,Rightmove,United Kingdom,London,Camden,Luxury Flat,12122651.08,461.87,26246.89,8,6,1,2026-02-11
+RIG_LON_121,Rightmove,United Kingdom,London,Kensington,Duplex,11831133.85,893.12,13246.97,5,5,1,2025-09-23
+RIG_LON_122,Rightmove,United Kingdom,London,Kensington,Luxury Flat,4216058.8,263.83,15980.21,4,5,12,2025-04-02
+RIG_LON_123,Rightmove,United Kingdom,London,Canary Wharf,Duplex,21197815.91,930.06,22791.88,7,6,3,2025-08-07
+RIG_LON_124,Rightmove,United Kingdom,London,Kensington,Penthouse,12898990.09,627.92,20542.41,3,5,12,2026-04-23
+RIG_LON_125,Rightmove,United Kingdom,London,Westminster,Townhouse,21904943.5,927.63,23613.88,6,3,13,2025-10-16
+RIG_LON_126,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,12606466.72,460.81,27357.19,7,5,8,2025-01-18
+RIG_LON_127,Rightmove,United Kingdom,London,Westminster,Duplex,20038519.36,1192.39,16805.34,1,5,4,2026-03-15
+RIG_LON_128,Rightmove,United Kingdom,London,Westminster,Luxury Flat,2231197.57,153.9,14497.71,5,5,4,2026-04-01
+RIG_LON_129,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,4033605.53,151.15,26686.11,4,3,9,2026-01-06
+RIG_LON_130,Rightmove,United Kingdom,London,Westminster,Detached House,17354614.55,732.49,23692.63,3,4,3,2025-02-10
+RIG_LON_131,Rightmove,United Kingdom,London,Kensington,Townhouse,25000000.0,1119.43,22332.79,6,4,13,2026-03-11
+RIG_LON_132,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,13688981.98,650.66,21038.61,7,1,9,2025-12-24
+RIG_LON_133,Rightmove,United Kingdom,London,Chelsea,Penthouse,24735619.52,1166.55,21204.08,1,6,12,2025-08-10
+RIG_LON_134,Rightmove,United Kingdom,London,Westminster,Detached House,1794805.45,140.34,12788.98,3,2,10,2025-02-13
+RIG_LON_135,Rightmove,United Kingdom,London,Camden,Duplex,14034284.96,925.15,15169.74,7,6,4,2025-10-20
+RIG_LON_136,Rightmove,United Kingdom,London,Chelsea,Duplex,8092611.7,352.53,22955.81,4,2,2,2025-02-27
+RIG_LON_137,Rightmove,United Kingdom,London,Camden,Detached House,5146307.94,415.45,12387.31,6,3,6,2026-05-21
+RIG_LON_138,Rightmove,United Kingdom,London,Westminster,Duplex,8713558.5,553.74,15735.83,8,5,4,2025-03-21
+RIG_LON_139,Rightmove,United Kingdom,London,Kensington,Luxury Flat,12811287.13,1048.41,12219.73,1,2,4,2025-02-26
+RIG_LON_140,Rightmove,United Kingdom,London,Westminster,Detached House,4370851.46,286.41,15260.82,8,1,10,2025-05-13
+RIG_LON_141,Rightmove,United Kingdom,London,Canary Wharf,Detached House,9805410.62,479.98,20428.79,3,6,0,2025-01-31
+RIG_LON_142,Rightmove,United Kingdom,London,Westminster,Penthouse,14597428.9,801.25,18218.32,5,1,14,2026-03-13
+RIG_LON_143,Rightmove,United Kingdom,London,Westminster,Luxury Flat,8619246.48,312.0,27625.79,1,3,12,2025-06-11
+RIG_LON_144,Rightmove,United Kingdom,London,Camden,Duplex,16716562.2,623.25,26821.6,2,2,6,2025-05-07
+RIG_LON_145,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,20763548.63,904.77,22948.98,6,4,12,2025-06-04
+RIG_LON_146,Rightmove,United Kingdom,London,Chelsea,Duplex,25000000.0,1059.87,23587.8,5,1,8,2025-10-12
+RIG_LON_147,Rightmove,United Kingdom,London,Westminster,Penthouse,14560361.57,803.76,18115.31,3,3,12,2025-11-10
+RIG_LON_148,Rightmove,United Kingdom,London,Chelsea,Detached House,11657689.26,537.57,21685.9,4,5,4,2025-03-09
+RIG_LON_149,Rightmove,United Kingdom,London,Chelsea,Penthouse,22311158.25,840.25,26553.0,4,2,9,2026-04-11
+RIG_LON_150,Rightmove,United Kingdom,London,Chelsea,Duplex,9569352.37,688.73,13894.2,3,3,2,2026-03-27
+RIG_LON_151,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,9942440.56,395.37,25147.18,6,4,13,2026-01-14
+RIG_LON_152,Rightmove,United Kingdom,London,Westminster,Penthouse,5630542.03,258.38,21791.71,4,1,4,2025-10-18
+RIG_LON_153,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,9026813.12,459.95,19625.64,4,2,0,2025-11-06
+RIG_LON_154,Rightmove,United Kingdom,London,Camden,Townhouse,9251788.95,592.29,15620.37,3,4,15,2026-05-12
+RIG_LON_155,Rightmove,United Kingdom,London,Kensington,Townhouse,24693129.74,920.23,26833.65,7,2,6,2026-03-20
+RIG_LON_156,Rightmove,United Kingdom,London,Canary Wharf,Detached House,11707094.75,538.83,21726.88,6,4,7,2026-01-04
+RIG_LON_157,Rightmove,United Kingdom,London,Westminster,Detached House,7183849.88,566.61,12678.65,1,5,3,2025-09-23
+RIG_LON_158,Rightmove,United Kingdom,London,Canary Wharf,Detached House,8199238.46,641.13,12788.73,1,5,12,2025-07-23
+RIG_LON_159,Rightmove,United Kingdom,London,Westminster,Townhouse,8871263.21,385.05,23039.25,8,2,13,2025-08-26
+RIG_LON_160,Rightmove,United Kingdom,London,Camden,Luxury Flat,6186772.42,498.99,12398.59,2,2,4,2026-04-05
+RIG_LON_161,Rightmove,United Kingdom,London,Chelsea,Detached House,20882018.26,843.93,24743.78,2,3,10,2025-03-05
+RIG_LON_162,Rightmove,United Kingdom,London,Kensington,Luxury Flat,3391611.03,143.53,23629.98,8,6,11,2025-11-10
+RIG_LON_163,Rightmove,United Kingdom,London,Chelsea,Detached House,24777293.14,1098.65,22552.49,7,1,5,2026-03-21
+RIG_LON_164,Rightmove,United Kingdom,London,Chelsea,Penthouse,7703710.92,402.49,19140.13,1,4,9,2025-03-02
+RIG_LON_165,Rightmove,United Kingdom,London,Chelsea,Penthouse,1180716.35,59.1,19978.28,1,5,8,2025-11-08
+RIG_LON_166,Rightmove,United Kingdom,London,Camden,Penthouse,12302991.79,569.07,21619.47,4,5,15,2026-03-28
+RIG_LON_167,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,2721929.65,216.24,12587.54,4,1,5,2025-12-08
+RIG_LON_168,Rightmove,United Kingdom,London,Canary Wharf,Duplex,1509405.71,101.63,14851.97,5,3,2,2025-11-09
+RIG_LON_169,Rightmove,United Kingdom,London,Canary Wharf,Duplex,18817793.49,1120.86,16788.71,3,4,11,2025-07-14
+RIG_LON_170,Rightmove,United Kingdom,London,Kensington,Detached House,3284696.28,200.4,16390.7,2,3,15,2025-09-26
+RIG_LON_171,Rightmove,United Kingdom,London,Chelsea,Penthouse,16263162.44,603.63,26942.27,1,1,2,2025-05-28
+RIG_LON_172,Rightmove,United Kingdom,London,Camden,Duplex,22251873.55,1115.81,19942.35,6,3,11,2025-09-12
+RIG_LON_173,Rightmove,United Kingdom,London,Camden,Penthouse,14563832.39,1176.04,12383.79,4,6,9,2025-03-02
+RIG_LON_174,Rightmove,United Kingdom,London,Chelsea,Duplex,9557791.83,430.53,22200.06,7,4,1,2025-04-14
+RIG_LON_175,Rightmove,United Kingdom,London,Westminster,Townhouse,7624585.56,630.23,12098.1,2,3,9,2025-06-24
+RIG_LON_176,Rightmove,United Kingdom,London,Camden,Duplex,9712418.9,426.74,22759.57,1,2,6,2026-02-13
+RIG_LON_177,Rightmove,United Kingdom,London,Kensington,Penthouse,18669610.63,1075.33,17361.75,8,2,14,2025-07-31
+RIG_LON_178,Rightmove,United Kingdom,London,Kensington,Duplex,14574399.78,686.23,21238.36,5,5,10,2026-04-15
+RIG_LON_179,Rightmove,United Kingdom,London,Westminster,Luxury Flat,8973884.15,436.72,20548.37,3,3,0,2025-11-07
+RIG_LON_180,Rightmove,United Kingdom,London,Camden,Penthouse,11579536.86,864.87,13388.76,2,3,10,2025-07-10
+RIG_LON_181,Rightmove,United Kingdom,London,Camden,Townhouse,3113548.8,247.14,12598.32,4,5,9,2025-02-17
+RIG_LON_182,Rightmove,United Kingdom,London,Camden,Duplex,6278197.99,264.69,23719.06,1,4,4,2026-02-02
+RIG_LON_183,Rightmove,United Kingdom,London,Westminster,Penthouse,5132615.61,281.99,18201.41,2,5,4,2025-03-01
+RIG_LON_184,Rightmove,United Kingdom,London,Kensington,Townhouse,5868667.02,429.95,13649.65,1,6,2,2026-01-17
+RIG_LON_185,Rightmove,United Kingdom,London,Westminster,Luxury Flat,6827136.21,415.62,16426.39,5,6,6,2025-08-14
+RIG_LON_186,Rightmove,United Kingdom,London,Kensington,Townhouse,3713050.57,177.2,20954.01,3,2,8,2025-10-05
+RIG_LON_187,Rightmove,United Kingdom,London,Westminster,Duplex,24034545.03,1134.49,21185.33,6,3,4,2025-06-09
+RIG_LON_188,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,1005244.98,78.49,12807.3,8,1,4,2025-02-14
+RIG_LON_189,Rightmove,United Kingdom,London,Camden,Detached House,18980843.34,756.84,25079.07,3,6,14,2025-12-10
+RIG_LON_190,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,3530410.51,152.32,23177.59,8,5,4,2025-06-08
+RIG_LON_191,Rightmove,United Kingdom,London,Camden,Detached House,25000000.0,1039.57,24048.4,4,2,4,2025-12-25
+RIG_LON_192,Rightmove,United Kingdom,London,Westminster,Townhouse,2368840.81,120.5,19658.43,8,4,0,2025-05-25
+RIG_LON_193,Rightmove,United Kingdom,London,Westminster,Duplex,7041917.77,513.57,13711.7,3,5,3,2025-02-06
+RIG_LON_194,Rightmove,United Kingdom,London,Westminster,Duplex,4662181.78,320.55,14544.32,8,4,13,2025-02-03
+RIG_LON_195,Rightmove,United Kingdom,London,Westminster,Penthouse,15232031.07,673.93,22601.8,7,4,10,2026-04-22
+RIG_LON_196,Rightmove,United Kingdom,London,Canary Wharf,Detached House,8047343.2,420.81,19123.46,2,5,14,2025-07-27
+RIG_LON_197,Rightmove,United Kingdom,London,Kensington,Duplex,5494190.96,423.16,12983.72,2,6,12,2025-03-13
+RIG_LON_198,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,12414468.54,568.19,21849.15,3,6,4,2025-04-16
+RIG_LON_199,Rightmove,United Kingdom,London,Westminster,Townhouse,25000000.0,1188.78,21029.96,5,4,11,2026-03-10
+RIG_LON_200,Rightmove,United Kingdom,London,Chelsea,Townhouse,1271490.67,45.97,27659.14,1,3,1,2025-05-25
+RIG_LON_201,Rightmove,United Kingdom,London,Kensington,Penthouse,14189050.42,767.12,18496.52,7,6,12,2025-04-19
+RIG_LON_202,Rightmove,United Kingdom,London,Chelsea,Detached House,19031356.66,1019.04,18675.77,3,2,12,2026-03-23
+RIG_LON_203,Rightmove,United Kingdom,London,Chelsea,Penthouse,4760369.72,211.32,22526.83,1,1,0,2025-03-11
+RIG_LON_204,Rightmove,United Kingdom,London,Kensington,Penthouse,14368464.45,764.85,18785.99,7,4,13,2025-07-16
+RIG_LON_205,Rightmove,United Kingdom,London,Westminster,Penthouse,11249265.76,712.52,15788.0,3,4,0,2025-07-30
+RIG_LON_206,Rightmove,United Kingdom,London,Canary Wharf,Duplex,9684151.86,701.21,13810.63,6,1,1,2025-12-20
+RIG_LON_207,Rightmove,United Kingdom,London,Kensington,Penthouse,10342124.68,649.48,15923.7,5,4,2,2025-12-06
+RIG_LON_208,Rightmove,United Kingdom,London,Kensington,Duplex,13251503.06,1088.64,12172.53,5,5,1,2026-04-09
+RIG_LON_209,Rightmove,United Kingdom,London,Camden,Duplex,19195765.21,1154.47,16627.34,6,4,11,2026-04-18
+RIG_LON_210,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,16037673.28,712.75,22501.12,5,1,15,2026-01-13
+RIG_LON_211,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,4698959.41,191.48,24540.21,5,4,2,2025-11-12
+RIG_LON_212,Rightmove,United Kingdom,London,Westminster,Townhouse,17686789.79,742.41,23823.48,5,1,3,2025-07-09
+RIG_LON_213,Rightmove,United Kingdom,London,Chelsea,Townhouse,16930752.86,968.27,17485.57,4,4,5,2025-03-16
+RIG_LON_214,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,7100606.6,319.83,22201.19,8,4,12,2026-01-11
+RIG_LON_215,Rightmove,United Kingdom,London,Westminster,Luxury Flat,4013361.74,238.58,16821.87,5,1,1,2026-01-21
+RIG_LON_216,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,15377081.59,593.15,25924.44,7,6,12,2026-04-20
+RIG_LON_217,Rightmove,United Kingdom,London,Camden,Detached House,2780940.43,157.46,17661.25,6,5,1,2025-11-09
+RIG_LON_218,Rightmove,United Kingdom,London,Westminster,Townhouse,6586881.38,339.92,19377.74,5,3,3,2025-05-04
+RIG_LON_219,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,4937134.28,406.83,12135.62,6,6,5,2025-07-30
+RIG_LON_220,Rightmove,United Kingdom,London,Kensington,Duplex,7229683.34,451.0,16030.34,2,6,14,2025-11-14
+RIG_LON_221,Rightmove,United Kingdom,London,Kensington,Luxury Flat,22177362.63,862.83,25703.05,4,5,3,2025-12-03
+RIG_LON_222,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,9108080.02,337.6,26978.91,2,6,5,2026-04-18
+RIG_LON_223,Rightmove,United Kingdom,London,Westminster,Detached House,12305915.87,946.74,12998.2,6,3,5,2025-01-31
+RIG_LON_224,Rightmove,United Kingdom,London,Westminster,Townhouse,13340534.9,612.94,21764.83,3,4,2,2025-09-09
+RIG_LON_225,Rightmove,United Kingdom,London,Kensington,Penthouse,15005015.57,1099.06,13652.59,7,2,3,2025-10-20
+RIG_LON_226,Rightmove,United Kingdom,London,Westminster,Detached House,10072446.95,799.06,12605.37,1,4,4,2025-03-19
+RIG_LON_227,Rightmove,United Kingdom,London,Westminster,Detached House,14121546.23,597.25,23644.28,1,5,15,2025-02-05
+RIG_LON_228,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,5154861.04,184.99,27865.62,1,4,15,2025-06-05
+RIG_LON_229,Rightmove,United Kingdom,London,Camden,Luxury Flat,3346751.45,137.93,24264.13,2,3,10,2025-04-01
+RIG_LON_230,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,5348974.76,390.2,13708.29,7,6,6,2025-09-07
+RIG_LON_231,Rightmove,United Kingdom,London,Kensington,Detached House,5758980.58,268.02,21487.13,4,2,1,2025-02-02
+RIG_LON_232,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,20241355.3,1161.39,17428.56,8,5,14,2026-01-05
+RIG_LON_233,Rightmove,United Kingdom,London,Kensington,Detached House,23277495.38,1130.8,20584.98,2,2,14,2025-04-30
+RIG_LON_234,Rightmove,United Kingdom,London,Kensington,Luxury Flat,7502947.41,589.26,12732.83,3,4,0,2025-03-08
+RIG_LON_235,Rightmove,United Kingdom,London,Kensington,Penthouse,12270860.73,571.89,21456.68,1,3,3,2025-02-24
+RIG_LON_236,Rightmove,United Kingdom,London,Kensington,Detached House,14890481.03,537.27,27715.08,4,1,6,2025-06-16
+RIG_LON_237,Rightmove,United Kingdom,London,Kensington,Duplex,16112001.9,927.68,17368.06,3,3,6,2025-03-14
+RIG_LON_238,Rightmove,United Kingdom,London,Camden,Penthouse,6979023.45,551.65,12651.18,6,5,5,2026-03-10
+RIG_LON_239,Rightmove,United Kingdom,London,Canary Wharf,Detached House,3707078.4,138.23,26818.19,3,1,15,2025-10-31
+RIG_LON_240,Rightmove,United Kingdom,London,Westminster,Detached House,5766981.7,283.12,20369.39,8,6,4,2026-04-26
+RIG_LON_241,Rightmove,United Kingdom,London,Chelsea,Duplex,11710307.82,873.36,13408.34,1,5,5,2025-06-04
+RIG_LON_242,Rightmove,United Kingdom,London,Westminster,Detached House,7367182.19,266.65,27628.66,1,5,7,2026-03-18
+RIG_LON_243,Rightmove,United Kingdom,London,Canary Wharf,Duplex,9014156.21,364.27,24745.81,4,4,6,2026-05-11
+RIG_LON_244,Rightmove,United Kingdom,London,Camden,Detached House,1648959.46,107.4,15353.44,3,2,1,2025-11-12
+RIG_LON_245,Rightmove,United Kingdom,London,Camden,Luxury Flat,25000000.0,1113.21,22457.58,2,6,1,2025-03-01
+RIG_LON_246,Rightmove,United Kingdom,London,Kensington,Penthouse,13952352.32,529.02,26373.96,8,5,10,2025-02-26
+RIG_LON_247,Rightmove,United Kingdom,London,Westminster,Penthouse,16302781.43,1049.72,15530.6,2,2,13,2025-09-06
+RIG_LON_248,Rightmove,United Kingdom,London,Kensington,Detached House,4843713.73,250.66,19323.84,3,2,14,2025-07-03
+RIG_LON_249,Rightmove,United Kingdom,London,Westminster,Penthouse,11978404.89,844.5,14184.02,6,2,1,2025-08-23
+RIG_LON_250,Rightmove,United Kingdom,London,Camden,Penthouse,16482770.18,742.2,22207.99,6,2,9,2025-03-29
+RIG_LON_251,Rightmove,United Kingdom,London,Canary Wharf,Duplex,25000000.0,1034.8,24159.26,4,1,13,2026-03-05
+RIG_LON_252,Rightmove,United Kingdom,London,Camden,Townhouse,15431880.95,895.29,17236.74,1,6,13,2026-04-02
+RIG_LON_253,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,2217651.08,91.27,24297.7,1,4,1,2025-09-29
+RIG_LON_254,Rightmove,United Kingdom,London,Camden,Detached House,3937640.97,322.79,12198.77,2,4,15,2026-05-02
+RIG_LON_255,Rightmove,United Kingdom,London,Chelsea,Penthouse,15603881.82,793.02,19676.53,6,3,7,2025-12-27
+RIG_LON_256,Rightmove,United Kingdom,London,Camden,Duplex,17311369.03,936.47,18485.77,1,4,14,2025-07-09
+RIG_LON_257,Rightmove,United Kingdom,London,Camden,Luxury Flat,15827455.88,658.21,24046.21,2,4,10,2025-11-10
+RIG_LON_258,Rightmove,United Kingdom,London,Canary Wharf,Duplex,20499949.3,761.63,26915.89,4,6,2,2026-04-11
+RIG_LON_259,Rightmove,United Kingdom,London,Westminster,Luxury Flat,10404799.47,582.48,17862.93,2,4,11,2025-12-27
+RIG_LON_260,Rightmove,United Kingdom,London,Kensington,Duplex,6302074.66,320.62,19655.9,4,2,10,2025-10-25
+RIG_LON_261,Rightmove,United Kingdom,London,Chelsea,Penthouse,8065451.6,626.62,12871.36,6,3,8,2025-08-20
+RIG_LON_262,Rightmove,United Kingdom,London,Camden,Duplex,12913145.22,567.04,22772.9,2,4,9,2026-05-16
+RIG_LON_263,Rightmove,United Kingdom,London,Kensington,Penthouse,13563281.3,496.24,27332.1,8,1,2,2025-03-26
+RIG_LON_264,Rightmove,United Kingdom,London,Westminster,Luxury Flat,23262085.68,1055.62,22036.42,3,4,4,2026-05-12
+RIG_LON_265,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,9292996.81,557.66,16664.27,8,3,13,2026-03-23
+RIG_LON_266,Rightmove,United Kingdom,London,Chelsea,Duplex,15870164.09,802.4,19778.37,6,4,10,2025-09-29
+RIG_LON_267,Rightmove,United Kingdom,London,Canary Wharf,Detached House,25000000.0,1082.52,23094.26,8,3,4,2025-07-10
+RIG_LON_268,Rightmove,United Kingdom,London,Westminster,Luxury Flat,15310940.48,571.6,26786.11,3,3,9,2025-05-27
+RIG_LON_269,Rightmove,United Kingdom,London,Chelsea,Penthouse,3815479.7,180.04,21192.4,3,2,7,2025-07-09
+RIG_LON_270,Rightmove,United Kingdom,London,Chelsea,Penthouse,22523185.8,1174.62,19174.87,1,6,10,2025-10-01
+RIG_LON_271,Rightmove,United Kingdom,London,Westminster,Luxury Flat,25000000.0,932.64,26805.63,1,4,15,2026-05-12
+RIG_LON_272,Rightmove,United Kingdom,London,Canary Wharf,Duplex,16055685.34,592.37,27104.15,6,6,9,2025-10-21
+RIG_LON_273,Rightmove,United Kingdom,London,Chelsea,Duplex,12665954.53,890.04,14230.77,8,3,3,2025-06-07
+RIG_LON_274,Rightmove,United Kingdom,London,Kensington,Detached House,3379665.02,151.82,22261.0,4,4,11,2025-04-24
+RIG_LON_275,Rightmove,United Kingdom,London,Westminster,Penthouse,22836582.74,827.01,27613.43,1,1,14,2025-09-09
+RIG_LON_276,Rightmove,United Kingdom,London,Westminster,Duplex,9499885.61,504.18,18842.25,1,6,11,2025-01-07
+RIG_LON_277,Rightmove,United Kingdom,London,Westminster,Townhouse,24941904.53,1054.82,23645.65,6,3,14,2025-08-01
+RIG_LON_278,Rightmove,United Kingdom,London,Camden,Townhouse,22489906.3,886.54,25368.18,3,6,13,2025-03-15
+RIG_LON_279,Rightmove,United Kingdom,London,Chelsea,Townhouse,2924511.44,121.36,24097.82,8,5,10,2025-07-29
+RIG_LON_280,Rightmove,United Kingdom,London,Westminster,Detached House,12279892.83,865.34,14190.83,3,5,14,2025-07-15
+RIG_LON_281,Rightmove,United Kingdom,London,Westminster,Duplex,21135989.07,1008.95,20948.5,8,1,9,2025-01-14
+RIG_LON_282,Rightmove,United Kingdom,London,Kensington,Penthouse,3128341.03,188.42,16603.02,5,3,15,2026-04-10
+RIG_LON_283,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,25000000.0,1193.45,20947.67,2,3,15,2025-10-17
+RIG_LON_284,Rightmove,United Kingdom,London,Camden,Townhouse,5846236.76,476.05,12280.72,8,6,3,2025-10-25
+RIG_LON_285,Rightmove,United Kingdom,London,Kensington,Penthouse,8138696.66,457.78,17778.62,6,4,4,2026-05-05
+RIG_LON_286,Rightmove,United Kingdom,London,Westminster,Luxury Flat,9534355.1,638.52,14931.96,5,3,2,2026-01-21
+RIG_LON_287,Rightmove,United Kingdom,London,Chelsea,Duplex,6382141.07,358.54,17800.36,6,3,9,2025-06-30
+RIG_LON_288,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,8300859.11,475.83,17445.01,3,5,9,2025-02-22
+RIG_LON_289,Rightmove,United Kingdom,London,Chelsea,Penthouse,7307297.3,527.03,13865.05,4,2,3,2025-01-09
+RIG_LON_290,Rightmove,United Kingdom,London,Camden,Townhouse,5714837.28,205.56,27801.31,5,6,11,2026-05-12
+RIG_LON_291,Rightmove,United Kingdom,London,Westminster,Penthouse,4309310.5,301.82,14277.75,5,1,3,2025-03-06
+RIG_LON_292,Rightmove,United Kingdom,London,Chelsea,Penthouse,3250535.09,134.78,24117.34,2,4,3,2025-02-25
+RIG_LON_293,Rightmove,United Kingdom,London,Kensington,Duplex,18413894.24,1094.35,16826.33,1,4,3,2025-02-19
+RIG_LON_294,Rightmove,United Kingdom,London,Kensington,Duplex,3476387.3,258.42,13452.47,4,5,6,2026-04-28
+RIG_LON_295,Rightmove,United Kingdom,London,Westminster,Duplex,22519962.56,1032.68,21807.3,6,3,5,2025-02-04
+RIG_LON_296,Rightmove,United Kingdom,London,Kensington,Duplex,12857047.75,871.76,14748.38,1,5,6,2025-01-03
+RIG_LON_297,Rightmove,United Kingdom,London,Kensington,Penthouse,8233319.96,552.81,14893.58,8,3,5,2025-07-14
+RIG_LON_298,Rightmove,United Kingdom,London,Camden,Penthouse,17984258.72,924.43,19454.43,4,4,3,2025-09-11
+RIG_LON_299,Rightmove,United Kingdom,London,Westminster,Townhouse,11880979.62,615.24,19311.13,1,1,10,2025-12-18
+RIG_LON_300,Rightmove,United Kingdom,London,Camden,Penthouse,6696445.44,263.05,25456.93,7,3,13,2025-12-14
+RIG_LON_301,Rightmove,United Kingdom,London,Westminster,Penthouse,16723192.5,821.27,20362.6,1,6,15,2025-03-03
+RIG_LON_302,Rightmove,United Kingdom,London,Chelsea,Detached House,13249457.42,901.35,14699.57,7,6,3,2025-04-12
+RIG_LON_303,Rightmove,United Kingdom,London,Westminster,Penthouse,16670550.9,1013.02,16456.29,7,1,7,2025-10-25
+RIG_LON_304,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,22657579.55,815.01,27800.37,7,3,15,2025-03-17
+RIG_LON_305,Rightmove,United Kingdom,London,Camden,Luxury Flat,8766112.68,619.35,14153.73,2,3,15,2025-01-28
+RIG_LON_306,Rightmove,United Kingdom,London,Kensington,Detached House,12520006.49,743.29,16844.04,1,2,12,2026-01-25
+RIG_LON_307,Rightmove,United Kingdom,London,Kensington,Duplex,7710865.85,384.07,20076.72,8,4,6,2026-02-19
+RIG_LON_308,Rightmove,United Kingdom,London,Canary Wharf,Duplex,20383723.87,1061.55,19201.85,1,1,13,2025-08-15
+RIG_LON_309,Rightmove,United Kingdom,London,Camden,Luxury Flat,20153378.85,1066.83,18890.9,1,2,9,2025-07-19
+RIG_LON_310,Rightmove,United Kingdom,London,Camden,Luxury Flat,11957206.97,594.68,20106.96,8,6,15,2025-09-11
+RIG_LON_311,Rightmove,United Kingdom,London,Canary Wharf,Detached House,1629092.65,115.94,14051.17,6,3,10,2026-02-19
+RIG_LON_312,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,10029960.27,539.51,18590.87,6,4,3,2025-05-06
+RIG_LON_313,Rightmove,United Kingdom,London,Chelsea,Penthouse,18507384.9,1096.5,16878.6,5,5,2,2025-01-11
+RIG_LON_314,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,11404022.49,701.1,16265.9,1,4,13,2025-10-29
+RIG_LON_315,Rightmove,United Kingdom,London,Kensington,Townhouse,8270255.08,417.4,19813.74,7,5,12,2025-04-16
+RIG_LON_316,Rightmove,United Kingdom,London,Westminster,Detached House,9270339.02,464.65,19951.23,6,2,9,2026-02-08
+RIG_LON_317,Rightmove,United Kingdom,London,Kensington,Duplex,1841400.76,99.9,18432.44,4,3,8,2026-01-16
+RIG_LON_318,Rightmove,United Kingdom,London,Kensington,Duplex,7394094.99,360.74,20497.02,2,5,10,2025-06-27
+RIG_LON_319,Rightmove,United Kingdom,London,Kensington,Townhouse,6073819.87,276.09,21999.42,5,4,10,2026-01-26
+RIG_LON_320,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,19483890.04,711.25,27393.87,1,6,5,2025-08-28
+RIG_LON_321,Rightmove,United Kingdom,London,Westminster,Duplex,9310967.26,648.22,14363.9,7,5,1,2025-12-17
+RIG_LON_322,Rightmove,United Kingdom,London,Westminster,Detached House,12645627.4,777.19,16270.96,7,3,2,2025-03-24
+RIG_LON_323,Rightmove,United Kingdom,London,Westminster,Duplex,2806121.34,176.16,15929.39,4,4,7,2025-08-26
+RIG_LON_324,Rightmove,United Kingdom,London,Camden,Duplex,3469362.94,278.3,12466.27,7,4,1,2025-05-23
+RIG_LON_325,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,24986842.48,948.48,26344.09,1,6,15,2025-06-02
+RIG_LON_326,Rightmove,United Kingdom,London,Kensington,Detached House,12828900.44,503.41,25484.0,6,6,2,2025-10-20
+RIG_LON_327,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,7969741.86,319.98,24907.0,5,4,2,2025-10-27
+RIG_LON_328,Rightmove,United Kingdom,London,Camden,Penthouse,2760049.0,168.37,16392.76,7,2,4,2026-03-18
+RIG_LON_329,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,17685571.68,853.06,20731.92,8,5,11,2025-05-07
+RIG_LON_330,Rightmove,United Kingdom,London,Westminster,Penthouse,25000000.0,993.68,25159.0,6,4,11,2026-03-07
+RIG_LON_331,Rightmove,United Kingdom,London,Kensington,Penthouse,7161622.55,402.21,17805.68,5,5,12,2025-03-04
+RIG_LON_332,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,25000000.0,1095.81,22814.17,8,4,0,2025-02-16
+RIG_LON_333,Rightmove,United Kingdom,London,Chelsea,Townhouse,18788412.15,774.21,24267.85,4,2,14,2025-01-18
+RIG_LON_334,Rightmove,United Kingdom,London,Westminster,Luxury Flat,20916889.69,1115.1,18757.86,8,4,13,2025-02-21
+RIG_LON_335,Rightmove,United Kingdom,London,Chelsea,Townhouse,17625855.81,740.44,23804.57,2,3,13,2025-01-15
+RIG_LON_336,Rightmove,United Kingdom,London,Kensington,Penthouse,819949.3,48.55,16888.76,8,6,4,2025-02-26
+RIG_LON_337,Rightmove,United Kingdom,London,Chelsea,Penthouse,18877522.92,960.5,19653.85,3,5,13,2025-05-14
+RIG_LON_338,Rightmove,United Kingdom,London,Chelsea,Duplex,2606801.26,142.48,18295.91,6,3,6,2026-03-04
+RIG_LON_339,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,16574328.55,1092.41,15172.26,1,1,7,2025-03-28
+RIG_LON_340,Rightmove,United Kingdom,London,Kensington,Detached House,3200409.06,217.39,14721.97,7,5,8,2025-01-08
+RIG_LON_341,Rightmove,United Kingdom,London,Canary Wharf,Detached House,2737059.37,181.88,15048.71,8,6,15,2026-02-05
+RIG_LON_342,Rightmove,United Kingdom,London,Westminster,Townhouse,8391316.86,543.16,15449.07,8,4,4,2026-01-08
+RIG_LON_343,Rightmove,United Kingdom,London,Chelsea,Detached House,1233512.65,78.23,15767.77,3,4,4,2025-05-08
+RIG_LON_344,Rightmove,United Kingdom,London,Westminster,Duplex,16183419.16,586.56,27590.39,8,1,0,2025-04-19
+RIG_LON_345,Rightmove,United Kingdom,London,Camden,Detached House,18514032.66,688.33,26897.03,5,1,3,2025-07-01
+RIG_LON_346,Rightmove,United Kingdom,London,Canary Wharf,Duplex,17351248.55,627.75,27640.38,1,1,8,2025-03-09
+RIG_LON_347,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,16326633.57,626.83,26046.35,3,3,5,2025-06-12
+RIG_LON_348,Rightmove,United Kingdom,London,Canary Wharf,Detached House,8131461.74,406.83,19987.37,3,3,3,2025-05-24
+RIG_LON_349,Rightmove,United Kingdom,London,Westminster,Detached House,9400177.05,642.1,14639.74,5,3,8,2025-09-09
+RIG_LON_350,Rightmove,United Kingdom,London,Chelsea,Duplex,2724239.51,216.66,12573.8,8,1,6,2025-12-28
+RIG_LON_351,Rightmove,United Kingdom,London,Camden,Detached House,11639547.9,554.96,20973.67,2,4,1,2025-02-27
+RIG_LON_352,Rightmove,United Kingdom,London,Chelsea,Luxury Flat,15394150.45,1047.74,14692.72,6,1,6,2025-05-20
+RIG_LON_353,Rightmove,United Kingdom,London,Canary Wharf,Duplex,12178344.88,652.55,18662.7,4,5,0,2026-01-29
+RIG_LON_354,Rightmove,United Kingdom,London,Camden,Luxury Flat,15229726.5,831.92,18306.72,6,1,9,2026-05-03
+RIG_LON_355,Rightmove,United Kingdom,London,Kensington,Townhouse,11345559.96,576.57,19677.68,3,1,2,2025-05-18
+RIG_LON_356,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,9981275.95,420.28,23749.11,6,1,14,2025-10-19
+RIG_LON_357,Rightmove,United Kingdom,London,Chelsea,Penthouse,5492418.83,418.26,13131.59,1,6,9,2025-07-15
+RIG_LON_358,Rightmove,United Kingdom,London,Kensington,Detached House,15570363.61,1159.63,13427.01,5,2,7,2025-03-25
+RIG_LON_359,Rightmove,United Kingdom,London,Camden,Detached House,3486537.64,184.3,18917.73,5,6,4,2025-06-08
+RIG_LON_360,Rightmove,United Kingdom,London,Canary Wharf,Penthouse,19953370.5,1006.02,19833.97,6,6,3,2025-09-01
+RIG_LON_361,Rightmove,United Kingdom,London,Westminster,Duplex,18598983.87,981.7,18945.69,7,1,13,2025-01-21
+RIG_LON_362,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,21324040.33,792.99,26890.68,8,6,7,2025-11-28
+RIG_LON_363,Rightmove,United Kingdom,London,Canary Wharf,Luxury Flat,2293386.33,136.46,16806.29,5,4,13,2025-12-17
+RIG_LON_364,Rightmove,United Kingdom,London,Westminster,Penthouse,13774248.88,681.4,20214.63,7,3,1,2025-07-31
+RIG_LON_365,Rightmove,United Kingdom,London,Kensington,Detached House,8843722.2,721.33,12260.3,5,3,8,2025-08-25
+RIG_LON_366,Rightmove,United Kingdom,London,Chelsea,Penthouse,8950256.32,525.77,17023.14,7,1,2,2026-01-23
+RIG_LON_367,Rightmove,United Kingdom,London,Camden,Duplex,8003531.92,288.78,27714.98,5,3,5,2025-12-11
+RIG_LON_368,Rightmove,United Kingdom,London,Kensington,Detached House,3529393.46,179.76,19633.92,1,1,12,2026-03-21
+RIG_LON_369,Rightmove,United Kingdom,London,Canary Wharf,Detached House,19215170.04,842.71,22801.64,5,5,11,2025-02-14
+RIG_LON_370,Rightmove,United Kingdom,London,Chelsea,Penthouse,14822995.06,987.44,15011.54,1,2,3,2025-09-04
+RIG_LON_371,Rightmove,United Kingdom,London,Chelsea,Penthouse,2075696.69,144.44,14370.65,7,6,6,2025-03-01
+RIG_LON_372,Rightmove,United Kingdom,London,Chelsea,Penthouse,1074739.68,67.67,15882.07,8,4,15,2026-03-01
+RIG_LON_373,Rightmove,United Kingdom,London,Camden,Luxury Flat,21393614.28,773.12,27671.79,6,1,3,2026-01-13
+RIG_LON_374,Rightmove,United Kingdom,London,Canary Wharf,Duplex,11953342.09,506.63,23593.83,5,1,15,2026-04-09
+RIG_LON_375,Rightmove,United Kingdom,London,Camden,Penthouse,6930069.23,532.42,13016.17,1,5,0,2025-08-02
+RIG_LON_376,Rightmove,United Kingdom,London,Camden,Luxury Flat,8206664.15,562.82,14581.33,8,5,11,2025-08-29
+RIG_LON_377,Rightmove,United Kingdom,London,Westminster,Detached House,19358698.54,723.75,26747.77,4,5,7,2026-01-02
+RIG_LON_378,Rightmove,United Kingdom,London,Camden,Penthouse,25000000.0,1153.57,21671.85,5,6,12,2026-02-12
+RIG_LON_379,Rightmove,United Kingdom,London,Camden,Penthouse,12388112.54,815.45,15191.75,4,3,2,2025-02-21
+RIG_LON_380,Rightmove,United Kingdom,London,Camden,Detached House,12208009.6,688.14,17740.59,5,2,6,2025-12-13
+RIG_LON_381,Rightmove,United Kingdom,London,Chelsea,Penthouse,7555761.89,542.37,13931.01,1,1,10,2025-05-13
+RIG_LON_382,Rightmove,United Kingdom,London,Westminster,Townhouse,25000000.0,1080.25,23142.79,1,5,8,2025-02-23
+RIG_LON_383,Rightmove,United Kingdom,London,Kensington,Detached House,24391132.1,947.81,25734.2,8,1,3,2025-10-15
+RIG_LON_384,Rightmove,United Kingdom,London,Kensington,Duplex,15250481.64,1050.85,14512.52,2,2,3,2025-08-15
+RIG_LON_385,Rightmove,United Kingdom,London,Canary Wharf,Detached House,11035932.55,431.47,25577.52,2,2,11,2025-08-01
+RIG_LON_386,Rightmove,United Kingdom,London,Kensington,Penthouse,11283627.13,628.3,17958.98,8,3,9,2025-07-04
+RIG_LON_387,Rightmove,United Kingdom,London,Chelsea,Penthouse,18011772.41,971.04,18548.95,7,2,4,2026-03-13
+RIG_LON_388,Rightmove,United Kingdom,London,Canary Wharf,Townhouse,18950006.84,934.53,20277.58,1,4,4,2025-06-23
+RIG_LON_389,Rightmove,United Kingdom,London,Westminster,Detached House,13359276.97,499.22,26760.3,3,4,1,2025-10-22
+RIG_LON_390,Rightmove,United Kingdom,London,Kensington,Duplex,25000000.0,1068.08,23406.49,5,4,12,2025-06-10
+RIG_LON_391,Rightmove,United Kingdom,London,Westminster,Luxury Flat,13048502.42,853.84,15282.14,5,5,4,2026-02-08
+RIG_LON_392,Rightmove,United Kingdom,London,Canary Wharf,Detached House,12555456.21,940.59,13348.49,6,6,12,2025-07-19
+RIG_LON_393,Rightmove,United Kingdom,London,Chelsea,Duplex,11098703.21,635.98,17451.34,5,2,2,2025-01-12
+RIG_LON_394,Rightmove,United Kingdom,London,Kensington,Duplex,12171741.93,884.12,13767.07,5,2,9,2025-07-10
+RIG_LON_395,Rightmove,United Kingdom,London,Westminster,Duplex,17622966.45,918.83,19179.79,6,1,1,2025-01-03
+RIG_LON_396,Rightmove,United Kingdom,London,Camden,Townhouse,11041643.11,449.64,24556.63,4,6,7,2025-12-11
+RIG_LON_397,Rightmove,United Kingdom,London,Chelsea,Detached House,15689030.79,641.5,24456.79,4,1,10,2025-03-17
+RIG_LON_398,Rightmove,United Kingdom,London,Camden,Detached House,8269977.3,535.74,15436.55,2,1,1,2025-12-13
+RIG_LON_399,Rightmove,United Kingdom,London,Canary Wharf,Detached House,17961478.87,780.11,23024.29,7,3,15,2026-01-10
+RIG_LON_400,Rightmove,United Kingdom,London,Camden,Penthouse,16627799.7,604.9,27488.51,3,5,4,2025-09-28

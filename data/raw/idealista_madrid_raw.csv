@@ -1,6 +1,401 @@
-property_id,source,city,country,neighborhood,property_type,price_eur,area_m2,bedrooms,bathrooms,listing_url,scraping_date,price_per_m2
-1,Idealista,Madrid,Spain,Salamanca,Apartment,1250000,120,3,2,idealista_1,2026-05-21 16:55:36.527799,10416.67
-2,Idealista,Madrid,Spain,Chamberí,Penthouse,2400000,210,5,4,idealista_2,2026-05-21 16:55:36.527799,11428.57
-3,Idealista,Madrid,Spain,Salamanca,Apartment,1800000,150,4,3,idealista_3,2026-05-21 16:55:36.527799,12000.0
-4,Idealista,Madrid,Spain,Chamartín,Duplex,3200000,300,6,5,idealista_4,2026-05-21 16:55:36.527799,10666.67
-5,Idealista,Madrid,Spain,Retiro,Apartment,950000,95,2,2,idealista_5,2026-05-21 16:55:36.527799,10000.0
+property_id,source,country,city,neighborhood,property_type,price_eur,area_m2,price_per_m2,bedrooms,bathrooms,floor,scraping_date
+IDE_MAD_1,Idealista,Spain,Madrid,Salamanca,Penthouse,1300392.0,160.0,8127.45,5,2,7,2025-10-30
+IDE_MAD_2,Idealista,Spain,Madrid,Chamartin,Penthouse,3270556.4,240.09,13622.21,1,1,6,2025-12-26
+IDE_MAD_3,Idealista,Spain,Madrid,Centro,Duplex,5205394.5,736.11,7071.49,4,4,8,2025-06-24
+IDE_MAD_4,Idealista,Spain,Madrid,Retiro,Luxury Apartment,965730.27,119.76,8063.88,4,3,3,2026-02-18
+IDE_MAD_5,Idealista,Spain,Madrid,Salamanca,Duplex,8299545.89,514.75,16123.45,2,4,2,2025-10-23
+IDE_MAD_6,Idealista,Spain,Madrid,Chamberi,Penthouse,12572541.21,704.84,17837.44,1,6,7,2025-07-14
+IDE_MAD_7,Idealista,Spain,Madrid,Retiro,Duplex,4965932.97,345.53,14371.93,6,2,11,2025-02-06
+IDE_MAD_8,Idealista,Spain,Madrid,Centro,Luxury Apartment,6551724.13,366.33,17884.76,4,2,14,2025-12-17
+IDE_MAD_9,Idealista,Spain,Madrid,Retiro,Penthouse,2975306.95,385.0,7728.07,4,1,10,2026-01-03
+IDE_MAD_10,Idealista,Spain,Madrid,Retiro,Luxury Apartment,1390246.92,162.87,8535.93,8,4,14,2026-01-18
+IDE_MAD_11,Idealista,Spain,Madrid,Centro,Duplex,7649885.21,897.7,8521.65,7,3,7,2026-03-17
+IDE_MAD_12,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6210528.4,552.91,11232.44,3,6,13,2025-05-09
+IDE_MAD_13,Idealista,Spain,Madrid,Centro,Penthouse,7529985.51,700.99,10741.93,2,6,8,2025-01-02
+IDE_MAD_14,Idealista,Spain,Madrid,Retiro,Loft,8109601.2,788.65,10282.89,3,5,3,2025-03-20
+IDE_MAD_15,Idealista,Spain,Madrid,Retiro,Luxury Apartment,3787694.51,460.2,8230.54,1,5,10,2026-02-18
+IDE_MAD_16,Idealista,Spain,Madrid,Retiro,Luxury Apartment,1403234.99,113.66,12345.9,1,2,2,2026-01-28
+IDE_MAD_17,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4447101.84,267.95,16596.76,8,5,5,2025-10-04
+IDE_MAD_18,Idealista,Spain,Madrid,Chamberi,Villa,5290199.14,416.77,12693.33,7,6,11,2025-06-23
+IDE_MAD_19,Idealista,Spain,Madrid,Salamanca,Loft,682829.03,46.18,14786.25,4,5,7,2025-01-17
+IDE_MAD_20,Idealista,Spain,Madrid,Retiro,Penthouse,1896045.62,224.24,8455.43,4,3,15,2025-08-31
+IDE_MAD_21,Idealista,Spain,Madrid,Chamberi,Duplex,1448438.84,123.36,11741.56,7,2,3,2026-01-09
+IDE_MAD_22,Idealista,Spain,Madrid,Salamanca,Penthouse,5975209.88,728.51,8201.96,1,4,10,2025-03-13
+IDE_MAD_23,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,6201219.91,792.06,7829.23,5,4,7,2025-02-20
+IDE_MAD_24,Idealista,Spain,Madrid,Salamanca,Loft,2258965.41,183.03,12342.05,1,1,7,2025-01-31
+IDE_MAD_25,Idealista,Spain,Madrid,Chamberi,Duplex,13084712.62,836.81,15636.42,1,4,8,2026-01-10
+IDE_MAD_26,Idealista,Spain,Madrid,Centro,Duplex,1736715.17,227.22,7643.32,3,2,9,2025-06-10
+IDE_MAD_27,Idealista,Spain,Madrid,Salamanca,Penthouse,1119156.9,88.92,12586.11,8,5,5,2025-02-04
+IDE_MAD_28,Idealista,Spain,Madrid,Chamberi,Duplex,4000225.25,537.87,7437.16,2,5,7,2025-10-17
+IDE_MAD_29,Idealista,Spain,Madrid,Centro,Villa,2784707.28,245.27,11353.64,5,2,10,2025-06-11
+IDE_MAD_30,Idealista,Spain,Madrid,Salamanca,Penthouse,962504.1,103.0,9344.7,8,5,3,2026-03-28
+IDE_MAD_31,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,5408665.74,416.84,12975.4,6,3,5,2026-02-18
+IDE_MAD_32,Idealista,Spain,Madrid,Centro,Penthouse,7184257.46,847.48,8477.2,5,6,3,2025-10-11
+IDE_MAD_33,Idealista,Spain,Madrid,Chamberi,Villa,6071783.43,657.15,9239.57,5,5,6,2025-09-08
+IDE_MAD_34,Idealista,Spain,Madrid,Retiro,Penthouse,5637963.74,753.24,7484.95,2,6,13,2026-05-17
+IDE_MAD_35,Idealista,Spain,Madrid,Retiro,Luxury Apartment,4299506.05,522.38,8230.61,8,5,13,2025-03-18
+IDE_MAD_36,Idealista,Spain,Madrid,Centro,Penthouse,3055814.35,409.62,7460.12,6,5,4,2026-05-13
+IDE_MAD_37,Idealista,Spain,Madrid,Salamanca,Villa,6681950.64,613.56,10890.46,4,6,7,2026-05-14
+IDE_MAD_38,Idealista,Spain,Madrid,Centro,Luxury Apartment,5803720.15,798.02,7272.65,4,2,5,2026-04-22
+IDE_MAD_39,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,2740108.67,368.99,7425.97,5,2,3,2026-04-16
+IDE_MAD_40,Idealista,Spain,Madrid,Chamartin,Villa,550659.35,60.35,9124.43,5,2,7,2026-05-11
+IDE_MAD_41,Idealista,Spain,Madrid,Retiro,Villa,7009758.6,847.74,8268.76,7,6,10,2026-05-08
+IDE_MAD_42,Idealista,Spain,Madrid,Retiro,Penthouse,5278827.98,337.29,15650.71,2,5,13,2025-03-01
+IDE_MAD_43,Idealista,Spain,Madrid,Chamartin,Loft,4559001.82,649.56,7018.6,4,3,1,2026-01-04
+IDE_MAD_44,Idealista,Spain,Madrid,Chamberi,Villa,8233935.01,575.91,14297.26,7,1,10,2025-09-17
+IDE_MAD_45,Idealista,Spain,Madrid,Retiro,Duplex,4708080.93,516.79,9110.24,6,4,9,2026-01-19
+IDE_MAD_46,Idealista,Spain,Madrid,Chamberi,Loft,2805987.97,301.33,9312.01,5,4,0,2025-06-14
+IDE_MAD_47,Idealista,Spain,Madrid,Chamartin,Duplex,7544788.07,479.61,15731.09,8,6,6,2025-12-04
+IDE_MAD_48,Idealista,Spain,Madrid,Salamanca,Villa,5858791.53,618.6,9471.05,6,1,7,2025-05-06
+IDE_MAD_49,Idealista,Spain,Madrid,Chamartin,Loft,10693635.35,802.08,13332.38,2,4,13,2025-07-24
+IDE_MAD_50,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,3615876.92,228.2,15845.21,1,1,13,2025-10-13
+IDE_MAD_51,Idealista,Spain,Madrid,Chamberi,Penthouse,10972371.5,614.12,17866.82,8,2,14,2026-04-02
+IDE_MAD_52,Idealista,Spain,Madrid,Chamartin,Loft,12320258.44,811.6,15180.21,7,5,14,2025-05-07
+IDE_MAD_53,Idealista,Spain,Madrid,Retiro,Loft,2168418.17,276.15,7852.32,8,6,7,2025-06-13
+IDE_MAD_54,Idealista,Spain,Madrid,Centro,Penthouse,3206796.49,369.41,8680.86,3,2,7,2025-06-19
+IDE_MAD_55,Idealista,Spain,Madrid,Centro,Duplex,8534157.87,756.29,11284.24,7,1,6,2025-01-11
+IDE_MAD_56,Idealista,Spain,Madrid,Centro,Duplex,3350940.38,296.81,11289.85,8,1,11,2025-10-03
+IDE_MAD_57,Idealista,Spain,Madrid,Centro,Loft,3390610.72,274.72,12342.06,4,4,7,2026-02-13
+IDE_MAD_58,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,11078331.97,819.96,13510.82,8,2,0,2025-08-08
+IDE_MAD_59,Idealista,Spain,Madrid,Chamberi,Duplex,3414423.01,366.03,9328.26,3,1,8,2025-07-14
+IDE_MAD_60,Idealista,Spain,Madrid,Retiro,Duplex,732947.68,56.67,12933.61,5,1,15,2025-11-29
+IDE_MAD_61,Idealista,Spain,Madrid,Salamanca,Penthouse,10538436.76,761.74,13834.69,1,2,6,2025-02-28
+IDE_MAD_62,Idealista,Spain,Madrid,Centro,Luxury Apartment,6187818.53,699.53,8845.68,8,6,8,2025-02-28
+IDE_MAD_63,Idealista,Spain,Madrid,Chamberi,Villa,11184891.24,838.84,13333.76,2,5,0,2026-04-28
+IDE_MAD_64,Idealista,Spain,Madrid,Chamberi,Penthouse,10492493.76,771.25,13604.53,4,1,9,2026-02-05
+IDE_MAD_65,Idealista,Spain,Madrid,Salamanca,Villa,1402411.91,99.3,14122.98,7,6,11,2025-09-08
+IDE_MAD_66,Idealista,Spain,Madrid,Salamanca,Duplex,7643572.48,648.29,11790.36,6,6,14,2025-05-19
+IDE_MAD_67,Idealista,Spain,Madrid,Centro,Loft,10139672.24,750.13,13517.22,8,4,13,2026-04-24
+IDE_MAD_68,Idealista,Spain,Madrid,Salamanca,Villa,7606541.6,530.07,14350.07,8,2,14,2025-06-16
+IDE_MAD_69,Idealista,Spain,Madrid,Chamberi,Duplex,5550440.27,332.69,16683.52,4,3,8,2025-01-06
+IDE_MAD_70,Idealista,Spain,Madrid,Centro,Luxury Apartment,7059073.77,460.18,15339.81,2,2,13,2025-09-09
+IDE_MAD_71,Idealista,Spain,Madrid,Chamartin,Penthouse,3752298.88,387.78,9676.36,2,3,7,2025-10-11
+IDE_MAD_72,Idealista,Spain,Madrid,Centro,Villa,4107705.47,342.56,11991.2,7,6,10,2026-01-05
+IDE_MAD_73,Idealista,Spain,Madrid,Chamberi,Villa,3096469.59,204.73,15124.65,2,6,5,2026-01-25
+IDE_MAD_74,Idealista,Spain,Madrid,Centro,Loft,3233535.52,294.77,10969.69,5,1,6,2025-03-06
+IDE_MAD_75,Idealista,Spain,Madrid,Retiro,Penthouse,5367159.2,639.78,8389.07,1,5,9,2026-03-23
+IDE_MAD_76,Idealista,Spain,Madrid,Salamanca,Loft,3780926.4,418.8,9028.0,5,4,15,2025-09-02
+IDE_MAD_77,Idealista,Spain,Madrid,Salamanca,Penthouse,7802806.79,536.24,14550.96,7,4,2,2026-05-01
+IDE_MAD_78,Idealista,Spain,Madrid,Retiro,Penthouse,8813412.35,561.43,15698.15,4,1,13,2025-08-19
+IDE_MAD_79,Idealista,Spain,Madrid,Chamartin,Villa,8543752.19,564.28,15140.98,7,3,1,2025-04-19
+IDE_MAD_80,Idealista,Spain,Madrid,Retiro,Penthouse,4489228.56,514.71,8721.86,3,2,5,2025-08-29
+IDE_MAD_81,Idealista,Spain,Madrid,Retiro,Penthouse,7731191.73,644.57,11994.34,4,3,9,2026-02-08
+IDE_MAD_82,Idealista,Spain,Madrid,Centro,Luxury Apartment,10144030.63,596.97,16992.53,7,1,7,2025-03-26
+IDE_MAD_83,Idealista,Spain,Madrid,Retiro,Loft,4583662.6,443.08,10345.0,5,4,3,2025-10-04
+IDE_MAD_84,Idealista,Spain,Madrid,Chamartin,Duplex,12137787.36,804.9,15079.87,2,5,1,2025-04-28
+IDE_MAD_85,Idealista,Spain,Madrid,Centro,Loft,8244671.69,535.57,15394.2,1,6,8,2025-08-15
+IDE_MAD_86,Idealista,Spain,Madrid,Retiro,Luxury Apartment,10629252.37,873.39,12170.11,7,6,15,2025-02-23
+IDE_MAD_87,Idealista,Spain,Madrid,Chamberi,Villa,5008111.81,287.87,17397.13,7,6,15,2025-08-21
+IDE_MAD_88,Idealista,Spain,Madrid,Salamanca,Villa,10007863.35,874.36,11445.93,5,3,3,2025-12-03
+IDE_MAD_89,Idealista,Spain,Madrid,Centro,Duplex,6728660.56,485.86,13848.97,7,1,6,2025-01-27
+IDE_MAD_90,Idealista,Spain,Madrid,Chamberi,Villa,9835004.38,797.53,12331.83,3,3,14,2026-02-14
+IDE_MAD_91,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4132547.98,514.94,8025.3,5,5,0,2025-08-25
+IDE_MAD_92,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,4779963.42,477.63,10007.67,8,6,9,2025-05-05
+IDE_MAD_93,Idealista,Spain,Madrid,Chamartin,Loft,10485619.23,832.81,12590.65,3,4,6,2025-05-22
+IDE_MAD_94,Idealista,Spain,Madrid,Chamartin,Villa,10771412.26,664.4,16212.24,5,1,9,2026-03-20
+IDE_MAD_95,Idealista,Spain,Madrid,Chamberi,Duplex,6678988.74,514.65,12977.73,8,3,10,2025-04-07
+IDE_MAD_96,Idealista,Spain,Madrid,Chamberi,Loft,1177969.07,77.54,15191.76,7,2,13,2025-07-17
+IDE_MAD_97,Idealista,Spain,Madrid,Chamberi,Duplex,13092481.95,787.94,16616.09,1,2,10,2025-08-22
+IDE_MAD_98,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,1627523.99,104.35,15596.78,7,6,4,2025-07-23
+IDE_MAD_99,Idealista,Spain,Madrid,Salamanca,Villa,5843811.82,790.25,7394.89,7,3,15,2026-04-17
+IDE_MAD_100,Idealista,Spain,Madrid,Retiro,Luxury Apartment,10230323.78,693.92,14742.8,2,4,3,2025-06-03
+IDE_MAD_101,Idealista,Spain,Madrid,Salamanca,Penthouse,4087953.91,348.28,11737.55,6,1,9,2025-12-16
+IDE_MAD_102,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,5528469.03,572.95,9649.13,3,1,12,2025-08-25
+IDE_MAD_103,Idealista,Spain,Madrid,Retiro,Duplex,9852490.34,813.06,12117.79,5,6,0,2025-02-07
+IDE_MAD_104,Idealista,Spain,Madrid,Chamartin,Villa,7620002.15,633.67,12025.19,5,6,13,2026-03-13
+IDE_MAD_105,Idealista,Spain,Madrid,Chamartin,Penthouse,9575164.41,534.34,17919.61,4,4,11,2025-12-04
+IDE_MAD_106,Idealista,Spain,Madrid,Chamartin,Villa,12509016.07,823.13,15196.89,1,5,1,2026-02-02
+IDE_MAD_107,Idealista,Spain,Madrid,Chamberi,Loft,8296971.68,573.97,14455.41,6,2,6,2026-03-06
+IDE_MAD_108,Idealista,Spain,Madrid,Chamberi,Penthouse,756515.25,68.69,11013.47,1,3,14,2025-06-17
+IDE_MAD_109,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,8465022.19,496.53,17048.36,4,2,11,2026-02-27
+IDE_MAD_110,Idealista,Spain,Madrid,Chamartin,Villa,7420719.79,868.09,8548.33,6,1,14,2026-01-06
+IDE_MAD_111,Idealista,Spain,Madrid,Chamartin,Loft,670532.53,51.97,12902.3,6,1,12,2025-12-11
+IDE_MAD_112,Idealista,Spain,Madrid,Retiro,Loft,1274804.29,133.18,9572.04,7,6,11,2025-10-15
+IDE_MAD_113,Idealista,Spain,Madrid,Retiro,Loft,7100114.96,586.45,12106.94,4,6,2,2025-03-01
+IDE_MAD_114,Idealista,Spain,Madrid,Chamberi,Penthouse,1340250.41,139.86,9582.8,1,3,15,2025-07-09
+IDE_MAD_115,Idealista,Spain,Madrid,Centro,Duplex,10425257.25,756.98,13772.17,3,4,3,2025-12-20
+IDE_MAD_116,Idealista,Spain,Madrid,Retiro,Luxury Apartment,6277581.6,775.69,8092.9,8,4,7,2026-05-16
+IDE_MAD_117,Idealista,Spain,Madrid,Retiro,Penthouse,15000000.0,872.66,17188.82,7,3,6,2025-04-19
+IDE_MAD_118,Idealista,Spain,Madrid,Centro,Penthouse,13940622.54,890.39,15656.76,1,3,7,2025-10-11
+IDE_MAD_119,Idealista,Spain,Madrid,Chamberi,Loft,11065979.48,705.96,15675.08,4,2,10,2026-05-19
+IDE_MAD_120,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4432131.27,608.51,7283.58,5,2,3,2025-05-02
+IDE_MAD_121,Idealista,Spain,Madrid,Centro,Villa,1289416.03,85.06,15158.9,1,2,8,2025-09-01
+IDE_MAD_122,Idealista,Spain,Madrid,Chamartin,Villa,6378346.68,853.06,7477.02,2,4,7,2025-09-24
+IDE_MAD_123,Idealista,Spain,Madrid,Retiro,Duplex,8985108.21,768.68,11689.01,1,1,15,2025-08-16
+IDE_MAD_124,Idealista,Spain,Madrid,Salamanca,Penthouse,967329.62,96.49,10025.18,6,5,4,2025-06-16
+IDE_MAD_125,Idealista,Spain,Madrid,Chamartin,Loft,1844214.93,125.29,14719.57,5,4,13,2026-01-29
+IDE_MAD_126,Idealista,Spain,Madrid,Centro,Luxury Apartment,6374305.37,395.88,16101.61,7,4,7,2025-06-10
+IDE_MAD_127,Idealista,Spain,Madrid,Chamartin,Villa,7704863.86,630.67,12216.95,5,3,4,2025-08-10
+IDE_MAD_128,Idealista,Spain,Madrid,Salamanca,Villa,7173276.68,544.36,13177.45,3,5,1,2025-07-01
+IDE_MAD_129,Idealista,Spain,Madrid,Chamartin,Penthouse,4573738.18,342.42,13357.1,5,5,9,2025-04-25
+IDE_MAD_130,Idealista,Spain,Madrid,Salamanca,Villa,8475333.51,533.73,15879.44,6,1,8,2026-02-24
+IDE_MAD_131,Idealista,Spain,Madrid,Centro,Loft,649387.45,64.9,10005.97,1,5,8,2025-06-29
+IDE_MAD_132,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,1512641.89,99.84,15150.66,3,5,12,2025-09-29
+IDE_MAD_133,Idealista,Spain,Madrid,Chamberi,Duplex,1828760.11,175.37,10428.01,7,4,10,2025-11-02
+IDE_MAD_134,Idealista,Spain,Madrid,Salamanca,Penthouse,6191843.28,619.61,9993.13,3,2,1,2025-08-15
+IDE_MAD_135,Idealista,Spain,Madrid,Chamartin,Villa,2768836.26,336.85,8219.79,4,5,3,2025-09-27
+IDE_MAD_136,Idealista,Spain,Madrid,Retiro,Penthouse,500000.0,46.61,10727.31,4,4,1,2025-05-11
+IDE_MAD_137,Idealista,Spain,Madrid,Retiro,Villa,6095901.52,682.43,8932.64,2,1,15,2025-09-14
+IDE_MAD_138,Idealista,Spain,Madrid,Centro,Villa,5005588.09,415.15,12057.3,2,4,1,2025-08-08
+IDE_MAD_139,Idealista,Spain,Madrid,Centro,Duplex,6845558.91,388.33,17628.2,7,3,3,2025-08-24
+IDE_MAD_140,Idealista,Spain,Madrid,Retiro,Penthouse,4729404.67,414.68,11404.95,7,1,7,2026-01-17
+IDE_MAD_141,Idealista,Spain,Madrid,Retiro,Luxury Apartment,3953970.0,479.02,8254.29,6,2,2,2025-06-28
+IDE_MAD_142,Idealista,Spain,Madrid,Retiro,Luxury Apartment,2317365.5,260.13,8908.49,4,1,4,2025-02-08
+IDE_MAD_143,Idealista,Spain,Madrid,Chamberi,Duplex,10451942.2,625.77,16702.53,8,5,14,2025-06-15
+IDE_MAD_144,Idealista,Spain,Madrid,Retiro,Luxury Apartment,4342127.71,420.3,10331.02,8,1,15,2025-09-17
+IDE_MAD_145,Idealista,Spain,Madrid,Salamanca,Villa,1436100.33,88.93,16148.66,8,4,1,2026-03-14
+IDE_MAD_146,Idealista,Spain,Madrid,Salamanca,Loft,6789048.62,426.77,15907.98,7,4,1,2025-09-01
+IDE_MAD_147,Idealista,Spain,Madrid,Centro,Luxury Apartment,11954588.34,737.43,16211.15,1,4,3,2025-11-27
+IDE_MAD_148,Idealista,Spain,Madrid,Chamberi,Penthouse,11389348.19,892.25,12764.75,4,6,14,2026-04-15
+IDE_MAD_149,Idealista,Spain,Madrid,Retiro,Duplex,10148867.55,718.74,14120.36,7,3,1,2025-12-14
+IDE_MAD_150,Idealista,Spain,Madrid,Chamartin,Villa,4380955.37,326.69,13410.13,5,6,4,2026-05-11
+IDE_MAD_151,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,6297896.62,593.4,10613.24,2,3,12,2026-04-30
+IDE_MAD_152,Idealista,Spain,Madrid,Centro,Penthouse,578934.47,55.68,10397.53,7,5,11,2026-01-28
+IDE_MAD_153,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,1732467.2,106.36,16288.71,4,2,4,2026-03-04
+IDE_MAD_154,Idealista,Spain,Madrid,Centro,Penthouse,4814798.31,553.63,8696.78,6,5,4,2025-11-16
+IDE_MAD_155,Idealista,Spain,Madrid,Chamberi,Duplex,5976008.03,621.67,9612.83,1,4,11,2026-01-19
+IDE_MAD_156,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,7466461.42,817.42,9134.18,4,3,15,2025-08-14
+IDE_MAD_157,Idealista,Spain,Madrid,Chamartin,Villa,13923471.94,870.99,15985.8,7,5,13,2025-05-09
+IDE_MAD_158,Idealista,Spain,Madrid,Salamanca,Duplex,8261565.0,651.8,12675.0,6,5,3,2025-03-24
+IDE_MAD_159,Idealista,Spain,Madrid,Retiro,Duplex,8063071.29,853.92,9442.42,3,4,2,2025-01-14
+IDE_MAD_160,Idealista,Spain,Madrid,Chamartin,Penthouse,4355240.39,242.77,17939.78,7,5,11,2026-04-22
+IDE_MAD_161,Idealista,Spain,Madrid,Salamanca,Villa,4624042.39,286.72,16127.38,3,2,1,2025-12-28
+IDE_MAD_162,Idealista,Spain,Madrid,Chamartin,Duplex,4209450.01,260.09,16184.59,1,1,0,2025-09-28
+IDE_MAD_163,Idealista,Spain,Madrid,Chamartin,Penthouse,1393289.56,144.79,9622.83,5,2,9,2025-02-02
+IDE_MAD_164,Idealista,Spain,Madrid,Salamanca,Duplex,6713715.22,657.95,10203.99,1,6,7,2025-10-20
+IDE_MAD_165,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,1255649.03,98.2,12786.65,2,5,11,2025-10-11
+IDE_MAD_166,Idealista,Spain,Madrid,Salamanca,Duplex,8651457.65,883.69,9790.15,8,1,12,2025-06-26
+IDE_MAD_167,Idealista,Spain,Madrid,Chamberi,Penthouse,3678124.38,342.98,10724.02,6,2,1,2025-12-17
+IDE_MAD_168,Idealista,Spain,Madrid,Chamartin,Duplex,11397581.03,655.8,17379.66,3,2,2,2026-02-10
+IDE_MAD_169,Idealista,Spain,Madrid,Chamberi,Penthouse,11554705.27,890.65,12973.34,6,3,12,2025-04-08
+IDE_MAD_170,Idealista,Spain,Madrid,Retiro,Villa,4342537.97,274.97,15792.77,1,6,10,2025-08-14
+IDE_MAD_171,Idealista,Spain,Madrid,Chamartin,Villa,5612929.58,355.92,15770.2,3,4,15,2025-08-06
+IDE_MAD_172,Idealista,Spain,Madrid,Salamanca,Duplex,2492211.54,316.24,7880.76,3,5,9,2025-11-05
+IDE_MAD_173,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,1266476.44,76.43,16570.41,8,3,14,2025-05-21
+IDE_MAD_174,Idealista,Spain,Madrid,Salamanca,Penthouse,7365547.86,859.4,8570.57,7,3,5,2025-01-18
+IDE_MAD_175,Idealista,Spain,Madrid,Chamberi,Penthouse,6130743.0,351.45,17444.14,4,6,11,2025-08-19
+IDE_MAD_176,Idealista,Spain,Madrid,Retiro,Villa,5636161.8,495.34,11378.37,8,1,4,2025-02-28
+IDE_MAD_177,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6849072.24,825.65,8295.37,8,5,12,2025-04-20
+IDE_MAD_178,Idealista,Spain,Madrid,Centro,Villa,1224777.56,156.73,7814.57,8,2,3,2025-02-14
+IDE_MAD_179,Idealista,Spain,Madrid,Retiro,Villa,13199174.62,806.55,16364.98,2,5,9,2025-11-23
+IDE_MAD_180,Idealista,Spain,Madrid,Chamberi,Villa,6926284.84,721.18,9604.1,4,1,6,2025-10-21
+IDE_MAD_181,Idealista,Spain,Madrid,Retiro,Duplex,1098602.03,96.54,11379.76,3,5,2,2025-07-30
+IDE_MAD_182,Idealista,Spain,Madrid,Chamartin,Loft,7079133.63,592.41,11949.72,2,2,10,2026-03-26
+IDE_MAD_183,Idealista,Spain,Madrid,Centro,Loft,7819368.91,472.46,16550.33,3,2,13,2025-06-05
+IDE_MAD_184,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,5856992.75,337.58,17349.94,6,6,7,2025-05-09
+IDE_MAD_185,Idealista,Spain,Madrid,Chamberi,Loft,4563030.64,568.41,8027.71,5,2,9,2025-10-25
+IDE_MAD_186,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,5481888.87,749.7,7312.11,6,5,1,2025-10-23
+IDE_MAD_187,Idealista,Spain,Madrid,Retiro,Luxury Apartment,6508947.03,468.31,13898.8,7,5,0,2025-09-05
+IDE_MAD_188,Idealista,Spain,Madrid,Chamberi,Duplex,5524807.32,632.21,8738.88,5,4,2,2025-06-24
+IDE_MAD_189,Idealista,Spain,Madrid,Centro,Luxury Apartment,11057149.16,671.41,16468.55,6,6,10,2025-07-09
+IDE_MAD_190,Idealista,Spain,Madrid,Centro,Loft,4386195.96,441.17,9942.19,2,3,7,2025-05-29
+IDE_MAD_191,Idealista,Spain,Madrid,Chamartin,Loft,12773658.58,739.59,17271.27,7,2,5,2025-03-23
+IDE_MAD_192,Idealista,Spain,Madrid,Chamartin,Loft,3737495.18,467.74,7990.54,8,4,9,2025-05-04
+IDE_MAD_193,Idealista,Spain,Madrid,Chamberi,Loft,3827097.04,281.97,13572.71,6,1,1,2025-05-27
+IDE_MAD_194,Idealista,Spain,Madrid,Centro,Penthouse,11985719.18,798.91,15002.59,2,4,4,2025-07-25
+IDE_MAD_195,Idealista,Spain,Madrid,Salamanca,Loft,1295332.66,103.24,12546.81,4,3,9,2025-11-16
+IDE_MAD_196,Idealista,Spain,Madrid,Centro,Penthouse,6444639.53,360.95,17854.66,3,1,12,2025-03-15
+IDE_MAD_197,Idealista,Spain,Madrid,Chamberi,Loft,671744.3,78.96,8507.4,7,5,1,2025-08-22
+IDE_MAD_198,Idealista,Spain,Madrid,Chamberi,Loft,3216944.41,179.75,17896.77,3,3,10,2025-06-22
+IDE_MAD_199,Idealista,Spain,Madrid,Centro,Loft,3220933.51,448.41,7183.01,8,6,9,2025-08-02
+IDE_MAD_200,Idealista,Spain,Madrid,Centro,Villa,3813798.14,268.36,14211.5,1,5,15,2025-04-27
+IDE_MAD_201,Idealista,Spain,Madrid,Salamanca,Loft,2420799.92,167.09,14488.0,8,2,12,2025-02-26
+IDE_MAD_202,Idealista,Spain,Madrid,Chamberi,Penthouse,2484591.96,170.23,14595.5,8,3,13,2026-04-17
+IDE_MAD_203,Idealista,Spain,Madrid,Chamartin,Penthouse,9391693.27,522.36,17979.35,3,5,6,2026-05-05
+IDE_MAD_204,Idealista,Spain,Madrid,Chamberi,Duplex,10278084.25,621.25,16544.2,6,5,11,2025-05-16
+IDE_MAD_205,Idealista,Spain,Madrid,Centro,Duplex,4925767.12,519.95,9473.54,4,2,8,2025-05-28
+IDE_MAD_206,Idealista,Spain,Madrid,Chamberi,Duplex,9020161.07,522.02,17279.34,6,4,11,2025-10-21
+IDE_MAD_207,Idealista,Spain,Madrid,Centro,Duplex,2945405.27,289.79,10163.93,7,3,4,2025-08-15
+IDE_MAD_208,Idealista,Spain,Madrid,Retiro,Duplex,12347798.11,842.4,14657.88,4,2,8,2025-10-28
+IDE_MAD_209,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,4460284.96,588.63,7577.4,1,6,7,2025-02-21
+IDE_MAD_210,Idealista,Spain,Madrid,Chamberi,Penthouse,4142917.35,450.61,9194.02,3,4,15,2025-11-27
+IDE_MAD_211,Idealista,Spain,Madrid,Salamanca,Penthouse,7367102.52,825.38,8925.71,4,5,1,2026-04-16
+IDE_MAD_212,Idealista,Spain,Madrid,Salamanca,Duplex,5638940.36,794.0,7101.94,8,2,9,2026-05-19
+IDE_MAD_213,Idealista,Spain,Madrid,Retiro,Villa,6821306.71,804.76,8476.2,8,6,15,2026-02-19
+IDE_MAD_214,Idealista,Spain,Madrid,Salamanca,Villa,8905933.69,597.53,14904.58,3,6,14,2025-06-01
+IDE_MAD_215,Idealista,Spain,Madrid,Centro,Luxury Apartment,9516395.89,751.21,12668.09,3,5,12,2025-04-05
+IDE_MAD_216,Idealista,Spain,Madrid,Chamberi,Duplex,2534638.12,264.28,9590.73,6,2,0,2025-06-04
+IDE_MAD_217,Idealista,Spain,Madrid,Centro,Loft,4884932.98,635.78,7683.37,1,3,11,2025-07-27
+IDE_MAD_218,Idealista,Spain,Madrid,Centro,Villa,3357693.68,356.09,9429.34,2,6,9,2025-08-21
+IDE_MAD_219,Idealista,Spain,Madrid,Centro,Villa,10938023.56,691.32,15821.94,7,6,15,2025-12-15
+IDE_MAD_220,Idealista,Spain,Madrid,Centro,Penthouse,1415272.02,107.17,13205.86,8,5,11,2025-09-16
+IDE_MAD_221,Idealista,Spain,Madrid,Chamberi,Loft,9190033.31,774.86,11860.25,3,2,10,2025-09-08
+IDE_MAD_222,Idealista,Spain,Madrid,Salamanca,Loft,1775597.25,153.47,11569.67,8,1,14,2025-12-11
+IDE_MAD_223,Idealista,Spain,Madrid,Retiro,Penthouse,9104337.97,681.39,13361.42,7,3,0,2025-02-02
+IDE_MAD_224,Idealista,Spain,Madrid,Centro,Penthouse,2576301.75,286.9,8979.79,2,4,1,2026-01-09
+IDE_MAD_225,Idealista,Spain,Madrid,Chamartin,Villa,5268011.49,363.06,14510.03,7,4,12,2025-12-01
+IDE_MAD_226,Idealista,Spain,Madrid,Retiro,Penthouse,7425186.51,494.8,15006.44,3,5,12,2025-01-12
+IDE_MAD_227,Idealista,Spain,Madrid,Retiro,Duplex,7273402.28,748.09,9722.63,7,5,12,2026-04-25
+IDE_MAD_228,Idealista,Spain,Madrid,Salamanca,Penthouse,1911597.19,246.97,7740.2,7,5,0,2025-12-11
+IDE_MAD_229,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,2267957.04,241.53,9389.96,1,4,14,2025-09-15
+IDE_MAD_230,Idealista,Spain,Madrid,Retiro,Luxury Apartment,4055550.86,243.74,16638.84,6,5,10,2025-07-31
+IDE_MAD_231,Idealista,Spain,Madrid,Retiro,Villa,6766238.1,578.35,11699.21,1,5,5,2026-04-28
+IDE_MAD_232,Idealista,Spain,Madrid,Chamartin,Loft,4027848.95,391.1,10298.77,6,6,13,2025-05-04
+IDE_MAD_233,Idealista,Spain,Madrid,Chamberi,Villa,9240144.62,523.65,17645.65,3,4,1,2025-05-05
+IDE_MAD_234,Idealista,Spain,Madrid,Retiro,Luxury Apartment,13595080.54,833.11,16318.47,6,6,2,2025-04-08
+IDE_MAD_235,Idealista,Spain,Madrid,Salamanca,Villa,7177023.44,791.31,9069.8,7,6,1,2025-10-14
+IDE_MAD_236,Idealista,Spain,Madrid,Chamberi,Duplex,6186848.96,863.04,7168.67,4,3,9,2025-03-02
+IDE_MAD_237,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,7995023.31,514.79,15530.65,4,4,7,2025-07-03
+IDE_MAD_238,Idealista,Spain,Madrid,Retiro,Villa,6977662.74,440.76,15830.98,6,5,15,2025-06-13
+IDE_MAD_239,Idealista,Spain,Madrid,Chamberi,Villa,4941256.66,523.77,9434.02,6,4,1,2026-04-24
+IDE_MAD_240,Idealista,Spain,Madrid,Centro,Loft,1989143.34,208.72,9530.2,7,3,4,2025-10-09
+IDE_MAD_241,Idealista,Spain,Madrid,Retiro,Villa,6571042.39,436.31,15060.49,8,6,15,2025-10-07
+IDE_MAD_242,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,5953907.01,761.6,7817.63,1,5,1,2025-01-04
+IDE_MAD_243,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,601268.05,47.86,12563.06,4,1,4,2025-12-08
+IDE_MAD_244,Idealista,Spain,Madrid,Centro,Duplex,5735853.14,497.7,11524.72,8,1,0,2025-10-02
+IDE_MAD_245,Idealista,Spain,Madrid,Retiro,Penthouse,10591510.44,829.52,12768.24,7,2,3,2025-05-10
+IDE_MAD_246,Idealista,Spain,Madrid,Retiro,Villa,10422367.7,865.0,12048.98,7,1,11,2025-06-03
+IDE_MAD_247,Idealista,Spain,Madrid,Salamanca,Penthouse,4458453.18,364.37,12236.06,2,4,12,2025-02-12
+IDE_MAD_248,Idealista,Spain,Madrid,Chamartin,Duplex,13851429.58,809.52,17110.67,6,5,3,2025-12-21
+IDE_MAD_249,Idealista,Spain,Madrid,Centro,Duplex,6338966.1,628.61,10084.1,5,1,2,2025-04-02
+IDE_MAD_250,Idealista,Spain,Madrid,Retiro,Penthouse,10194072.82,686.94,14839.83,4,5,4,2025-03-25
+IDE_MAD_251,Idealista,Spain,Madrid,Centro,Luxury Apartment,5602429.09,370.11,15137.2,7,6,10,2025-02-10
+IDE_MAD_252,Idealista,Spain,Madrid,Centro,Villa,1877866.97,239.64,7836.2,1,1,13,2025-11-01
+IDE_MAD_253,Idealista,Spain,Madrid,Chamartin,Villa,8534826.29,713.85,11956.05,1,6,8,2025-07-12
+IDE_MAD_254,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,10781780.52,726.33,14844.19,7,1,9,2025-12-31
+IDE_MAD_255,Idealista,Spain,Madrid,Chamberi,Duplex,2062296.6,118.71,17372.56,6,3,3,2025-02-22
+IDE_MAD_256,Idealista,Spain,Madrid,Chamberi,Penthouse,6558651.52,519.01,12636.85,3,4,14,2025-10-11
+IDE_MAD_257,Idealista,Spain,Madrid,Salamanca,Loft,3278235.14,290.99,11265.8,6,4,0,2026-04-09
+IDE_MAD_258,Idealista,Spain,Madrid,Chamberi,Loft,1849918.09,185.77,9958.11,3,6,12,2025-03-27
+IDE_MAD_259,Idealista,Spain,Madrid,Chamartin,Villa,7824287.32,713.09,10972.37,7,3,15,2025-09-11
+IDE_MAD_260,Idealista,Spain,Madrid,Centro,Loft,1107291.35,156.52,7074.44,4,4,3,2025-07-14
+IDE_MAD_261,Idealista,Spain,Madrid,Retiro,Duplex,4068370.43,298.37,13635.32,6,4,4,2025-04-01
+IDE_MAD_262,Idealista,Spain,Madrid,Chamartin,Villa,13609068.32,872.28,15601.72,5,6,15,2026-02-07
+IDE_MAD_263,Idealista,Spain,Madrid,Chamartin,Villa,7142214.69,549.32,13001.92,2,5,6,2026-05-03
+IDE_MAD_264,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,11724542.31,744.31,15752.23,8,3,2,2025-11-21
+IDE_MAD_265,Idealista,Spain,Madrid,Retiro,Luxury Apartment,10271863.18,655.1,15679.84,5,6,4,2025-09-03
+IDE_MAD_266,Idealista,Spain,Madrid,Centro,Duplex,7887689.5,720.02,10954.82,7,5,1,2025-11-23
+IDE_MAD_267,Idealista,Spain,Madrid,Salamanca,Penthouse,2515008.15,183.05,13739.46,4,6,11,2025-11-28
+IDE_MAD_268,Idealista,Spain,Madrid,Chamartin,Villa,1178362.85,124.8,9442.01,7,1,0,2025-12-19
+IDE_MAD_269,Idealista,Spain,Madrid,Centro,Luxury Apartment,6343427.46,438.23,14475.11,8,3,12,2025-01-13
+IDE_MAD_270,Idealista,Spain,Madrid,Chamartin,Penthouse,2425519.06,139.82,17347.44,5,4,2,2025-08-22
+IDE_MAD_271,Idealista,Spain,Madrid,Chamberi,Loft,1852201.64,123.96,14941.93,8,3,15,2025-01-23
+IDE_MAD_272,Idealista,Spain,Madrid,Salamanca,Penthouse,5481508.49,622.34,8807.9,6,6,3,2025-03-31
+IDE_MAD_273,Idealista,Spain,Madrid,Centro,Luxury Apartment,8254228.35,864.28,9550.41,6,5,13,2025-11-24
+IDE_MAD_274,Idealista,Spain,Madrid,Chamartin,Duplex,5002270.88,426.63,11725.08,1,6,6,2025-05-23
+IDE_MAD_275,Idealista,Spain,Madrid,Salamanca,Loft,3250725.62,354.58,9167.82,2,5,5,2025-09-08
+IDE_MAD_276,Idealista,Spain,Madrid,Centro,Villa,5898858.76,544.82,10827.17,7,5,12,2026-02-21
+IDE_MAD_277,Idealista,Spain,Madrid,Retiro,Loft,2977180.96,309.34,9624.3,2,6,4,2025-03-14
+IDE_MAD_278,Idealista,Spain,Madrid,Centro,Duplex,6226777.25,534.33,11653.43,7,5,4,2026-04-16
+IDE_MAD_279,Idealista,Spain,Madrid,Chamberi,Loft,1680564.65,160.66,10460.38,3,4,9,2025-07-03
+IDE_MAD_280,Idealista,Spain,Madrid,Salamanca,Duplex,10913102.0,868.89,12559.82,3,2,12,2025-08-01
+IDE_MAD_281,Idealista,Spain,Madrid,Chamartin,Duplex,6828629.56,724.46,9425.82,3,1,0,2025-05-28
+IDE_MAD_282,Idealista,Spain,Madrid,Chamberi,Duplex,5296958.75,532.53,9946.78,8,5,3,2025-10-05
+IDE_MAD_283,Idealista,Spain,Madrid,Salamanca,Duplex,9549422.95,672.95,14190.39,4,4,3,2025-01-17
+IDE_MAD_284,Idealista,Spain,Madrid,Chamartin,Villa,6501583.69,784.15,8291.25,6,1,14,2026-01-13
+IDE_MAD_285,Idealista,Spain,Madrid,Centro,Villa,11402934.99,714.97,15948.83,7,2,4,2025-09-30
+IDE_MAD_286,Idealista,Spain,Madrid,Retiro,Loft,2871192.6,288.83,9940.77,3,3,9,2025-12-14
+IDE_MAD_287,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6596220.66,785.66,8395.77,7,1,8,2025-12-31
+IDE_MAD_288,Idealista,Spain,Madrid,Retiro,Luxury Apartment,5342231.02,536.59,9955.89,7,4,4,2025-11-21
+IDE_MAD_289,Idealista,Spain,Madrid,Salamanca,Duplex,5331313.93,431.04,12368.49,5,6,11,2026-03-10
+IDE_MAD_290,Idealista,Spain,Madrid,Salamanca,Duplex,2665687.49,227.33,11726.07,6,1,12,2026-03-01
+IDE_MAD_291,Idealista,Spain,Madrid,Retiro,Villa,12087022.46,717.94,16835.7,3,5,15,2025-11-17
+IDE_MAD_292,Idealista,Spain,Madrid,Chamartin,Penthouse,7748140.27,432.61,17910.22,2,2,14,2026-04-11
+IDE_MAD_293,Idealista,Spain,Madrid,Chamberi,Villa,5881343.13,602.95,9754.28,3,3,2,2025-03-26
+IDE_MAD_294,Idealista,Spain,Madrid,Salamanca,Duplex,3274425.16,409.14,8003.19,5,6,7,2025-02-09
+IDE_MAD_295,Idealista,Spain,Madrid,Chamberi,Loft,703128.84,47.99,14651.57,4,5,14,2025-08-05
+IDE_MAD_296,Idealista,Spain,Madrid,Chamberi,Duplex,1853411.21,116.82,15865.53,2,2,12,2025-06-03
+IDE_MAD_297,Idealista,Spain,Madrid,Chamberi,Duplex,1304180.45,98.83,13196.2,3,6,4,2025-06-29
+IDE_MAD_298,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,6200364.56,779.57,7953.57,7,5,14,2025-10-29
+IDE_MAD_299,Idealista,Spain,Madrid,Chamartin,Villa,3566389.07,253.1,14090.83,7,3,4,2026-01-05
+IDE_MAD_300,Idealista,Spain,Madrid,Centro,Villa,2963359.02,216.68,13676.2,1,6,9,2025-11-27
+IDE_MAD_301,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,3467297.01,247.33,14018.91,8,4,3,2025-01-07
+IDE_MAD_302,Idealista,Spain,Madrid,Retiro,Villa,5141003.53,354.25,14512.36,3,4,13,2026-01-30
+IDE_MAD_303,Idealista,Spain,Madrid,Salamanca,Penthouse,3867643.37,225.54,17148.37,2,1,8,2025-05-27
+IDE_MAD_304,Idealista,Spain,Madrid,Centro,Duplex,1430726.07,110.89,12902.21,7,6,12,2025-06-08
+IDE_MAD_305,Idealista,Spain,Madrid,Salamanca,Loft,5255861.56,376.03,13977.24,4,2,10,2025-02-03
+IDE_MAD_306,Idealista,Spain,Madrid,Retiro,Duplex,1344491.58,114.14,11779.32,4,1,7,2025-06-08
+IDE_MAD_307,Idealista,Spain,Madrid,Chamberi,Penthouse,5662341.51,643.29,8802.16,1,6,4,2026-02-05
+IDE_MAD_308,Idealista,Spain,Madrid,Retiro,Luxury Apartment,5562730.96,670.32,8298.62,6,2,8,2025-08-08
+IDE_MAD_309,Idealista,Spain,Madrid,Retiro,Loft,5888974.43,466.69,12618.6,2,3,2,2025-03-27
+IDE_MAD_310,Idealista,Spain,Madrid,Retiro,Luxury Apartment,2978325.26,236.43,12597.07,5,1,3,2025-05-06
+IDE_MAD_311,Idealista,Spain,Madrid,Salamanca,Duplex,3405788.7,193.91,17563.76,6,4,4,2026-01-01
+IDE_MAD_312,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,8706185.18,827.64,10519.29,6,2,13,2025-03-03
+IDE_MAD_313,Idealista,Spain,Madrid,Centro,Penthouse,6676000.08,860.51,7758.19,3,2,1,2026-03-09
+IDE_MAD_314,Idealista,Spain,Madrid,Retiro,Villa,500000.0,46.85,10672.36,2,5,14,2025-11-15
+IDE_MAD_315,Idealista,Spain,Madrid,Chamberi,Duplex,13951758.97,898.1,15534.75,6,5,15,2026-02-12
+IDE_MAD_316,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,2598666.45,240.38,10810.66,1,4,0,2026-05-02
+IDE_MAD_317,Idealista,Spain,Madrid,Retiro,Penthouse,1659938.02,129.4,12827.96,7,6,9,2025-01-31
+IDE_MAD_318,Idealista,Spain,Madrid,Chamberi,Villa,10322291.47,811.67,12717.35,2,1,7,2026-05-14
+IDE_MAD_319,Idealista,Spain,Madrid,Salamanca,Loft,6666775.06,588.01,11337.86,2,5,4,2025-12-06
+IDE_MAD_320,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,9470122.27,836.4,11322.48,5,3,10,2025-08-20
+IDE_MAD_321,Idealista,Spain,Madrid,Retiro,Luxury Apartment,9546644.74,710.75,13431.79,2,2,4,2025-08-27
+IDE_MAD_322,Idealista,Spain,Madrid,Retiro,Duplex,8073273.56,869.59,9284.0,2,5,11,2025-03-03
+IDE_MAD_323,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,3693705.97,224.92,16422.31,5,6,1,2026-05-11
+IDE_MAD_324,Idealista,Spain,Madrid,Retiro,Duplex,4720270.83,263.74,17897.44,1,6,9,2025-08-20
+IDE_MAD_325,Idealista,Spain,Madrid,Centro,Loft,2008020.99,127.64,15731.91,4,1,14,2026-02-04
+IDE_MAD_326,Idealista,Spain,Madrid,Chamberi,Luxury Apartment,10911027.4,630.21,17313.32,4,4,11,2026-04-15
+IDE_MAD_327,Idealista,Spain,Madrid,Salamanca,Penthouse,5896662.72,736.0,8011.77,2,2,14,2025-03-04
+IDE_MAD_328,Idealista,Spain,Madrid,Salamanca,Duplex,8470736.78,746.65,11344.99,1,2,13,2025-03-30
+IDE_MAD_329,Idealista,Spain,Madrid,Retiro,Luxury Apartment,3657505.77,423.57,8634.95,3,3,8,2025-11-28
+IDE_MAD_330,Idealista,Spain,Madrid,Retiro,Duplex,931567.8,92.44,10077.54,7,5,15,2026-03-29
+IDE_MAD_331,Idealista,Spain,Madrid,Centro,Luxury Apartment,7057562.85,452.53,15595.79,1,4,11,2025-06-14
+IDE_MAD_332,Idealista,Spain,Madrid,Chamartin,Villa,4053061.64,553.52,7322.34,3,1,10,2026-02-19
+IDE_MAD_333,Idealista,Spain,Madrid,Chamartin,Loft,7110020.88,877.62,8101.48,6,5,7,2026-02-22
+IDE_MAD_334,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,2587965.58,191.45,13517.71,7,3,5,2026-04-13
+IDE_MAD_335,Idealista,Spain,Madrid,Centro,Penthouse,4755427.73,524.27,9070.57,6,5,4,2025-09-10
+IDE_MAD_336,Idealista,Spain,Madrid,Centro,Villa,1124313.11,117.62,9558.86,3,4,1,2025-01-01
+IDE_MAD_337,Idealista,Spain,Madrid,Retiro,Loft,11231673.8,656.57,17106.59,4,2,10,2025-01-12
+IDE_MAD_338,Idealista,Spain,Madrid,Chamberi,Loft,9621715.76,866.08,11109.5,3,1,11,2025-02-21
+IDE_MAD_339,Idealista,Spain,Madrid,Retiro,Villa,7907593.5,669.82,11805.55,6,2,5,2025-06-12
+IDE_MAD_340,Idealista,Spain,Madrid,Chamberi,Loft,5508168.42,365.41,15073.94,6,2,5,2025-01-01
+IDE_MAD_341,Idealista,Spain,Madrid,Centro,Duplex,14680439.06,832.09,17642.85,1,2,10,2026-04-25
+IDE_MAD_342,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,4356816.12,244.68,17806.18,6,6,2,2025-02-15
+IDE_MAD_343,Idealista,Spain,Madrid,Retiro,Duplex,1972142.86,254.61,7745.74,1,3,6,2025-01-01
+IDE_MAD_344,Idealista,Spain,Madrid,Salamanca,Duplex,14612545.04,873.43,16730.07,8,6,13,2025-10-07
+IDE_MAD_345,Idealista,Spain,Madrid,Chamartin,Penthouse,1405006.7,179.88,7810.8,8,5,7,2025-06-13
+IDE_MAD_346,Idealista,Spain,Madrid,Retiro,Penthouse,7047707.22,803.62,8769.95,2,3,5,2026-05-16
+IDE_MAD_347,Idealista,Spain,Madrid,Salamanca,Villa,5831234.49,410.94,14189.99,8,6,0,2025-01-28
+IDE_MAD_348,Idealista,Spain,Madrid,Salamanca,Villa,9557022.41,639.59,14942.42,4,2,13,2025-05-25
+IDE_MAD_349,Idealista,Spain,Madrid,Retiro,Luxury Apartment,8634282.05,531.72,16238.4,2,1,12,2025-08-07
+IDE_MAD_350,Idealista,Spain,Madrid,Salamanca,Villa,551661.59,62.13,8879.15,8,2,3,2026-03-09
+IDE_MAD_351,Idealista,Spain,Madrid,Salamanca,Villa,8027125.33,809.59,9915.05,7,4,15,2025-07-09
+IDE_MAD_352,Idealista,Spain,Madrid,Chamartin,Villa,3227969.97,266.43,12115.64,3,4,1,2025-02-01
+IDE_MAD_353,Idealista,Spain,Madrid,Chamberi,Penthouse,8492426.37,735.03,11553.85,2,6,11,2025-02-01
+IDE_MAD_354,Idealista,Spain,Madrid,Chamartin,Loft,5108059.71,532.53,9592.06,7,5,15,2026-03-14
+IDE_MAD_355,Idealista,Spain,Madrid,Salamanca,Loft,3363796.47,188.68,17828.05,3,1,14,2025-03-06
+IDE_MAD_356,Idealista,Spain,Madrid,Salamanca,Duplex,3428697.93,213.65,16048.2,2,6,13,2025-06-13
+IDE_MAD_357,Idealista,Spain,Madrid,Salamanca,Penthouse,8454000.79,514.77,16422.87,7,5,12,2025-01-07
+IDE_MAD_358,Idealista,Spain,Madrid,Centro,Loft,2232195.49,168.69,13232.53,7,1,13,2025-02-21
+IDE_MAD_359,Idealista,Spain,Madrid,Salamanca,Loft,7874773.45,794.99,9905.5,2,3,11,2025-08-31
+IDE_MAD_360,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,8283182.11,571.69,14488.94,5,4,4,2026-03-27
+IDE_MAD_361,Idealista,Spain,Madrid,Retiro,Luxury Apartment,14032277.49,831.92,16867.34,1,6,15,2025-06-05
+IDE_MAD_362,Idealista,Spain,Madrid,Retiro,Villa,8331923.92,876.35,9507.53,8,6,3,2026-02-01
+IDE_MAD_363,Idealista,Spain,Madrid,Retiro,Villa,1880166.99,201.62,9325.3,7,5,2,2026-01-24
+IDE_MAD_364,Idealista,Spain,Madrid,Centro,Villa,1427671.22,96.43,14805.26,1,5,5,2025-09-26
+IDE_MAD_365,Idealista,Spain,Madrid,Centro,Penthouse,7403787.52,759.8,9744.39,3,2,6,2025-12-27
+IDE_MAD_366,Idealista,Spain,Madrid,Chamberi,Villa,4904246.77,586.45,8362.6,6,4,12,2025-11-01
+IDE_MAD_367,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,5448778.55,336.05,16214.19,8,5,11,2025-02-16
+IDE_MAD_368,Idealista,Spain,Madrid,Retiro,Penthouse,12061990.28,774.29,15578.13,7,1,5,2025-04-26
+IDE_MAD_369,Idealista,Spain,Madrid,Chamberi,Villa,13821191.5,783.58,17638.52,7,5,0,2025-03-09
+IDE_MAD_370,Idealista,Spain,Madrid,Chamberi,Loft,9784154.3,563.18,17373.05,1,2,8,2025-05-21
+IDE_MAD_371,Idealista,Spain,Madrid,Chamartin,Duplex,2350270.78,227.66,10323.6,6,4,8,2025-10-27
+IDE_MAD_372,Idealista,Spain,Madrid,Salamanca,Penthouse,2429638.91,296.69,8189.15,6,5,9,2025-11-24
+IDE_MAD_373,Idealista,Spain,Madrid,Retiro,Villa,2563299.56,201.99,12690.23,5,6,9,2026-03-15
+IDE_MAD_374,Idealista,Spain,Madrid,Centro,Duplex,9382473.42,660.3,14209.41,6,6,4,2025-08-03
+IDE_MAD_375,Idealista,Spain,Madrid,Chamartin,Duplex,4975546.75,335.12,14847.06,1,5,6,2025-09-01
+IDE_MAD_376,Idealista,Spain,Madrid,Retiro,Loft,3564064.36,292.65,12178.59,5,2,5,2025-10-14
+IDE_MAD_377,Idealista,Spain,Madrid,Chamberi,Villa,3848889.15,232.06,16585.75,2,2,11,2025-07-10
+IDE_MAD_378,Idealista,Spain,Madrid,Retiro,Loft,7350376.54,444.66,16530.33,5,4,3,2025-02-06
+IDE_MAD_379,Idealista,Spain,Madrid,Chamartin,Luxury Apartment,5721988.26,495.66,11544.18,2,6,12,2025-04-13
+IDE_MAD_380,Idealista,Spain,Madrid,Retiro,Duplex,7022370.91,781.66,8983.92,8,2,10,2026-05-21
+IDE_MAD_381,Idealista,Spain,Madrid,Chamberi,Villa,4231146.57,275.23,15373.13,1,1,14,2025-09-08
+IDE_MAD_382,Idealista,Spain,Madrid,Salamanca,Luxury Apartment,6816992.58,386.92,17618.61,7,6,13,2025-04-13
+IDE_MAD_383,Idealista,Spain,Madrid,Retiro,Penthouse,500000.0,55.41,9023.64,6,5,6,2026-03-26
+IDE_MAD_384,Idealista,Spain,Madrid,Retiro,Villa,4902370.96,472.87,10367.27,3,1,12,2026-05-01
+IDE_MAD_385,Idealista,Spain,Madrid,Retiro,Duplex,5662369.9,334.75,16915.22,6,4,4,2026-05-01
+IDE_MAD_386,Idealista,Spain,Madrid,Chamartin,Penthouse,1604761.5,221.62,7241.05,4,2,4,2025-12-31
+IDE_MAD_387,Idealista,Spain,Madrid,Salamanca,Duplex,4145954.22,550.77,7527.56,5,5,1,2025-01-25
+IDE_MAD_388,Idealista,Spain,Madrid,Salamanca,Duplex,6239427.72,510.66,12218.36,8,4,3,2025-11-19
+IDE_MAD_389,Idealista,Spain,Madrid,Salamanca,Villa,6078955.37,609.74,9969.75,7,6,3,2026-03-02
+IDE_MAD_390,Idealista,Spain,Madrid,Salamanca,Loft,8918345.69,714.89,12475.13,2,3,3,2026-03-02
+IDE_MAD_391,Idealista,Spain,Madrid,Centro,Luxury Apartment,2185437.24,294.0,7433.46,6,6,13,2026-04-23
+IDE_MAD_392,Idealista,Spain,Madrid,Chamartin,Villa,10484179.97,617.6,16975.68,4,1,0,2025-03-18
+IDE_MAD_393,Idealista,Spain,Madrid,Salamanca,Loft,11525288.25,818.11,14087.7,2,6,3,2025-05-16
+IDE_MAD_394,Idealista,Spain,Madrid,Chamartin,Penthouse,8473136.91,772.93,10962.36,2,2,1,2025-03-01
+IDE_MAD_395,Idealista,Spain,Madrid,Salamanca,Penthouse,5433361.47,322.65,16839.8,1,2,5,2026-01-11
+IDE_MAD_396,Idealista,Spain,Madrid,Salamanca,Villa,6764579.66,384.67,17585.41,6,2,3,2026-03-12
+IDE_MAD_397,Idealista,Spain,Madrid,Chamartin,Duplex,4883008.21,638.71,7645.11,3,1,4,2025-08-02
+IDE_MAD_398,Idealista,Spain,Madrid,Centro,Duplex,9745805.4,710.08,13724.94,8,2,12,2026-01-08
+IDE_MAD_399,Idealista,Spain,Madrid,Chamberi,Duplex,3224840.33,418.99,7696.7,8,1,13,2026-03-21
+IDE_MAD_400,Idealista,Spain,Madrid,Centro,Loft,7087606.14,486.43,14570.66,4,6,10,2026-01-08

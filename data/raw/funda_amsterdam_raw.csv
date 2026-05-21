@@ -1,0 +1,251 @@
+property_id,source,country,city,neighborhood,property_type,price_eur,area_m2,price_per_m2,bedrooms,bathrooms,floor,scraping_date
+FUN_AMS_1,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,10000000.0,531.42,18817.51,8,4,1,2025-11-05
+FUN_AMS_2,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,1229141.51,61.79,19892.24,2,3,9,2025-06-05
+FUN_AMS_3,Funda,Netherlands,Amsterdam,De Pijp,Villa,6486620.95,556.22,11661.97,1,2,4,2025-05-26
+FUN_AMS_4,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,5497389.03,399.11,13774.12,8,1,3,2025-06-08
+FUN_AMS_5,Funda,Netherlands,Amsterdam,Zuidas,Villa,5699966.32,589.92,9662.27,6,4,15,2025-11-22
+FUN_AMS_6,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,1193733.34,94.39,12646.82,8,2,10,2026-04-06
+FUN_AMS_7,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,8645190.87,524.38,16486.5,1,6,14,2025-10-20
+FUN_AMS_8,Funda,Netherlands,Amsterdam,De Pijp,Loft,1407076.49,162.96,8634.49,2,6,2,2025-10-19
+FUN_AMS_9,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,946100.92,114.99,8227.68,8,5,0,2026-02-07
+FUN_AMS_10,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,2501962.15,302.2,8279.16,8,1,10,2025-08-12
+FUN_AMS_11,Funda,Netherlands,Amsterdam,Jordaan,Villa,4191470.2,289.04,14501.35,1,5,10,2025-05-27
+FUN_AMS_12,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,3674624.16,239.02,15373.71,5,1,4,2025-06-16
+FUN_AMS_13,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1116843.84,100.66,11095.21,1,3,12,2026-04-28
+FUN_AMS_14,Funda,Netherlands,Amsterdam,Centrum,Canal House,3403700.97,362.83,9380.98,4,2,7,2025-02-01
+FUN_AMS_15,Funda,Netherlands,Amsterdam,De Pijp,Villa,445876.54,54.22,8223.47,7,1,15,2025-10-11
+FUN_AMS_16,Funda,Netherlands,Amsterdam,Zuidas,Canal House,3713121.7,237.57,15629.59,4,5,4,2025-04-15
+FUN_AMS_17,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,10000000.0,674.3,14830.19,3,2,13,2026-05-08
+FUN_AMS_18,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,10000000.0,655.78,15249.02,3,1,1,2025-07-14
+FUN_AMS_19,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,6710301.61,526.56,12743.66,5,1,5,2025-03-04
+FUN_AMS_20,Funda,Netherlands,Amsterdam,Jordaan,Loft,7136868.35,440.95,16185.21,5,4,6,2025-06-25
+FUN_AMS_21,Funda,Netherlands,Amsterdam,De Pijp,Villa,2147385.29,262.18,8190.5,5,2,10,2025-12-21
+FUN_AMS_22,Funda,Netherlands,Amsterdam,Jordaan,Canal House,7929641.06,482.35,16439.6,8,1,0,2026-01-26
+FUN_AMS_23,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,5246121.58,393.2,13342.12,2,6,2,2025-03-05
+FUN_AMS_24,Funda,Netherlands,Amsterdam,De Pijp,Villa,5632106.73,593.03,9497.17,6,4,5,2025-07-09
+FUN_AMS_25,Funda,Netherlands,Amsterdam,Jordaan,Villa,5554301.81,539.35,10298.14,1,2,0,2026-02-22
+FUN_AMS_26,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,10000000.0,678.25,14743.83,4,2,15,2025-11-07
+FUN_AMS_27,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1092774.51,108.78,10045.73,4,6,12,2025-04-10
+FUN_AMS_28,Funda,Netherlands,Amsterdam,Zuidas,Loft,9700391.85,531.07,18265.75,3,1,4,2026-03-28
+FUN_AMS_29,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,7665497.48,694.65,11035.05,4,6,0,2025-10-14
+FUN_AMS_30,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7765834.68,602.82,12882.51,7,6,1,2025-03-04
+FUN_AMS_31,Funda,Netherlands,Amsterdam,Zuidas,Villa,8120860.02,622.73,13040.74,8,3,1,2025-08-18
+FUN_AMS_32,Funda,Netherlands,Amsterdam,De Pijp,Canal House,1506330.1,89.4,16849.33,7,2,10,2026-05-16
+FUN_AMS_33,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,2116371.97,253.93,8334.47,4,2,5,2025-08-10
+FUN_AMS_34,Funda,Netherlands,Amsterdam,Centrum,Loft,923381.9,106.71,8653.19,6,3,7,2025-06-20
+FUN_AMS_35,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,4902519.49,543.13,9026.42,2,5,14,2025-02-01
+FUN_AMS_36,Funda,Netherlands,Amsterdam,Centrum,Villa,4808878.29,555.46,8657.47,6,6,2,2025-11-09
+FUN_AMS_37,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,3723210.22,406.91,9149.96,2,6,1,2026-01-21
+FUN_AMS_38,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,3167312.36,343.7,9215.34,1,4,12,2025-11-30
+FUN_AMS_39,Funda,Netherlands,Amsterdam,Centrum,Villa,1614545.84,106.82,15114.64,6,5,6,2026-03-07
+FUN_AMS_40,Funda,Netherlands,Amsterdam,Jordaan,Loft,2776101.25,271.34,10231.08,3,6,8,2025-03-12
+FUN_AMS_41,Funda,Netherlands,Amsterdam,Centrum,Canal House,5644951.16,376.23,15003.99,3,3,13,2025-10-05
+FUN_AMS_42,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,3632302.95,228.56,15892.12,8,3,10,2025-03-16
+FUN_AMS_43,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,2873951.89,164.95,17423.17,1,4,11,2025-06-24
+FUN_AMS_44,Funda,Netherlands,Amsterdam,Jordaan,Villa,6975784.97,601.59,11595.58,8,5,10,2025-06-18
+FUN_AMS_45,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1947079.16,180.9,10763.29,8,1,15,2025-11-16
+FUN_AMS_46,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,10000000.0,571.84,17487.41,8,6,10,2025-01-04
+FUN_AMS_47,Funda,Netherlands,Amsterdam,De Pijp,Canal House,6290683.16,403.87,15576.01,2,3,0,2026-04-13
+FUN_AMS_48,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2259769.44,223.93,10091.41,1,2,6,2026-03-10
+FUN_AMS_49,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,2734175.16,152.09,17977.35,3,2,0,2025-03-12
+FUN_AMS_50,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,3402857.56,338.38,10056.32,6,2,9,2025-09-27
+FUN_AMS_51,Funda,Netherlands,Amsterdam,Zuidas,Villa,8951134.43,622.01,14390.66,2,1,4,2025-12-22
+FUN_AMS_52,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,10000000.0,647.47,15444.73,7,6,7,2025-05-31
+FUN_AMS_53,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,10000000.0,615.45,16248.27,4,1,8,2025-04-18
+FUN_AMS_54,Funda,Netherlands,Amsterdam,Centrum,Villa,7475618.19,534.62,13983.05,2,2,12,2025-08-26
+FUN_AMS_55,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,6545446.83,510.91,12811.35,6,5,15,2026-04-17
+FUN_AMS_56,Funda,Netherlands,Amsterdam,Zuidas,Canal House,4396843.62,335.63,13100.27,4,2,6,2025-07-13
+FUN_AMS_57,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,1519175.84,124.33,12218.9,6,3,2,2025-10-26
+FUN_AMS_58,Funda,Netherlands,Amsterdam,Centrum,Villa,4083326.16,345.92,11804.25,6,4,14,2025-07-15
+FUN_AMS_59,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,8406513.16,464.16,18111.24,8,2,8,2025-09-20
+FUN_AMS_60,Funda,Netherlands,Amsterdam,Zuidas,Canal House,1366899.55,113.86,12005.09,5,2,3,2025-12-12
+FUN_AMS_61,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,2954101.18,161.78,18259.99,5,6,8,2026-01-02
+FUN_AMS_62,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,7487757.14,581.84,12869.1,1,3,9,2025-10-24
+FUN_AMS_63,Funda,Netherlands,Amsterdam,Centrum,Villa,2638044.31,185.91,14189.9,3,4,7,2026-02-07
+FUN_AMS_64,Funda,Netherlands,Amsterdam,Zuidas,Villa,3982309.21,243.19,16375.3,8,3,2,2025-04-18
+FUN_AMS_65,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,3400999.88,419.04,8116.17,1,3,4,2026-02-19
+FUN_AMS_66,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,7095997.29,491.03,14451.25,4,4,13,2025-06-16
+FUN_AMS_67,Funda,Netherlands,Amsterdam,Zuidas,Canal House,10000000.0,684.87,14601.31,1,2,4,2026-04-13
+FUN_AMS_68,Funda,Netherlands,Amsterdam,Zuidas,Loft,9120778.1,665.88,13697.33,7,4,6,2025-06-18
+FUN_AMS_69,Funda,Netherlands,Amsterdam,Zuidas,Villa,1697921.43,104.37,16268.29,5,1,5,2025-09-08
+FUN_AMS_70,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,1977805.67,223.74,8839.75,4,1,12,2025-01-30
+FUN_AMS_71,Funda,Netherlands,Amsterdam,De Pijp,Loft,5659955.12,606.71,9328.93,1,2,10,2025-10-02
+FUN_AMS_72,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,2005049.68,121.4,16516.06,2,4,6,2025-09-01
+FUN_AMS_73,Funda,Netherlands,Amsterdam,Jordaan,Loft,2986172.48,369.15,8089.32,5,5,6,2025-03-15
+FUN_AMS_74,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,5201951.29,384.69,13522.45,7,5,7,2025-10-22
+FUN_AMS_75,Funda,Netherlands,Amsterdam,Centrum,Canal House,3371408.98,265.61,12693.08,5,6,14,2026-02-26
+FUN_AMS_76,Funda,Netherlands,Amsterdam,Jordaan,Villa,5031944.57,339.46,14823.38,4,2,13,2025-07-21
+FUN_AMS_77,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9005432.81,478.33,18826.82,3,3,9,2026-04-11
+FUN_AMS_78,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,6943050.74,537.34,12921.15,2,3,2,2025-03-26
+FUN_AMS_79,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,1052181.44,83.68,12573.87,1,4,0,2026-01-17
+FUN_AMS_80,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,3235181.86,201.65,16043.55,7,1,0,2025-08-26
+FUN_AMS_81,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,5783012.64,509.53,11349.7,2,1,7,2025-03-24
+FUN_AMS_82,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1887626.83,117.56,16056.71,2,2,9,2025-01-06
+FUN_AMS_83,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,1897279.46,179.09,10594.0,8,3,5,2025-12-23
+FUN_AMS_84,Funda,Netherlands,Amsterdam,Centrum,Loft,4137619.69,330.25,12528.75,2,4,9,2025-04-14
+FUN_AMS_85,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,815041.43,45.67,17846.32,4,2,2,2025-12-15
+FUN_AMS_86,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9186704.96,516.47,17787.49,2,6,5,2025-06-15
+FUN_AMS_87,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,8096474.27,659.38,12278.92,4,5,12,2025-03-30
+FUN_AMS_88,Funda,Netherlands,Amsterdam,Centrum,Villa,2001659.57,176.49,11341.49,6,1,12,2025-11-16
+FUN_AMS_89,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2171908.92,235.52,9221.76,2,2,13,2025-10-02
+FUN_AMS_90,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,10000000.0,687.64,14542.49,5,1,10,2025-12-22
+FUN_AMS_91,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,5628196.63,685.38,8211.79,3,6,10,2026-04-12
+FUN_AMS_92,Funda,Netherlands,Amsterdam,Zuidas,Villa,3052288.65,369.77,8254.56,7,5,7,2026-01-24
+FUN_AMS_93,Funda,Netherlands,Amsterdam,Centrum,Penthouse,6729044.38,538.57,12494.28,4,6,13,2025-06-01
+FUN_AMS_94,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,2575799.69,193.31,13324.71,7,2,1,2026-03-26
+FUN_AMS_95,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,4371171.61,381.38,11461.46,5,3,1,2025-01-13
+FUN_AMS_96,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,4322190.82,393.64,10980.06,6,2,6,2025-12-18
+FUN_AMS_97,Funda,Netherlands,Amsterdam,Jordaan,Loft,2183088.45,157.06,13899.71,7,5,10,2026-05-04
+FUN_AMS_98,Funda,Netherlands,Amsterdam,Jordaan,Canal House,1841831.64,96.02,19181.75,3,2,4,2025-05-01
+FUN_AMS_99,Funda,Netherlands,Amsterdam,Zuidas,Canal House,2449583.73,242.12,10117.23,7,6,14,2025-05-08
+FUN_AMS_100,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,4244731.72,215.79,19670.66,8,6,6,2025-07-23
+FUN_AMS_101,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,6617234.46,371.02,17835.25,8,4,13,2026-02-11
+FUN_AMS_102,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,5306593.11,539.64,9833.58,7,4,2,2026-01-08
+FUN_AMS_103,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,2983823.21,336.65,8863.28,7,4,9,2025-03-11
+FUN_AMS_104,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,604955.56,43.53,13897.44,3,2,0,2026-04-19
+FUN_AMS_105,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,4463025.4,239.69,18619.99,6,4,15,2026-04-17
+FUN_AMS_106,Funda,Netherlands,Amsterdam,Centrum,Villa,8180478.72,671.47,12182.94,3,2,13,2025-12-30
+FUN_AMS_107,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,5478666.42,651.13,8414.09,1,6,12,2026-02-21
+FUN_AMS_108,Funda,Netherlands,Amsterdam,De Pijp,Canal House,9904389.89,662.94,14940.1,3,3,14,2025-12-06
+FUN_AMS_109,Funda,Netherlands,Amsterdam,Jordaan,Canal House,4258909.66,299.45,14222.44,2,1,12,2025-04-07
+FUN_AMS_110,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,5531076.97,367.93,15032.96,7,3,9,2026-01-11
+FUN_AMS_111,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,9787991.04,576.46,16979.48,2,6,11,2025-12-24
+FUN_AMS_112,Funda,Netherlands,Amsterdam,De Pijp,Canal House,1292669.78,99.42,13002.11,3,4,0,2025-05-28
+FUN_AMS_113,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,9752727.94,503.19,19381.8,3,3,5,2025-08-19
+FUN_AMS_114,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,10000000.0,533.69,18737.47,3,2,1,2026-03-23
+FUN_AMS_115,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,772475.18,88.07,8771.15,2,6,5,2025-01-16
+FUN_AMS_116,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,660453.51,41.32,15983.87,8,4,3,2026-02-09
+FUN_AMS_117,Funda,Netherlands,Amsterdam,Centrum,Canal House,3187144.34,284.82,11190.03,4,5,0,2025-09-06
+FUN_AMS_118,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,5311863.15,488.44,10875.16,7,3,11,2025-07-04
+FUN_AMS_119,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,7323370.39,571.17,12821.7,1,3,10,2026-03-04
+FUN_AMS_120,Funda,Netherlands,Amsterdam,Jordaan,Canal House,8959328.93,667.46,13423.02,2,5,8,2025-12-18
+FUN_AMS_121,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,439998.7,37.08,11866.2,7,6,6,2025-11-21
+FUN_AMS_122,Funda,Netherlands,Amsterdam,De Pijp,Canal House,3335837.61,190.32,17527.52,6,6,14,2025-06-28
+FUN_AMS_123,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,3281330.57,230.42,14240.65,2,6,12,2025-10-20
+FUN_AMS_124,Funda,Netherlands,Amsterdam,Zuidas,Canal House,4354295.02,235.4,18497.43,3,4,2,2025-03-28
+FUN_AMS_125,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,3227797.46,196.83,16398.91,8,6,7,2025-02-24
+FUN_AMS_126,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7469532.1,544.6,13715.63,3,3,12,2026-04-05
+FUN_AMS_127,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9350578.95,614.84,15208.15,8,1,10,2025-11-26
+FUN_AMS_128,Funda,Netherlands,Amsterdam,De Pijp,Villa,5183447.86,572.62,9052.16,7,6,13,2025-02-15
+FUN_AMS_129,Funda,Netherlands,Amsterdam,De Pijp,Loft,5225179.7,415.94,12562.34,4,6,3,2026-01-13
+FUN_AMS_130,Funda,Netherlands,Amsterdam,Centrum,Penthouse,7407498.92,598.33,12380.29,1,5,6,2025-12-14
+FUN_AMS_131,Funda,Netherlands,Amsterdam,Jordaan,Loft,731502.3,41.11,17793.78,4,1,12,2025-06-01
+FUN_AMS_132,Funda,Netherlands,Amsterdam,Jordaan,Villa,2169499.2,132.0,16435.6,8,2,9,2025-11-03
+FUN_AMS_133,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,8910599.93,454.67,19597.95,2,3,15,2025-01-31
+FUN_AMS_134,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,5081934.14,500.77,10148.24,4,6,7,2025-09-07
+FUN_AMS_135,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,4433470.81,259.38,17092.57,3,1,12,2025-07-20
+FUN_AMS_136,Funda,Netherlands,Amsterdam,Centrum,Loft,5955242.46,501.24,11881.02,5,3,6,2026-02-10
+FUN_AMS_137,Funda,Netherlands,Amsterdam,Zuidas,Canal House,7859648.12,418.81,18766.62,5,4,5,2025-04-18
+FUN_AMS_138,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,9432275.46,486.08,19404.78,1,3,3,2025-08-07
+FUN_AMS_139,Funda,Netherlands,Amsterdam,Jordaan,Canal House,2440648.72,154.46,15801.17,2,3,15,2025-10-31
+FUN_AMS_140,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,1727541.18,114.0,15153.87,7,2,1,2025-03-30
+FUN_AMS_141,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,2058108.8,218.02,9440.0,8,6,12,2025-02-12
+FUN_AMS_142,Funda,Netherlands,Amsterdam,Centrum,Villa,2207880.91,217.03,10173.16,4,1,15,2025-09-05
+FUN_AMS_143,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,789188.66,77.23,10218.68,3,1,10,2026-02-21
+FUN_AMS_144,Funda,Netherlands,Amsterdam,Centrum,Villa,5043392.39,536.08,9407.91,8,1,3,2026-03-18
+FUN_AMS_145,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,5942750.34,567.34,10474.76,1,5,14,2025-03-24
+FUN_AMS_146,Funda,Netherlands,Amsterdam,Centrum,Loft,9979173.71,686.65,14533.13,5,1,2,2025-08-05
+FUN_AMS_147,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,7734953.07,473.34,16341.22,5,1,9,2025-09-25
+FUN_AMS_148,Funda,Netherlands,Amsterdam,De Pijp,Loft,4613712.76,475.64,9700.01,4,6,3,2026-03-15
+FUN_AMS_149,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,3203862.56,219.47,14598.18,4,5,11,2025-05-14
+FUN_AMS_150,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,6446080.32,663.25,9718.93,7,4,2,2025-04-15
+FUN_AMS_151,Funda,Netherlands,Amsterdam,Centrum,Penthouse,4085298.87,409.82,9968.52,4,6,11,2026-02-25
+FUN_AMS_152,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,9720291.07,676.07,14377.64,7,4,0,2025-12-17
+FUN_AMS_153,Funda,Netherlands,Amsterdam,Zuidas,Villa,5090622.85,276.27,18426.26,2,3,2,2025-04-26
+FUN_AMS_154,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2899097.02,286.79,10108.78,2,4,7,2026-01-08
+FUN_AMS_155,Funda,Netherlands,Amsterdam,De Pijp,Loft,7657031.68,500.8,15289.6,8,1,11,2026-04-05
+FUN_AMS_156,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,3804135.46,264.54,14380.19,6,4,5,2025-11-01
+FUN_AMS_157,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,4774730.23,491.63,9712.04,3,3,0,2025-10-18
+FUN_AMS_158,Funda,Netherlands,Amsterdam,De Pijp,Canal House,6448147.4,486.01,13267.52,6,6,7,2025-07-01
+FUN_AMS_159,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,4096058.8,381.2,10745.17,5,3,13,2025-11-22
+FUN_AMS_160,Funda,Netherlands,Amsterdam,Centrum,Penthouse,4170032.62,457.06,9123.6,7,3,2,2025-10-22
+FUN_AMS_161,Funda,Netherlands,Amsterdam,Centrum,Canal House,9232025.22,572.55,16124.4,5,5,15,2026-04-23
+FUN_AMS_162,Funda,Netherlands,Amsterdam,Jordaan,Villa,5163955.69,304.64,16951.01,8,5,3,2026-01-01
+FUN_AMS_163,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,8156153.31,438.9,18583.17,6,2,1,2025-09-26
+FUN_AMS_164,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,4726006.12,376.6,12549.14,2,3,4,2025-07-11
+FUN_AMS_165,Funda,Netherlands,Amsterdam,Centrum,Penthouse,1829229.73,227.89,8026.81,4,5,3,2025-11-20
+FUN_AMS_166,Funda,Netherlands,Amsterdam,Zuidas,Villa,5709738.22,657.05,8689.96,4,3,1,2025-01-04
+FUN_AMS_167,Funda,Netherlands,Amsterdam,Zuidas,Villa,1362765.37,106.26,12824.82,6,3,11,2025-01-05
+FUN_AMS_168,Funda,Netherlands,Amsterdam,Centrum,Villa,7333635.37,386.85,18957.31,8,2,2,2025-01-04
+FUN_AMS_169,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,4098989.95,283.92,14437.13,4,4,12,2025-05-18
+FUN_AMS_170,Funda,Netherlands,Amsterdam,Centrum,Villa,4984892.98,270.24,18446.17,8,2,4,2025-04-12
+FUN_AMS_171,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,2951025.54,297.37,9923.75,5,1,4,2025-04-12
+FUN_AMS_172,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,4769335.88,400.83,11898.65,2,4,15,2026-01-27
+FUN_AMS_173,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,8149292.28,671.86,12129.45,7,2,3,2025-01-07
+FUN_AMS_174,Funda,Netherlands,Amsterdam,Jordaan,Canal House,5547466.96,323.83,17130.8,6,4,0,2025-05-07
+FUN_AMS_175,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,5976270.38,544.87,10968.25,3,2,8,2026-02-25
+FUN_AMS_176,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,9980397.38,501.26,19910.62,8,6,3,2025-10-30
+FUN_AMS_177,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,793627.38,60.51,13115.64,2,2,12,2025-11-12
+FUN_AMS_178,Funda,Netherlands,Amsterdam,Jordaan,Canal House,4095111.94,384.11,10661.3,1,4,13,2025-08-07
+FUN_AMS_179,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,2898587.03,237.35,12212.29,7,6,1,2025-08-03
+FUN_AMS_180,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,403945.57,35.36,11423.8,1,2,1,2025-05-24
+FUN_AMS_181,Funda,Netherlands,Amsterdam,Zuidas,Canal House,6099026.35,665.64,9162.65,7,2,8,2025-01-07
+FUN_AMS_182,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,5744969.82,529.05,10859.03,6,3,11,2025-05-22
+FUN_AMS_183,Funda,Netherlands,Amsterdam,Jordaan,Loft,1831267.37,121.77,15038.74,7,1,3,2026-04-13
+FUN_AMS_184,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,9053585.2,661.31,13690.38,8,1,2,2026-01-25
+FUN_AMS_185,Funda,Netherlands,Amsterdam,Jordaan,Loft,3009925.75,162.48,18524.9,3,1,4,2026-03-13
+FUN_AMS_186,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,10000000.0,640.71,15607.69,6,4,3,2025-09-15
+FUN_AMS_187,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,4477214.84,227.62,19669.69,5,6,4,2025-04-08
+FUN_AMS_188,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,6843587.8,534.23,12810.19,2,2,14,2025-05-20
+FUN_AMS_189,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,6068334.56,428.75,14153.55,1,2,6,2025-09-15
+FUN_AMS_190,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,4324873.63,505.99,8547.35,5,2,9,2025-05-02
+FUN_AMS_191,Funda,Netherlands,Amsterdam,De Pijp,Canal House,2360683.4,214.84,10988.1,3,3,4,2026-02-26
+FUN_AMS_192,Funda,Netherlands,Amsterdam,Jordaan,Loft,8821624.85,455.73,19357.13,2,1,11,2026-03-29
+FUN_AMS_193,Funda,Netherlands,Amsterdam,Zuidas,Penthouse,4487535.72,250.88,17887.18,3,4,9,2025-04-23
+FUN_AMS_194,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,5716268.81,515.53,11088.14,5,1,3,2025-11-17
+FUN_AMS_195,Funda,Netherlands,Amsterdam,Zuidas,Loft,4586193.16,250.63,18298.66,4,4,7,2025-07-22
+FUN_AMS_196,Funda,Netherlands,Amsterdam,Jordaan,Villa,2851411.52,280.15,10178.16,4,6,13,2025-04-05
+FUN_AMS_197,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,4718140.32,465.63,10132.81,8,6,5,2025-07-21
+FUN_AMS_198,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,4087012.43,318.55,12830.05,2,2,2,2026-01-06
+FUN_AMS_199,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,4913122.89,286.29,17161.35,1,5,3,2025-11-26
+FUN_AMS_200,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,2544583.45,129.85,19596.33,4,1,8,2026-05-06
+FUN_AMS_201,Funda,Netherlands,Amsterdam,Centrum,Loft,2260292.02,169.54,13331.91,6,6,2,2025-03-25
+FUN_AMS_202,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,683853.83,72.16,9476.91,8,2,7,2026-02-27
+FUN_AMS_203,Funda,Netherlands,Amsterdam,Centrum,Canal House,1697406.47,129.32,13125.63,5,1,13,2025-03-17
+FUN_AMS_204,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,6835539.65,491.7,13901.85,4,6,12,2025-02-26
+FUN_AMS_205,Funda,Netherlands,Amsterdam,Jordaan,Canal House,8461462.05,444.44,19038.48,5,3,2,2026-04-04
+FUN_AMS_206,Funda,Netherlands,Amsterdam,Centrum,Loft,3801169.71,387.77,9802.64,3,2,13,2025-12-08
+FUN_AMS_207,Funda,Netherlands,Amsterdam,De Pijp,Loft,2407865.9,215.28,11184.81,5,3,3,2026-04-10
+FUN_AMS_208,Funda,Netherlands,Amsterdam,Centrum,Canal House,4321261.6,247.97,17426.55,3,6,4,2025-09-02
+FUN_AMS_209,Funda,Netherlands,Amsterdam,Centrum,Canal House,2258007.1,131.2,17210.42,7,6,8,2025-06-30
+FUN_AMS_210,Funda,Netherlands,Amsterdam,De Pijp,Villa,8410929.14,435.16,19328.36,7,4,13,2026-04-17
+FUN_AMS_211,Funda,Netherlands,Amsterdam,Jordaan,Villa,4232123.98,393.27,10761.37,7,5,15,2025-02-12
+FUN_AMS_212,Funda,Netherlands,Amsterdam,Zuidas,Villa,1570601.6,191.4,8205.86,4,6,2,2025-10-13
+FUN_AMS_213,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,2659562.08,274.97,9672.19,2,1,11,2025-08-24
+FUN_AMS_214,Funda,Netherlands,Amsterdam,Jordaan,Loft,10000000.0,585.5,17079.42,7,2,6,2025-12-27
+FUN_AMS_215,Funda,Netherlands,Amsterdam,Jordaan,Villa,2507148.17,282.17,8885.24,1,6,13,2026-03-05
+FUN_AMS_216,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,2317595.14,128.95,17972.82,1,2,11,2025-08-02
+FUN_AMS_217,Funda,Netherlands,Amsterdam,Jordaan,Luxury Apartment,6889499.39,532.49,12938.27,8,6,4,2025-06-22
+FUN_AMS_218,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,755213.7,74.9,10082.96,5,1,4,2025-03-24
+FUN_AMS_219,Funda,Netherlands,Amsterdam,Centrum,Villa,5658206.87,403.51,14022.47,7,6,14,2025-12-30
+FUN_AMS_220,Funda,Netherlands,Amsterdam,Jordaan,Villa,4025076.87,381.8,10542.37,3,3,2,2025-11-13
+FUN_AMS_221,Funda,Netherlands,Amsterdam,Centrum,Luxury Apartment,9076311.85,578.01,15702.69,7,2,2,2026-02-28
+FUN_AMS_222,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,2506697.06,164.5,15238.28,1,3,13,2026-03-10
+FUN_AMS_223,Funda,Netherlands,Amsterdam,De Pijp,Canal House,6748303.66,395.14,17078.26,4,3,5,2025-06-08
+FUN_AMS_224,Funda,Netherlands,Amsterdam,Jordaan,Loft,1663468.62,194.82,8538.49,4,6,1,2026-05-21
+FUN_AMS_225,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7544302.66,662.43,11388.83,1,3,2,2025-07-23
+FUN_AMS_226,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,8797095.42,682.61,12887.44,6,4,11,2026-01-15
+FUN_AMS_227,Funda,Netherlands,Amsterdam,Zuidas,Canal House,3498696.26,352.17,9934.68,3,1,12,2025-12-16
+FUN_AMS_228,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,10000000.0,623.13,16048.02,2,6,7,2025-03-24
+FUN_AMS_229,Funda,Netherlands,Amsterdam,Zuidas,Loft,3430340.07,260.45,13170.82,6,4,4,2026-04-02
+FUN_AMS_230,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,6162214.15,672.08,9168.87,4,5,2,2025-01-08
+FUN_AMS_231,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,2975613.85,337.45,8817.94,2,4,3,2025-10-23
+FUN_AMS_232,Funda,Netherlands,Amsterdam,De Pijp,Penthouse,10000000.0,507.59,19700.94,2,1,5,2026-01-26
+FUN_AMS_233,Funda,Netherlands,Amsterdam,Oud Zuid,Luxury Apartment,1121358.33,61.33,18284.01,2,5,15,2026-04-15
+FUN_AMS_234,Funda,Netherlands,Amsterdam,Jordaan,Villa,3162139.16,283.5,11153.93,6,5,10,2026-03-25
+FUN_AMS_235,Funda,Netherlands,Amsterdam,Centrum,Loft,4634846.98,500.33,9263.58,1,6,7,2025-07-12
+FUN_AMS_236,Funda,Netherlands,Amsterdam,Jordaan,Loft,3984335.68,293.17,13590.53,7,1,7,2025-11-25
+FUN_AMS_237,Funda,Netherlands,Amsterdam,Zuidas,Villa,8981738.32,521.63,17218.6,2,1,5,2025-04-13
+FUN_AMS_238,Funda,Netherlands,Amsterdam,Oud Zuid,Penthouse,9567737.33,697.63,13714.63,2,3,10,2025-05-23
+FUN_AMS_239,Funda,Netherlands,Amsterdam,Oud Zuid,Canal House,7009205.37,460.74,15212.93,3,4,4,2025-07-14
+FUN_AMS_240,Funda,Netherlands,Amsterdam,Centrum,Penthouse,1149840.1,70.96,16204.06,7,4,6,2025-05-19
+FUN_AMS_241,Funda,Netherlands,Amsterdam,De Pijp,Luxury Apartment,2913512.41,217.15,13417.05,2,2,2,2025-08-03
+FUN_AMS_242,Funda,Netherlands,Amsterdam,Zuidas,Luxury Apartment,1643666.47,96.47,17038.11,5,2,1,2025-03-26
+FUN_AMS_243,Funda,Netherlands,Amsterdam,Jordaan,Penthouse,5178847.87,391.11,13241.41,7,4,15,2026-04-13
+FUN_AMS_244,Funda,Netherlands,Amsterdam,Zuidas,Villa,1030886.68,86.74,11884.79,1,5,6,2026-05-21
+FUN_AMS_245,Funda,Netherlands,Amsterdam,De Pijp,Canal House,5906145.13,367.13,16087.34,3,4,4,2025-05-15
+FUN_AMS_246,Funda,Netherlands,Amsterdam,Zuidas,Canal House,7794271.58,459.88,16948.49,8,2,14,2025-04-07
+FUN_AMS_247,Funda,Netherlands,Amsterdam,Oud Zuid,Loft,2887479.66,178.73,16155.54,3,5,12,2026-05-05
+FUN_AMS_248,Funda,Netherlands,Amsterdam,Centrum,Penthouse,10000000.0,631.28,15840.83,6,1,9,2025-11-29
+FUN_AMS_249,Funda,Netherlands,Amsterdam,Oud Zuid,Villa,7046405.34,585.74,12029.92,7,3,11,2026-04-20
+FUN_AMS_250,Funda,Netherlands,Amsterdam,Jordaan,Villa,4597600.48,402.58,11420.34,7,3,5,2025-12-04
