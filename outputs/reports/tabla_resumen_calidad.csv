@@ -1,0 +1,5 @@
+fuente,registros,variables,nulos_pct,blancos_pct,duplicados,outliers_detectados
+Idealista Madrid,5,13.0,0.0,0.0,0,0
+Rightmove London,5,13.0,0.0,0.0,0,3
+Dataset limpio unificado,10,14.0,0.0,0.0,0,0
+TOTAL / MEDIA,20,13.33,0.0,0.0,0,3

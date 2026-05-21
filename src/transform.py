@@ -11,7 +11,9 @@ FINAL_PATH.mkdir(parents=True, exist_ok=True)
 
 def load_clean_dataset():
     df = pd.read_csv(PROCESSED_PATH / "properties_clean.csv")
+
     print("Dataset limpio cargado correctamente.")
+
     return df
 
 
@@ -32,7 +34,10 @@ def create_dim_city(df):
         ]
     ]
 
-    dim_city.to_csv(FINAL_PATH / "dim_city.csv", index=False)
+    dim_city.to_csv(
+        FINAL_PATH / "dim_city.csv",
+        index=False
+    )
 
     log_step(
         phase="DIMENSION",
@@ -173,6 +178,7 @@ def create_dim_time(df):
     dim_time["month"] = dim_time["scraping_date"].dt.month
     dim_time["day"] = dim_time["scraping_date"].dt.day
     dim_time["day_name"] = dim_time["scraping_date"].dt.day_name()
+    dim_time["is_weekend"] = dim_time["day_name"].isin(["Saturday", "Sunday"])
 
     dim_time = dim_time[
         [
@@ -182,7 +188,8 @@ def create_dim_time(df):
             "quarter",
             "month",
             "day",
-            "day_name"
+            "day_name",
+            "is_weekend"
         ]
     ]
 
@@ -219,6 +226,7 @@ def create_fact_properties(
     )
 
     dim_time = dim_time.copy()
+
     dim_time["scraping_date"] = pd.to_datetime(
         dim_time["scraping_date"],
         errors="coerce"
@@ -256,6 +264,14 @@ def create_fact_properties(
 
     fact["fact_id"] = fact.index + 1
 
+    fact["source_record_id"] = (
+        fact["source"].astype(str)
+        + "_"
+        + fact["property_id"].astype(str)
+    )
+
+    fact["load_timestamp"] = pd.Timestamp.now()
+
     fact = fact[
         [
             "fact_id",
@@ -264,6 +280,8 @@ def create_fact_properties(
             "property_type_id",
             "source_id",
             "time_id",
+            "source_record_id",
+            "load_timestamp",
             "price_eur",
             "area_m2",
             "bedrooms",
@@ -283,7 +301,7 @@ def create_fact_properties(
         input_rows=len(df),
         output_rows=len(fact),
         discarded_rows=0,
-        reason="Creación de tabla de hechos fact_properties"
+        reason="Creación de tabla de hechos fact_properties con trazabilidad source_record_id y load_timestamp"
     )
 
     return fact

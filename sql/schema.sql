@@ -35,7 +35,8 @@ CREATE TABLE dim_time (
     quarter INTEGER NOT NULL,
     month INTEGER NOT NULL,
     day INTEGER NOT NULL,
-    day_name VARCHAR(20) NOT NULL
+    day_name VARCHAR(20) NOT NULL,
+    is_weekend BOOLEAN NOT NULL
 );
 
 CREATE TABLE fact_properties (
@@ -45,6 +46,8 @@ CREATE TABLE fact_properties (
     property_type_id INTEGER NOT NULL,
     source_id INTEGER NOT NULL,
     time_id INTEGER NOT NULL,
+    source_record_id VARCHAR(150) NOT NULL,
+    load_timestamp TIMESTAMP NOT NULL,
     price_eur DECIMAL(12,2) NOT NULL,
     area_m2 DECIMAL(10,2) NOT NULL,
     bedrooms INTEGER,

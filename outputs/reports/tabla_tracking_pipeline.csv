@@ -1,0 +1,75 @@
+timestamp,phase,source,input_rows,output_rows,discarded_rows,reason
+2026-05-19T21:25:17.581256,EXTRACT,Idealista Madrid,5,5,0,Extracción inicial simulada
+2026-05-19T21:25:17.582157,EXTRACT,Rightmove London,5,5,0,Extracción inicial simulada
+2026-05-19T21:28:03.678120,MERGE_RAW,Idealista + Rightmove,10,10,0,Unificación inicial de fuentes raw
+2026-05-19T21:28:03.680877,T03_BLANCOS,Dataset unificado,10,10,0,Eliminación de espacios y cadenas vacías
+2026-05-19T21:29:27.113723,EXTRACT,Idealista Madrid,5,5,0,Extracción inicial simulada
+2026-05-19T21:29:27.114618,EXTRACT,Rightmove London,5,5,0,Extracción inicial simulada
+2026-05-19T21:29:27.356253,MERGE_RAW,Idealista + Rightmove,10,10,0,Unificación inicial de fuentes raw
+2026-05-19T21:29:27.358195,T03_BLANCOS,Dataset unificado,10,10,0,Eliminación de espacios y cadenas vacías
+2026-05-19T21:29:27.359026,T01_DUPLICADOS,Dataset unificado,10,10,0,Eliminación de duplicados exactos y duplicados por clave source + property_id
+2026-05-19T21:29:27.360736,T02_NULOS,Dataset unificado,10,10,0,Tratamiento de nulos: eliminación en campos críticos e imputación por mediana en campos secundarios
+2026-05-19T21:29:27.362972,T04_TIPOS,Dataset unificado,10,10,0,Conversión de tipos de datos según semántica de negocio
+2026-05-19T21:29:27.364239,T05_FECHAS,Dataset unificado,10,10,0,Normalización de fechas a formato ISO-8601
+2026-05-19T21:29:27.364959,T06_TEXTO,Dataset unificado,10,10,0,Normalización de texto: minúsculas y eliminación de espacios
+2026-05-19T21:29:27.365721,T07_RANGOS,Dataset unificado,10,10,0,"Validación de rangos de negocio: precios, superficies, habitaciones y baños positivos y coherentes"
+2026-05-19T21:29:27.367318,T08_OUTLIERS,Dataset unificado,10,10,0,Detección de outliers mediante IQR. No se eliminan automáticamente por tratarse de mercado premium
+2026-05-19T21:29:27.369416,T09_SEUDONIMIZACION,Dataset unificado,10,10,0,Seudonimización de identificadores de propiedad mediante hash
+2026-05-19T21:29:27.369784,T10_VALIDACION_REFERENCIAL,Dataset unificado,10,10,0,Validación referencial básica previa al modelo dimensional
+2026-05-19T21:29:27.370777,SAVE_PROCESSED,Dataset limpio,10,10,0,Guardado del dataset limpio en data/processed
+2026-05-21T16:52:42.259880,DIMENSION,DIM_CITY,10,2,0,Creación de dimensión ciudad
+2026-05-21T16:52:42.261559,DIMENSION,DIM_NEIGHBORHOOD,10,9,0,Creación de dimensión barrio
+2026-05-21T16:52:42.262383,DIMENSION,DIM_PROPERTY_TYPE,10,4,0,Creación de dimensión tipo de propiedad
+2026-05-21T16:52:42.263162,DIMENSION,DIM_SOURCE,10,2,0,Creación de dimensión fuente
+2026-05-21T16:52:42.265612,DIMENSION,DIM_TIME,10,1,0,Creación de dimensión temporal
+2026-05-21T16:52:42.269154,FACT,FACT_PROPERTIES,10,10,0,Creación de tabla de hechos fact_properties
+2026-05-21T16:54:19.041673,DIMENSION,DIM_CITY,10,2,0,Creación de dimensión ciudad
+2026-05-21T16:54:19.043137,DIMENSION,DIM_NEIGHBORHOOD,10,9,0,Creación de dimensión barrio
+2026-05-21T16:54:19.043996,DIMENSION,DIM_PROPERTY_TYPE,10,4,0,Creación de dimensión tipo de propiedad
+2026-05-21T16:54:19.044828,DIMENSION,DIM_SOURCE,10,2,0,Creación de dimensión fuente
+2026-05-21T16:54:19.047066,DIMENSION,DIM_TIME,10,1,0,Creación de dimensión temporal
+2026-05-21T16:54:19.050029,FACT,FACT_PROPERTIES,10,10,0,Creación de tabla de hechos fact_properties
+2026-05-21T16:54:26.333595,LOAD_SQL,dim_city,2,2,0,Carga de dim_city.csv en tabla SQL dim_city
+2026-05-21T16:54:26.334818,LOAD_SQL,dim_neighborhood,9,9,0,Carga de dim_neighborhood.csv en tabla SQL dim_neighborhood
+2026-05-21T16:54:26.336040,LOAD_SQL,dim_property_type,4,4,0,Carga de dim_property_type.csv en tabla SQL dim_property_type
+2026-05-21T16:54:26.337352,LOAD_SQL,dim_source,2,2,0,Carga de dim_source.csv en tabla SQL dim_source
+2026-05-21T16:54:26.338634,LOAD_SQL,dim_time,1,1,0,Carga de dim_time.csv en tabla SQL dim_time
+2026-05-21T16:54:26.339990,LOAD_SQL,fact_properties,10,10,0,Carga de fact_properties.csv en tabla SQL fact_properties
+2026-05-21T16:55:36.530150,EXTRACT,Idealista Madrid,5,5,0,Extracción inicial simulada
+2026-05-21T16:55:36.531260,EXTRACT,Rightmove London,5,5,0,Extracción inicial simulada
+2026-05-21T16:55:36.768088,MERGE_RAW,Idealista + Rightmove,10,10,0,Unificación inicial de fuentes raw
+2026-05-21T16:55:36.770255,T03_BLANCOS,Dataset unificado,10,10,0,Eliminación de espacios y cadenas vacías
+2026-05-21T16:55:36.771233,T01_DUPLICADOS,Dataset unificado,10,10,0,Eliminación de duplicados exactos y duplicados por clave source + property_id
+2026-05-21T16:55:36.772257,T02_NULOS,Dataset unificado,10,10,0,Tratamiento de nulos: eliminación en campos críticos e imputación por mediana en campos secundarios
+2026-05-21T16:55:36.773917,T04_TIPOS,Dataset unificado,10,10,0,Conversión de tipos de datos según semántica de negocio
+2026-05-21T16:55:36.774690,T05_FECHAS,Dataset unificado,10,10,0,Normalización de fechas a formato ISO-8601
+2026-05-21T16:55:36.775591,T06_TEXTO,Dataset unificado,10,10,0,Normalización de texto: minúsculas y eliminación de espacios
+2026-05-21T16:55:36.776536,T07_RANGOS,Dataset unificado,10,10,0,"Validación de rangos de negocio: precios, superficies, habitaciones y baños positivos y coherentes"
+2026-05-21T16:55:36.778141,T08_OUTLIERS,Dataset unificado,10,10,0,Detección de outliers mediante IQR. No se eliminan automáticamente por tratarse de mercado premium
+2026-05-21T16:55:36.780262,T09_SEUDONIMIZACION,Dataset unificado,10,10,0,Seudonimización de identificadores de propiedad mediante hash
+2026-05-21T16:55:36.780797,T10_VALIDACION_REFERENCIAL,Dataset unificado,10,10,0,Validación referencial básica previa al modelo dimensional
+2026-05-21T16:55:36.782103,SAVE_PROCESSED,Dataset limpio,10,10,0,Guardado del dataset limpio en data/processed
+2026-05-21T16:55:37.022057,DIMENSION,DIM_CITY,10,2,0,Creación de dimensión ciudad
+2026-05-21T16:55:37.023720,DIMENSION,DIM_NEIGHBORHOOD,10,9,0,Creación de dimensión barrio
+2026-05-21T16:55:37.024708,DIMENSION,DIM_PROPERTY_TYPE,10,4,0,Creación de dimensión tipo de propiedad
+2026-05-21T16:55:37.025724,DIMENSION,DIM_SOURCE,10,2,0,Creación de dimensión fuente
+2026-05-21T16:55:37.028222,DIMENSION,DIM_TIME,10,1,0,Creación de dimensión temporal
+2026-05-21T16:55:37.031420,FACT,FACT_PROPERTIES,10,10,0,Creación de tabla de hechos fact_properties
+2026-05-21T16:55:37.277307,LOAD_SQL,dim_city,2,2,0,Carga de dim_city.csv en tabla SQL dim_city
+2026-05-21T16:55:37.278590,LOAD_SQL,dim_neighborhood,9,9,0,Carga de dim_neighborhood.csv en tabla SQL dim_neighborhood
+2026-05-21T16:55:37.279674,LOAD_SQL,dim_property_type,4,4,0,Carga de dim_property_type.csv en tabla SQL dim_property_type
+2026-05-21T16:55:37.280755,LOAD_SQL,dim_source,2,2,0,Carga de dim_source.csv en tabla SQL dim_source
+2026-05-21T16:55:37.281980,LOAD_SQL,dim_time,1,1,0,Carga de dim_time.csv en tabla SQL dim_time
+2026-05-21T16:55:37.283245,LOAD_SQL,fact_properties,10,10,0,Carga de fact_properties.csv en tabla SQL fact_properties
+2026-05-21T17:47:29.636556,DIMENSION,DIM_CITY,10,2,0,Creación de dimensión ciudad
+2026-05-21T17:47:29.638398,DIMENSION,DIM_NEIGHBORHOOD,10,9,0,Creación de dimensión barrio
+2026-05-21T17:47:29.639497,DIMENSION,DIM_PROPERTY_TYPE,10,4,0,Creación de dimensión tipo de propiedad
+2026-05-21T17:47:29.640543,DIMENSION,DIM_SOURCE,10,2,0,Creación de dimensión fuente
+2026-05-21T17:47:29.646622,DIMENSION,DIM_TIME,10,1,0,Creación de dimensión temporal
+2026-05-21T17:47:29.651632,FACT,FACT_PROPERTIES,10,10,0,Creación de tabla de hechos fact_properties con trazabilidad source_record_id y load_timestamp
+2026-05-21T17:47:29.894180,LOAD_SQL,dim_city,2,2,0,Carga de dim_city.csv en tabla SQL dim_city
+2026-05-21T17:47:29.895551,LOAD_SQL,dim_neighborhood,9,9,0,Carga de dim_neighborhood.csv en tabla SQL dim_neighborhood
+2026-05-21T17:47:29.896693,LOAD_SQL,dim_property_type,4,4,0,Carga de dim_property_type.csv en tabla SQL dim_property_type
+2026-05-21T17:47:29.897832,LOAD_SQL,dim_source,2,2,0,Carga de dim_source.csv en tabla SQL dim_source
+2026-05-21T17:47:29.899173,LOAD_SQL,dim_time,1,1,0,Carga de dim_time.csv en tabla SQL dim_time
+2026-05-21T17:47:29.900743,LOAD_SQL,fact_properties,10,10,0,Carga de fact_properties.csv en tabla SQL fact_properties
