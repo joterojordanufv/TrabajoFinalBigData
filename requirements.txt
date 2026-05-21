@@ -14,3 +14,4 @@ notebook
 openpyxl
 streamlit
 plotly
+scikit-learn
