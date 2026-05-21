@@ -344,6 +344,126 @@
             "discarded_rows": 0,
             "reason": "Creación de tabla de hechos fact_properties",
             "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:19.041673",
+            "phase": "DIMENSION",
+            "source": "DIM_CITY",
+            "input_rows": 10,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión ciudad",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:19.043137",
+            "phase": "DIMENSION",
+            "source": "DIM_NEIGHBORHOOD",
+            "input_rows": 10,
+            "output_rows": 9,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión barrio",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:19.043996",
+            "phase": "DIMENSION",
+            "source": "DIM_PROPERTY_TYPE",
+            "input_rows": 10,
+            "output_rows": 4,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión tipo de propiedad",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:19.044828",
+            "phase": "DIMENSION",
+            "source": "DIM_SOURCE",
+            "input_rows": 10,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión fuente",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:19.047066",
+            "phase": "DIMENSION",
+            "source": "DIM_TIME",
+            "input_rows": 10,
+            "output_rows": 1,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión temporal",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:19.050029",
+            "phase": "FACT",
+            "source": "FACT_PROPERTIES",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Creación de tabla de hechos fact_properties",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:26.333595",
+            "phase": "LOAD_SQL",
+            "source": "dim_city",
+            "input_rows": 2,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_city.csv en tabla SQL dim_city",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:26.334818",
+            "phase": "LOAD_SQL",
+            "source": "dim_neighborhood",
+            "input_rows": 9,
+            "output_rows": 9,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_neighborhood.csv en tabla SQL dim_neighborhood",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:26.336040",
+            "phase": "LOAD_SQL",
+            "source": "dim_property_type",
+            "input_rows": 4,
+            "output_rows": 4,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_property_type.csv en tabla SQL dim_property_type",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:26.337352",
+            "phase": "LOAD_SQL",
+            "source": "dim_source",
+            "input_rows": 2,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_source.csv en tabla SQL dim_source",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:26.338634",
+            "phase": "LOAD_SQL",
+            "source": "dim_time",
+            "input_rows": 1,
+            "output_rows": 1,
+            "discarded_rows": 0,
+            "reason": "Carga de dim_time.csv en tabla SQL dim_time",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:54:26.339990",
+            "phase": "LOAD_SQL",
+            "source": "fact_properties",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Carga de fact_properties.csv en tabla SQL fact_properties",
+            "details": {}
         }
     ]
 }
