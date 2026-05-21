@@ -45,3 +45,5 @@ outputs/figures/*.png
 *.csv
 !data/final/*.csv
 !outputs/reports/*.csv
+
+data/processed/
