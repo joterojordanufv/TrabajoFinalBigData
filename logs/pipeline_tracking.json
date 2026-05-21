@@ -284,6 +284,66 @@
             "details": {
                 "output_file": "data/processed/properties_clean.csv"
             }
+        },
+        {
+            "timestamp": "2026-05-21T16:52:42.259880",
+            "phase": "DIMENSION",
+            "source": "DIM_CITY",
+            "input_rows": 10,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión ciudad",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:52:42.261559",
+            "phase": "DIMENSION",
+            "source": "DIM_NEIGHBORHOOD",
+            "input_rows": 10,
+            "output_rows": 9,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión barrio",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:52:42.262383",
+            "phase": "DIMENSION",
+            "source": "DIM_PROPERTY_TYPE",
+            "input_rows": 10,
+            "output_rows": 4,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión tipo de propiedad",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:52:42.263162",
+            "phase": "DIMENSION",
+            "source": "DIM_SOURCE",
+            "input_rows": 10,
+            "output_rows": 2,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión fuente",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:52:42.265612",
+            "phase": "DIMENSION",
+            "source": "DIM_TIME",
+            "input_rows": 10,
+            "output_rows": 1,
+            "discarded_rows": 0,
+            "reason": "Creación de dimensión temporal",
+            "details": {}
+        },
+        {
+            "timestamp": "2026-05-21T16:52:42.269154",
+            "phase": "FACT",
+            "source": "FACT_PROPERTIES",
+            "input_rows": 10,
+            "output_rows": 10,
+            "discarded_rows": 0,
+            "reason": "Creación de tabla de hechos fact_properties",
+            "details": {}
         }
     ]
 }
