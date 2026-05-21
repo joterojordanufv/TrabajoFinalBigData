@@ -29,3 +29,19 @@ temp/
 # Credenciales
 credentials.json
 secrets.json
+
+*.zip
+*.db
+__pycache__/
+.ipynb_checkpoints/
+
+data/raw/spain/
+data/raw/uk/
+data/raw/real_sources/
+data/raw/*_real_estate_raw.csv
+
+outputs/figures/*.png
+
+*.csv
+!data/final/*.csv
+!outputs/reports/*.csv

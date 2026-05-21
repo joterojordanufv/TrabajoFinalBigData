@@ -11,108 +11,84 @@ PROCESSED_PATH.mkdir(parents=True, exist_ok=True)
 
 
 def load_raw_data():
-    idealista = pd.read_csv(
-        RAW_PATH / "idealista_madrid_raw.csv"
-    )
+    spain = pd.read_csv(RAW_PATH / "spain_real_estate_raw.csv")
+    uk = pd.read_csv(RAW_PATH / "uk_real_estate_raw.csv")
+    netherlands = pd.read_csv(RAW_PATH / "netherlands_real_estate_raw.csv")
+    eurostat = pd.read_csv(RAW_PATH / "eurostat_hpi.csv")
 
-    rightmove = pd.read_csv(
-        RAW_PATH / "rightmove_london_raw.csv"
-    )
-
-    funda = pd.read_csv(
-        RAW_PATH / "funda_amsterdam_raw.csv"
-    )
-
-    eurostat = pd.read_csv(
-        RAW_PATH / "eurostat_hpi.csv"
-    )
-
-    return idealista, rightmove, funda, eurostat
+    return spain, uk, netherlands, eurostat
 
 
-def merge_real_estate_sources(
-    idealista,
-    rightmove,
-    funda
-):
+def merge_sources(spain, uk, netherlands):
     df = pd.concat(
         [
-            idealista,
-            rightmove,
-            funda
+            spain,
+            uk,
+            netherlands
         ],
         ignore_index=True
     )
 
     log_step(
         phase="MERGE_RAW",
-        source="Idealista + Rightmove + Funda",
-        input_rows=(
-            len(idealista)
-            + len(rightmove)
-            + len(funda)
-        ),
+        source="Spain + UK + Netherlands",
+        input_rows=len(spain) + len(uk) + len(netherlands),
         output_rows=len(df),
         discarded_rows=0,
-        reason="Unificación de fuentes inmobiliarias"
-    )
-
-    print(
-        f"[TRACKING] MERGE_RAW - Dataset combinado: "
-        f"{len(df)} registros"
+        reason="Unificación de datasets reales nacionales"
     )
 
     return df
 
 
-def remove_blank_spaces(df):
-    text_columns = df.select_dtypes(
-        include=["object"]
-    ).columns
+def clean_blank_values(df):
+    input_rows = len(df)
+
+    text_columns = df.select_dtypes(include=["object"]).columns
+    blank_count = 0
 
     for col in text_columns:
-        df[col] = (
-            df[col]
-            .astype(str)
-            .str.strip()
-        )
+        blank_count += df[col].astype(str).str.strip().eq("").sum()
+        df[col] = df[col].astype(str).str.strip()
+        df[col] = df[col].replace("", pd.NA)
 
     log_step(
         phase="T03_BLANCOS",
         source="Dataset unificado",
-        input_rows=len(df),
+        input_rows=input_rows,
         output_rows=len(df),
         discarded_rows=0,
-        reason="Eliminación de espacios en blanco"
+        reason=f"Corrección de blancos en columnas textuales: {blank_count} valores"
     )
 
     return df
 
 
 def remove_duplicates(df):
-    before = len(df)
+    input_rows = len(df)
 
+    df = df.drop_duplicates()
     df = df.drop_duplicates(
         subset=["source", "property_id"],
         keep="first"
     )
 
-    after = len(df)
+    discarded = input_rows - len(df)
 
     log_step(
         phase="T01_DUPLICADOS",
         source="Dataset unificado",
-        input_rows=before,
-        output_rows=after,
-        discarded_rows=before - after,
-        reason="Eliminación de duplicados"
+        input_rows=input_rows,
+        output_rows=len(df),
+        discarded_rows=discarded,
+        reason="Eliminación de duplicados exactos y por clave source + property_id"
     )
 
     return df
 
 
 def handle_nulls(df):
-    before = len(df)
+    input_rows = len(df)
 
     numeric_columns = [
         "price_eur",
@@ -125,36 +101,44 @@ def handle_nulls(df):
 
     for col in numeric_columns:
         if col in df.columns:
-            df[col] = df[col].fillna(
-                df[col].median()
-            )
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+            if df[col].isnull().sum() > 0:
+                median_value = df[col].median()
+
+                if pd.isna(median_value):
+                    median_value = 0
+
+                df[col] = df[col].fillna(median_value)
 
     text_columns = [
+        "source",
+        "country",
+        "city",
+        "neighborhood",
         "property_type",
-        "neighborhood"
+        "listing_url"
     ]
 
     for col in text_columns:
         if col in df.columns:
-            df[col] = df[col].fillna(
-                "Unknown"
-            )
-
-    after = len(df)
+            df[col] = df[col].fillna("Not available")
 
     log_step(
         phase="T02_NULOS",
         source="Dataset unificado",
-        input_rows=before,
-        output_rows=after,
+        input_rows=input_rows,
+        output_rows=len(df),
         discarded_rows=0,
-        reason="Tratamiento de valores nulos"
+        reason="Imputación de nulos mediante mediana en numéricas y valor por defecto en categóricas"
     )
 
     return df
 
 
 def validate_types(df):
+    input_rows = len(df)
+
     numeric_columns = [
         "price_eur",
         "area_m2",
@@ -165,101 +149,112 @@ def validate_types(df):
     ]
 
     for col in numeric_columns:
-        if col in df.columns:
-            df[col] = pd.to_numeric(
-                df[col],
-                errors="coerce"
-            )
+        df[col] = pd.to_numeric(
+            df[col],
+            errors="coerce"
+        )
+
+    df["scraping_date"] = pd.to_datetime(
+        df["scraping_date"],
+        errors="coerce"
+    )
 
     log_step(
         phase="T04_TIPOS",
         source="Dataset unificado",
-        input_rows=len(df),
+        input_rows=input_rows,
         output_rows=len(df),
         discarded_rows=0,
-        reason="Validación de tipos de dato"
+        reason="Conversión de tipos numéricos y temporales"
     )
 
     return df
 
 
 def normalize_dates(df):
+    input_rows = len(df)
+
     df["scraping_date"] = pd.to_datetime(
         df["scraping_date"],
         errors="coerce"
     )
 
-    df["scraping_date"] = (
-        df["scraping_date"]
-        .dt.strftime("%Y-%m-%d")
+    df["scraping_date"] = df["scraping_date"].fillna(
+        pd.Timestamp.today()
     )
+
+    df["scraping_date"] = df["scraping_date"].dt.strftime("%Y-%m-%d")
 
     log_step(
         phase="T05_FECHAS",
         source="Dataset unificado",
-        input_rows=len(df),
+        input_rows=input_rows,
         output_rows=len(df),
         discarded_rows=0,
-        reason="Normalización de fechas ISO-8601"
+        reason="Normalización de fechas a formato ISO-8601"
     )
 
     return df
 
 
 def normalize_text(df):
+    input_rows = len(df)
+
     text_columns = [
-        "city",
+        "source",
         "country",
+        "city",
         "neighborhood",
         "property_type"
     ]
 
     for col in text_columns:
-        if col in df.columns:
-            df[col] = (
-                df[col]
-                .astype(str)
-                .str.title()
-            )
+        df[col] = (
+            df[col]
+            .astype(str)
+            .str.strip()
+            .str.title()
+        )
 
     log_step(
         phase="T06_TEXTO",
         source="Dataset unificado",
-        input_rows=len(df),
+        input_rows=input_rows,
         output_rows=len(df),
         discarded_rows=0,
-        reason="Normalización textual"
+        reason="Normalización textual de variables categóricas"
     )
 
     return df
 
 
 def validate_ranges(df):
-    before = len(df)
+    input_rows = len(df)
 
     df = df[
         (df["price_eur"] > 0)
         & (df["area_m2"] > 0)
+        & (df["price_per_m2"] > 0)
         & (df["bedrooms"] >= 0)
         & (df["bathrooms"] >= 0)
     ]
 
-    after = len(df)
+    discarded = input_rows - len(df)
 
     log_step(
         phase="T07_RANGOS",
         source="Dataset unificado",
-        input_rows=before,
-        output_rows=after,
-        discarded_rows=before - after,
-        reason="Validación de rangos"
+        input_rows=input_rows,
+        output_rows=len(df),
+        discarded_rows=discarded,
+        reason="Validación de rangos mínimos de negocio"
     )
 
     return df
 
 
-def remove_outliers(df):
-    before = len(df)
+def detect_outliers(df):
+    input_rows = len(df)
 
     numeric_columns = [
         "price_eur",
@@ -267,86 +262,114 @@ def remove_outliers(df):
         "price_per_m2"
     ]
 
+    outlier_counts = {}
+
     for col in numeric_columns:
         q1 = df[col].quantile(0.25)
         q3 = df[col].quantile(0.75)
-
         iqr = q3 - q1
 
         lower = q1 - 1.5 * iqr
         upper = q3 + 1.5 * iqr
 
-        df = df[
-            (df[col] >= lower)
-            & (df[col] <= upper)
+        outliers = df[
+            (df[col] < lower)
+            | (df[col] > upper)
         ]
 
-    after = len(df)
+        outlier_counts[col] = len(outliers)
 
     log_step(
         phase="T08_OUTLIERS",
         source="Dataset unificado",
-        input_rows=before,
-        output_rows=after,
-        discarded_rows=before - after,
-        reason="Eliminación de outliers"
+        input_rows=input_rows,
+        output_rows=len(df),
+        discarded_rows=0,
+        reason=f"Detección de outliers mediante IQR sin eliminación: {outlier_counts}"
+    )
+
+    return df
+
+
+def create_luxury_segment(df):
+    input_rows = len(df)
+
+    df["luxury_threshold_country"] = (
+        df
+        .groupby("country")["price_eur"]
+        .transform(lambda x: x.quantile(0.90))
+    )
+
+    df["luxury_segment"] = df["price_eur"] >= df["luxury_threshold_country"]
+
+    df["luxury_label"] = df["luxury_segment"].map(
+        {
+            True: "Luxury",
+            False: "Standard"
+        }
+    )
+
+    log_step(
+        phase="LUXURY_SEGMENT",
+        source="Dataset unificado",
+        input_rows=input_rows,
+        output_rows=len(df),
+        discarded_rows=0,
+        reason="Creación de segmento luxury mediante percentil 90 de precio por país"
     )
 
     return df
 
 
 def pseudonymize_data(df):
+    input_rows = len(df)
+
     df["property_id"] = (
-        df["property_id"]
-        .astype(str)
-        .apply(
-            lambda x: f"PROP_{abs(hash(x)) % 1000000}"
-        )
+        df["source"].astype(str)
+        + "_"
+        + df["property_id"].astype(str)
+    ).apply(
+        lambda x: f"PROP_{abs(hash(x)) % 100000000}"
     )
 
     log_step(
         phase="T09_SEUDONIMIZACION",
         source="Dataset unificado",
-        input_rows=len(df),
+        input_rows=input_rows,
         output_rows=len(df),
         discarded_rows=0,
-        reason="Seudonimización de identificadores"
+        reason="Seudonimización de identificadores de propiedad"
     )
 
     return df
 
 
 def validate_referential_integrity(df):
+    input_rows = len(df)
+
     valid_sources = [
-        "Idealista",
-        "Rightmove",
-        "Funda"
+        "Spanish Housing Dataset",
+        "Uk Land Registry",
+        "Dutch Housing Dataset"
     ]
 
-    before = len(df)
+    df = df[df["source"].isin(valid_sources)]
 
-    df = df[
-        df["source"].isin(valid_sources)
-    ]
-
-    after = len(df)
+    discarded = input_rows - len(df)
 
     log_step(
         phase="T10_VALIDACION_REFERENCIAL",
         source="Dataset unificado",
-        input_rows=before,
-        output_rows=after,
-        discarded_rows=before - after,
-        reason="Validación referencial"
+        input_rows=input_rows,
+        output_rows=len(df),
+        discarded_rows=discarded,
+        reason="Validación referencial de fuentes permitidas"
     )
 
     return df
 
 
-def save_processed_data(
-    real_estate_df,
-    eurostat_df
-):
+def save_processed_data(real_estate_df, eurostat_df):
     real_estate_df.to_csv(
         PROCESSED_PATH / "properties_clean.csv",
         index=False
@@ -359,63 +382,45 @@ def save_processed_data(
 
     log_step(
         phase="SAVE_PROCESSED",
-        source="Dataset limpio",
+        source="Dataset inmobiliario limpio",
         input_rows=len(real_estate_df),
         output_rows=len(real_estate_df),
         discarded_rows=0,
-        reason="Exportación dataset inmobiliario limpio"
+        reason="Exportación de dataset inmobiliario real limpio"
     )
 
     log_step(
         phase="SAVE_PROCESSED",
-        source="Eurostat HPI",
+        source="Eurostat HPI limpio",
         input_rows=len(eurostat_df),
         output_rows=len(eurostat_df),
         discarded_rows=0,
-        reason="Exportación Eurostat limpio"
+        reason="Exportación de Eurostat HPI limpio"
     )
 
-    print(
-        "Dataset inmobiliario limpio guardado."
-    )
-
-    print(
-        "Dataset Eurostat HPI guardado."
-    )
+    print(f"Dataset inmobiliario limpio guardado: {len(real_estate_df)} registros")
+    print(f"Dataset Eurostat HPI limpio guardado: {len(eurostat_df)} registros")
 
 
 def main():
-    (
-        idealista,
-        rightmove,
-        funda,
-        eurostat
-    ) = load_raw_data()
+    spain, uk, netherlands, eurostat = load_raw_data()
 
-    df = merge_real_estate_sources(
-        idealista,
-        rightmove,
-        funda
+    df = merge_sources(
+        spain,
+        uk,
+        netherlands
     )
 
-    df = remove_blank_spaces(df)
-
+    df = clean_blank_values(df)
     df = remove_duplicates(df)
-
     df = handle_nulls(df)
-
     df = validate_types(df)
-
     df = normalize_dates(df)
-
     df = normalize_text(df)
-
     df = validate_ranges(df)
-
-    df = remove_outliers(df)
-
+    df = detect_outliers(df)
+    df = create_luxury_segment(df)
     df = pseudonymize_data(df)
-
     df = validate_referential_integrity(df)
 
     save_processed_data(
@@ -423,9 +428,7 @@ def main():
         eurostat
     )
 
-    print(
-        "\nLimpieza ETL completada correctamente."
-    )
+    print("\nLimpieza ETL completada correctamente.")
 
 
 if __name__ == "__main__":

@@ -6,12 +6,14 @@ from tracker import log_step
 
 
 RAW_PATH = Path("data/raw")
-REAL_SOURCES_PATH = RAW_PATH / "real_sources"
+SPAIN_PATH = RAW_PATH / "spain"
+UK_PATH = RAW_PATH / "uk"
+NL_PATH = RAW_PATH / "real_sources"
 
 RAW_PATH.mkdir(parents=True, exist_ok=True)
 
 
-def clean_numeric_value(value):
+def clean_numeric(value):
     if pd.isna(value):
         return None
 
@@ -29,10 +31,7 @@ def clean_numeric_value(value):
         .strip()
     )
 
-    digits = "".join(
-        char for char in value
-        if char.isdigit()
-    )
+    digits = "".join(char for char in value if char.isdigit())
 
     if digits == "":
         return None
@@ -40,217 +39,230 @@ def clean_numeric_value(value):
     return float(digits)
 
 
-def normalize_madrid():
-    df = pd.read_csv(
-        REAL_SOURCES_PATH / "idealista_madrid.csv"
-    )
+def normalize_property_type(value):
+    value = str(value).lower()
+
+    if value in ["d", "detached"] or "detached" in value:
+        return "Detached House"
+
+    if value in ["s", "semi-detached"] or "semi" in value:
+        return "Semi-Detached House"
+
+    if value in ["t", "terraced"] or "terrace" in value or "terraced" in value:
+        return "Terraced House"
+
+    if value in ["f", "flat"] or "flat" in value or "apartment" in value or "piso" in value:
+        return "Apartment"
+
+    if "villa" in value or "chalet" in value:
+        return "Villa"
+
+    if "penthouse" in value or "ático" in value or "atico" in value:
+        return "Penthouse"
+
+    if "house" in value or "casa" in value or "woning" in value:
+        return "House"
+
+    return "Other"
+
+
+def extract_spain():
+    files = list(SPAIN_PATH.glob("houses_*.csv"))
+
+    dfs = []
+
+    for file in files:
+        df = pd.read_csv(file)
+
+        province = (
+            file.stem
+            .replace("houses_", "")
+            .replace("_", " ")
+            .title()
+        )
+
+        df["source_file"] = file.name
+        df["province"] = province
+
+        dfs.append(df)
+
+    raw = pd.concat(dfs, ignore_index=True)
 
     normalized = pd.DataFrame()
 
-    normalized["property_id"] = df["id"].astype(str)
-    normalized["source"] = "Idealista"
+    normalized["property_id"] = "ES_" + raw["house_id"].astype(str)
+    normalized["source"] = "Spanish Housing Dataset"
     normalized["country"] = "Spain"
-    normalized["city"] = "Madrid"
+    normalized["city"] = raw["loc_city"].fillna(raw["province"])
+    normalized["neighborhood"] = raw["loc_neigh"].fillna(raw["loc_district"]).fillna(raw["loc_zone"]).fillna("Unknown")
+    normalized["property_type"] = raw["house_type"].apply(normalize_property_type)
+    normalized["price_eur"] = pd.to_numeric(raw["price"], errors="coerce")
+    normalized["area_m2"] = pd.to_numeric(raw["m2_real"], errors="coerce")
+    normalized["price_per_m2"] = (normalized["price_eur"] / normalized["area_m2"]).round(2)
+    normalized["bedrooms"] = pd.to_numeric(raw["room_num"], errors="coerce")
+    normalized["bathrooms"] = pd.to_numeric(raw["bath_num"], errors="coerce")
+    normalized["floor"] = pd.to_numeric(raw["floor"], errors="coerce")
+    normalized["listing_url"] = "Not available"
+    normalized["scraping_date"] = pd.to_datetime(raw["obtention_date"], errors="coerce").dt.strftime("%Y-%m-%d")
+    normalized["scraping_date"] = normalized["scraping_date"].fillna(pd.Timestamp.today().strftime("%Y-%m-%d"))
 
-    normalized["neighborhood"] = df["address"].fillna("Madrid")
-    normalized["property_type"] = df["typology"].fillna("Unknown")
-
-    normalized["price_eur"] = df["price"].apply(clean_numeric_value)
-
-    normalized["area_m2"] = (
-        df["sqft"]
-        .apply(clean_numeric_value)
-        .astype(float)
-        * 0.092903
-    ).round(2)
-
-    normalized["price_per_m2"] = (
-        normalized["price_eur"] / normalized["area_m2"]
-    ).round(2)
-
-    normalized["bedrooms"] = pd.to_numeric(
-        df["rooms"],
-        errors="coerce"
-    )
-
-    normalized["bathrooms"] = pd.to_numeric(
-        df["baths"],
-        errors="coerce"
-    )
-
-    normalized["floor"] = None
-
-    normalized["listing_url"] = df["listingUrl"].fillna(df["url"])
-
-    normalized["scraping_date"] = pd.Timestamp.today().strftime("%Y-%m-%d")
-
-    normalized.to_csv(
-        RAW_PATH / "idealista_madrid_raw.csv",
-        index=False
-    )
+    normalized.to_csv(RAW_PATH / "spain_real_estate_raw.csv", index=False)
 
     log_step(
         phase="EXTRACT",
-        source="Idealista Madrid",
-        input_rows=len(df),
+        source="Spain national housing dataset",
+        input_rows=len(raw),
         output_rows=len(normalized),
         discarded_rows=0,
-        reason="Normalización de dataset real Idealista Madrid"
+        reason="Normalización de dataset nacional real de España"
     )
 
-    print(f"Idealista Madrid normalizado: {len(normalized)} registros")
+    print(f"España normalizada: {len(normalized)} registros")
 
     return normalized
 
 
-def normalize_london():
-    df = pd.read_csv(
-        REAL_SOURCES_PATH / "realestate_data_london_2024_nov.csv"
+def extract_uk():
+    columns = [
+        "transaction_id",
+        "price_gbp",
+        "transfer_date",
+        "property_type",
+        "old_new",
+        "duration",
+        "town_city",
+        "district",
+        "county",
+        "ppd_category",
+        "record_status"
+    ]
+
+    raw = pd.read_csv(
+        UK_PATH / "price_paid_records.csv",
+        skiprows=1,
+        names=columns,
+        low_memory=False
     )
+
+    # Para que el proyecto sea manejable, usamos una muestra reproducible.
+    # El archivo UK completo es muy grande.
+    if len(raw) > 50000:
+        raw = raw.sample(
+            n=50000,
+            random_state=42
+        )
 
     normalized = pd.DataFrame()
 
-    normalized["property_id"] = (
-        "LON_"
-        + df.index.astype(str)
-    )
-
-    normalized["source"] = "Rightmove"
+    normalized["property_id"] = "UK_" + raw["transaction_id"].astype(str)
+    normalized["source"] = "UK Land Registry"
     normalized["country"] = "United Kingdom"
-    normalized["city"] = "London"
+    normalized["city"] = raw["town_city"].fillna(raw["district"]).fillna("Unknown").astype(str).str.title()
+    normalized["neighborhood"] = raw["district"].fillna(raw["county"]).fillna("Unknown").astype(str).str.title()
+    normalized["property_type"] = raw["property_type"].apply(normalize_property_type)
 
-    normalized["neighborhood"] = df["title"].fillna("London")
-    normalized["property_type"] = df["propertyType"].fillna("Unknown")
+    price_gbp = pd.to_numeric(raw["price_gbp"], errors="coerce")
+    normalized["price_eur"] = (price_gbp * 1.17).round(2)
 
-    price_gbp = df["price"].apply(clean_numeric_value)
+    # Land Registry no incluye metros cuadrados.
+    # Para no inventar vivienda concreta, imputamos superficie media por tipo de vivienda.
+    area_mapping = {
+        "Detached House": 180,
+        "Semi-Detached House": 130,
+        "Terraced House": 110,
+        "Apartment": 75,
+        "House": 120,
+        "Villa": 220,
+        "Penthouse": 140,
+        "Other": 100
+    }
 
-    normalized["price_eur"] = (
-        price_gbp * 1.17
-    ).round(2)
+    normalized["area_m2"] = normalized["property_type"].map(area_mapping).fillna(100)
+    normalized["price_per_m2"] = (normalized["price_eur"] / normalized["area_m2"]).round(2)
 
-    normalized["area_m2"] = (
-        df["sizeSqFeetMax"]
-        .apply(clean_numeric_value)
-        .astype(float)
-        * 0.092903
-    ).round(2)
+    room_mapping = {
+        "Detached House": 5,
+        "Semi-Detached House": 4,
+        "Terraced House": 3,
+        "Apartment": 2,
+        "House": 3,
+        "Villa": 5,
+        "Penthouse": 3,
+        "Other": 3
+    }
 
-    normalized["price_per_m2"] = (
-        normalized["price_eur"] / normalized["area_m2"]
-    ).round(2)
+    bath_mapping = {
+        "Detached House": 3,
+        "Semi-Detached House": 2,
+        "Terraced House": 2,
+        "Apartment": 1,
+        "House": 2,
+        "Villa": 4,
+        "Penthouse": 2,
+        "Other": 2
+    }
 
-    normalized["bedrooms"] = pd.to_numeric(
-        df["bedrooms"],
-        errors="coerce"
-    )
+    normalized["bedrooms"] = normalized["property_type"].map(room_mapping).fillna(3)
+    normalized["bathrooms"] = normalized["property_type"].map(bath_mapping).fillna(2)
+    normalized["floor"] = -1
+    normalized["listing_url"] = "Not available"
+    normalized["scraping_date"] = pd.to_datetime(raw["transfer_date"], errors="coerce").dt.strftime("%Y-%m-%d")
+    normalized["scraping_date"] = normalized["scraping_date"].fillna(pd.Timestamp.today().strftime("%Y-%m-%d"))
 
-    normalized["bathrooms"] = pd.to_numeric(
-        df["bathrooms"],
-        errors="coerce"
-    )
-
-    normalized["floor"] = None
-
-    normalized["listing_url"] = None
-
-    normalized["scraping_date"] = pd.to_datetime(
-        df["addedOn"],
-        errors="coerce"
-    ).dt.strftime("%Y-%m-%d")
-
-    normalized["scraping_date"] = normalized["scraping_date"].fillna(
-        pd.Timestamp.today().strftime("%Y-%m-%d")
-    )
-
-    normalized.to_csv(
-        RAW_PATH / "rightmove_london_raw.csv",
-        index=False
-    )
+    normalized.to_csv(RAW_PATH / "uk_real_estate_raw.csv", index=False)
 
     log_step(
         phase="EXTRACT",
-        source="Rightmove London",
-        input_rows=len(df),
+        source="UK Land Registry national dataset",
+        input_rows=len(raw),
         output_rows=len(normalized),
         discarded_rows=0,
-        reason="Normalización de dataset real Rightmove London"
+        reason="Normalización de dataset nacional real de Reino Unido"
     )
 
-    print(f"Rightmove London normalizado: {len(normalized)} registros")
+    print(f"UK normalizado: {len(normalized)} registros")
 
     return normalized
 
 
-def normalize_amsterdam():
-    df = pd.read_csv(
-        REAL_SOURCES_PATH / "raw_data.csv"
-    )
+def extract_netherlands():
+    raw = pd.read_csv(NL_PATH / "raw_data.csv")
 
     normalized = pd.DataFrame()
 
-    normalized["property_id"] = (
-        "AMS_"
-        + df.index.astype(str)
-    )
-
-    normalized["source"] = "Funda"
+    normalized["property_id"] = "NL_" + raw.index.astype(str)
+    normalized["source"] = "Dutch Housing Dataset"
     normalized["country"] = "Netherlands"
-    normalized["city"] = "Amsterdam"
-
-    normalized["neighborhood"] = df["City"].fillna("Amsterdam")
-    normalized["property_type"] = df["House type"].fillna("Unknown")
-
-    normalized["price_eur"] = df["Price"].apply(clean_numeric_value)
-
-    normalized["area_m2"] = pd.to_numeric(
-        df["Living space size (m2)"],
-        errors="coerce"
-    )
-
-    normalized["price_per_m2"] = (
-        normalized["price_eur"] / normalized["area_m2"]
-    ).round(2)
-
-    normalized["bedrooms"] = pd.to_numeric(
-        df["Rooms"],
-        errors="coerce"
-    )
-
-    normalized["bathrooms"] = pd.to_numeric(
-        df["Toilet"],
-        errors="coerce"
-    )
-
-    normalized["floor"] = pd.to_numeric(
-        df["Floors"],
-        errors="coerce"
-    )
-
-    normalized["listing_url"] = None
-
+    normalized["city"] = raw["City"].fillna("Unknown")
+    normalized["neighborhood"] = raw["City"].fillna("Unknown")
+    normalized["property_type"] = raw["House type"].apply(normalize_property_type)
+    normalized["price_eur"] = raw["Price"].apply(clean_numeric)
+    normalized["area_m2"] = pd.to_numeric(raw["Living space size (m2)"], errors="coerce")
+    normalized["price_per_m2"] = (normalized["price_eur"] / normalized["area_m2"]).round(2)
+    normalized["bedrooms"] = pd.to_numeric(raw["Rooms"], errors="coerce")
+    normalized["bathrooms"] = pd.to_numeric(raw["Toilet"], errors="coerce")
+    normalized["floor"] = pd.to_numeric(raw["Floors"], errors="coerce")
+    normalized["listing_url"] = "Not available"
     normalized["scraping_date"] = pd.Timestamp.today().strftime("%Y-%m-%d")
 
-    normalized.to_csv(
-        RAW_PATH / "funda_amsterdam_raw.csv",
-        index=False
-    )
+    normalized.to_csv(RAW_PATH / "netherlands_real_estate_raw.csv", index=False)
 
     log_step(
         phase="EXTRACT",
-        source="Funda Amsterdam",
-        input_rows=len(df),
+        source="Netherlands housing dataset",
+        input_rows=len(raw),
         output_rows=len(normalized),
         discarded_rows=0,
-        reason="Normalización de dataset real Funda Amsterdam"
+        reason="Normalización de dataset nacional real de Países Bajos"
     )
 
-    print(f"Funda Amsterdam normalizado: {len(normalized)} registros")
+    print(f"Netherlands normalizado: {len(normalized)} registros")
 
     return normalized
 
 
-def normalize_eurostat():
-    eurostat_path = REAL_SOURCES_PATH / "eurostat_hpi_real.csv"
+def extract_eurostat():
+    eurostat_path = NL_PATH / "eurostat_hpi_real.csv"
 
     if eurostat_path.exists():
         df = pd.read_csv(eurostat_path)
@@ -281,10 +293,7 @@ def normalize_eurostat():
 
         df = pd.DataFrame(rows)
 
-    df.to_csv(
-        RAW_PATH / "eurostat_hpi.csv",
-        index=False
-    )
+    df.to_csv(RAW_PATH / "eurostat_hpi.csv", index=False)
 
     log_step(
         phase="EXTRACT",
@@ -292,21 +301,21 @@ def normalize_eurostat():
         input_rows=len(df),
         output_rows=len(df),
         discarded_rows=0,
-        reason="Carga de serie HPI Eurostat"
+        reason="Carga de índice macroeconómico HPI"
     )
 
-    print(f"Eurostat HPI normalizado: {len(df)} registros")
+    print(f"Eurostat HPI cargado: {len(df)} registros")
 
     return df
 
 
 def main():
-    normalize_madrid()
-    normalize_london()
-    normalize_amsterdam()
-    normalize_eurostat()
+    extract_spain()
+    extract_uk()
+    extract_netherlands()
+    extract_eurostat()
 
-    print("\nExtracción y normalización de fuentes reales completada correctamente.")
+    print("\nExtracción real nacional completada correctamente.")
 
 
 if __name__ == "__main__":

@@ -52,6 +52,7 @@ def verify_counts(connection):
         "dim_property_type",
         "dim_source",
         "dim_time",
+        "dim_luxury_segment",
         "fact_properties"
     ]
 
@@ -73,6 +74,7 @@ def main():
     load_table(connection, "dim_property_type.csv", "dim_property_type")
     load_table(connection, "dim_source.csv", "dim_source")
     load_table(connection, "dim_time.csv", "dim_time")
+    load_table(connection, "dim_luxury_segment.csv", "dim_luxury_segment")
     load_table(connection, "fact_properties.csv", "fact_properties")
 
     verify_counts(connection)

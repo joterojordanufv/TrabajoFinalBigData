@@ -7,7 +7,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="Premium Real Estate BI Dashboard",
+    page_title="European Luxury Real Estate BI Dashboard",
     page_icon="🏠",
     layout="wide"
 )
@@ -27,6 +27,7 @@ def load_data():
     dim_property_type = pd.read_csv(FINAL_PATH / "dim_property_type.csv")
     dim_source = pd.read_csv(FINAL_PATH / "dim_source.csv")
     dim_time = pd.read_csv(FINAL_PATH / "dim_time.csv")
+    dim_luxury_segment = pd.read_csv(FINAL_PATH / "dim_luxury_segment.csv")
 
     df = (
         fact
@@ -35,6 +36,7 @@ def load_data():
         .merge(dim_property_type, on="property_type_id", how="left")
         .merge(dim_source, on="source_id", how="left")
         .merge(dim_time, on="time_id", how="left")
+        .merge(dim_luxury_segment, on="luxury_segment_id", how="left")
     )
 
     return df
@@ -65,10 +67,18 @@ section = st.sidebar.radio(
 )
 
 
+countries = st.sidebar.multiselect(
+    "País",
+    options=sorted(df["country"].dropna().unique()),
+    default=sorted(df["country"].dropna().unique())
+)
+
+filtered_country_df = df[df["country"].isin(countries)]
+
 cities = st.sidebar.multiselect(
     "Ciudad",
-    options=sorted(df["city"].dropna().unique()),
-    default=sorted(df["city"].dropna().unique())
+    options=sorted(filtered_country_df["city"].dropna().unique()),
+    default=sorted(filtered_country_df["city"].dropna().unique())
 )
 
 property_types = st.sidebar.multiselect(
@@ -77,8 +87,14 @@ property_types = st.sidebar.multiselect(
     default=sorted(df["property_type"].dropna().unique())
 )
 
+luxury_labels = st.sidebar.multiselect(
+    "Segmento",
+    options=sorted(df["luxury_label"].dropna().unique()),
+    default=sorted(df["luxury_label"].dropna().unique())
+)
+
 min_price = int(df["price_eur"].min())
-max_price = int(df["price_eur"].max())
+max_price = int(df["price_eur"].quantile(0.99))
 
 price_range = st.sidebar.slider(
     "Rango de precio (€)",
@@ -87,89 +103,106 @@ price_range = st.sidebar.slider(
     value=(min_price, max_price)
 )
 
-bedrooms = st.sidebar.multiselect(
-    "Habitaciones",
-    options=sorted(df["bedrooms"].dropna().unique()),
-    default=sorted(df["bedrooms"].dropna().unique())
-)
-
 
 filtered_df = df[
+    (df["country"].isin(countries)) &
     (df["city"].isin(cities)) &
     (df["property_type"].isin(property_types)) &
-    (df["price_eur"].between(price_range[0], price_range[1])) &
-    (df["bedrooms"].isin(bedrooms))
+    (df["luxury_label"].isin(luxury_labels)) &
+    (df["price_eur"].between(price_range[0], price_range[1]))
 ]
 
 
+plot_df = filtered_df[
+    filtered_df["price_eur"] <= filtered_df["price_eur"].quantile(0.99)
+] if len(filtered_df) > 0 else filtered_df
+
+
 if section == "Resumen ejecutivo":
-    st.title("🏠 Premium European Real Estate BI Dashboard")
+    st.title("🏠 European Luxury Real Estate BI Dashboard")
 
     st.markdown(
         """
-        Dashboard interactivo para analizar el mercado inmobiliario premium europeo.
-        Integra datos de Madrid, Londres y Ámsterdam con un modelo dimensional en estrella,
-        base de datos SQL y visualizaciones de negocio.
+        Dashboard interactivo para analizar el mercado inmobiliario europeo utilizando datos reales
+        de España, Reino Unido y Países Bajos. El proyecto integra ETL, modelo dimensional,
+        base de datos SQL, visualización BI y segmentación Luxury mediante percentil 90 por país.
         """
     )
 
-    col1, col2, col3, col4 = st.columns(4)
+    if len(filtered_df) == 0:
+        st.warning("No hay datos para los filtros seleccionados.")
+        st.stop()
+
+    luxury_count = filtered_df[filtered_df["luxury_label"] == "Luxury"].shape[0]
+    luxury_pct = luxury_count / len(filtered_df) * 100
+
+    most_expensive_country = (
+        filtered_df
+        .groupby("country")["price_eur"]
+        .mean()
+        .sort_values(ascending=False)
+        .index[0]
+    )
+
+    col1, col2, col3, col4, col5 = st.columns(5)
 
     col1.metric("Propiedades", f"{len(filtered_df):,}")
     col2.metric("Precio medio", f"€{filtered_df['price_eur'].mean():,.0f}")
     col3.metric("Precio medio/m²", f"€{filtered_df['price_per_m2'].mean():,.0f}")
-    col4.metric("Superficie media", f"{filtered_df['area_m2'].mean():.1f} m²")
+    col4.metric("Luxury", f"{luxury_pct:.1f}%")
+    col5.metric("País más caro", most_expensive_country)
 
     st.divider()
 
     left, right = st.columns(2)
 
     with left:
-        city_avg = (
-            filtered_df
-            .groupby("city", as_index=False)["price_eur"]
+        country_avg = (
+            plot_df
+            .groupby("country", as_index=False)["price_eur"]
             .mean()
             .sort_values("price_eur", ascending=False)
         )
 
         fig = px.bar(
-            city_avg,
-            x="city",
+            country_avg,
+            x="country",
             y="price_eur",
             text_auto=".2s",
-            title="Precio medio por ciudad"
+            title="Precio medio por país"
         )
 
         st.plotly_chart(fig, use_container_width=True)
 
     with right:
         fig = px.box(
-            filtered_df,
-            x="city",
+            plot_df,
+            x="country",
             y="price_per_m2",
-            points="all",
-            title="Distribución del precio por m² por ciudad"
+            color="luxury_label",
+            points=False,
+            title="Distribución del precio/m² por país y segmento"
         )
 
         st.plotly_chart(fig, use_container_width=True)
 
-    st.subheader("Ranking de barrios premium")
+    st.subheader("Top 15 ciudades por precio medio")
 
-    neighborhood_rank = (
-        filtered_df
-        .groupby(["city", "neighborhood"], as_index=False)["price_per_m2"]
+    city_rank = (
+        plot_df
+        .groupby(["country", "city"], as_index=False)["price_eur"]
         .mean()
-        .sort_values("price_per_m2", ascending=False)
+        .sort_values("price_eur", ascending=False)
         .head(15)
     )
 
     fig = px.bar(
-        neighborhood_rank,
-        x="price_per_m2",
-        y="neighborhood",
-        color="city",
+        city_rank,
+        x="price_eur",
+        y="city",
+        color="country",
         orientation="h",
-        title="Top 15 barrios por precio/m²"
+        title="Top 15 ciudades por precio medio"
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -178,30 +211,36 @@ if section == "Resumen ejecutivo":
 elif section == "Análisis visual":
     st.title("📊 Análisis visual interactivo")
 
+    if len(filtered_df) == 0:
+        st.warning("No hay datos para los filtros seleccionados.")
+        st.stop()
+
     left, right = st.columns(2)
 
     with left:
         fig = px.histogram(
-            filtered_df,
+            plot_df,
             x="price_eur",
-            color="city",
-            nbins=40,
-            title="Distribución de precios por ciudad"
+            color="country",
+            nbins=60,
+            title="Distribución de precios por país"
         )
 
         st.plotly_chart(fig, use_container_width=True)
 
     with right:
         fig = px.scatter(
-            filtered_df,
+            plot_df,
             x="area_m2",
             y="price_eur",
-            color="city",
-            size="bedrooms",
+            color="country",
+            symbol="luxury_label",
             hover_data=[
+                "city",
                 "neighborhood",
                 "property_type",
-                "price_per_m2"
+                "price_per_m2",
+                "luxury_label"
             ],
             title="Relación superficie-precio"
         )
@@ -215,30 +254,33 @@ elif section == "Análisis visual":
             filtered_df
             .groupby("property_type", as_index=False)
             .size()
+            .sort_values("size", ascending=False)
         )
 
-        fig = px.pie(
+        fig = px.bar(
             property_count,
-            names="property_type",
-            values="size",
+            x="property_type",
+            y="size",
+            text_auto=True,
             title="Distribución por tipo de propiedad"
         )
 
         st.plotly_chart(fig, use_container_width=True)
 
     with right:
-        source_count = (
+        luxury_by_country = (
             filtered_df
-            .groupby("source", as_index=False)
+            .groupby(["country", "luxury_label"], as_index=False)
             .size()
         )
 
         fig = px.bar(
-            source_count,
-            x="source",
+            luxury_by_country,
+            x="country",
             y="size",
+            color="luxury_label",
             text_auto=True,
-            title="Registros por fuente"
+            title="Distribución Luxury / Standard por país"
         )
 
         st.plotly_chart(fig, use_container_width=True)
@@ -250,10 +292,11 @@ elif section == "Análisis visual":
         "area_m2",
         "bedrooms",
         "bathrooms",
-        "price_per_m2"
+        "price_per_m2",
+        "luxury_threshold_country"
     ]
 
-    corr = filtered_df[numeric_cols].corr()
+    corr = plot_df[numeric_cols].corr()
 
     fig = px.imshow(
         corr,
@@ -269,8 +312,8 @@ elif section == "Galería EDA":
 
     st.markdown(
         """
-        Esta sección muestra las visualizaciones generadas durante el análisis exploratorio
-        y exportadas automáticamente desde los notebooks/scripts del proyecto.
+        Visualizaciones generadas durante el análisis exploratorio.
+        Estas imágenes proceden de `outputs/figures/` y sirven como evidencia documental del EDA.
         """
     )
 
@@ -278,7 +321,7 @@ elif section == "Galería EDA":
         ("Distribución de precios", "01_distribucion_precios.png"),
         ("Precio por m² por ciudad", "02_precio_m2_ciudad.png"),
         ("Relación superficie-precio", "03_superficie_precio.png"),
-        ("Frecuencia de barrios", "04_frecuencia_barrios.png"),
+        ("Frecuencia de barrios / ciudades", "04_frecuencia_barrios.png"),
         ("Heatmap de correlaciones", "05_heatmap_correlaciones.png"),
         ("Tipos de propiedad", "06_tipos_propiedad.png"),
         ("Precio medio por ciudad", "07_precio_medio_ciudad.png"),
@@ -286,7 +329,6 @@ elif section == "Galería EDA":
         ("Funnel de tracking del pipeline", "09_funnel_tracking_pipeline.png"),
         ("Serie temporal de registros", "10_serie_temporal_registros.png"),
         ("Pairplot de variables continuas", "11_pairplot_variables_continuas.png"),
-        ("Heatmap de nulos", "eda01_01_heatmap_nulos.png"),
     ]
 
     for title, file_name in eda_images:
@@ -320,20 +362,23 @@ elif section == "Explorador SQL":
 
     st.markdown(
         """
-        Ejecuta consultas SQL directamente sobre la base de datos SQLite generada por el pipeline.
+        Ejecuta consultas SQL directamente sobre el Data Warehouse SQLite generado por el pipeline.
         """
     )
 
     default_query = """
 SELECT
-    c.city,
+    c.country,
+    l.luxury_label,
     AVG(f.price_eur) AS avg_price,
     AVG(f.price_per_m2) AS avg_price_m2,
     COUNT(*) AS total_properties
 FROM fact_properties f
 JOIN dim_city c
     ON f.city_id = c.city_id
-GROUP BY c.city
+JOIN dim_luxury_segment l
+    ON f.luxury_segment_id = l.luxury_segment_id
+GROUP BY c.country, l.luxury_label
 ORDER BY avg_price DESC;
 """
 
@@ -357,9 +402,9 @@ elif section == "Modelo dimensional":
 
     st.markdown(
         """
-        El Data Warehouse del proyecto sigue un modelo dimensional en estrella.
-        La tabla central es `fact_properties`, que contiene las métricas principales del negocio
-        inmobiliario, y está conectada con cinco dimensiones descriptivas.
+        El Data Warehouse sigue un modelo dimensional en estrella.
+        La tabla central es `fact_properties`, conectada con dimensiones descriptivas
+        de ciudad, barrio/zona, tipo de propiedad, fuente, tiempo y segmento luxury.
         """
     )
 
@@ -385,62 +430,35 @@ elif section == "Modelo dimensional":
                 graph [rankdir=LR]
                 node [shape=record, style=filled, fontname="Arial"]
 
-                fact [label="{FACT_PROPERTIES|PK fact_id\\lFK city_id\\lFK neighborhood_id\\lFK property_type_id\\lFK source_id\\lFK time_id\\lsource_record_id\\lload_timestamp\\lprice_eur\\larea_m2\\lbedrooms\\lbathrooms\\lprice_per_m2\\l}", fillcolor="#dbeafe"]
+                fact [label="{FACT_PROPERTIES|PK fact_id\\lFK city_id\\lFK neighborhood_id\\lFK property_type_id\\lFK source_id\\lFK time_id\\lFK luxury_segment_id\\lsource_record_id\\lload_timestamp\\lprice_eur\\larea_m2\\lbedrooms\\lbathrooms\\lprice_per_m2\\lluxury_threshold_country\\l}", fillcolor="#dbeafe"]
 
                 city [label="{DIM_CITY|PK city_id\\lcity\\lcountry\\l}", fillcolor="#dcfce7"]
                 neighborhood [label="{DIM_NEIGHBORHOOD|PK neighborhood_id\\lneighborhood\\lcity_id\\l}", fillcolor="#ffedd5"]
                 property_type [label="{DIM_PROPERTY_TYPE|PK property_type_id\\lproperty_type\\l}", fillcolor="#f3e8ff"]
                 source [label="{DIM_SOURCE|PK source_id\\lsource\\l}", fillcolor="#fee2e2"]
                 time [label="{DIM_TIME|PK time_id\\lscraping_date\\lyear\\lquarter\\lmonth\\lday\\lday_name\\lis_weekend\\l}", fillcolor="#fef3c7"]
+                luxury [label="{DIM_LUXURY_SEGMENT|PK luxury_segment_id\\lluxury_label\\l}", fillcolor="#e0e7ff"]
 
                 city -> fact
                 neighborhood -> fact
                 property_type -> fact
                 source -> fact
                 time -> fact
+                luxury -> fact
             }
             """
         )
 
     st.divider()
 
-    st.subheader("Descripción del modelo")
-
-    st.markdown(
-        """
-        **Tabla de hechos**
-        - `fact_properties`
-
-        **Dimensiones**
-        - `dim_city`
-        - `dim_neighborhood`
-        - `dim_property_type`
-        - `dim_source`
-        - `dim_time`
-
-        **Granularidad**
-        - Una fila de `fact_properties` representa una propiedad premium extraída de una fuente inmobiliaria.
-
-        **Medidas principales**
-        - `price_eur`
-        - `area_m2`
-        - `bedrooms`
-        - `bathrooms`
-        - `price_per_m2`
-
-        **Trazabilidad**
-        - `source_record_id`
-        - `load_timestamp`
-        """
-    )
-
     tables = {
-        "fact_properties": "SELECT * FROM fact_properties",
+        "fact_properties": "SELECT * FROM fact_properties LIMIT 1000",
         "dim_city": "SELECT * FROM dim_city",
         "dim_neighborhood": "SELECT * FROM dim_neighborhood",
         "dim_property_type": "SELECT * FROM dim_property_type",
         "dim_source": "SELECT * FROM dim_source",
-        "dim_time": "SELECT * FROM dim_time"
+        "dim_time": "SELECT * FROM dim_time",
+        "dim_luxury_segment": "SELECT * FROM dim_luxury_segment"
     }
 
     selected_table = st.selectbox(
@@ -448,9 +466,7 @@ elif section == "Modelo dimensional":
         list(tables.keys())
     )
 
-    table_df = run_sql_query(
-        tables[selected_table]
-    )
+    table_df = run_sql_query(tables[selected_table])
 
     st.dataframe(
         table_df,

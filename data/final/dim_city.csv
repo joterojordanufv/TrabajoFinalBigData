@@ -1,3 +1,3323 @@
 city_id,city,country
-1,London,United Kingdom
-2,Amsterdam,Netherlands
+1,Riaza,Spain
+2,Campo De San Pedro,Spain
+3,Fresno De Cantespino,Spain
+4,Aldeanueva De La Serrezuela,Spain
+5,Moral De Hornuez,Spain
+6,Ayllon,Spain
+7,Cedillo De La Torre,Spain
+8,Alconada De Maderuelo,Spain
+9,Riaguas De San Bartolomé,Spain
+10,Aldealengua De Santa Maria,Spain
+11,Maderuelo,Spain
+12,Sequera De Fresno,Spain
+13,Cilleruelo De San Mamés,Spain
+14,Pradales,Spain
+15,Honrubia De La Cuesta,Spain
+16,Riofrio De Riaza,Spain
+17,Ribota,Spain
+18,Corral De Ayllon,Spain
+19,Loc_City,Spain
+20,Rebollo,Spain
+21,Caballar,Spain
+22,Grajera,Spain
+23,Matabuena,Spain
+24,Cabezuela,Spain
+25,Casla,Spain
+26,Turégano,Spain
+27,Bercimuel,Spain
+28,Castillejo De Mesleon,Spain
+29,Cerezo De Arriba,Spain
+30,Pradena,Spain
+31,Navafria,Spain
+32,Boceguillas,Spain
+33,Gallegos,Spain
+34,Cantalejo,Spain
+35,Duruelo,Spain
+36,Cerezo De Abajo,Spain
+37,Arcones,Spain
+38,Navares De Ayuso,Spain
+39,San Pedro De Gaillos,Spain
+40,Santiuste De Pedraza,Spain
+41,Pedraza,Spain
+42,Sepúlveda,Spain
+43,Sebulcor,Spain
+44,Sauquillo De Cabezas,Spain
+45,Condado De Castilnovo,Spain
+46,Fresno De La Fuente,Spain
+47,Torre Val De San Pedro,Spain
+48,Barbolla,Spain
+49,Veganzones,Spain
+50,Castrojimeno,Spain
+51,Santo Tomé Del Puerto,Spain
+52,Fuenterrebollo,Spain
+53,Santa Marta Del Cerro,Spain
+54,Muñoveros,Spain
+55,Aldealengua De Pedraza,Spain
+56,Ventosilla Y Tejadilla,Spain
+57,Cubillo,Spain
+58,Urueñas,Spain
+59,Castroserna De Abajo,Spain
+60,La Matilla,Spain
+61,Orejana,Spain
+62,Valle De Tabladillo,Spain
+63,Arahuetes,Spain
+64,Valdevacas Y Guijar,Spain
+65,Valleruela De Pedraza,Spain
+66,Aldealcorvo,Spain
+67,Navalilla,Spain
+68,Encinas,Spain
+69,Navares De Enmedio,Spain
+70,Collado Hermoso,Spain
+71,Puebla De Pedraza,Spain
+72,Armuña,Spain
+73,Santa Maria La Real De Nieva,Spain
+74,Bernardos,Spain
+75,Martin Muñoz De Las Posadas,Spain
+76,Codorniz,Spain
+77,Coca,Spain
+78,Muñopedro,Spain
+79,Santiuste De San Juan Bautista,Spain
+80,Nava De La Asuncion,Spain
+81,Bercial,Spain
+82,Domingo Garcia,Spain
+83,Ortigosa De Pestaño,Spain
+84,Fuente De Santa Cruz,Spain
+85,Rapariegos,Spain
+86,Montejo De Arévalo,Spain
+87,Martin Muñoz De La Dehesa,Spain
+88,San Cristobal De La Vega,Spain
+89,Melque De Cercos,Spain
+90,Villeguillo,Spain
+91,Villaverde De Iscar,Spain
+92,Juarros De Voltoya,Spain
+93,Nieva,Spain
+94,Miguelañez,Spain
+95,Labajos,Spain
+96,Sangarcia,Spain
+97,Aldeanueva Del Codonal,Spain
+98,Aldehuela Del Codonal,Spain
+99,Segovia,Spain
+100,Pinto,Spain
+101,Madrid,Spain
+102,Tijarafe,Spain
+103,Los Llanos De Aridane,Spain
+104,Breña Alta,Spain
+105,Villa De Mazo,Spain
+106,Breña Baja,Spain
+107,Garafia,Spain
+108,San Andrés Y Sauces,Spain
+109,Santa Cruz De La Palma,Spain
+110,Tazacorte,Spain
+111,Barlovento,Spain
+112,Puntallana,Spain
+113,Fuencaliente De La Palma,Spain
+114,El Paso,Spain
+115,Puntagorda,Spain
+116,Vilaflor,Spain
+117,Tegueste,Spain
+118,Tacoronte,Spain
+119,Santa Ursula,Spain
+120,Valladolid,Spain
+121,Sanlúcar La Mayor,Spain
+122,Olivares,Spain
+123,Albaida Del Aljarafe,Spain
+124,Sevilla,Spain
+125,Altafulla,Spain
+126,Carrion De Los Céspedes,Spain
+127,Pilas,Spain
+128,Castilleja Del Campo,Spain
+129,Huévar,Spain
+130,Gines,Spain
+131,Dos Hermanas,Spain
+132,Almazan,Spain
+133,Monteagudo De Las Vicarias,Spain
+134,Soria,Spain
+135,Arcos De Jalon,Spain
+136,San Pedro Manrique,Spain
+137,Santa Maria De Huerta,Spain
+138,Golmayo,Spain
+139,Olvega,Spain
+140,Burgo De Osma-Ciudad De Osma,Spain
+141,Berlanga De Duero,Spain
+142,Medinaceli,Spain
+143,San Leonardo De Yague,Spain
+144,Vinuesa,Spain
+145,Espejon,Spain
+146,Calatañazor,Spain
+147,Rioseco De Soria,Spain
+148,Navaleno,Spain
+149,Muriel Viejo,Spain
+150,San Esteban De Gormaz,Spain
+151,Fuentestrun,Spain
+152,Baraona,Spain
+153,Yanguas,Spain
+154,Fuentearmegil,Spain
+155,Quintana Redonda,Spain
+156,Montejo De Tiermes,Spain
+157,Castilfrio De La Sierra,Spain
+158,Cabrejas Del Pinar,Spain
+159,Abejar,Spain
+160,Agreda,Spain
+161,Langa De Duero,Spain
+162,Villar Del Río,Spain
+163,Almarza,Spain
+164,Seron De Nagima,Spain
+165,Covaleda,Spain
+166,Molinos De Duero,Spain
+167,Castilruiz,Spain
+168,Caltojar,Spain
+169,Miño De Medinaceli,Spain
+170,Oncala,Spain
+171,Cubo De La Solana,Spain
+172,Ucero,Spain
+173,Los Rabanos,Spain
+174,Fresno De Caracena,Spain
+175,Velamazan,Spain
+176,Tardelcuende,Spain
+177,Almenar De Soria,Spain
+178,Gomara,Spain
+179,Almazul,Spain
+180,Garray,Spain
+181,Carrascosa De La Sierra,Spain
+182,Valtajeros,Spain
+183,Villaciervos,Spain
+184,Cubilla,Spain
+185,Almajano,Spain
+186,Fuentelmonge,Spain
+187,Villar Del Ala,Spain
+188,Adradas,Spain
+189,Bayubas De Abajo,Spain
+190,Deza,Spain
+191,Cihuela,Spain
+192,Vozmediano,Spain
+193,Centenera De Andaluz,Spain
+194,Cidones,Spain
+195,Arancon,Spain
+196,Coscurita,Spain
+197,Salduero,Spain
+198,Alentisque,Spain
+199,La Quiñoneria,Spain
+200,Vizmanos,Spain
+201,Narros,Spain
+202,Valdeavellano De Tera,Spain
+203,Caracena,Spain
+204,Gormaz,Spain
+205,Pozalmuro,Spain
+206,Montenegro De Cameros,Spain
+207,Fuentes De Magaña,Spain
+208,El Royo,Spain
+209,Arévalo De La Sierra,Spain
+210,Valdemaluque,Spain
+211,La Poveda De Soria,Spain
+212,Duruelo De La Sierra,Spain
+213,Moron De Almazan,Spain
+214,Rello,Spain
+215,Almaluez,Spain
+216,Sotillo Del Rincon,Spain
+217,Barcones,Spain
+218,Alcubilla De Las Peñas,Spain
+219,Fuentelsaz De Soria,Spain
+220,Muriel De La Fuente,Spain
+221,Matamala De Almazan,Spain
+222,Bayubas De Arriba,Spain
+223,Cerbon,Spain
+224,Magaña,Spain
+225,Rebollar,Spain
+226,Candilichera,Spain
+227,Yelo,Spain
+228,Reznos,Spain
+229,Valdegeña,Spain
+230,Espeja De San Marcelino,Spain
+231,San Felices,Spain
+232,Escobosa De Almazan,Spain
+233,Recuerda,Spain
+234,Valdenebro,Spain
+235,Casarejos,Spain
+236,Alconaba,Spain
+237,Beraton,Spain
+238,Torrubia De Soria,Spain
+239,Torlengua,Spain
+240,Noviercas,Spain
+241,Ausejo De La Sierra,Spain
+242,Dévanos,Spain
+243,Frechilla De Almazan,Spain
+244,Castillejo De Robledo,Spain
+245,Valderrodilla,Spain
+246,Retortillo De Soria,Spain
+247,Villar Del Campo,Spain
+248,Matalebreras,Spain
+249,Cigudosa,Spain
+250,Cueva De Agreda,Spain
+251,Soliedra,Spain
+252,Tajueco,Spain
+253,Quintanas De Gormaz,Spain
+254,Alcubilla De Avellaneda,Spain
+255,Santa Comba,Spain
+256,Mazaricos,Spain
+257,Valdoviño,Spain
+258,Mugardos,Spain
+259,Ares,Spain
+260,Vimianzo,Spain
+261,Camariñas,Spain
+262,Zas,Spain
+263,Toques,Spain
+264,Melide,Spain
+265,Sobrado,Spain
+266,Santiso,Spain
+267,Ortigueira,Spain
+268,Cariño,Spain
+269,Mañon,Spain
+270,Val Do Dubra,Spain
+271,Brion,Spain
+272,Rois,Spain
+273,Boqueixon,Spain
+274,Vedra,Spain
+275,Teo,Spain
+276,Ames,Spain
+277,Ordes,Spain
+278,Mesia,Spain
+279,Frades,Spain
+280,Oroso,Spain
+281,Cerceda,Spain
+282,Tordoia,Spain
+283,Trazo,Spain
+284,Dodro,Spain
+285,Padron,Spain
+286,Noia,Spain
+287,Outes,Spain
+288,Porto Do Son,Spain
+289,Lousame,Spain
+290,Muros,Spain
+291,Carnota,Spain
+292,Betanzos,Spain
+293,Vilarmaior,Spain
+294,Vilasantar,Spain
+295,Irixoa,Spain
+296,Oza Dos Rios,Spain
+297,Miño,Spain
+298,Aranga,Spain
+299,Cesuras,Spain
+300,Curtis,Spain
+301,Paderne,Spain
+302,Coiros,Spain
+303,Cee,Spain
+304,Fisterra,Spain
+305,Muxia,Spain
+306,Dumbria,Spain
+307,Corcubion,Spain
+308,Boiro,Spain
+309,Puebla Del Caramiñal,Spain
+310,Ribeira,Spain
+311,Rianxo,Spain
+312,O Pino,Spain
+313,Arzua,Spain
+314,Touro,Spain
+315,Boimorto,Spain
+316,Negreira,Spain
+317,A Baña,Spain
+318,Sada,Spain
+319,Culleredo,Spain
+320,Carral,Spain
+321,Bergondo,Spain
+322,Lubre (San Juan Bautista),Spain
+323,Oleiros,Spain
+324,Abegondo,Spain
+325,A Coruña,Spain
+326,Hellín,Spain
+327,Liétor,Spain
+328,Albatana,Spain
+329,Tobarra,Spain
+330,Ontur,Spain
+331,Pozohondo,Spain
+332,Riopar,Spain
+333,Molinicos,Spain
+334,Férez,Spain
+335,Nerpio,Spain
+336,Balazote,Spain
+337,Ayna,Spain
+338,Salobre,Spain
+339,Bogarra,Spain
+340,Yeste,Spain
+341,Bienservida,Spain
+342,Elche De La Sierra,Spain
+343,Cotillas,Spain
+344,Socovos,Spain
+345,Vianos,Spain
+346,Villaverde De Guadalimar,Spain
+347,San Pedro,Spain
+348,Robledo,Spain
+349,Peñascosa,Spain
+350,Letur,Spain
+351,Casas De Lazaro,Spain
+352,Alcaraz,Spain
+353,Paterna Del Madera,Spain
+354,Povedilla,Spain
+355,Masegoso,Spain
+356,El Ballestero,Spain
+357,Villapalacios,Spain
+358,Madrigueras,Spain
+359,Casas-Ibañez,Spain
+360,Carcelén,Spain
+361,Mahora,Spain
+362,Villamalea,Spain
+363,Valdeganga,Spain
+364,Casas De Ves,Spain
+365,La Recueja,Spain
+366,Villatoya,Spain
+367,Alatoz,Spain
+368,Alborea,Spain
+369,Motilleja,Spain
+370,Fuentealbilla,Spain
+371,Alcalá Del Jucar,Spain
+372,Jorquera,Spain
+373,Balsa De Ves,Spain
+374,Pozo-Lorente,Spain
+375,Villavaliente,Spain
+376,Abengibre,Spain
+377,Villa De Ves,Spain
+378,Golosalvo,Spain
+379,Navas De Jorquera,Spain
+380,Villarrobledo,Spain
+381,La Roda,Spain
+382,Munera,Spain
+383,El Bonillo,Spain
+384,Tarazona De La Mancha,Spain
+385,Minaya,Spain
+386,Villalgordo Del Jucar,Spain
+387,Ossa De Montiel,Spain
+388,Lezuza,Spain
+389,Fuensanta,Spain
+390,Montealegre Del Castillo,Spain
+391,Almansa,Spain
+392,Caudete,Spain
+393,Bonete,Spain
+394,Alpera,Spain
+395,Fuente-Álamo,Spain
+396,Chinchilla De Monte-Aragón,Spain
+397,Pozo Cañada,Spain
+398,Corral-Rubio,Spain
+399,Casas De Juan Nuñez,Spain
+400,Higueruela,Spain
+401,Pétrola,Spain
+402,Hoya-Gonzalo,Spain
+403,Barrax,Spain
+404,La Gineta,Spain
+405,Alcadozo,Spain
+406,La Herrera,Spain
+407,Peñas De San Pedro,Spain
+408,Montalvos,Spain
+409,Pozuelo,Spain
+410,Albacete,Spain
+411,Villanueva De Los Infantes,Spain
+412,San Carlos Del Valle,Spain
+413,Torre De Juan Abad,Spain
+414,Castellar De Santiago,Spain
+415,Carrizosa,Spain
+416,Almedina,Spain
+417,Cozar,Spain
+418,Alcubillas,Spain
+419,Villamanrique,Spain
+420,Montiel,Spain
+421,Alhambra,Spain
+422,Villanueva De La Fuente,Spain
+423,Albaladejo,Spain
+424,Villahermosa,Spain
+425,Fuenllana,Spain
+426,Santa Cruz De Los Cañamos,Spain
+427,Malagon,Spain
+428,Horcajo De Los Montes,Spain
+429,Piedrabuena,Spain
+430,Retuerta Del Bullaque,Spain
+431,Fuente El Fresno,Spain
+432,Porzuna,Spain
+433,Los Cortijos,Spain
+434,El Robledo,Spain
+435,Luciana,Spain
+436,Navalpino,Spain
+437,Navas De Estena,Spain
+438,Fontanarejo,Spain
+439,Anchuras,Spain
+440,Alcoba,Spain
+441,Puebla De Don Rodrigo,Spain
+442,Arroba De Los Montes,Spain
+443,Valdepeñas,Spain
+444,Puertollano,Spain
+445,Santa Eulalia Del Río,Spain
+446,Sant Lluis,Spain
+447,Maó/Mahon,Spain
+448,Ferreries,Spain
+449,Es Migjorn Gran,Spain
+450,Es Mercadal,Spain
+451,Alaior,Spain
+452,Sant Josep De Sa Talaia,Spain
+453,Sant Joan De Labritja,Spain
+454,San Vicente,Spain
+455,Portinax,Spain
+456,Sant Antoni De Portmany,Spain
+457,San Rafael,Spain
+458,Eivissa,Spain
+459,Formentera,Spain
+460,Valldemossa,Spain
+461,Soller,Spain
+462,Selva,Spain
+463,Santa Eugenia,Spain
+464,Santa Maria Del Cami,Spain
+465,Santa Margalida,Spain
+466,Pobla (Sa),Spain
+467,Muro,Spain
+468,Palma De Mallorca,Spain
+469,Marratxi,Spain
+470,Mancor De La Vall,Spain
+471,Llucmajor,Spain
+472,Lloseta,Spain
+473,Inca,Spain
+474,Esporles,Spain
+475,Puigpunyent,Spain
+476,Bañalbufar,Spain
+477,Estellenchs,Spain
+478,Buger,Spain
+479,Campanet,Spain
+480,Cala Millor,Spain
+481,Sa Coma,Spain
+482,Son Servera,Spain
+483,Son Carrio,Spain
+484,Sant Llorenç Des Cardassar,Spain
+485,Cala Bona,Spain
+486,Costa De Los Pinos,Spain
+487,Sineu,Spain
+488,Llubi,Spain
+489,Petra,Spain
+490,Ariany,Spain
+491,Maria De La Salud,Spain
+492,Colonia De Sant Jordi,Spain
+493,Ses Salines (Mallorca),Spain
+494,Montuiri,Spain
+495,Villafranca De Bonany,Spain
+496,Porreres,Spain
+497,Sant Joan,Spain
+498,Lloret De Vista Alegre,Spain
+499,Pollença,Spain
+500,Puerto De Pollença,Spain
+501,Manacor,Spain
+502,Felanitx,Spain
+503,Fornalutx,Spain
+504,Escorca,Spain
+505,Bunyola,Spain
+506,Palmanyola,Spain
+507,Deya,Spain
+508,Capdepera,Spain
+509,Cala Ratjada,Spain
+510,Canyamel,Spain
+511,Sa Ràpita,Spain
+512,Campos,Spain
+513,Sencelles,Spain
+514,Alaró,Spain
+515,Consell,Spain
+516,Binissalem,Spain
+517,Costitx,Spain
+518,Calvià,Spain
+519,Toses,Spain
+520,Ripoll,Spain
+521,Sant Joan De Les Abadesses,Spain
+522,Ribes De Freser,Spain
+523,Campdevánol,Spain
+524,Llanars,Spain
+525,Camprodon,Spain
+526,Planoles,Spain
+527,Setcases,Spain
+528,Vilallonga De Ter,Spain
+529,Vallfogona De Ripollès,Spain
+530,Sant Pau De Segúries,Spain
+531,Ogassa,Spain
+532,Campelles,Spain
+533,Queralbs,Spain
+534,Gombrèn,Spain
+535,Molló,Spain
+536,Les Llosses,Spain
+537,Pardines,Spain
+538,Torroella De Fluvià,Spain
+539,L'Armentera,Spain
+540,Vilamacolum,Spain
+541,Viladamat,Spain
+542,Ventallo,Spain
+543,Sant Pere Pescador,Spain
+544,Roses,Spain
+545,Guillena,Spain
+546,Almadén De La Plata,Spain
+547,El Pedroso,Spain
+548,Guadalcanal,Spain
+549,Castilblanco De Los Arroyos,Spain
+550,La Puebla De Los Infantes,Spain
+551,Aznalcollar,Spain
+552,Constantina,Spain
+553,Cazalla De La Sierra,Spain
+554,El Real De La Jara,Spain
+555,Las Navas De La Concepcion,Spain
+556,El Castillo De Las Guardas,Spain
+557,El Garrobo,Spain
+558,El Ronquillo,Spain
+559,Gerena,Spain
+560,El Madroño,Spain
+561,Alanis,Spain
+562,San Nicolas Del Puerto,Spain
+563,Tomares,Spain
+564,San Juan De Aznalfarache,Spain
+565,Mairena Del Aljarafe,Spain
+566,Espartinas,Spain
+567,Arahal,Spain
+568,Paradas,Spain
+569,Aguadulce,Spain
+570,Estepa,Spain
+571,La Roda De Andalucia,Spain
+572,Los Corrales,Spain
+573,Zalamea La Real,Spain
+574,Tharsis,Spain
+575,Nerva,Spain
+576,Minas De Riotinto,Spain
+577,El Almendro,Spain
+578,Puebla De Guzman,Spain
+579,Villanueva De Los Castillejos,Spain
+580,Valverde Del Camino,Spain
+581,Sanlucar De Guadiana,Spain
+582,Calañas,Spain
+583,El Campillo,Spain
+584,Cabezas Rubias,Spain
+585,Alosno,Spain
+586,Santa Barbara De Casa,Spain
+587,El Cerro De Andévalo,Spain
+588,San Bartolomé De La Torre,Spain
+589,Villanueva De Las Cruces,Spain
+590,Paymogo,Spain
+591,Berrocal,Spain
+592,El Granado,Spain
+593,San Silvestre De Guzman,Spain
+594,Cortegana,Spain
+595,Alájar,Spain
+596,Santa Olalla Del Cala,Spain
+597,Castaño Del Robledo,Spain
+598,Galaroza,Spain
+599,Aracena,Spain
+600,Aroche,Spain
+601,Encinasola,Spain
+602,Campofrio,Spain
+603,Santa Ana La Real,Spain
+604,Cumbres Mayores,Spain
+605,Cañaveral De Leon,Spain
+606,Arroyomolinos De Leon,Spain
+607,Higuera De La Sierra,Spain
+608,Jabugo,Spain
+609,Almonaster La Real,Spain
+610,Rosal De La Frontera,Spain
+611,Cumbres De San Bartolomé,Spain
+612,Valdelarco,Spain
+613,Zufre,Spain
+614,Corteconcepcion,Spain
+615,Los Marines,Spain
+616,Hinojales,Spain
+617,Cala,Spain
+618,Fuenteheridos,Spain
+619,Cumbres De Enmedio,Spain
+620,Cortelazor,Spain
+621,La Nava,Spain
+622,Gordexola,Spain
+623,Arcentales,Spain
+624,Sopuerta,Spain
+625,Balmaseda,Spain
+626,Carranza,Spain
+627,Güeñes,Spain
+628,Zalla,Spain
+629,Lanestosa,Spain
+630,Galdames,Spain
+631,Trucios,Spain
+632,Berango,Spain
+633,Sopelana,Spain
+634,Mungia,Spain
+635,Urduliz,Spain
+636,Gorliz,Spain
+637,Plentzia,Spain
+638,Bakio,Spain
+639,Laukiz,Spain
+640,Lemoiz,Spain
+641,Maruri,Spain
+642,Gatica,Spain
+643,Barrika,Spain
+644,Arrieta,Spain
+645,Fruiz,Spain
+646,Meñaka,Spain
+647,Gamiz-Fika,Spain
+648,Berriatua,Spain
+649,Lekeitio,Spain
+650,Ondarroa,Spain
+651,Ziortza-Bolibar,Spain
+652,Amoroto,Spain
+653,Markina-Xemein,Spain
+654,Munitibar-Arbatzegi Gerrikaitz,Spain
+655,Mendexa,Spain
+656,Ispaster,Spain
+657,Aulesti,Spain
+658,Etxebarria,Spain
+659,Guizaburuaga,Spain
+660,Zaldibar,Spain
+661,Ermua,Spain
+662,Amorebieta-Echano,Spain
+663,Mañaria,Spain
+664,Mallabia,Spain
+665,Durango,Spain
+666,Berriz,Spain
+667,Iurreta,Spain
+668,Atxondo,Spain
+669,Elorrio,Spain
+670,Abadiño,Spain
+671,Garay,Spain
+672,Izurza,Spain
+673,Lezama,Spain
+674,Zamudio,Spain
+675,Larrabetzu,Spain
+676,Valle De Trapaga-Trapagaran,Spain
+677,Ortuella,Spain
+678,Muskiz,Spain
+679,Loiu,Spain
+680,Sondika,Spain
+681,Derio,Spain
+682,Leioa,Spain
+683,Galdakao,Spain
+684,Santurtzi,Spain
+685,Portugalete,Spain
+686,Getxo,Spain
+687,Basauri,Spain
+688,Barakaldo,Spain
+689,Erandio,Spain
+690,Astrabudua,Spain
+691,Sestao,Spain
+692,"Etxebarri, Anteiglesia De San Esteban",Spain
+693,Arrigorriaga,Spain
+694,Alonsotegui,Spain
+695,Zaratamo,Spain
+696,Bilbao,Spain
+697,Abanto Y Ciérvana/Abanto Zierbena,Spain
+698,Gallarta,Spain
+699,Zierbena,Spain
+700,Mundaka,Spain
+701,Ea,Spain
+702,Bermeo,Spain
+703,Morga,Spain
+704,Gernika-Lumo,Spain
+705,Gauteguiz De Arteaga,Spain
+706,Nabarniz,Spain
+707,Ereño,Spain
+708,Busturia,Spain
+709,Ajangiz,Spain
+710,Muxika,Spain
+711,Murueta,Spain
+712,Sukarrieta,Spain
+713,Ibarranguelua,Spain
+714,Elantxobe,Spain
+715,Arratzu,Spain
+716,Forua,Spain
+717,Kortezubi,Spain
+718,Errigoiti,Spain
+719,Mendata,Spain
+720,Orduña,Spain
+721,Orozko,Spain
+722,Otxandio,Spain
+723,Arantzazu,Spain
+724,Bedia,Spain
+725,Dima,Spain
+726,Zeanuri,Spain
+727,Lemoa,Spain
+728,Vitoria-Gasteiz,Spain
+729,Ugao-Miraballes,Spain
+730,Areatza,Spain
+731,Artea,Spain
+732,Igorre,Spain
+733,Zeberio,Spain
+734,Arrankudiaga,Spain
+735,Ubidea,Spain
+736,Aracaldo,Spain
+737,Vilafranca Del Penedès,Spain
+738,Torrelavit,Spain
+739,Gelida,Spain
+740,Santa Margarida I Els Monjos,Spain
+741,Sant Quintí De Mediona,Spain
+742,Olèrdola,Spain
+743,Subirats,Spain
+744,Mediona,Spain
+745,Pontons,Spain
+746,Les Cabanyes,Spain
+747,Sant Martí Sarroca,Spain
+748,Puigdàlber,Spain
+749,Sant Llorenç D'Hortons,Spain
+750,Torrelles De Foix,Spain
+751,Sant Pere De Riudebitlles,Spain
+752,Sant Sadurní D'Anoia,Spain
+753,Pacs Del Penedès,Spain
+754,Font-Rubí,Spain
+755,Vilobí Del Penedès,Spain
+756,El Pla Del Penedès,Spain
+757,Avinyonet Del Penedès,Spain
+758,Sant Cugat Sesgarrigues,Spain
+759,Castellví De La Marca,Spain
+760,La Granada,Spain
+761,Urcabustaiz,Spain
+762,Legutiano,Spain
+763,Aramaio,Spain
+764,Zuya,Spain
+765,Zigoitia,Spain
+766,Arrazua-Ubarrundia,Spain
+767,Elburgo,Spain
+768,Salvatierra,Spain
+769,Asparrena,Spain
+770,Alegria-Dulantzi,Spain
+771,San Millán,Spain
+772,Zalduondo,Spain
+773,Iruraiz-Gauna,Spain
+774,Barrundia,Spain
+775,Oión,Spain
+776,Villabuena De Álava,Spain
+777,Labastida,Spain
+778,Laguardia,Spain
+779,Elvillar,Spain
+780,Lapuebla De Labarca,Spain
+781,Lanciego,Spain
+782,Moreda De Álava,Spain
+783,Baños De Ebro,Spain
+784,Leza,Spain
+785,Cripán,Spain
+786,Elciego,Spain
+787,Navaridas,Spain
+788,Samaniego,Spain
+789,Yécora,Spain
+790,Arraia-Maeztu,Spain
+791,Campezo,Spain
+792,Lagrán,Spain
+793,Bernedo,Spain
+794,Peñacerrada,Spain
+795,Valle De Arana,Spain
+796,Llodio,Spain
+797,Artziniega,Spain
+798,Okondo,Spain
+799,Amurrio,Spain
+800,Ayala,Spain
+801,Ribera Alta,Spain
+802,Ribera Baja,Spain
+803,Valdegovia,Spain
+804,Iruña De Oca,Spain
+805,Berantevilla,Spain
+806,Lantarón,Spain
+807,Zambrana,Spain
+808,Cuartango,Spain
+809,Armiñon,Spain
+810,Salinas De Añana,Spain
+811,Villena,Spain
+812,Sax,Spain
+813,Biar,Spain
+814,Salinas,Spain
+815,Campo De Mirra,Spain
+816,Cañada,Spain
+817,Benejama,Spain
+818,Pinoso,Spain
+819,La Nucia,Spain
+820,Orio,Spain
+821,Azkoitia,Spain
+822,Azpeitia,Spain
+823,Aia,Spain
+824,Aizarnazabal,Spain
+825,Zarautz,Spain
+826,Zestoa,Spain
+827,Zumaia,Spain
+828,Errezil,Spain
+829,Getaria,Spain
+830,Beizama,Spain
+831,Beasain,Spain
+832,Zegama,Spain
+833,Legazpia,Spain
+834,Urretxu,Spain
+835,Zumarraga,Spain
+836,Ordizia,Spain
+837,Arama,Spain
+838,Itsasondo,Spain
+839,Mutiloa,Spain
+840,Lazkao,Spain
+841,Ataun,Spain
+842,Idiazabal,Spain
+843,Segura,Spain
+844,Ormaiztegi,Spain
+845,Ezkio-Itsaso,Spain
+846,Zaldibia,Spain
+847,Altzaga,Spain
+848,Zerain,Spain
+849,Gainza,Spain
+850,Gabiria,Spain
+851,Olaberria,Spain
+852,Renteria / Errenteria,Spain
+853,Pasaia,Spain
+854,Lezo,Spain
+855,Oiartzun,Spain
+856,Donostia-San Sebastián,Spain
+857,Usurbil,Spain
+858,Lasarte-Oria,Spain
+859,Hernani,Spain
+860,Andoain,Spain
+861,Astigarraga,Spain
+862,Urnieta,Spain
+863,Irun,Spain
+864,Hondarribia,Spain
+865,Arrasate O Mondragon,Spain
+866,Bergara,Spain
+867,Antzuola,Spain
+868,Eskoriatza,Spain
+869,Elgeta,Spain
+870,Aretxabaleta,Spain
+871,Oñati,Spain
+872,Eibar,Spain
+873,Ikaztegieta,Spain
+874,Mendaro,Spain
+875,Anoeta,Spain
+876,Legorreta,Spain
+877,Altzola,Spain
+878,Tolosa,Spain
+879,Zizurkil,Spain
+880,Ibarra,Spain
+881,Villabona,Spain
+882,Aduna,Spain
+883,Alegia,Spain
+884,Irura,Spain
+885,Larraul,Spain
+886,Elduain,Spain
+887,Bidegoyan,Spain
+888,Altzo,Spain
+889,Hernialde,Spain
+890,Berastegi,Spain
+891,Amezketa,Spain
+892,Asteasu,Spain
+893,Lizartza,Spain
+894,Orendain,Spain
+895,Leaburu-Gaztelu,Spain
+896,Berrobi,Spain
+897,Albiztur,Spain
+898,Belauntza,Spain
+899,Gaztelu,Spain
+900,Baliarrain,Spain
+901,Alkiza,Spain
+902,Abaltzisketa,Spain
+903,Mutriku,Spain
+904,Elgoibar,Spain
+905,Soraluze/Placencia De Las Armas,Spain
+906,Deba,Spain
+907,Espera,Spain
+908,Villamartin,Spain
+909,Benaocaz,Spain
+910,Olvera,Spain
+911,Arcos De La Frontera,Spain
+912,Prado Del Rey,Spain
+913,Bornos,Spain
+914,Grazalema,Spain
+915,Ubrique,Spain
+916,El Bosque,Spain
+917,El Gastor,Spain
+918,Setenil,Spain
+919,Puerto Serrano,Spain
+920,Alcalá Del Valle,Spain
+921,Algodonales,Spain
+922,Torre-Alhaquime,Spain
+923,Zahara,Spain
+924,Villaluenga Del Rosario,Spain
+925,Toro,Spain
+926,Morales De Toro,Spain
+927,Vezdemarban,Spain
+928,Villavendimio,Spain
+929,Villardondiego,Spain
+930,Fuentesecas,Spain
+931,Villalonso,Spain
+932,Pozoantiguo,Spain
+933,Venialbo,Spain
+934,Peleagonzalo,Spain
+935,Pinilla De Toro,Spain
+936,Matilla La Seca,Spain
+937,Fuentesauco,Spain
+938,Fuentelapeña,Spain
+939,Corrales,Spain
+940,Villalazan,Spain
+941,Argujillo,Spain
+942,Moraleja Del Vino,Spain
+943,El Cubo De Tierra Del Vino,Spain
+944,Cañizal,Spain
+945,Madridanos,Spain
+946,Santa Clara De Avedillo,Spain
+947,Vallesa,Spain
+948,La Boveda De Toro,Spain
+949,Sanzoles,Spain
+950,Villamor De Los Escuderos,Spain
+951,Peleas De Abajo,Spain
+952,Vadillo De La Guareña,Spain
+953,Jambrina,Spain
+954,San Miguel De La Ribera,Spain
+955,Villabuena Del Puente,Spain
+956,Cuelgamures,Spain
+957,Guarrate,Spain
+958,Villaescusa,Spain
+959,El Piñero,Spain
+960,Gema,Spain
+961,Fuentespreadas,Spain
+962,El Maderal,Spain
+963,Villarrin De Campos,Spain
+964,Tapioles,Spain
+965,Villalpando,Spain
+966,Cañizo,Spain
+967,Villamayor De Campos,Spain
+968,Belver De Los Montes,Spain
+969,San Martin De Valderaduey,Spain
+970,Villanueva Del Campo,Spain
+971,Manganeses De La Lampreana,Spain
+972,Villardefallaves,Spain
+973,Pobladura De Valderaduey,Spain
+974,Quintanilla Del Olmo,Spain
+975,Castronuevo,Spain
+976,San Miguel Del Valle,Spain
+977,Castroverde De Campos,Spain
+978,Villalobos,Spain
+979,Cerecinos De Campos,Spain
+980,Villafafila,Spain
+981,Villardiga,Spain
+982,Revellinos,Spain
+983,Cotanes,Spain
+984,San Esteban Del Molar,Spain
+985,Quintanilla Del Monte,Spain
+986,Vega De Villalobos,Spain
+987,Galende,Spain
+988,Trefacio,Spain
+989,Rionegro Del Puente,Spain
+990,Muelas De Los Caballeros,Spain
+991,Robleda-Cervantes,Spain
+992,Rosinos De La Requejada,Spain
+993,Palacios De Sanabria,Spain
+994,Ferreras De Arriba,Spain
+995,Cobreros,Spain
+996,San Justo,Spain
+997,Requejo,Spain
+998,Hermisende,Spain
+999,Mombuey,Spain
+1000,Asturianos,Spain
+1001,Puebla De Sanabria,Spain
+1002,Villardeciervos,Spain
+1003,Espadañedo,Spain
+1004,Lubian,Spain
+1005,Manzanal De Los Infantes,Spain
+1006,Cernadilla,Spain
+1007,Porto,Spain
+1008,Manzanal De Arriba,Spain
+1009,Benavente,Spain
+1010,Santa Croya De Tera,Spain
+1011,Quintanilla De Urz,Spain
+1012,Quiruelas De Vidriales,Spain
+1013,Santibañez De Vidriales,Spain
+1014,Ayoo De Vidriales,Spain
+1015,Camarzana De Tera,Spain
+1016,Coomonte,Spain
+1017,Santa Cristina De La Polvorosa,Spain
+1018,Morales De Rey,Spain
+1019,Castrogonzalo,Spain
+1020,Brime De Urz,Spain
+1021,San Pedro De Ceque,Spain
+1022,Villanazar,Spain
+1023,Fuentes De Ropel,Spain
+1024,Santovenia,Spain
+1025,Matilla De Arzon,Spain
+1026,Villaferrueña,Spain
+1027,Arcos De La Polvorosa,Spain
+1028,Granucillo,Spain
+1029,Fresno De La Polvorosa,Spain
+1030,Villabrazaro,Spain
+1031,Calzadilla De Tera,Spain
+1032,Breto,Spain
+1033,San Cristobal De Entreviñas,Spain
+1034,Barcial Del Barco,Spain
+1035,Navianos De Valverde,Spain
+1036,Milles De La Polvorosa,Spain
+1037,Micereces De Tera,Spain
+1038,Villanueva De Las Peras,Spain
+1039,La Torre Del Valle,Spain
+1040,Santa Colomba De Las Monjas,Spain
+1041,Otero De Bodas,Spain
+1042,Manganeses De La Polvorosa,Spain
+1043,Morales De Valverde,Spain
+1044,Villanueva De Azoague,Spain
+1045,Santa Maria De La Vega,Spain
+1046,Villaveza Del Agua,Spain
+1047,Burganes De Valverde,Spain
+1048,Pobladura Del Valle,Spain
+1049,Bretocino,Spain
+1050,Brime De Sog,Spain
+1051,Pueblica De Valverde,Spain
+1052,Maire De Castroponce,Spain
+1053,Melgar De Tera,Spain
+1054,Bermillo De Sayago,Spain
+1055,Moral De Sayago,Spain
+1056,Muga De Sayago,Spain
+1057,Pereruela,Spain
+1058,Cabañas De Sayago,Spain
+1059,Fermoselle,Spain
+1060,Almeida,Spain
+1061,Luelmo,Spain
+1062,Gamones,Spain
+1063,Fariza,Spain
+1064,Peñausende,Spain
+1065,Villar Del Buey,Spain
+1066,Villardiegua De La Ribera,Spain
+1067,Torregamones,Spain
+1068,Fresno De Sayago,Spain
+1069,Moralina,Spain
+1070,Roelos,Spain
+1071,Alfaraz De Sayago,Spain
+1072,Carbellino,Spain
+1073,Villadepera,Spain
+1074,Trabazos,Spain
+1075,Gallegos Del Río,Spain
+1076,Carbajales De Alba,Spain
+1077,Tabara,Spain
+1078,Figueruela De Arriba,Spain
+1079,Fonfria,Spain
+1080,Viñas,Spain
+1081,Losacino,Spain
+1082,San Vitero,Spain
+1083,Moreruela De Tabara,Spain
+1084,Perilla De Castro,Spain
+1085,Olmillos De Castro,Spain
+1086,Mahide,Spain
+1087,Manzanal Del Barco,Spain
+1088,Ferreras De Abajo,Spain
+1089,Ferreruela,Spain
+1090,Alcañices,Spain
+1091,Vegalatrave,Spain
+1092,Rabanales,Spain
+1093,Rabano De Aliste,Spain
+1094,Zamora,Spain
+1095,Monfarracinos,Spain
+1096,Morales Del Vino,Spain
+1097,La Hiniesta,Spain
+1098,Muelas Del Pan,Spain
+1099,Roales,Spain
+1100,Benegiles,Spain
+1101,Montamarta,Spain
+1102,Bustillo Del Oro,Spain
+1103,San Pedro De La Nave-Almendra,Spain
+1104,Villanueva De Campean,Spain
+1105,Arcenillas,Spain
+1106,San Cebrian De Castro,Spain
+1107,Almaraz De Duero,Spain
+1108,Pajares De La Lampreana,Spain
+1109,Malva,Spain
+1110,El Perdigon,Spain
+1111,Villaralbo,Spain
+1112,Algodre,Spain
+1113,Torres Del Carrizal,Spain
+1114,Piedrahita De Castro,Spain
+1115,Aspariegos,Spain
+1116,Coreses,Spain
+1117,Entrala,Spain
+1118,Villalube,Spain
+1119,Andavias,Spain
+1120,Villaseco,Spain
+1121,Casaseca De Las Chanas,Spain
+1122,Fresno De La Ribera,Spain
+1123,Cazurra,Spain
+1124,Valcabado,Spain
+1125,Gallegos Del Pan,Spain
+1126,Molacillos,Spain
+1127,Palacios Del Pan,Spain
+1128,Moreruela De Los Infanzones,Spain
+1129,Ademuz,Spain
+1130,Casas Bajas,Spain
+1131,Castielfabib,Spain
+1132,Vallanca,Spain
+1133,Torre Baja,Spain
+1134,Casas Altas,Spain
+1135,Sagunto/Sagunt,Spain
+1136,La Torre,Spain
+1137,Forn De Alcedo,Spain
+1138,Castellar-Oliveral,Spain
+1139,València,Spain
+1140,Swindon,United Kingdom
+1141,Bingley,United Kingdom
+1142,Brighton,United Kingdom
+1143,Caerphilly,United Kingdom
+1144,Bexleyheath,United Kingdom
+1145,Nottingham,United Kingdom
+1146,Poole,United Kingdom
+1147,Colne,United Kingdom
+1148,Carlisle,United Kingdom
+1149,Bexhill-On-Sea,United Kingdom
+1150,Launceston,United Kingdom
+1151,Grays,United Kingdom
+1152,Wrexham,United Kingdom
+1153,Trowbridge,United Kingdom
+1154,Northolt,United Kingdom
+1155,York,United Kingdom
+1156,Liverpool,United Kingdom
+1157,Andover,United Kingdom
+1158,Newport,United Kingdom
+1159,Penryn,United Kingdom
+1160,Neath,United Kingdom
+1161,Herne Bay,United Kingdom
+1162,Portsmouth,United Kingdom
+1163,Swansea,United Kingdom
+1164,Halifax,United Kingdom
+1165,Norwich,United Kingdom
+1166,Colwyn Bay,United Kingdom
+1167,Newbury,United Kingdom
+1168,Bromsgrove,United Kingdom
+1169,Kingswinford,United Kingdom
+1170,Billericay,United Kingdom
+1171,Erith,United Kingdom
+1172,Guisborough,United Kingdom
+1173,Ashford,United Kingdom
+1174,Blackburn,United Kingdom
+1175,Worthing,United Kingdom
+1176,Bournemouth,United Kingdom
+1177,Bury,United Kingdom
+1178,London,United Kingdom
+1179,Bedford,United Kingdom
+1180,Leamington Spa,United Kingdom
+1181,Slough,United Kingdom
+1182,Stoke-On-Trent,United Kingdom
+1183,Kingsbridge,United Kingdom
+1184,Manchester,United Kingdom
+1185,Llanymynech,United Kingdom
+1186,Birmingham,United Kingdom
+1187,Congleton,United Kingdom
+1188,Doncaster,United Kingdom
+1189,East Grinstead,United Kingdom
+1190,Preston,United Kingdom
+1191,Middlesbrough,United Kingdom
+1192,Newark,United Kingdom
+1193,Telford,United Kingdom
+1194,Coalville,United Kingdom
+1195,Lincoln,United Kingdom
+1196,Peacehaven,United Kingdom
+1197,Saltash,United Kingdom
+1198,Guildford,United Kingdom
+1199,Luton,United Kingdom
+1200,Buxton,United Kingdom
+1201,Newcastle Upon Tyne,United Kingdom
+1202,Crawley,United Kingdom
+1203,Kidderminster,United Kingdom
+1204,Kettering,United Kingdom
+1205,Hove,United Kingdom
+1206,Croydon,United Kingdom
+1207,Derby,United Kingdom
+1208,Leicester,United Kingdom
+1209,Lichfield,United Kingdom
+1210,Warrington,United Kingdom
+1211,Camborne,United Kingdom
+1212,Wallasey,United Kingdom
+1213,Dewsbury,United Kingdom
+1214,Princes Risborough,United Kingdom
+1215,Cardiff,United Kingdom
+1216,Shrewsbury,United Kingdom
+1217,Hassocks,United Kingdom
+1218,Chelmsford,United Kingdom
+1219,Corby,United Kingdom
+1220,Southport,United Kingdom
+1221,Borth,United Kingdom
+1222,Enfield,United Kingdom
+1223,Buckley,United Kingdom
+1224,Bolton,United Kingdom
+1225,St. Leonards-On-Sea,United Kingdom
+1226,Newquay,United Kingdom
+1227,Stone,United Kingdom
+1228,Wakefield,United Kingdom
+1229,Basildon,United Kingdom
+1230,Thatcham,United Kingdom
+1231,Clacton-On-Sea,United Kingdom
+1232,South Croydon,United Kingdom
+1233,Holmfirth,United Kingdom
+1234,Milton Keynes,United Kingdom
+1235,Peterborough,United Kingdom
+1236,Stockton-On-Tees,United Kingdom
+1237,Barnsley,United Kingdom
+1238,Totnes,United Kingdom
+1239,Macclesfield,United Kingdom
+1240,Solihull,United Kingdom
+1241,Sunderland,United Kingdom
+1242,Biggleswade,United Kingdom
+1243,Hereford,United Kingdom
+1244,Sheffield,United Kingdom
+1245,Oxford,United Kingdom
+1246,Bristol,United Kingdom
+1247,Huntingdon,United Kingdom
+1248,Chester,United Kingdom
+1249,Ely,United Kingdom
+1250,Dunstable,United Kingdom
+1251,Leyland,United Kingdom
+1252,Hengoed,United Kingdom
+1253,Hatfield,United Kingdom
+1254,Gillingham,United Kingdom
+1255,Stockport,United Kingdom
+1256,Leeds,United Kingdom
+1257,Aldershot,United Kingdom
+1258,Bromley,United Kingdom
+1259,Retford,United Kingdom
+1260,Loughborough,United Kingdom
+1261,Winchester,United Kingdom
+1262,Hull,United Kingdom
+1263,Warwick,United Kingdom
+1264,Hyde,United Kingdom
+1265,Wirral,United Kingdom
+1266,Coulsdon,United Kingdom
+1267,Mansfield,United Kingdom
+1268,Salisbury,United Kingdom
+1269,Banbury,United Kingdom
+1270,Folkestone,United Kingdom
+1271,Coventry,United Kingdom
+1272,Southampton,United Kingdom
+1273,Rainham,United Kingdom
+1274,Sidcup,United Kingdom
+1275,Walsall,United Kingdom
+1276,Halesowen,United Kingdom
+1277,St Ives,United Kingdom
+1278,Frodsham,United Kingdom
+1279,Romford,United Kingdom
+1280,Stratford-Upon-Avon,United Kingdom
+1281,Swadlincote,United Kingdom
+1282,Diss,United Kingdom
+1283,Camberley,United Kingdom
+1284,Fareham,United Kingdom
+1285,Whitehaven,United Kingdom
+1286,Alford,United Kingdom
+1287,Prenton,United Kingdom
+1288,Surbiton,United Kingdom
+1289,Isleworth,United Kingdom
+1290,Barnet,United Kingdom
+1291,Scunthorpe,United Kingdom
+1292,Cranleigh,United Kingdom
+1293,Altrincham,United Kingdom
+1294,Wigton,United Kingdom
+1295,Willenhall,United Kingdom
+1296,March,United Kingdom
+1297,Wolverhampton,United Kingdom
+1298,Royston,United Kingdom
+1299,Skipton,United Kingdom
+1300,Canterbury,United Kingdom
+1301,Morpeth,United Kingdom
+1302,Tonypandy,United Kingdom
+1303,Boston,United Kingdom
+1304,Wokingham,United Kingdom
+1305,Sutton Coldfield,United Kingdom
+1306,Hertford,United Kingdom
+1307,Weymouth,United Kingdom
+1308,Wellingborough,United Kingdom
+1309,Egham,United Kingdom
+1310,Wembley,United Kingdom
+1311,Paignton,United Kingdom
+1312,Worksop,United Kingdom
+1313,Maldon,United Kingdom
+1314,Southend-On-Sea,United Kingdom
+1315,Dagenham,United Kingdom
+1316,Redcar,United Kingdom
+1317,Wantage,United Kingdom
+1318,Wickford,United Kingdom
+1319,Wincanton,United Kingdom
+1320,Rotherham,United Kingdom
+1321,Burnley,United Kingdom
+1322,Hoddesdon,United Kingdom
+1323,Thetford,United Kingdom
+1324,Gateshead,United Kingdom
+1325,Ormskirk,United Kingdom
+1326,Bridlington,United Kingdom
+1327,High Wycombe,United Kingdom
+1328,Bexley,United Kingdom
+1329,Jarrow,United Kingdom
+1330,Chessington,United Kingdom
+1331,Haywards Heath,United Kingdom
+1332,Reading,United Kingdom
+1333,Colchester,United Kingdom
+1334,Crewe,United Kingdom
+1335,Ipswich,United Kingdom
+1336,Stafford,United Kingdom
+1337,Lowestoft,United Kingdom
+1338,Kingston Upon Thames,United Kingdom
+1339,Fairford,United Kingdom
+1340,Houghton Le Spring,United Kingdom
+1341,Harrogate,United Kingdom
+1342,Helston,United Kingdom
+1343,Ashton-Under-Lyne,United Kingdom
+1344,Gloucester,United Kingdom
+1345,Burntwood,United Kingdom
+1346,Grimsby,United Kingdom
+1347,Bicester,United Kingdom
+1348,St. Asaph,United Kingdom
+1349,Stevenage,United Kingdom
+1350,Barry,United Kingdom
+1351,Uxbridge,United Kingdom
+1352,Pontefract,United Kingdom
+1353,Morecambe,United Kingdom
+1354,Fleetwood,United Kingdom
+1355,Nelson,United Kingdom
+1356,Nantwich,United Kingdom
+1357,Rugeley,United Kingdom
+1358,Plymouth,United Kingdom
+1359,Felixstowe,United Kingdom
+1360,Leominster,United Kingdom
+1361,Driffield,United Kingdom
+1362,Spilsby,United Kingdom
+1363,Littlehampton,United Kingdom
+1364,Dorking,United Kingdom
+1365,Huddersfield,United Kingdom
+1366,Oldham,United Kingdom
+1367,Deeside,United Kingdom
+1368,Keighley,United Kingdom
+1369,St Neots,United Kingdom
+1370,Perranporth,United Kingdom
+1371,Hornchurch,United Kingdom
+1372,Scarborough,United Kingdom
+1373,Bradford,United Kingdom
+1374,Farnham,United Kingdom
+1375,Tamworth,United Kingdom
+1376,Caernarfon,United Kingdom
+1377,Godalming,United Kingdom
+1378,Taunton,United Kingdom
+1379,Upminster,United Kingdom
+1380,Heathfield,United Kingdom
+1381,Portland,United Kingdom
+1382,Sleaford,United Kingdom
+1383,Cleator Moor,United Kingdom
+1384,Clevedon,United Kingdom
+1385,Brigg,United Kingdom
+1386,Basingstoke,United Kingdom
+1387,Eye,United Kingdom
+1388,Aylesbury,United Kingdom
+1389,Radstock,United Kingdom
+1390,Great Yarmouth,United Kingdom
+1391,Rochester,United Kingdom
+1392,Louth,United Kingdom
+1393,Gravesend,United Kingdom
+1394,Liversedge,United Kingdom
+1395,Wetherby,United Kingdom
+1396,Brentwood,United Kingdom
+1397,Windsor,United Kingdom
+1398,Wallsend,United Kingdom
+1399,Cheadle,United Kingdom
+1400,Edgware,United Kingdom
+1401,Haslemere,United Kingdom
+1402,Newport Pagnell,United Kingdom
+1403,Tunbridge Wells,United Kingdom
+1404,Knaresborough,United Kingdom
+1405,Fakenham,United Kingdom
+1406,Whitstable,United Kingdom
+1407,Wigan,United Kingdom
+1408,Carmarthen,United Kingdom
+1409,Beaconsfield,United Kingdom
+1410,Oswestry,United Kingdom
+1411,Dartford,United Kingdom
+1412,Whitby,United Kingdom
+1413,Chichester,United Kingdom
+1414,Harrow,United Kingdom
+1415,Canvey Island,United Kingdom
+1416,Lampeter,United Kingdom
+1417,Fleet,United Kingdom
+1418,St. Albans,United Kingdom
+1419,Southall,United Kingdom
+1420,Barking,United Kingdom
+1421,Feltham,United Kingdom
+1422,Newcastle,United Kingdom
+1423,Darlington,United Kingdom
+1424,Watford,United Kingdom
+1425,Chippenham,United Kingdom
+1426,Northampton,United Kingdom
+1427,Thornton-Cleveleys,United Kingdom
+1428,Stalybridge,United Kingdom
+1429,Calne,United Kingdom
+1430,Witney,United Kingdom
+1431,St. Neots,United Kingdom
+1432,Llanybydder,United Kingdom
+1433,Cambridge,United Kingdom
+1434,Pontypool,United Kingdom
+1435,Welling,United Kingdom
+1436,Cleckheaton,United Kingdom
+1437,Maidstone,United Kingdom
+1438,Tenbury Wells,United Kingdom
+1439,Durham,United Kingdom
+1440,Abingdon,United Kingdom
+1441,Goole,United Kingdom
+1442,Blandford Forum,United Kingdom
+1443,Epsom,United Kingdom
+1444,Chard,United Kingdom
+1445,Alfreton,United Kingdom
+1446,St. Columb,United Kingdom
+1447,Horley,United Kingdom
+1448,Ferndale,United Kingdom
+1449,Carnforth,United Kingdom
+1450,Cramlington,United Kingdom
+1451,Dolwyddelan,United Kingdom
+1452,Bracknell,United Kingdom
+1453,Rayleigh,United Kingdom
+1454,Carshalton,United Kingdom
+1455,Leek,United Kingdom
+1456,Blackpool,United Kingdom
+1457,Gosport,United Kingdom
+1458,Ashbourne,United Kingdom
+1459,Walton-On-Thames,United Kingdom
+1460,Clitheroe,United Kingdom
+1461,Henley-On-Thames,United Kingdom
+1462,Market Rasen,United Kingdom
+1463,Dudley,United Kingdom
+1464,Okehampton,United Kingdom
+1465,Bishop Auckland,United Kingdom
+1466,Weybridge,United Kingdom
+1467,Stroud,United Kingdom
+1468,Bury St Edmunds,United Kingdom
+1469,Merthyr Tydfil,United Kingdom
+1470,Prescot,United Kingdom
+1471,Monmouth,United Kingdom
+1472,Braunton,United Kingdom
+1473,Westbury,United Kingdom
+1474,Sutton,United Kingdom
+1475,Truro,United Kingdom
+1476,Arlesey,United Kingdom
+1477,Beckenham,United Kingdom
+1478,Selby,United Kingdom
+1479,Ripley,United Kingdom
+1480,Devizes,United Kingdom
+1481,Burton-On-Trent,United Kingdom
+1482,Watlington,United Kingdom
+1483,Weston-Super-Mare,United Kingdom
+1484,Redhill,United Kingdom
+1485,Sheringham,United Kingdom
+1486,Orpington,United Kingdom
+1487,Ilford,United Kingdom
+1488,Chatteris,United Kingdom
+1489,Washington,United Kingdom
+1490,Chepstow,United Kingdom
+1491,Buntingford,United Kingdom
+1492,Bedworth,United Kingdom
+1493,Verwood,United Kingdom
+1494,Maidenhead,United Kingdom
+1495,Runcorn,United Kingdom
+1496,Accrington,United Kingdom
+1497,West Molesey,United Kingdom
+1498,Ashtead,United Kingdom
+1499,Cannock,United Kingdom
+1500,Stanford-Le-Hope,United Kingdom
+1501,Hessle,United Kingdom
+1502,Bishop'S Stortford,United Kingdom
+1503,Sandbach,United Kingdom
+1504,Longfield,United Kingdom
+1505,Southsea,United Kingdom
+1506,Spalding,United Kingdom
+1507,Margate,United Kingdom
+1508,Sunbury-On-Thames,United Kingdom
+1509,Brackley,United Kingdom
+1510,Greenhithe,United Kingdom
+1511,Woodbridge,United Kingdom
+1512,Fordingbridge,United Kingdom
+1513,Leigh,United Kingdom
+1514,Horncastle,United Kingdom
+1515,Hayle,United Kingdom
+1516,Wallingford,United Kingdom
+1517,Chesterfield,United Kingdom
+1518,Mountain Ash,United Kingdom
+1519,Hemel Hempstead,United Kingdom
+1520,Sherborne,United Kingdom
+1521,Buckingham,United Kingdom
+1522,Birkenhead,United Kingdom
+1523,Llanelli,United Kingdom
+1524,Sandhurst,United Kingdom
+1525,Letchworth Garden City,United Kingdom
+1526,Rugby,United Kingdom
+1527,Dartmouth,United Kingdom
+1528,Bognor Regis,United Kingdom
+1529,Milford Haven,United Kingdom
+1530,Haverhill,United Kingdom
+1531,Ilkeston,United Kingdom
+1532,Wimborne,United Kingdom
+1533,Eastbourne,United Kingdom
+1534,Immingham,United Kingdom
+1535,Cullompton,United Kingdom
+1536,Rushden,United Kingdom
+1537,Ramsgate,United Kingdom
+1538,Hayling Island,United Kingdom
+1539,Loughton,United Kingdom
+1540,Winsford,United Kingdom
+1541,Brandon,United Kingdom
+1542,Newmarket,United Kingdom
+1543,St. Austell,United Kingdom
+1544,Berkhamsted,United Kingdom
+1545,Wigston,United Kingdom
+1546,Glossop,United Kingdom
+1547,Frome,United Kingdom
+1548,Billingshurst,United Kingdom
+1549,Yeovil,United Kingdom
+1550,Chorley,United Kingdom
+1551,Ingatestone,United Kingdom
+1552,Hartlepool,United Kingdom
+1553,Pickering,United Kingdom
+1554,Bath,United Kingdom
+1555,Bridgend,United Kingdom
+1556,Westerham,United Kingdom
+1557,Abergele,United Kingdom
+1558,Worcester,United Kingdom
+1559,Dronfield,United Kingdom
+1560,Didcot,United Kingdom
+1561,Much Hadham,United Kingdom
+1562,Dunmow,United Kingdom
+1563,Newton Abbot,United Kingdom
+1564,Dover,United Kingdom
+1565,Melton Mowbray,United Kingdom
+1566,Sevenoaks,United Kingdom
+1567,Craven Arms,United Kingdom
+1568,Leighton Buzzard,United Kingdom
+1569,Corbridge,United Kingdom
+1570,Kendal,United Kingdom
+1571,Pontyclun,United Kingdom
+1572,Braintree,United Kingdom
+1573,Chipping Campden,United Kingdom
+1574,Waltham Cross,United Kingdom
+1575,Shaftesbury,United Kingdom
+1576,Abbots Langley,United Kingdom
+1577,Penmaenmawr,United Kingdom
+1578,St. Helens,United Kingdom
+1579,Skelmersdale,United Kingdom
+1580,Frinton-On-Sea,United Kingdom
+1581,Hounslow,United Kingdom
+1582,Marlow,United Kingdom
+1583,Cardigan,United Kingdom
+1584,Oakham,United Kingdom
+1585,Cheltenham,United Kingdom
+1586,Wellington,United Kingdom
+1587,St Austell,United Kingdom
+1588,Barrow-In-Furness,United Kingdom
+1589,Aberdare,United Kingdom
+1590,West Malling,United Kingdom
+1591,Hockley,United Kingdom
+1592,Cleethorpes,United Kingdom
+1593,North Shields,United Kingdom
+1594,Castle Cary,United Kingdom
+1595,Highbridge,United Kingdom
+1596,Torquay,United Kingdom
+1597,Pentre,United Kingdom
+1598,Fowey,United Kingdom
+1599,Blaydon-On-Tyne,United Kingdom
+1600,Faversham,United Kingdom
+1601,Waterlooville,United Kingdom
+1602,Hastings,United Kingdom
+1603,Robertsbridge,United Kingdom
+1604,West Wickham,United Kingdom
+1605,Teddington,United Kingdom
+1606,Porth,United Kingdom
+1607,Bridgwater,United Kingdom
+1608,Hailsham,United Kingdom
+1609,Cheddar,United Kingdom
+1610,Tadcaster,United Kingdom
+1611,Ruislip,United Kingdom
+1612,Benfleet,United Kingdom
+1613,Heanor,United Kingdom
+1614,Stansted,United Kingdom
+1615,Bewdley,United Kingdom
+1616,King'S Lynn,United Kingdom
+1617,Heckmondwike,United Kingdom
+1618,Southam,United Kingdom
+1619,Windermere,United Kingdom
+1620,Shipston-On-Stour,United Kingdom
+1621,Shepton Mallet,United Kingdom
+1622,Beverley,United Kingdom
+1623,Sheerness,United Kingdom
+1624,Newhaven,United Kingdom
+1625,Exeter,United Kingdom
+1626,Baldock,United Kingdom
+1627,Tewkesbury,United Kingdom
+1628,Ware,United Kingdom
+1629,Darwen,United Kingdom
+1630,Leigh-On-Sea,United Kingdom
+1631,Wells,United Kingdom
+1632,Maryport,United Kingdom
+1633,Manningtree,United Kingdom
+1634,Lancaster,United Kingdom
+1635,Wisbech,United Kingdom
+1636,Winkleigh,United Kingdom
+1637,Llangefni,United Kingdom
+1638,South Ockendon,United Kingdom
+1639,Staines,United Kingdom
+1640,Horsham,United Kingdom
+1641,Hornsea,United Kingdom
+1642,Evesham,United Kingdom
+1643,Tadley,United Kingdom
+1644,Whitchurch,United Kingdom
+1645,Shanklin,United Kingdom
+1646,Hexham,United Kingdom
+1647,Penrith,United Kingdom
+1648,Penzance,United Kingdom
+1649,Belper,United Kingdom
+1650,Shifnal,United Kingdom
+1651,Bacup,United Kingdom
+1652,Trefriw,United Kingdom
+1653,Consett,United Kingdom
+1654,Sale,United Kingdom
+1655,Brighouse,United Kingdom
+1656,Chipping Norton,United Kingdom
+1657,Ferryhill,United Kingdom
+1658,Salford,United Kingdom
+1659,Pulborough,United Kingdom
+1660,Harpenden,United Kingdom
+1661,Meifod,United Kingdom
+1662,Freshwater,United Kingdom
+1663,Hitchin,United Kingdom
+1664,Esher,United Kingdom
+1665,Nuneaton,United Kingdom
+1666,Sandown,United Kingdom
+1667,Hungerford,United Kingdom
+1668,Blackwood,United Kingdom
+1669,Cobham,United Kingdom
+1670,Welwyn,United Kingdom
+1671,Workington,United Kingdom
+1672,Shefford,United Kingdom
+1673,Northwich,United Kingdom
+1674,Treharris,United Kingdom
+1675,Eastleigh,United Kingdom
+1676,Chatham,United Kingdom
+1677,Woodford Green,United Kingdom
+1678,Holyhead,United Kingdom
+1679,Kenilworth,United Kingdom
+1680,Stowmarket,United Kingdom
+1681,Bilston,United Kingdom
+1682,Oldbury,United Kingdom
+1683,South Shields,United Kingdom
+1684,Borehamwood,United Kingdom
+1685,Grantham,United Kingdom
+1686,Stanmore,United Kingdom
+1687,Ludlow,United Kingdom
+1688,Saltburn-By-The-Sea,United Kingdom
+1689,Burgess Hill,United Kingdom
+1690,Kings Langley,United Kingdom
+1691,Chester Le Street,United Kingdom
+1692,Barton-Upon-Humber,United Kingdom
+1693,Saundersfoot,United Kingdom
+1694,Caldicot,United Kingdom
+1695,Par,United Kingdom
+1696,Cockermouth,United Kingdom
+1697,Shoreham-By-Sea,United Kingdom
+1698,Amersham,United Kingdom
+1699,Stanley,United Kingdom
+1700,Sutton-In-Ashfield,United Kingdom
+1701,Bodmin,United Kingdom
+1702,Blyth,United Kingdom
+1703,Emsworth,United Kingdom
+1704,Ellesmere Port,United Kingdom
+1705,Mexborough,United Kingdom
+1706,Droitwich,United Kingdom
+1707,Badminton,United Kingdom
+1708,Cwmbran,United Kingdom
+1709,Pwllheli,United Kingdom
+1710,Warminster,United Kingdom
+1711,Morden,United Kingdom
+1712,Hinckley,United Kingdom
+1713,Downham Market,United Kingdom
+1714,Twickenham,United Kingdom
+1715,Mitcham,United Kingdom
+1716,Towcester,United Kingdom
+1717,Redditch,United Kingdom
+1718,Beaumaris,United Kingdom
+1719,Falmouth,United Kingdom
+1720,Shipley,United Kingdom
+1721,Richmond,United Kingdom
+1722,Porthcawl,United Kingdom
+1723,Welshpool,United Kingdom
+1724,Harlow,United Kingdom
+1725,Castleford,United Kingdom
+1726,Honiton,United Kingdom
+1727,Ringwood,United Kingdom
+1728,Knutsford,United Kingdom
+1729,Wednesbury,United Kingdom
+1730,New Malden,United Kingdom
+1731,Llandudno,United Kingdom
+1732,Matlock,United Kingdom
+1733,Tarporley,United Kingdom
+1734,Rochdale,United Kingdom
+1735,St Agnes,United Kingdom
+1736,Haverfordwest,United Kingdom
+1737,Wilmslow,United Kingdom
+1738,Mablethorpe,United Kingdom
+1739,Newnham,United Kingdom
+1740,Keswick,United Kingdom
+1741,East Molesey,United Kingdom
+1742,Rickmansworth,United Kingdom
+1743,Steyning,United Kingdom
+1744,Ryton,United Kingdom
+1745,Sudbury,United Kingdom
+1746,Tiverton,United Kingdom
+1747,West Bromwich,United Kingdom
+1748,Ambleside,United Kingdom
+1749,Henley-In-Arden,United Kingdom
+1750,Daventry,United Kingdom
+1751,Whitley Bay,United Kingdom
+1752,Ongar,United Kingdom
+1753,Pontypridd,United Kingdom
+1754,Bradford-On-Avon,United Kingdom
+1755,Farnborough,United Kingdom
+1756,South Brent,United Kingdom
+1757,Callington,United Kingdom
+1758,Dukinfield,United Kingdom
+1759,Bordon,United Kingdom
+1760,Stamford,United Kingdom
+1761,Cromer,United Kingdom
+1762,Bury St. Edmunds,United Kingdom
+1763,Barnstaple,United Kingdom
+1764,Holywell,United Kingdom
+1765,Lutterworth,United Kingdom
+1766,Lytham St Annes,United Kingdom
+1767,Pudsey,United Kingdom
+1768,Pinner,United Kingdom
+1769,Middlewich,United Kingdom
+1770,Betchworth,United Kingdom
+1771,Leatherhead,United Kingdom
+1772,Lightwater,United Kingdom
+1773,Lyme Regis,United Kingdom
+1774,Denbigh,United Kingdom
+1775,Spennymoor,United Kingdom
+1776,Malmesbury,United Kingdom
+1777,Ilkley,United Kingdom
+1778,Poulton-Le-Fylde,United Kingdom
+1779,New Romney,United Kingdom
+1780,Shildon,United Kingdom
+1781,Rossendale,United Kingdom
+1782,Sittingbourne,United Kingdom
+1783,Harleston,United Kingdom
+1784,Longhope,United Kingdom
+1785,Liss,United Kingdom
+1786,Lancing,United Kingdom
+1787,St Albans,United Kingdom
+1788,Peterlee,United Kingdom
+1789,Penarth,United Kingdom
+1790,Blakeney,United Kingdom
+1791,Blaenau Ffestiniog,United Kingdom
+1792,Burnham-On-Crouch,United Kingdom
+1793,Hook,United Kingdom
+1794,Havant,United Kingdom
+1795,Llanidloes,United Kingdom
+1796,Skegness,United Kingdom
+1797,Market Harborough,United Kingdom
+1798,Etchingham,United Kingdom
+1799,Delabole,United Kingdom
+1800,Dawlish,United Kingdom
+1801,Tadworth,United Kingdom
+1802,Tonbridge,United Kingdom
+1803,Reigate,United Kingdom
+1804,Woking,United Kingdom
+1805,Todmorden,United Kingdom
+1806,Mold,United Kingdom
+1807,West Drayton,United Kingdom
+1808,Purfleet,United Kingdom
+1809,Ross-On-Wye,United Kingdom
+1810,Ryde,United Kingdom
+1811,Normanton,United Kingdom
+1812,Newton Aycliffe,United Kingdom
+1813,Brough,United Kingdom
+1814,Penrhyndeudraeth,United Kingdom
+1815,Belvedere,United Kingdom
+1816,Iver,United Kingdom
+1817,South Molton,United Kingdom
+1818,Axminster,United Kingdom
+1819,Warlingham,United Kingdom
+1820,Bourne,United Kingdom
+1821,Melton Constable,United Kingdom
+1822,Tavistock,United Kingdom
+1823,Swanage,United Kingdom
+1824,Kilgetty,United Kingdom
+1825,Bootle,United Kingdom
+1826,Sandy,United Kingdom
+1827,Whyteleafe,United Kingdom
+1828,Ashington,United Kingdom
+1829,Tring,United Kingdom
+1830,Chulmleigh,United Kingdom
+1831,Newent,United Kingdom
+1832,Bushey,United Kingdom
+1833,Cowes,United Kingdom
+1834,Lingfield,United Kingdom
+1835,Bridgnorth,United Kingdom
+1836,Keston,United Kingdom
+1837,Holsworthy,United Kingdom
+1838,Aldeburgh,United Kingdom
+1839,Wallington,United Kingdom
+1840,Potters Bar,United Kingdom
+1841,Epping,United Kingdom
+1842,Crook,United Kingdom
+1843,Southwold,United Kingdom
+1844,Smethwick,United Kingdom
+1845,High Peak,United Kingdom
+1846,Chinnor,United Kingdom
+1847,Seaton,United Kingdom
+1848,Heywood,United Kingdom
+1849,West Byfleet,United Kingdom
+1850,Woolacombe,United Kingdom
+1851,Lechlade,United Kingdom
+1852,Oxted,United Kingdom
+1853,Crowthorne,United Kingdom
+1854,Llangollen,United Kingdom
+1855,Broadstairs,United Kingdom
+1856,Wymondham,United Kingdom
+1857,Lydney,United Kingdom
+1858,Hebburn,United Kingdom
+1859,Choppington,United Kingdom
+1860,Hayes,United Kingdom
+1861,Tipton,United Kingdom
+1862,Sowerby Bridge,United Kingdom
+1863,Cradley Heath,United Kingdom
+1864,Dymock,United Kingdom
+1865,Walton On The Naze,United Kingdom
+1866,Moreton-In-Marsh,United Kingdom
+1867,Thornton Heath,United Kingdom
+1868,Mirfield,United Kingdom
+1869,Rochford,United Kingdom
+1870,Abertillery,United Kingdom
+1871,Barnoldswick,United Kingdom
+1872,Banwell,United Kingdom
+1873,Christchurch,United Kingdom
+1874,Dorchester,United Kingdom
+1875,Minehead,United Kingdom
+1876,Radlett,United Kingdom
+1877,Dursley,United Kingdom
+1878,Studley,United Kingdom
+1879,Olney,United Kingdom
+1880,Bedlington,United Kingdom
+1881,Redruth,United Kingdom
+1882,Thames Ditton,United Kingdom
+1883,Brampton,United Kingdom
+1884,Alton,United Kingdom
+1885,New Milton,United Kingdom
+1886,Hindhead,United Kingdom
+1887,Montgomery,United Kingdom
+1888,Broadstone,United Kingdom
+1889,Shepperton,United Kingdom
+1890,Halstead,United Kingdom
+1891,Hope Valley,United Kingdom
+1892,Wotton-Under-Edge,United Kingdom
+1893,Ripon,United Kingdom
+1894,Godstone,United Kingdom
+1895,Littleborough,United Kingdom
+1896,Chigwell,United Kingdom
+1897,Southminster,United Kingdom
+1898,Malton,United Kingdom
+1899,Hebden Bridge,United Kingdom
+1900,Ivybridge,United Kingdom
+1901,Bideford,United Kingdom
+1902,Ulverston,United Kingdom
+1903,Market Drayton,United Kingdom
+1904,Malpas,United Kingdom
+1905,Broseley,United Kingdom
+1906,Saffron Walden,United Kingdom
+1907,Bangor,United Kingdom
+1908,Stourbridge,United Kingdom
+1909,Winscombe,United Kingdom
+1910,Northwood,United Kingdom
+1911,Chesham,United Kingdom
+1912,Prestatyn,United Kingdom
+1913,Bridport,United Kingdom
+1914,Addlestone,United Kingdom
+1915,Polegate,United Kingdom
+1916,St. Ives,United Kingdom
+1917,Batley,United Kingdom
+1918,Witham,United Kingdom
+1919,Widnes,United Kingdom
+1920,Lytham St. Annes,United Kingdom
+1921,Yateley,United Kingdom
+1922,Cowbridge,United Kingdom
+1923,Holt,United Kingdom
+1924,Treorchy,United Kingdom
+1925,Exmouth,United Kingdom
+1926,Ellesmere,United Kingdom
+1927,Wareham,United Kingdom
+1928,Rowley Regis,United Kingdom
+1929,Dereham,United Kingdom
+1930,Betws-Y-Coed,United Kingdom
+1931,Broadway,United Kingdom
+1932,Padstow,United Kingdom
+1933,Totland Bay,United Kingdom
+1934,Seaham,United Kingdom
+1935,Crowborough,United Kingdom
+1936,Faringdon,United Kingdom
+1937,Teignmouth,United Kingdom
+1938,Yarm,United Kingdom
+1939,Elland,United Kingdom
+1940,Burnham-On-Sea,United Kingdom
+1941,Romsey,United Kingdom
+1942,Lymm,United Kingdom
+1943,Salcombe,United Kingdom
+1944,Tidworth,United Kingdom
+1945,Haltwhistle,United Kingdom
+1946,Swaffham,United Kingdom
+1947,Neston,United Kingdom
+1948,Seaford,United Kingdom
+1949,Torrington,United Kingdom
+1950,Kenley,United Kingdom
+1951,Westcliff-On-Sea,United Kingdom
+1952,Halesworth,United Kingdom
+1953,Corsham,United Kingdom
+1954,Crewkerne,United Kingdom
+1955,Bude,United Kingdom
+1956,Talybont,United Kingdom
+1957,Sandwich,United Kingdom
+1958,Rye,United Kingdom
+1959,Prudhoe,United Kingdom
+1960,Welwyn Garden City,United Kingdom
+1961,Henfield,United Kingdom
+1962,Rhyl,United Kingdom
+1963,Flint,United Kingdom
+1964,Malvern,United Kingdom
+1965,Deal,United Kingdom
+1966,Billingham,United Kingdom
+1967,Brierley Hill,United Kingdom
+1968,Buckhurst Hill,United Kingdom
+1969,Greenford,United Kingdom
+1970,Ashby-De-La-Zouch,United Kingdom
+1971,Henlow,United Kingdom
+1972,Gaerwen,United Kingdom
+1973,Worcester Park,United Kingdom
+1974,St Helens,United Kingdom
+1975,Ammanford,United Kingdom
+1976,Rowlands Gill,United Kingdom
+1977,Church Stretton,United Kingdom
+1978,Lyndhurst,United Kingdom
+1979,Knebworth,United Kingdom
+1980,Atherstone,United Kingdom
+1981,Hinton St George,United Kingdom
+1982,Ledbury,United Kingdom
+1983,Uttoxeter,United Kingdom
+1984,Abergavenny,United Kingdom
+1985,Saxmundham,United Kingdom
+1986,St Columb,United Kingdom
+1987,Thirsk,United Kingdom
+1988,Snodland,United Kingdom
+1989,Llantwit Major,United Kingdom
+1990,Brockenhurst,United Kingdom
+1991,Ascot,United Kingdom
+1992,Catterick Garrison,United Kingdom
+1993,Petersfield,United Kingdom
+1994,Caterham,United Kingdom
+1995,Swanscombe,United Kingdom
+1996,Filey,United Kingdom
+1997,Lewes,United Kingdom
+1998,Bampton,United Kingdom
+1999,Swanley,United Kingdom
+2000,Bargoed,United Kingdom
+2001,Stourport-On-Severn,United Kingdom
+2002,North Ferriby,United Kingdom
+2003,Pevensey,United Kingdom
+2004,Gerrards Cross,United Kingdom
+2005,Thame,United Kingdom
+2006,Bakewell,United Kingdom
+2007,Marlborough,United Kingdom
+2008,Burry Port,United Kingdom
+2009,Wadhurst,United Kingdom
+2010,Pershore,United Kingdom
+2011,Broxbourne,United Kingdom
+2012,Port Talbot,United Kingdom
+2013,Brixham,United Kingdom
+2014,Arundel,United Kingdom
+2015,Ventnor,United Kingdom
+2016,Torpoint,United Kingdom
+2017,Attleborough,United Kingdom
+2018,Edenbridge,United Kingdom
+2019,Melksham,United Kingdom
+2020,Bungay,United Kingdom
+2021,Street,United Kingdom
+2022,Lostwithiel,United Kingdom
+2023,Uckfield,United Kingdom
+2024,Llandudno Junction,United Kingdom
+2025,Cirencester,United Kingdom
+2026,East Cowes,United Kingdom
+2027,Berwick-Upon-Tweed,United Kingdom
+2028,Banstead,United Kingdom
+2029,Ibstock,United Kingdom
+2030,Hampton,United Kingdom
+2031,Llanfairfechan,United Kingdom
+2032,Forest Row,United Kingdom
+2033,Barnard Castle,United Kingdom
+2034,St Leonards-On-Sea,United Kingdom
+2035,Dalton-In-Furness,United Kingdom
+2036,Harwich,United Kingdom
+2037,Kidlington,United Kingdom
+2038,Machynlleth,United Kingdom
+2039,Ossett,United Kingdom
+2040,Budleigh Salterton,United Kingdom
+2041,Gainsborough,United Kingdom
+2042,Bedale,United Kingdom
+2043,Ilfracombe,United Kingdom
+2044,Ruthin,United Kingdom
+2045,Lymington,United Kingdom
+2046,Liphook,United Kingdom
+2047,Northallerton,United Kingdom
+2048,Holmrook,United Kingdom
+2049,Usk,United Kingdom
+2050,Winchelsea,United Kingdom
+2051,Otley,United Kingdom
+2052,Leyburn,United Kingdom
+2053,Aberystwyth,United Kingdom
+2054,Tetbury,United Kingdom
+2055,Drybrook,United Kingdom
+2056,Bourne End,United Kingdom
+2057,Newtown,United Kingdom
+2058,Cottingham,United Kingdom
+2059,Chislehurst,United Kingdom
+2060,Beaminster,United Kingdom
+2061,Brecon,United Kingdom
+2062,Lee-On-The-Solent,United Kingdom
+2063,Sawbridgeworth,United Kingdom
+2064,Chalfont St. Giles,United Kingdom
+2065,Conwy,United Kingdom
+2066,Calstock,United Kingdom
+2067,Leiston,United Kingdom
+2068,Alcester,United Kingdom
+2069,Crediton,United Kingdom
+2070,Alnwick,United Kingdom
+2071,Tilbury,United Kingdom
+2072,Langport,United Kingdom
+2073,Ilminster,United Kingdom
+2074,North Walsham,United Kingdom
+2075,Tywyn,United Kingdom
+2076,Yelverton,United Kingdom
+2077,Alresford,United Kingdom
+2078,Stonehouse,United Kingdom
+2079,Buckfastleigh,United Kingdom
+2080,Dinas Powys,United Kingdom
+2081,Pembroke Dock,United Kingdom
+2082,Hunstanton,United Kingdom
+2083,New Quay,United Kingdom
+2084,Chertsey,United Kingdom
+2085,Coleford,United Kingdom
+2086,Newton-Le-Willows,United Kingdom
+2087,Looe,United Kingdom
+2088,Ferndown,United Kingdom
+2089,Llandrindod Wells,United Kingdom
+2090,Sidmouth,United Kingdom
+2091,Appleby-In-Westmorland,United Kingdom
+2092,Llanwrda,United Kingdom
+2093,Pewsey,United Kingdom
+2094,Millom,United Kingdom
+2095,Great Missenden,United Kingdom
+2096,Westgate-On-Sea,United Kingdom
+2097,Hythe,United Kingdom
+2098,Broughton-In-Furness,United Kingdom
+2099,Barnetby,United Kingdom
+2100,Stockbridge,United Kingdom
+2101,Woodhall Spa,United Kingdom
+2102,Watchet,United Kingdom
+2103,Kidwelly,United Kingdom
+2104,Virginia Water,United Kingdom
+2105,Carterton,United Kingdom
+2106,Glastonbury,United Kingdom
+2107,Waltham Abbey,United Kingdom
+2108,Camelford,United Kingdom
+2109,Askam-In-Furness,United Kingdom
+2110,Ebbw Vale,United Kingdom
+2111,Wingate,United Kingdom
+2112,Aylesford,United Kingdom
+2113,Beccles,United Kingdom
+2114,Rhayader,United Kingdom
+2115,Llanbrynmair,United Kingdom
+2116,Purley,United Kingdom
+2117,Milnthorpe,United Kingdom
+2118,Sturminster Newton,United Kingdom
+2119,Midhurst,United Kingdom
+2120,Alston,United Kingdom
+2121,Queenborough,United Kingdom
+2122,Grange-Over-Sands,United Kingdom
+2123,Battle,United Kingdom
+2124,Tenterden,United Kingdom
+2125,Ferryside,United Kingdom
+2126,Bures,United Kingdom
+2127,Southwell,United Kingdom
+2128,Amlwch,United Kingdom
+2129,Wadebridge,United Kingdom
+2130,South Petherton,United Kingdom
+2131,Llanrhystud,United Kingdom
+2132,Cranbrook,United Kingdom
+2133,Seaview,United Kingdom
+2134,Burford,United Kingdom
+2135,Liskeard,United Kingdom
+2136,Crickhowell,United Kingdom
+2137,Romney Marsh,United Kingdom
+2138,Maesteg,United Kingdom
+2139,Presteigne,United Kingdom
+2140,Narberth,United Kingdom
+2141,Llangadog,United Kingdom
+2142,Llanfairpwllgwyngyll,United Kingdom
+2143,Alderley Edge,United Kingdom
+2144,Knottingley,United Kingdom
+2145,Martock,United Kingdom
+2146,Birchington,United Kingdom
+2147,Tenby,United Kingdom
+2148,Brentford,United Kingdom
+2149,Woodstock,United Kingdom
+2150,Rowland'S Castle,United Kingdom
+2151,Y Felinheli,United Kingdom
+2152,Colyton,United Kingdom
+2153,Dolgellau,United Kingdom
+2154,Trimdon Station,United Kingdom
+2155,Llanrwst,United Kingdom
+2156,Somerton,United Kingdom
+2157,Menai Bridge,United Kingdom
+2158,Bagshot,United Kingdom
+2159,Corwen,United Kingdom
+2160,New Tredegar,United Kingdom
+2161,Criccieth,United Kingdom
+2162,Pembroke,United Kingdom
+2163,Much Wenlock,United Kingdom
+2164,Staines-Upon-Thames,United Kingdom
+2165,Llandinam,United Kingdom
+2166,Tintagel,United Kingdom
+2167,Aberaeron,United Kingdom
+2168,Bruton,United Kingdom
+2169,Axbridge,United Kingdom
+2170,Goodwick,United Kingdom
+2171,Chathill,United Kingdom
+2172,Llandysul,United Kingdom
+2173,Ottery St. Mary,United Kingdom
+2174,Talsarnau,United Kingdom
+2175,East Boldon,United Kingdom
+2176,Dulverton,United Kingdom
+2177,Markfield,United Kingdom
+2178,Frizington,United Kingdom
+2179,Barrow-Upon-Humber,United Kingdom
+2180,Kirkby Stephen,United Kingdom
+2181,Penysarn,United Kingdom
+2182,Tredegar,United Kingdom
+2183,Cinderford,United Kingdom
+2184,Sedbergh,United Kingdom
+2185,Llandovery,United Kingdom
+2186,Beckermet,United Kingdom
+2187,Aberdovey,United Kingdom
+2188,Porthmadog,United Kingdom
+2189,Boldon Colliery,United Kingdom
+2190,Fairbourne,United Kingdom
+2191,Whitland,United Kingdom
+2192,Stocksfield,United Kingdom
+2193,Llandeilo,United Kingdom
+2194,Bromyard,United Kingdom
+2195,Cemaes Bay,United Kingdom
+2196,Hawes,United Kingdom
+2197,Beaworthy,United Kingdom
+2198,Wells-Next-The-Sea,United Kingdom
+2199,Builth Wells,United Kingdom
+2200,North Tawton,United Kingdom
+2201,Belford,United Kingdom
+2202,Port Isaac,United Kingdom
+2203,Newbiggin-By-The-Sea,United Kingdom
+2204,Knighton,United Kingdom
+2205,Bagillt,United Kingdom
+2206,Clynderwen,United Kingdom
+2207,Harlech,United Kingdom
+2208,Egremont,United Kingdom
+2209,Ulceby,United Kingdom
+2210,Bishops Castle,United Kingdom
+2211,Newcastle Emlyn,United Kingdom
+2212,Stoke-Sub-Hamdon,United Kingdom
+2213,Mayfield,United Kingdom
+2214,Mitcheldean,United Kingdom
+2215,Llanon,United Kingdom
+2216,Windlesham,United Kingdom
+2217,Pencader,United Kingdom
+2218,Hartfield,United Kingdom
+2219,Gunnislake,United Kingdom
+2220,Lifton,United Kingdom
+2221,Cleator,United Kingdom
+2222,Lynton,United Kingdom
+2223,Bembridge,United Kingdom
+2224,Berkeley,United Kingdom
+2225,Dyffryn Ardudwy,United Kingdom
+2226,Lynmouth,United Kingdom
+2227,Kington,United Kingdom
+2228,Barmouth,United Kingdom
+2229,Templecombe,United Kingdom
+2230,Fishguard,United Kingdom
+2231,Brynteg,United Kingdom
+2232,Boncath,United Kingdom
+2233,Tyn-Y-Gongl,United Kingdom
+2234,Llanbedr,United Kingdom
+2235,Moelfre,United Kingdom
+2236,Withernsea,United Kingdom
+2237,Merriott,United Kingdom
+2238,Rhosneigr,United Kingdom
+2239,Yarmouth,United Kingdom
+2240,Wooler,United Kingdom
+2241,Ty Croes,United Kingdom
+2242,St. Agnes,United Kingdom
+2243,Settle,United Kingdom
+2244,Ruardean,United Kingdom
+2245,Bow Street,United Kingdom
+2246,Ottery St Mary,United Kingdom
+2247,Petworth,United Kingdom
+2248,Sint Pancras,Netherlands
+2249,Waddinxveen,Netherlands
+2250,Houten,Netherlands
+2251,Pannerden,Netherlands
+2252,Sassenheim,Netherlands
+2253,Oudewater,Netherlands
+2254,Utrecht,Netherlands
+2255,Dordrecht,Netherlands
+2256,Zuidveen,Netherlands
+2257,Amstelveen,Netherlands
+2258,Nieuwlande,Netherlands
+2259,Rhoon,Netherlands
+2260,Ede,Netherlands
+2261,Terheijden,Netherlands
+2262,Schaijk,Netherlands
+2263,Nieuwleusen,Netherlands
+2264,Linden,Netherlands
+2265,Ermelo,Netherlands
+2266,Veghel,Netherlands
+2267,Veenendaal,Netherlands
+2268,Holten,Netherlands
+2269,Helmond,Netherlands
+2270,Gilze,Netherlands
+2271,Assendelft,Netherlands
+2272,Nuenen,Netherlands
+2273,Apeldoorn,Netherlands
+2274,Linne,Netherlands
+2275,Arnhem,Netherlands
+2276,Eindhoven,Netherlands
+2277,Hillegom,Netherlands
+2278,'S-Gravenzande,Netherlands
+2279,Nijkerk,Netherlands
+2280,Gorinchem,Netherlands
+2281,Spijkenisse,Netherlands
+2282,Purmerend,Netherlands
+2283,Nijmegen,Netherlands
+2284,Almere,Netherlands
+2285,St. Willebrord,Netherlands
+2286,Rijssen,Netherlands
+2287,Delfzijl,Netherlands
+2288,Surhuisterveen,Netherlands
+2289,Oosterhout (Nb),Netherlands
+2290,Tegelen,Netherlands
+2291,Hoeven,Netherlands
+2292,Lage Mierde,Netherlands
+2293,Alphen Aan Den Rijn,Netherlands
+2294,Oss,Netherlands
+2295,Sliedrecht,Netherlands
+2296,Wanroij,Netherlands
+2297,Leeuwarden,Netherlands
+2298,Lelystad,Netherlands
+2299,Kesteren,Netherlands
+2300,Den Haag,Netherlands
+2301,Nieuw Heeten,Netherlands
+2302,Oisterwijk,Netherlands
+2303,Emmen,Netherlands
+2304,Maasbommel,Netherlands
+2305,Venray,Netherlands
+2306,Zaandam,Netherlands
+2307,Emst,Netherlands
+2308,Castricum,Netherlands
+2309,Middenbeemster,Netherlands
+2310,Breda,Netherlands
+2311,Valthe,Netherlands
+2312,Meteren,Netherlands
+2313,Akersloot,Netherlands
+2314,Leusden,Netherlands
+2315,Deurne,Netherlands
+2316,Heemskerk,Netherlands
+2317,Nuland,Netherlands
+2318,Putten,Netherlands
+2319,Zieuwent,Netherlands
+2320,Kapel Avezaath (Gem. Tiel),Netherlands
+2321,Assen,Netherlands
+2322,Rotterdam,Netherlands
+2323,Vlissingen,Netherlands
+2324,Made,Netherlands
+2325,Poortvliet,Netherlands
+2326,Emmeloord,Netherlands
+2327,Afferden (Li),Netherlands
+2328,Amersfoort,Netherlands
+2329,Wageningen,Netherlands
+2330,Elp,Netherlands
+2331,Maarssen,Netherlands
+2332,Doetinchem,Netherlands
+2333,Blokker,Netherlands
+2334,Riel,Netherlands
+2335,Heiloo,Netherlands
+2336,Heeze,Netherlands
+2337,Zeeland,Netherlands
+2338,Voorschoten,Netherlands
+2339,Best,Netherlands
+2340,Lopik,Netherlands
+2341,Wijster,Netherlands
+2342,Wijchen,Netherlands
+2343,Harderwijk,Netherlands
+2344,Nieuw-Amsterdam,Netherlands
+2345,De Woude,Netherlands
+2346,Vianen (Ut),Netherlands
+2347,Oostkapelle,Netherlands
+2348,Groot-Ammers,Netherlands
+2349,Ijmuiden,Netherlands
+2350,Oosthuizen,Netherlands
+2351,Dronten,Netherlands
+2352,Dedemsvaart,Netherlands
+2353,Krimpen Aan Den Ijssel,Netherlands
+2354,Neede,Netherlands
+2355,Sittard,Netherlands
+2356,Malden,Netherlands
+2357,Aalsmeer,Netherlands
+2358,Lathum,Netherlands
+2359,Groningen,Netherlands
+2360,Achterveld (Ut),Netherlands
+2361,Zwolle,Netherlands
+2362,Lexmond,Netherlands
+2363,Gouda,Netherlands
+2364,Harlingen,Netherlands
+2365,Beuningen (Ge),Netherlands
+2366,Hoorn (Nh),Netherlands
+2367,Kerkrade,Netherlands
+2368,Sint Anthonis,Netherlands
+2369,Voorhout,Netherlands
+2370,Wieringerwaard,Netherlands
+2371,Enkhuizen,Netherlands
+2372,Gendringen,Netherlands
+2373,Capelle Aan Den Ijssel,Netherlands
+2374,Nieuw-Buinen,Netherlands
+2375,Maastricht,Netherlands
+2376,Kats,Netherlands
+2377,'S Gravenmoer,Netherlands
+2378,Valthermond,Netherlands
+2379,Raamsdonksveer,Netherlands
+2380,Zevenaar,Netherlands
+2381,Zutphen,Netherlands
+2382,Giethoorn,Netherlands
+2383,Odijk,Netherlands
+2384,Beverwijk,Netherlands
+2385,Oosterbeek,Netherlands
+2386,Dongen,Netherlands
+2387,Zierikzee,Netherlands
+2388,Amsterdam,Netherlands
+2389,Barneveld,Netherlands
+2390,Hoevelaken,Netherlands
+2391,Enschede,Netherlands
+2392,Uithoorn,Netherlands
+2393,Mijdrecht,Netherlands
+2394,Renswoude,Netherlands
+2395,Hoogvliet Rotterdam,Netherlands
+2396,Wormerveer,Netherlands
+2397,Roermond,Netherlands
+2398,Stein,Netherlands
+2399,Vught,Netherlands
+2400,Nijverdal,Netherlands
+2401,Hilversum,Netherlands
+2402,Monster,Netherlands
+2403,Tilburg,Netherlands
+2404,Erica,Netherlands
+2405,Hooge Zwaluwe,Netherlands
+2406,Haarlem,Netherlands
+2407,Hellevoetsluis,Netherlands
+2408,'S-Heerenberg,Netherlands
+2409,Leiderdorp,Netherlands
+2410,Roosendaal,Netherlands
+2411,Huissen,Netherlands
+2412,Pijnacker,Netherlands
+2413,Noordwijk (Zh),Netherlands
+2414,Lunteren,Netherlands
+2415,'S-Heerenhoek,Netherlands
+2416,Hoogezand,Netherlands
+2417,Heerhugowaard,Netherlands
+2418,Panningen,Netherlands
+2419,Lochem,Netherlands
+2420,Ellemeet,Netherlands
+2421,Zwartewaal,Netherlands
+2422,Tiel,Netherlands
+2423,Alkmaar,Netherlands
+2424,Lisse,Netherlands
+2425,Epe,Netherlands
+2426,Kudelstaart,Netherlands
+2427,Beek En Donk,Netherlands
+2428,Wehl,Netherlands
+2429,Ootmarsum,Netherlands
+2430,Bergen (Li),Netherlands
+2431,Borne,Netherlands
+2432,Hardinxveld-Giessendam,Netherlands
+2433,Grave,Netherlands
+2434,Bloemendaal,Netherlands
+2435,Zevenbergen,Netherlands
+2436,Borger,Netherlands
+2437,Otterlo,Netherlands
+2438,Warmenhuizen,Netherlands
+2439,Herten,Netherlands
+2440,Delft,Netherlands
+2441,Burgum,Netherlands
+2442,Goes,Netherlands
+2443,Zuid-Beijerland,Netherlands
+2444,Westervoort,Netherlands
+2445,Beinsdorp,Netherlands
+2446,Oost West En Middelbeers,Netherlands
+2447,Schijndel,Netherlands
+2448,Koudekerk Aan Den Rijn,Netherlands
+2449,Prinsenbeek,Netherlands
+2450,Geldrop,Netherlands
+2451,Berkel En Rodenrijs,Netherlands
+2452,Haarsteeg,Netherlands
+2453,Etten-Leur,Netherlands
+2454,Numansdorp,Netherlands
+2455,Den Bosch,Netherlands
+2456,Nieuw-Vennep,Netherlands
+2457,Kampen,Netherlands
+2458,Angeren,Netherlands
+2459,Meerstad,Netherlands
+2460,Marknesse,Netherlands
+2461,Leiden,Netherlands
+2462,Werkendam,Netherlands
+2463,Tholen,Netherlands
+2464,Dalfsen,Netherlands
+2465,Bergambacht,Netherlands
+2466,Schoonhoven,Netherlands
+2467,Dreischor,Netherlands
+2468,Sleen,Netherlands
+2469,Ruurlo,Netherlands
+2470,Zoetermeer,Netherlands
+2471,Duiven,Netherlands
+2472,Swalmen,Netherlands
+2473,Sint Jansteen,Netherlands
+2474,Oentsjerk,Netherlands
+2475,Uden,Netherlands
+2476,Almelo,Netherlands
+2477,Zwartsluis,Netherlands
+2478,Langbroek,Netherlands
+2479,Oost-Souburg,Netherlands
+2480,Berghem,Netherlands
+2481,Ijsselstein,Netherlands
+2482,Hoofddorp,Netherlands
+2483,Blije,Netherlands
+2484,Horst,Netherlands
+2485,Groet,Netherlands
+2486,Berkhout,Netherlands
+2487,Slagharen,Netherlands
+2488,Balkbrug,Netherlands
+2489,Moordrecht,Netherlands
+2490,Bladel,Netherlands
+2491,Nieuwerkerk Aan Den Ijssel,Netherlands
+2492,Stadskanaal,Netherlands
+2493,Woudenberg,Netherlands
+2494,Brunssum,Netherlands
+2495,Oldelamer,Netherlands
+2496,Middelharnis,Netherlands
+2497,Hengelo (Ov),Netherlands
+2498,Valkenburg (Li),Netherlands
+2499,Alteveer (Gr),Netherlands
+2500,Rijsenhout,Netherlands
+2501,Puttershoek,Netherlands
+2502,Sprundel,Netherlands
+2503,Ridderkerk,Netherlands
+2504,Wijngaarden,Netherlands
+2505,Gennep,Netherlands
+2506,Volendam,Netherlands
+2507,Wormer,Netherlands
+2508,Oeffelt,Netherlands
+2509,Bavel (Gem. Breda),Netherlands
+2510,Hendrik-Ido-Ambacht,Netherlands
+2511,Halle,Netherlands
+2512,Schiedam,Netherlands
+2513,Stad Aan 'T Haringvliet,Netherlands
+2514,Rijen,Netherlands
+2515,Wenum Wiesel,Netherlands
+2516,Warnsveld,Netherlands
+2517,Kootstertille,Netherlands
+2518,Middelburg,Netherlands
+2519,Hollandscheveld,Netherlands
+2520,Den Ham (Ov),Netherlands
+2521,Herpen,Netherlands
+2522,Hoogland,Netherlands
+2523,Gemert,Netherlands
+2524,Rijpwetering,Netherlands
+2525,Marum,Netherlands
+2526,Pernis Rotterdam,Netherlands
+2527,Culemborg,Netherlands
+2528,Ees,Netherlands
+2529,Opheusden,Netherlands
+2530,Gemonde,Netherlands
+2531,Rosmalen,Netherlands
+2532,Aerdenhout,Netherlands
+2533,Buurmalsen (Gem. West Betuwe),Netherlands
+2534,Geleen,Netherlands
+2535,Eerbeek,Netherlands
+2536,Driebergen-Rijsenburg,Netherlands
+2537,Klazienaveen,Netherlands
+2538,Wateringen,Netherlands
+2539,Winschoten,Netherlands
+2540,Papendrecht,Netherlands
+2541,Doorwerth,Netherlands
+2542,Krommenie,Netherlands
+2543,Wijk Bij Duurstede,Netherlands
+2544,Landhorst,Netherlands
+2545,Lippenhuizen,Netherlands
+2546,Vleuten,Netherlands
+2547,Bergschenhoek,Netherlands
+2548,Nieuwegein,Netherlands
+2549,Elst (Ge),Netherlands
+2550,Oldebroek,Netherlands
+2551,Nieuwkuijk,Netherlands
+2552,Woerden,Netherlands
+2553,Weesp,Netherlands
+2554,Fijnaart,Netherlands
+2555,Swifterbant,Netherlands
+2556,Egmond-Binnen,Netherlands
+2557,Geertruidenberg,Netherlands
+2558,Elst (Ut),Netherlands
+2559,Maurik,Netherlands
+2560,Dodewaard,Netherlands
+2561,Eelde,Netherlands
+2562,Vroomshoop,Netherlands
+2563,Heerjansdam,Netherlands
+2564,Helden,Netherlands
+2565,Hoogeveen,Netherlands
+2566,Den Bommel,Netherlands
+2567,Goirle,Netherlands
+2568,Domburg,Netherlands
+2569,Hoensbroek,Netherlands
+2570,Oudebildtzijl,Netherlands
+2571,Vinkeveen,Netherlands
+2572,Ursem (Gem. Koggenland),Netherlands
+2573,Vaassen,Netherlands
+2574,De Goorn,Netherlands
+2575,Heusden (Gem. Heusden),Netherlands
+2576,Willemstad,Netherlands
+2577,Waalre,Netherlands
+2578,Ijsselmuiden,Netherlands
+2579,Herwen,Netherlands
+2580,Hardenberg,Netherlands
+2581,Bovenkarspel,Netherlands
+2582,Heemstede,Netherlands
+2583,Meppel,Netherlands
+2584,Hengelo (Ge),Netherlands
+2585,De Meern,Netherlands
+2586,Denekamp,Netherlands
+2587,Beers,Netherlands
+2588,Haaksbergen,Netherlands
+2589,Terneuzen,Netherlands
+2590,Wassenaar,Netherlands
+2591,Reeuwijk,Netherlands
+2592,Herkenbosch,Netherlands
+2593,Britsum,Netherlands
+2594,Bleiswijk,Netherlands
+2595,Dirksland,Netherlands
+2596,Losser,Netherlands
+2597,Gieten,Netherlands
+2598,Dreumel,Netherlands
+2599,Oosterwolde (Fr),Netherlands
+2600,Raalte,Netherlands
+2601,Roswinkel,Netherlands
+2602,Westerbork,Netherlands
+2603,Lottum,Netherlands
+2604,Koewacht,Netherlands
+2605,Dalmsholte,Netherlands
+2606,Rijswijk (Zh),Netherlands
+2607,Noord-Sleen,Netherlands
+2608,Groenlo,Netherlands
+2609,Blaricum,Netherlands
+2610,Limmen,Netherlands
+2611,Bennekom,Netherlands
+2612,Koudekerke,Netherlands
+2613,Gorssel,Netherlands
+2614,Zuidhorn,Netherlands
+2615,Rijnsburg,Netherlands
+2616,Steenbergen (Nb),Netherlands
+2617,Almkerk,Netherlands
+2618,Geldermalsen,Netherlands
+2619,Uitgeest,Netherlands
+2620,Elburg,Netherlands
+2621,Toldijk,Netherlands
+2622,Eibergen,Netherlands
+2623,Noord-Scharwoude,Netherlands
+2624,Velsen-Noord,Netherlands
+2625,Valkenswaard,Netherlands
+2626,Kaatsheuvel,Netherlands
+2627,Nunspeet,Netherlands
+2628,Koedijk (Gem. Alkmaar),Netherlands
+2629,Landgraaf,Netherlands
+2630,Boxtel,Netherlands
+2631,Horssen,Netherlands
+2632,Zwijndrecht,Netherlands
+2633,Lutjebroek,Netherlands
+2634,Egmond Aan Zee,Netherlands
+2635,Oudenbosch,Netherlands
+2636,Vierlingsbeek,Netherlands
+2637,Heesch,Netherlands
+2638,Breukelen,Netherlands
+2639,Stiens,Netherlands
+2640,Doorn,Netherlands
+2641,Maasbree,Netherlands
+2642,Zaandijk,Netherlands
+2643,Lopikerkapel,Netherlands
+2644,Rozendaal,Netherlands
+2645,Zuidlaren,Netherlands
+2646,Naarden,Netherlands
+2647,Eygelshoven,Netherlands
+2648,Den Dolder,Netherlands
+2649,Lekkerkerk,Netherlands
+2650,Oud Gastel,Netherlands
+2651,Winterswijk,Netherlands
+2652,Loosdrecht,Netherlands
+2653,Bunde,Netherlands
+2654,Sint-Oedenrode,Netherlands
+2655,Emmer-Compascuum,Netherlands
+2656,Dinxperlo,Netherlands
+2657,Heinenoord,Netherlands
+2658,Brielle,Netherlands
+2659,Wons,Netherlands
+2660,Barendrecht,Netherlands
+2661,Deest,Netherlands
+2662,Veendam,Netherlands
+2663,Drachten,Netherlands
+2664,Oostvoorne,Netherlands
+2665,Loenen Aan De Vecht,Netherlands
+2666,Tubbergen,Netherlands
+2667,Stavenisse,Netherlands
+2668,Nieuwer Ter Aa,Netherlands
+2669,Montfoort,Netherlands
+2670,Vianen (Nb),Netherlands
+2671,Hapert,Netherlands
+2672,Geerdijk,Netherlands
+2673,Zeist,Netherlands
+2674,Ommen,Netherlands
+2675,Alblasserdam,Netherlands
+2676,Echten (Fr),Netherlands
+2677,Maasbracht,Netherlands
+2678,Leende,Netherlands
+2679,Beilen,Netherlands
+2680,Dirkshorn,Netherlands
+2681,Wissenkerke,Netherlands
+2682,Smilde,Netherlands
+2683,Ovezande,Netherlands
+2684,Steenderen,Netherlands
+2685,Terborg,Netherlands
+2686,Leimuiderbrug,Netherlands
+2687,Didam,Netherlands
+2688,Udenhout,Netherlands
+2689,Benthuizen,Netherlands
+2690,De Kwakel,Netherlands
+2691,Sellingen,Netherlands
+2692,Goudswaard,Netherlands
+2693,Hilvarenbeek,Netherlands
+2694,Druten,Netherlands
+2695,Soest,Netherlands
+2696,Veldhoven,Netherlands
+2697,Breedenbroek,Netherlands
+2698,Boekel,Netherlands
+2699,Honselersdijk,Netherlands
+2700,Bleskensgraaf Ca,Netherlands
+2701,Buren (Ge),Netherlands
+2702,Nieuwkoop,Netherlands
+2703,Huizen,Netherlands
+2704,Vinkel (Gem. Den Bosch),Netherlands
+2705,Cothen,Netherlands
+2706,Elsloo (Li),Netherlands
+2707,Ell,Netherlands
+2708,Bedum,Netherlands
+2709,Bruinisse,Netherlands
+2710,De Rijp,Netherlands
+2711,Nieuwendijk,Netherlands
+2712,Heerewaarden,Netherlands
+2713,Waalwijk,Netherlands
+2714,Rijsbergen,Netherlands
+2715,Venlo,Netherlands
+2716,Bergen (Nh),Netherlands
+2717,Vriezenveen,Netherlands
+2718,Oosterwolde (Ge),Netherlands
+2719,Noordwijkerhout,Netherlands
+2720,Vlaardingen,Netherlands
+2721,Beekbergen,Netherlands
+2722,Peize,Netherlands
+2723,Zeewolde,Netherlands
+2724,Driebruggen,Netherlands
+2725,Deventer,Netherlands
+2726,Kloetinge (Gem. Goes),Netherlands
+2727,Oosteind,Netherlands
+2728,Valburg,Netherlands
+2729,Petten,Netherlands
+2730,Katwijk (Zh),Netherlands
+2731,Amen,Netherlands
+2732,Boven-Leeuwen,Netherlands
+2733,Vlijmen,Netherlands
+2734,Punthorst,Netherlands
+2735,Edam,Netherlands
+2736,Vlagtwedde,Netherlands
+2737,Heikant,Netherlands
+2738,Meeden,Netherlands
+2739,Drunen,Netherlands
+2740,Nieuwe Wetering,Netherlands
+2741,Bodegraven,Netherlands
+2742,Rhenen,Netherlands
+2743,'S-Gravenpolder,Netherlands
+2744,Herpt,Netherlands
+2745,Bakel,Netherlands
+2746,Doornspijk,Netherlands
+2747,Diemen,Netherlands
+2748,Rijswijk (Ge),Netherlands
+2749,Echt,Netherlands
+2750,Horn,Netherlands
+2751,Zuidwolde (Dr),Netherlands
+2752,Sevenum,Netherlands
+2753,Garderen,Netherlands
+2754,Cuijk,Netherlands
+2755,Ferwert,Netherlands
+2756,Lewedorp,Netherlands
+2757,Berlicum,Netherlands
+2758,Wierden,Netherlands
+2759,Bussum,Netherlands
+2760,Meijel,Netherlands
+2761,Moerdijk,Netherlands
+2762,Arnemuiden,Netherlands
+2763,Eersel,Netherlands
+2764,Riethoven,Netherlands
+2765,Meliskerke,Netherlands
+2766,Appingedam,Netherlands
+2767,Wijhe,Netherlands
+2768,Waspik,Netherlands
+2769,Gouderak,Netherlands
+2770,Sneek,Netherlands
+2771,Schijf,Netherlands
+2772,Rottum (Fr),Netherlands
+2773,Erp,Netherlands
+2774,Wervershoof,Netherlands
+2775,Silvolde,Netherlands
+2776,Rheden,Netherlands
+2777,Hulst,Netherlands
+2778,Bennebroek,Netherlands
+2779,Harskamp,Netherlands
+2780,'T Goy,Netherlands
+2781,Twello,Netherlands
+2782,Laren (Nh),Netherlands
+2783,Exloo,Netherlands
+2784,Biddinghuizen,Netherlands
+2785,Boxmeer,Netherlands
+2786,Enter,Netherlands
+2787,Annen,Netherlands
+2788,Weert,Netherlands
+2789,Abbekerk,Netherlands
+2790,Liessel,Netherlands
+2791,Schoonloo,Netherlands
+2792,Grou,Netherlands
+2793,Leidschendam,Netherlands
+2794,Anna Paulowna,Netherlands
+2795,Borculo,Netherlands
+2796,Berkel-Enschot,Netherlands
+2797,De Knipe,Netherlands
+2798,Overasselt,Netherlands
+2799,Thorn,Netherlands
+2800,Aalten,Netherlands
+2801,Voorthuizen,Netherlands
+2802,Boskoop,Netherlands
+2803,Eemnes,Netherlands
+2804,Hoogersmilde (Gem. Midden-Drenthe),Netherlands
+2805,Haren (Gr),Netherlands
+2806,Den Ilp,Netherlands
+2807,Hasselt,Netherlands
+2808,Doesburg,Netherlands
+2809,Hindeloopen,Netherlands
+2810,Diessen,Netherlands
+2811,Oudkarspel (Gem. Dijk En Waard),Netherlands
+2812,Odiliapeel,Netherlands
+2813,Giesbeek,Netherlands
+2814,Pesse (Gem. Hoogeveen),Netherlands
+2815,Koog Aan De Zaan,Netherlands
+2816,Oud-Beijerland,Netherlands
+2817,Loenen,Netherlands
+2818,Driel,Netherlands
+2819,Axel,Netherlands
+2820,Lepelstraat,Netherlands
+2821,Eethen,Netherlands
+2822,Zoutelande,Netherlands
+2823,Heel,Netherlands
+2824,Geffen,Netherlands
+2825,Coevorden,Netherlands
+2826,Wachtum,Netherlands
+2827,Lutten,Netherlands
+2828,Loon Op Zand,Netherlands
+2829,Son En Breugel,Netherlands
+2830,Hazerswoude-Rijndijk,Netherlands
+2831,Nieuwdorp,Netherlands
+2832,Den Dungen,Netherlands
+2833,Musselkanaal,Netherlands
+2834,Baarn,Netherlands
+2835,Neerkant,Netherlands
+2836,Bunschoten-Spakenburg,Netherlands
+2837,Vledder,Netherlands
+2838,Avenhorn,Netherlands
+2839,Den Helder,Netherlands
+2840,Wilhelminaoord,Netherlands
+2841,Leunen,Netherlands
+2842,Heukelum,Netherlands
+2843,Ouderkerk Aan Den Ijssel,Netherlands
+2844,Mariahout,Netherlands
+2845,Purmer (Gem. Waterland),Netherlands
+2846,Vorden,Netherlands
+2847,Maassluis,Netherlands
+2848,Schoonoord,Netherlands
+2849,Heijen,Netherlands
+2850,Abcoude,Netherlands
+2851,Fluitenberg,Netherlands
+2852,Krewerd,Netherlands
+2853,Hedel,Netherlands
+2854,Melick,Netherlands
+2855,Houtigehage,Netherlands
+2856,Nederweert,Netherlands
+2857,Heinkenszand,Netherlands
+2858,Borgercompagnie (Gem. Veendam),Netherlands
+2859,Grafhorst,Netherlands
+2860,Wedde,Netherlands
+2861,Hoek Van Holland,Netherlands
+2862,Leersum,Netherlands
+2863,Oudemirdum,Netherlands
+2864,Vogelwaarde,Netherlands
+2865,Oostzaan,Netherlands
+2866,Genderen,Netherlands
+2867,Oldenzaal,Netherlands
+2868,Sluiskil,Netherlands
+2869,Amerongen,Netherlands
+2870,Sprang-Capelle,Netherlands
+2871,Terschuur,Netherlands
+2872,Wolfheze,Netherlands
+2873,Sappemeer,Netherlands
+2874,'S-Graveland,Netherlands
+2875,Genemuiden,Netherlands
+2876,Ter Apel,Netherlands
+2877,Velserbroek,Netherlands
+2878,Sint-Michielsgestel,Netherlands
+2879,Valkenburg (Zh),Netherlands
+2880,Sleeuwijk,Netherlands
+2881,Leerdam,Netherlands
+2882,Groesbeek,Netherlands
+2883,Anjum,Netherlands
+2884,Nieuw-Lekkerland,Netherlands
+2885,Stramproy,Netherlands
+2886,Ijzendoorn,Netherlands
+2887,Velp (Ge),Netherlands
+2888,Hattem,Netherlands
+2889,Oudorp,Netherlands
+2890,Zuidoostbeemster,Netherlands
+2891,Hooghalen,Netherlands
+2892,Hoef En Haag,Netherlands
+2893,Reusel,Netherlands
+2894,Kootwijkerbroek,Netherlands
+2895,Baarle-Nassau,Netherlands
+2896,Veen,Netherlands
+2897,Wamel,Netherlands
+2898,Zuiddorpe,Netherlands
+2899,Ruinen (Gem. De Wolden),Netherlands
+2900,Zuiderwoude,Netherlands
+2901,Diever,Netherlands
+2902,Well (Li),Netherlands
+2903,Ewijk,Netherlands
+2904,Wagenberg,Netherlands
+2905,Westzaan,Netherlands
+2906,Rijkevoort,Netherlands
+2907,Grootegast,Netherlands
+2908,Veere,Netherlands
+2909,Neerijnen,Netherlands
+2910,De Zilk,Netherlands
+2911,Susteren,Netherlands
+2912,Lieshout,Netherlands
+2913,Nieuw-Dordrecht,Netherlands
+2914,Steenwijk,Netherlands
+2915,Gapinge,Netherlands
+2916,Arkel,Netherlands
+2917,Loenersloot,Netherlands
+2918,Overloon,Netherlands
+2919,Braamt,Netherlands
+2920,Purmerland,Netherlands
+2921,Ederveen,Netherlands
+2922,Vrouwenpolder,Netherlands
+2923,Harkema,Netherlands
+2924,Huis Ter Heide (Ut),Netherlands
+2925,Den Hout,Netherlands
+2926,Doornenburg,Netherlands
+2927,Dinteloord,Netherlands
+2928,Ulvenhout (Gem. Alphen-Chaam),Netherlands
+2929,Lichtenvoorde,Netherlands
+2930,Norg,Netherlands
+2931,Sint Nicolaasga,Netherlands
+2932,Schoorl,Netherlands
+2933,Ooij,Netherlands
+2934,Grootebroek,Netherlands
+2935,Scherpenzeel (Ge),Netherlands
+2936,Herkingen,Netherlands
+2937,Wilnis,Netherlands
+2938,Bergen Op Zoom,Netherlands
+2939,Zuilichem,Netherlands
+2940,Lith,Netherlands
+2941,Noordwolde (Fr),Netherlands
+2942,Oudenhoorn,Netherlands
+2943,Sint Odiliënberg,Netherlands
+2944,Stellendam,Netherlands
+2945,Eefde,Netherlands
+2946,Oegstgeest,Netherlands
+2947,Peins,Netherlands
+2948,Nijkerkerveen,Netherlands
+2949,Groeningen,Netherlands
+2950,Oosterhout (Ge),Netherlands
+2951,Warmond,Netherlands
+2952,Molenhoek,Netherlands
+2953,Oldemarkt,Netherlands
+2954,Westerhoven,Netherlands
+2955,Nispen,Netherlands
+2956,Rolde,Netherlands
+2957,Santpoort-Zuid,Netherlands
+2958,Heeswijk-Dinther,Netherlands
+2959,Weerselo,Netherlands
+2960,Hellendoorn,Netherlands
+2961,Zuid-Scharwoude,Netherlands
+2962,Zuidland,Netherlands
+2963,Franeker,Netherlands
+2964,Maarn,Netherlands
+2965,Haastrecht,Netherlands
+2966,Heerenveen,Netherlands
+2967,Beneden-Leeuwen,Netherlands
+2968,Broek Op Langedijk,Netherlands
+2969,Hooglanderveen,Netherlands
+2970,Mariënheem,Netherlands
+2971,Mijnsheerenland,Netherlands
+2972,Overdinkel,Netherlands
+2973,Hoogmade,Netherlands
+2974,Milsbeek,Netherlands
+2975,Elspeet,Netherlands
+2976,Achtmaal,Netherlands
+2977,Zwaag,Netherlands
+2978,Hagestein,Netherlands
+2979,Nootdorp,Netherlands
+2980,Burgh-Haamstede,Netherlands
+2981,Tiendeveen (Gem. Hoogeveen),Netherlands
+2982,Alphen (Ge),Netherlands
+2983,Ulft,Netherlands
+2984,Hierden,Netherlands
+2985,Bathmen,Netherlands
+2986,Hooge Mierde,Netherlands
+2987,Rouveen,Netherlands
+2988,Heenvliet,Netherlands
+2989,Winsum (Fr),Netherlands
+2990,Bergeijk,Netherlands
+2991,Krimpen Aan De Lek,Netherlands
+2992,Landsmeer,Netherlands
+2993,Uithuizermeeden,Netherlands
+2994,Haulerwijk,Netherlands
+2995,Brummen,Netherlands
+2996,Ossenzijl,Netherlands
+2997,Hulshorst,Netherlands
+2998,Wognum,Netherlands
+2999,Chaam,Netherlands
+3000,Oranjewoud,Netherlands
+3001,Gieterveen,Netherlands
+3002,Bemmel,Netherlands
+3003,Vijfhuizen,Netherlands
+3004,Goor,Netherlands
+3005,Delden,Netherlands
+3006,De Bilt,Netherlands
+3007,Alphen (Nb),Netherlands
+3008,Dorst,Netherlands
+3009,Aalden,Netherlands
+3010,Wolphaartsdijk,Netherlands
+3011,Ouderkerk Aan De Amstel,Netherlands
+3012,Zetten,Netherlands
+3013,Mook,Netherlands
+3014,Bilthoven,Netherlands
+3015,Gasselte,Netherlands
+3016,Een,Netherlands
+3017,Nieuwe-Tonge,Netherlands
+3018,'T Harde,Netherlands
+3019,Mierlo,Netherlands
+3020,Everdingen,Netherlands
+3021,Schuinesloot,Netherlands
+3022,Steenwijkerwold,Netherlands
+3023,Sterksel,Netherlands
+3024,Monnickendam,Netherlands
+3025,Beusichem,Netherlands
+3026,Babyloniënbroek,Netherlands
+3027,Olst,Netherlands
+3028,Zandvoort,Netherlands
+3029,Wouwse Plantage,Netherlands
+3030,Badhoevedorp,Netherlands
+3031,Rockanje,Netherlands
+3032,Maarsbergen,Netherlands
+3033,Reek,Netherlands
+3034,Peest,Netherlands
+3035,Kerkenveld,Netherlands
+3036,Philippine,Netherlands
+3037,Scheemda,Netherlands
+3038,Renesse,Netherlands
+3039,Ittervoort,Netherlands
+3040,Dieren,Netherlands
+3041,Velsen-Zuid,Netherlands
+3042,Stolwijk,Netherlands
+3043,Oude Wetering,Netherlands
+3044,Bosschenhoofd,Netherlands
+3045,Kwintsheul,Netherlands
+3046,Wijk En Aalburg,Netherlands
+3047,Wellerlooi,Netherlands
+3048,Raamsdonk,Netherlands
+3049,Appelscha,Netherlands
+3050,Cadier En Keer,Netherlands
+3051,Stompetoren,Netherlands
+3052,Mill,Netherlands
+3053,Nieuwe Niedorp,Netherlands
+3054,Oud-Vossemeer,Netherlands
+3055,Vollenhove,Netherlands
+3056,Werkhoven,Netherlands
+3057,Est,Netherlands
+3058,Gellicum,Netherlands
+3059,Rijnsaterwoude,Netherlands
+3060,Nijeveen,Netherlands
+3061,Nigtevecht,Netherlands
+3062,Nieuw-Schoonebeek,Netherlands
+3063,Gaanderen,Netherlands
+3064,Strijen,Netherlands
+3065,Rozenburg (Zh),Netherlands
+3066,Roden,Netherlands
+3067,Maasdam,Netherlands
+3068,Jubbega,Netherlands
+3069,Klarenbeek (Gem. Voorst),Netherlands
+3070,Zwanenburg,Netherlands
+3071,Spier (Gem. Midden-Drenthe),Netherlands
+3072,Hulten,Netherlands
+3073,Schalkwijk,Netherlands
+3074,Teteringen,Netherlands
+3075,Menaam,Netherlands
+3076,Montfort,Netherlands
+3077,Lieren,Netherlands
+3078,Ouddorp,Netherlands
+3079,Grijpskerke,Netherlands
+3080,Varsseveld,Netherlands
+3081,De Lier,Netherlands
+3082,Ter Apelkanaal,Netherlands
+3083,Roggel,Netherlands
+3084,Roelofarendsveen,Netherlands
+3085,Randwijk,Netherlands
+3086,Nieuwe Pekela,Netherlands
+3087,Serooskerke (Gem. Veere),Netherlands
+3088,Overveen,Netherlands
+3089,Oud Ade,Netherlands
+3090,Hurdegaryp,Netherlands
+3091,Aardenburg,Netherlands
+3092,Hank,Netherlands
+3093,Milheeze,Netherlands
+3094,Westkapelle,Netherlands
+3095,Heteren,Netherlands
+3096,Scharendijke,Netherlands
+3097,Ochten,Netherlands
+3098,Heythuysen,Netherlands
+3099,Bunnik,Netherlands
+3100,Ternaard,Netherlands
+3101,Hippolytushoef,Netherlands
+3102,Den Horn,Netherlands
+3103,Woerdense Verlaat,Netherlands
+3104,Lithoijen,Netherlands
+3105,Someren,Netherlands
+3106,Wolvega,Netherlands
+3107,Wijk Aan Zee,Netherlands
+3108,Spaubeek,Netherlands
+3109,Lienden,Netherlands
+3110,Streefkerk,Netherlands
+3111,Netersel,Netherlands
+3112,Winssen,Netherlands
+3113,Klarenbeek (Gem. Apeldoorn),Netherlands
+3114,Wilbertoord,Netherlands
+3115,Damwâld,Netherlands
+3116,Poeldijk,Netherlands
+3117,Wildervank,Netherlands
+3118,Wilsum,Netherlands
+3119,Bentveld,Netherlands
+3120,Poortugaal,Netherlands
+3121,Wanneperveen,Netherlands
+3122,Almen,Netherlands
+3123,Krabbendijke,Netherlands
+3124,Dwingeloo,Netherlands
+3125,Kolhorn,Netherlands
+3126,Schermerhorn,Netherlands
+3127,Sambeek,Netherlands
+3128,Venhuizen,Netherlands
+3129,Batenburg,Netherlands
+3130,Voorburg,Netherlands
+3131,Zevenhuizen (Zh),Netherlands
+3132,Tienhoven Aan De Lek,Netherlands
+3133,Hoogkarspel,Netherlands
+3134,Ammerzoden,Netherlands
+3135,Stampersgat,Netherlands
+3136,Wezep,Netherlands
+3137,Grashoek,Netherlands
+3138,Beerzerveld,Netherlands
+3139,Zwaanshoek,Netherlands
+3140,Beets,Netherlands
+3141,Vries,Netherlands
+3142,Beegden,Netherlands
+3143,Andijk,Netherlands
+3144,Wijdewormer,Netherlands
+3145,Kortenhoef,Netherlands
+3146,Rotsterhaule,Netherlands
+3147,'S-Gravendeel,Netherlands
+3148,Kortgene,Netherlands
+3149,Nieuw-Weerdinge,Netherlands
+3150,Hansweert,Netherlands
+3151,Delwijnen,Netherlands
+3152,Uithuizen,Netherlands
+3153,Grijpskerk,Netherlands
+3154,Vrouwenparochie,Netherlands
+3155,Kerkdriel,Netherlands
+3156,Aarle-Rixtel,Netherlands
+3157,Lent,Netherlands
+3158,Zwiggelte,Netherlands
+3159,Lobith,Netherlands
+3160,Naaldwijk,Netherlands
+3161,Augustinusga,Netherlands
+3162,Nieuwerbrug Aan Den Rijn,Netherlands
+3163,Linschoten,Netherlands
+3164,Westendorp,Netherlands
+3165,Molenaarsgraaf,Netherlands
+3166,Broek In Waterland,Netherlands
+3167,Eemdijk,Netherlands
+3168,Waarder,Netherlands
+3169,Nederhorst Den Berg,Netherlands
+3170,Schoondijke,Netherlands
+3171,Castenray,Netherlands
+3172,Standdaarbuiten,Netherlands
+3173,Esbeek,Netherlands
+3174,Diepenheim,Netherlands
+3175,Midwoud,Netherlands
+3176,Nieuwveen,Netherlands
+3177,Nijeholtpade,Netherlands
+3178,Gasselternijveenschemond,Netherlands
+3179,Geesteren (Ov),Netherlands
+3180,Meerssen,Netherlands
+3181,Nieuw-Balinge,Netherlands
+3182,Wijdenes,Netherlands
+3183,Buitenkaag,Netherlands
+3184,Siebengewald,Netherlands
+3185,Maasland,Netherlands
+3186,Meterik,Netherlands
+3187,Spierdijk,Netherlands
+3188,Vortum-Mullem,Netherlands
+3189,Breukeleveen,Netherlands
+3190,Haarlo,Netherlands
+3191,Zaamslag,Netherlands
+3192,Brakel,Netherlands
+3193,Piershil,Netherlands
+3194,Stevensweert,Netherlands
+3195,Lisserbroek,Netherlands
+3196,Muiden,Netherlands
+3197,Waardenburg,Netherlands
+3198,Tzum,Netherlands
+3199,Schagerbrug,Netherlands
+3200,Hallum,Netherlands
+3201,Wier,Netherlands
+3202,Maashees,Netherlands
+3203,Westdorpe,Netherlands
+3204,Zwartebroek,Netherlands
+3205,Appeltern,Netherlands
+3206,Kaag,Netherlands
+3207,Winterswijk Kotten,Netherlands
+3208,Zegveld,Netherlands
+3209,Joure,Netherlands
+3210,Stokkum,Netherlands
+3211,Heino,Netherlands
+3212,Kilder,Netherlands
+3213,Froombosch,Netherlands
+3214,Eijsden,Netherlands
+3215,Rossum (Ov),Netherlands
+3216,Duizel,Netherlands
+3217,Schelluinen,Netherlands
+3218,Ballum,Netherlands
+3219,Plasmolen,Netherlands
+3220,Lemelerveld,Netherlands
+3221,Baambrugge,Netherlands
+3222,Ijzendijke,Netherlands
+3223,Katlijk,Netherlands
+3224,Rotstergaast,Netherlands
+3225,Soesterberg,Netherlands
+3226,Wapenveld,Netherlands
+3227,Blijham,Netherlands
+3228,Renkum,Netherlands
+3229,Schagen,Netherlands
+3230,Jisp,Netherlands
+3231,Bergharen,Netherlands
+3232,Epse,Netherlands
+3233,Volkel,Netherlands
+3234,Lengel,Netherlands
+3235,Marsum,Netherlands
+3236,Lijnden,Netherlands
+3237,Herveld,Netherlands
+3238,Oud Zuilen,Netherlands
+3239,Kloosterzande,Netherlands
+3240,Sas Van Gent,Netherlands
+3241,Ottersum,Netherlands
+3242,Ugchelen,Netherlands
+3243,St.-Annaparochie,Netherlands
+3244,Posterholt,Netherlands
+3245,Elshout,Netherlands
+3246,Roosteren,Netherlands
+3247,Ophemert,Netherlands
+3248,Wapse,Netherlands
+3249,Nijland,Netherlands
+3250,Hoornaar,Netherlands
+3251,'S-Heer Arendskerke,Netherlands
+3252,Meerlo,Netherlands
+3253,Bosch En Duin,Netherlands
+3254,Vierhouten,Netherlands
+3255,Sommelsdijk,Netherlands
+3256,Veeningen,Netherlands
+3257,Buinen,Netherlands
+3258,De Wilp,Netherlands
+3259,Noordwijk (Gr),Netherlands
+3260,Heijningen,Netherlands
+3261,Klaaswaal,Netherlands
+3262,Wilp,Netherlands
+3263,Schinveld,Netherlands
+3264,Obdam,Netherlands
+3265,Oude-Tonge,Netherlands
+3266,Zoelmond,Netherlands
+3267,Dalem,Netherlands
+3268,Noordlaren,Netherlands
+3269,Opende,Netherlands
+3270,Langenboom,Netherlands
+3271,Vinkenbuurt,Netherlands
+3272,Hoofdplaat,Netherlands
+3273,Polsbroek,Netherlands
+3274,Breezand,Netherlands
+3275,Lettele,Netherlands
+3276,Garmerwolde,Netherlands
+3277,Tjalleberd,Netherlands
+3278,Blauwestad,Netherlands
+3279,Havelte,Netherlands
+3280,Meedhuizen,Netherlands
+3281,Ouwsterhaule,Netherlands
+3282,Hekelingen,Netherlands
+3283,Kollum,Netherlands
+3284,Idsegahuizum,Netherlands
+3285,Vessem,Netherlands
+3286,Oijen,Netherlands
+3287,Molkwerum,Netherlands
+3288,Echteld,Netherlands
+3289,Ameide,Netherlands
+3290,Rekken,Netherlands
+3291,Heide,Netherlands
+3292,Laren (Ge),Netherlands
+3293,Groede,Netherlands
+3294,Rossum (Ge),Netherlands
+3295,Schipluiden,Netherlands
+3296,Gramsbergen,Netherlands
+3297,Haalderen,Netherlands
+3298,Geulle,Netherlands
+3299,Goedereede,Netherlands
+3300,Oldeberkoop,Netherlands
+3301,Meerkerk,Netherlands
+3302,De Wijk,Netherlands
+3303,Daarle,Netherlands
+3304,Zwammerdam,Netherlands
+3305,Tonden,Netherlands
+3306,Elim,Netherlands
+3307,Spaarndam Gem. Haarlem,Netherlands
+3308,Biest-Houtakker,Netherlands
+3309,Hijken,Netherlands
+3310,Rottevalle,Netherlands
+3311,Haps,Netherlands
+3312,Klundert,Netherlands
+3313,Albergen,Netherlands
+3314,Escharen,Netherlands
+3315,Holwerd,Netherlands
+3316,Ter Aar,Netherlands
+3317,Buggenum,Netherlands
+3318,Ilpendam,Netherlands
+3319,Jirnsum,Netherlands
+3320,Cadzand,Netherlands
+3321,Woudsend,Netherlands
+3322,Bitgum,Netherlands

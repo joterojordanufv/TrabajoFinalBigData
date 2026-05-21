@@ -11,9 +11,7 @@ FINAL_PATH.mkdir(parents=True, exist_ok=True)
 
 def load_clean_dataset():
     df = pd.read_csv(PROCESSED_PATH / "properties_clean.csv")
-
     print("Dataset limpio cargado correctamente.")
-
     return df
 
 
@@ -34,10 +32,7 @@ def create_dim_city(df):
         ]
     ]
 
-    dim_city.to_csv(
-        FINAL_PATH / "dim_city.csv",
-        index=False
-    )
+    dim_city.to_csv(FINAL_PATH / "dim_city.csv", index=False)
 
     log_step(
         phase="DIMENSION",
@@ -45,7 +40,7 @@ def create_dim_city(df):
         input_rows=len(df),
         output_rows=len(dim_city),
         discarded_rows=0,
-        reason="Creación de dimensión ciudad"
+        reason="Creación dimensión ciudad"
     )
 
     return dim_city
@@ -53,14 +48,14 @@ def create_dim_city(df):
 
 def create_dim_neighborhood(df, dim_city):
     dim_neighborhood = (
-        df[["neighborhood", "city"]]
+        df[["neighborhood", "city", "country"]]
         .drop_duplicates()
         .reset_index(drop=True)
     )
 
     dim_neighborhood = dim_neighborhood.merge(
-        dim_city[["city_id", "city"]],
-        on="city",
+        dim_city,
+        on=["city", "country"],
         how="left"
     )
 
@@ -85,7 +80,7 @@ def create_dim_neighborhood(df, dim_city):
         input_rows=len(df),
         output_rows=len(dim_neighborhood),
         discarded_rows=0,
-        reason="Creación de dimensión barrio"
+        reason="Creación dimensión barrio/zona"
     )
 
     return dim_neighborhood
@@ -118,7 +113,7 @@ def create_dim_property_type(df):
         input_rows=len(df),
         output_rows=len(dim_property_type),
         discarded_rows=0,
-        reason="Creación de dimensión tipo de propiedad"
+        reason="Creación dimensión tipo de propiedad"
     )
 
     return dim_property_type
@@ -151,7 +146,7 @@ def create_dim_source(df):
         input_rows=len(df),
         output_rows=len(dim_source),
         discarded_rows=0,
-        reason="Creación de dimensión fuente"
+        reason="Creación dimensión fuente"
     )
 
     return dim_source
@@ -172,13 +167,17 @@ def create_dim_time(df):
     )
 
     dim_time["time_id"] = dim_time.index + 1
-
     dim_time["year"] = dim_time["scraping_date"].dt.year
     dim_time["quarter"] = dim_time["scraping_date"].dt.quarter
     dim_time["month"] = dim_time["scraping_date"].dt.month
     dim_time["day"] = dim_time["scraping_date"].dt.day
     dim_time["day_name"] = dim_time["scraping_date"].dt.day_name()
-    dim_time["is_weekend"] = dim_time["day_name"].isin(["Saturday", "Sunday"])
+    dim_time["is_weekend"] = dim_time["day_name"].isin(
+        [
+            "Saturday",
+            "Sunday"
+        ]
+    )
 
     dim_time = dim_time[
         [
@@ -204,10 +203,45 @@ def create_dim_time(df):
         input_rows=len(df),
         output_rows=len(dim_time),
         discarded_rows=0,
-        reason="Creación de dimensión temporal"
+        reason="Creación dimensión temporal"
     )
 
     return dim_time
+
+
+def create_dim_luxury_segment(df):
+    dim_luxury_segment = (
+        df[["luxury_label"]]
+        .drop_duplicates()
+        .reset_index(drop=True)
+    )
+
+    dim_luxury_segment["luxury_segment_id"] = (
+        dim_luxury_segment.index + 1
+    )
+
+    dim_luxury_segment = dim_luxury_segment[
+        [
+            "luxury_segment_id",
+            "luxury_label"
+        ]
+    ]
+
+    dim_luxury_segment.to_csv(
+        FINAL_PATH / "dim_luxury_segment.csv",
+        index=False
+    )
+
+    log_step(
+        phase="DIMENSION",
+        source="DIM_LUXURY_SEGMENT",
+        input_rows=len(df),
+        output_rows=len(dim_luxury_segment),
+        discarded_rows=0,
+        reason="Creación dimensión segmento luxury"
+    )
+
+    return dim_luxury_segment
 
 
 def create_fact_properties(
@@ -216,7 +250,8 @@ def create_fact_properties(
     dim_neighborhood,
     dim_property_type,
     dim_source,
-    dim_time
+    dim_time,
+    dim_luxury_segment
 ):
     fact = df.copy()
 
@@ -226,7 +261,6 @@ def create_fact_properties(
     )
 
     dim_time = dim_time.copy()
-
     dim_time["scraping_date"] = pd.to_datetime(
         dim_time["scraping_date"],
         errors="coerce"
@@ -262,13 +296,15 @@ def create_fact_properties(
         how="left"
     )
 
+    fact = fact.merge(
+        dim_luxury_segment,
+        on="luxury_label",
+        how="left"
+    )
+
     fact["fact_id"] = fact.index + 1
 
-    fact["source_record_id"] = (
-        fact["source"].astype(str)
-        + "_"
-        + fact["property_id"].astype(str)
-    )
+    fact["source_record_id"] = fact["property_id"].astype(str)
 
     fact["load_timestamp"] = pd.Timestamp.now()
 
@@ -280,13 +316,15 @@ def create_fact_properties(
             "property_type_id",
             "source_id",
             "time_id",
+            "luxury_segment_id",
             "source_record_id",
             "load_timestamp",
             "price_eur",
             "area_m2",
             "bedrooms",
             "bathrooms",
-            "price_per_m2"
+            "price_per_m2",
+            "luxury_threshold_country"
         ]
     ]
 
@@ -301,7 +339,7 @@ def create_fact_properties(
         input_rows=len(df),
         output_rows=len(fact),
         discarded_rows=0,
-        reason="Creación de tabla de hechos fact_properties con trazabilidad source_record_id y load_timestamp"
+        reason="Creación tabla de hechos fact_properties con segmento luxury"
     )
 
     return fact
@@ -315,6 +353,7 @@ def main():
     dim_property_type = create_dim_property_type(df)
     dim_source = create_dim_source(df)
     dim_time = create_dim_time(df)
+    dim_luxury_segment = create_dim_luxury_segment(df)
 
     create_fact_properties(
         df,
@@ -322,10 +361,11 @@ def main():
         dim_neighborhood,
         dim_property_type,
         dim_source,
-        dim_time
+        dim_time,
+        dim_luxury_segment
     )
 
-    print("\nModelo dimensional generado correctamente.")
+    print("\nModelo dimensional actualizado correctamente.")
     print("Archivos exportados en data/final/")
 
 
