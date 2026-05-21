@@ -1,11 +1,11 @@
 property_id,source,city,country,neighborhood,property_type,price_eur,area_m2,bedrooms,bathrooms,listing_url,scraping_date,price_per_m2,property_hash
-1,idealista,madrid,spain,salamanca,apartment,1250000,120,3,2,idealista_1,2026-05-19 21:29:27,10416.67,16227767690043111597
-2,idealista,madrid,spain,chamberí,penthouse,2400000,210,5,4,idealista_2,2026-05-19 21:29:27,11428.57,1523316688968288165
-3,idealista,madrid,spain,salamanca,apartment,1800000,150,4,3,idealista_3,2026-05-19 21:29:27,12000.0,778212546876465143
-4,idealista,madrid,spain,chamartín,duplex,3200000,300,6,5,idealista_4,2026-05-19 21:29:27,10666.67,5185738137208126607
-5,idealista,madrid,spain,retiro,apartment,950000,95,2,2,idealista_5,2026-05-19 21:29:27,10000.0,11190764761202608822
-101,rightmove,london,united kingdom,kensington,apartment,4200000,180,4,3,rightmove_1,2026-05-19 21:29:27,23333.33,13120907778699325914
-102,rightmove,london,united kingdom,chelsea,townhouse,5100000,240,5,5,rightmove_2,2026-05-19 21:29:27,21250.0,16012256105406598054
-103,rightmove,london,united kingdom,mayfair,penthouse,8900000,420,7,7,rightmove_3,2026-05-19 21:29:27,21190.48,1327330989237336854
-104,rightmove,london,united kingdom,notting hill,apartment,3400000,160,3,2,rightmove_4,2026-05-19 21:29:27,21250.0,14242366108392978440
-105,rightmove,london,united kingdom,westminster,duplex,6200000,310,5,5,rightmove_5,2026-05-19 21:29:27,20000.0,6824428455045764307
+1,idealista,madrid,spain,salamanca,apartment,1250000,120,3,2,idealista_1,2026-05-21 16:55:36,10416.67,16227767690043111597
+2,idealista,madrid,spain,chamberí,penthouse,2400000,210,5,4,idealista_2,2026-05-21 16:55:36,11428.57,1523316688968288165
+3,idealista,madrid,spain,salamanca,apartment,1800000,150,4,3,idealista_3,2026-05-21 16:55:36,12000.0,778212546876465143
+4,idealista,madrid,spain,chamartín,duplex,3200000,300,6,5,idealista_4,2026-05-21 16:55:36,10666.67,5185738137208126607
+5,idealista,madrid,spain,retiro,apartment,950000,95,2,2,idealista_5,2026-05-21 16:55:36,10000.0,11190764761202608822
+101,rightmove,london,united kingdom,kensington,apartment,4200000,180,4,3,rightmove_1,2026-05-21 16:55:36,23333.33,13120907778699325914
+102,rightmove,london,united kingdom,chelsea,townhouse,5100000,240,5,5,rightmove_2,2026-05-21 16:55:36,21250.0,16012256105406598054
+103,rightmove,london,united kingdom,mayfair,penthouse,8900000,420,7,7,rightmove_3,2026-05-21 16:55:36,21190.48,1327330989237336854
+104,rightmove,london,united kingdom,notting hill,apartment,3400000,160,3,2,rightmove_4,2026-05-21 16:55:36,21250.0,14242366108392978440
+105,rightmove,london,united kingdom,westminster,duplex,6200000,310,5,5,rightmove_5,2026-05-21 16:55:36,20000.0,6824428455045764307

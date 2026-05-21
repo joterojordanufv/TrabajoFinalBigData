@@ -1,6 +1,6 @@
 property_id,source,city,country,neighborhood,property_type,price_eur,area_m2,bedrooms,bathrooms,listing_url,scraping_date,price_per_m2
-1,Idealista,Madrid,Spain,Salamanca,Apartment,1250000,120,3,2,idealista_1,2026-05-19 21:29:27.110619,10416.67
-2,Idealista,Madrid,Spain,Chamberí,Penthouse,2400000,210,5,4,idealista_2,2026-05-19 21:29:27.110619,11428.57
-3,Idealista,Madrid,Spain,Salamanca,Apartment,1800000,150,4,3,idealista_3,2026-05-19 21:29:27.110619,12000.0
-4,Idealista,Madrid,Spain,Chamartín,Duplex,3200000,300,6,5,idealista_4,2026-05-19 21:29:27.110619,10666.67
-5,Idealista,Madrid,Spain,Retiro,Apartment,950000,95,2,2,idealista_5,2026-05-19 21:29:27.110619,10000.0
+1,Idealista,Madrid,Spain,Salamanca,Apartment,1250000,120,3,2,idealista_1,2026-05-21 16:55:36.527799,10416.67
+2,Idealista,Madrid,Spain,Chamberí,Penthouse,2400000,210,5,4,idealista_2,2026-05-21 16:55:36.527799,11428.57
+3,Idealista,Madrid,Spain,Salamanca,Apartment,1800000,150,4,3,idealista_3,2026-05-21 16:55:36.527799,12000.0
+4,Idealista,Madrid,Spain,Chamartín,Duplex,3200000,300,6,5,idealista_4,2026-05-21 16:55:36.527799,10666.67
+5,Idealista,Madrid,Spain,Retiro,Apartment,950000,95,2,2,idealista_5,2026-05-21 16:55:36.527799,10000.0

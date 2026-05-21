@@ -1,6 +1,6 @@
 property_id,source,city,country,neighborhood,property_type,price_eur,area_m2,bedrooms,bathrooms,listing_url,scraping_date,price_per_m2
-101,Rightmove,London,United Kingdom,Kensington,Apartment,4200000,180,4,3,rightmove_1,2026-05-19 21:29:27.113869,23333.33
-102,Rightmove,London,United Kingdom,Chelsea,Townhouse,5100000,240,5,5,rightmove_2,2026-05-19 21:29:27.113869,21250.0
-103,Rightmove,London,United Kingdom,Mayfair,Penthouse,8900000,420,7,7,rightmove_3,2026-05-19 21:29:27.113869,21190.48
-104,Rightmove,London,United Kingdom,Notting Hill,Apartment,3400000,160,3,2,rightmove_4,2026-05-19 21:29:27.113869,21250.0
-105,Rightmove,London,United Kingdom,Westminster,Duplex,6200000,310,5,5,rightmove_5,2026-05-19 21:29:27.113869,20000.0
+101,Rightmove,London,United Kingdom,Kensington,Apartment,4200000,180,4,3,rightmove_1,2026-05-21 16:55:36.530507,23333.33
+102,Rightmove,London,United Kingdom,Chelsea,Townhouse,5100000,240,5,5,rightmove_2,2026-05-21 16:55:36.530507,21250.0
+103,Rightmove,London,United Kingdom,Mayfair,Penthouse,8900000,420,7,7,rightmove_3,2026-05-21 16:55:36.530507,21190.48
+104,Rightmove,London,United Kingdom,Notting Hill,Apartment,3400000,160,3,2,rightmove_4,2026-05-21 16:55:36.530507,21250.0
+105,Rightmove,London,United Kingdom,Westminster,Duplex,6200000,310,5,5,rightmove_5,2026-05-21 16:55:36.530507,20000.0
