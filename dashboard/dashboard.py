@@ -4,6 +4,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import streamlit.components.v1 as components
 
 
 st.set_page_config(
@@ -17,6 +18,7 @@ DB_PATH = Path("data/final/real_estate_dw.db")
 FINAL_PATH = Path("data/final")
 FIGURES_PATH = Path("outputs/figures")
 ARCHITECTURE_PATH = Path("outputs/architecture")
+ASSETS_PATH = Path("dashboard/assets")
 
 
 @st.cache_data
@@ -60,9 +62,10 @@ section = st.sidebar.radio(
         "Resumen ejecutivo",
         "Análisis visual",
         "Galería EDA",
+        "Arquitectura ETL",
+        "Modelo dimensional",
         "Explorador de datos",
-        "Explorador SQL",
-        "Modelo dimensional"
+        "Explorador SQL"
     ]
 )
 
@@ -113,9 +116,13 @@ filtered_df = df[
 ]
 
 
-plot_df = filtered_df[
-    filtered_df["price_eur"] <= filtered_df["price_eur"].quantile(0.99)
-] if len(filtered_df) > 0 else filtered_df
+plot_df = (
+    filtered_df[
+        filtered_df["price_eur"] <= filtered_df["price_eur"].quantile(0.99)
+    ]
+    if len(filtered_df) > 0
+    else filtered_df
+)
 
 
 if section == "Resumen ejecutivo":
@@ -125,7 +132,8 @@ if section == "Resumen ejecutivo":
         """
         Dashboard interactivo para analizar el mercado inmobiliario europeo utilizando datos reales
         de España, Reino Unido y Países Bajos. El proyecto integra ETL, modelo dimensional,
-        base de datos SQL, visualización BI y segmentación Luxury mediante percentil 90 por país.
+        base de datos SQL, visualización BI, PySpark, OLAP y segmentación Luxury mediante
+        percentil 90 por país.
         """
     )
 
@@ -312,23 +320,25 @@ elif section == "Galería EDA":
 
     st.markdown(
         """
-        Visualizaciones generadas durante el análisis exploratorio.
-        Estas imágenes proceden de `outputs/figures/` y sirven como evidencia documental del EDA.
+        Esta sección muestra las visualizaciones generadas automáticamente durante el análisis
+        exploratorio de datos. Las imágenes proceden de `outputs/figures/`.
         """
     )
 
     eda_images = [
         ("Distribución de precios", "01_distribucion_precios.png"),
-        ("Precio por m² por ciudad", "02_precio_m2_ciudad.png"),
+        ("Precio por m² por país y segmento", "02_precio_m2_ciudad.png"),
         ("Relación superficie-precio", "03_superficie_precio.png"),
-        ("Frecuencia de barrios / ciudades", "04_frecuencia_barrios.png"),
+        ("Top ciudades por precio medio", "04_frecuencia_barrios.png"),
         ("Heatmap de correlaciones", "05_heatmap_correlaciones.png"),
         ("Tipos de propiedad", "06_tipos_propiedad.png"),
-        ("Precio medio por ciudad", "07_precio_medio_ciudad.png"),
+        ("Precio medio por país", "07_precio_medio_ciudad.png"),
         ("Habitaciones y precio", "08_habitaciones_precio.png"),
         ("Funnel de tracking del pipeline", "09_funnel_tracking_pipeline.png"),
         ("Serie temporal de registros", "10_serie_temporal_registros.png"),
         ("Pairplot de variables continuas", "11_pairplot_variables_continuas.png"),
+        ("Distribución Luxury / Standard", "12_luxury_distribution.png"),
+        ("Mapa de valores nulos", "eda01_01_heatmap_nulos.png"),
     ]
 
     for title, file_name in eda_images:
@@ -339,6 +349,145 @@ elif section == "Galería EDA":
             st.image(str(image_path), use_container_width=True)
         else:
             st.warning(f"No se encontró la imagen: {file_name}")
+
+
+elif section == "Arquitectura ETL":
+    st.title("🧩 Arquitectura ETL del Proyecto")
+
+    st.markdown(
+        """
+        Esta sección documenta la arquitectura completa del pipeline ETL del proyecto:
+        extracción, análisis de calidad, limpieza, EDA, modelo dimensional, carga SQL,
+        PySpark, OLAP, dashboard BI y despliegue con Docker.
+        """
+    )
+
+    st.subheader("Pipeline ETL interactivo")
+
+    html_path = ASSETS_PATH / "etl_pipeline.html"
+
+    if html_path.exists():
+        with open(html_path, "r", encoding="utf-8") as file:
+            html_content = file.read()
+
+        components.html(
+            html_content,
+            height=2300,
+            scrolling=True
+        )
+    else:
+        st.warning("No se encontró dashboard/assets/etl_pipeline.html")
+
+    st.divider()
+
+    st.subheader("Imagen del Pipeline ETL")
+
+    pipeline_image = ASSETS_PATH / "etl_pipeline.png"
+
+    if pipeline_image.exists():
+        st.image(str(pipeline_image), use_container_width=True)
+    else:
+        st.info("Guarda la imagen del pipeline como dashboard/assets/etl_pipeline.png")
+
+    st.divider()
+
+    st.subheader("Documento PDF del Pipeline")
+
+    pdf_path = ASSETS_PATH / "etl_pipeline.pdf"
+
+    if pdf_path.exists():
+        with open(pdf_path, "rb") as pdf_file:
+            pdf_bytes = pdf_file.read()
+
+        st.download_button(
+            label="📥 Descargar Pipeline ETL en PDF",
+            data=pdf_bytes,
+            file_name="etl_pipeline.pdf",
+            mime="application/pdf"
+        )
+    else:
+        st.info("Guarda el PDF como dashboard/assets/etl_pipeline.pdf")
+
+
+elif section == "Modelo dimensional":
+    st.title("⭐ Modelo dimensional en estrella")
+
+    st.markdown(
+        """
+        El Data Warehouse sigue un modelo dimensional en estrella. La tabla central es
+        `fact_properties`, conectada con dimensiones descriptivas de ciudad, barrio/zona,
+        tipo de propiedad, fuente, tiempo y segmento luxury.
+        """
+    )
+
+    st.subheader("Diagrama Star Schema")
+
+    star_schema_asset = ASSETS_PATH / "star_schema.png"
+    star_schema_output = ARCHITECTURE_PATH / "star_schema_real_estate_dw.png"
+
+    if star_schema_asset.exists():
+        st.image(str(star_schema_asset), use_container_width=True)
+    elif star_schema_output.exists():
+        st.image(str(star_schema_output), use_container_width=True)
+    else:
+        st.info(
+            """
+            No se ha encontrado imagen del modelo dimensional.
+
+            Guarda una de estas rutas:
+            - dashboard/assets/star_schema.png
+            - outputs/architecture/star_schema_real_estate_dw.png
+            """
+        )
+
+        st.graphviz_chart(
+            """
+            digraph {
+                graph [rankdir=LR]
+                node [shape=record, style=filled, fontname="Arial"]
+
+                fact [label="{FACT_PROPERTIES|PK fact_id\\lFK city_id\\lFK neighborhood_id\\lFK property_type_id\\lFK source_id\\lFK time_id\\lFK luxury_segment_id\\lsource_record_id\\lload_timestamp\\lprice_eur\\larea_m2\\lbedrooms\\lbathrooms\\lprice_per_m2\\lluxury_threshold_country\\l}", fillcolor="#dbeafe"]
+
+                city [label="{DIM_CITY|PK city_id\\lcity\\lcountry\\l}", fillcolor="#dcfce7"]
+                neighborhood [label="{DIM_NEIGHBORHOOD|PK neighborhood_id\\lneighborhood\\lcity_id\\l}", fillcolor="#ffedd5"]
+                property_type [label="{DIM_PROPERTY_TYPE|PK property_type_id\\lproperty_type\\l}", fillcolor="#f3e8ff"]
+                source [label="{DIM_SOURCE|PK source_id\\lsource\\l}", fillcolor="#fee2e2"]
+                time [label="{DIM_TIME|PK time_id\\lscraping_date\\lyear\\lquarter\\lmonth\\lday\\lday_name\\lis_weekend\\l}", fillcolor="#fef3c7"]
+                luxury [label="{DIM_LUXURY_SEGMENT|PK luxury_segment_id\\lluxury_label\\l}", fillcolor="#e0e7ff"]
+
+                city -> fact
+                neighborhood -> fact
+                property_type -> fact
+                source -> fact
+                time -> fact
+                luxury -> fact
+            }
+            """
+        )
+
+    st.divider()
+
+    tables = {
+        "fact_properties": "SELECT * FROM fact_properties LIMIT 1000",
+        "dim_city": "SELECT * FROM dim_city",
+        "dim_neighborhood": "SELECT * FROM dim_neighborhood LIMIT 1000",
+        "dim_property_type": "SELECT * FROM dim_property_type",
+        "dim_source": "SELECT * FROM dim_source",
+        "dim_time": "SELECT * FROM dim_time",
+        "dim_luxury_segment": "SELECT * FROM dim_luxury_segment"
+    }
+
+    selected_table = st.selectbox(
+        "Selecciona una tabla del modelo",
+        list(tables.keys())
+    )
+
+    table_df = run_sql_query(tables[selected_table])
+
+    st.dataframe(
+        table_df,
+        use_container_width=True
+    )
 
 
 elif section == "Explorador de datos":
@@ -395,80 +544,3 @@ ORDER BY avg_price DESC;
             st.dataframe(result, use_container_width=True)
         except Exception as error:
             st.error(f"Error ejecutando la consulta: {error}")
-
-
-elif section == "Modelo dimensional":
-    st.title("⭐ Modelo dimensional en estrella")
-
-    st.markdown(
-        """
-        El Data Warehouse sigue un modelo dimensional en estrella.
-        La tabla central es `fact_properties`, conectada con dimensiones descriptivas
-        de ciudad, barrio/zona, tipo de propiedad, fuente, tiempo y segmento luxury.
-        """
-    )
-
-    st.subheader("Diagrama del modelo dimensional")
-
-    star_schema_image = ARCHITECTURE_PATH / "star_schema_real_estate_dw.png"
-
-    if star_schema_image.exists():
-        st.image(str(star_schema_image), use_container_width=True)
-    else:
-        st.info(
-            """
-            Todavía no se ha añadido la imagen final del diagrama.
-            Cuando esté creada, guárdala en:
-
-            outputs/architecture/star_schema_real_estate_dw.png
-            """
-        )
-
-        st.graphviz_chart(
-            """
-            digraph {
-                graph [rankdir=LR]
-                node [shape=record, style=filled, fontname="Arial"]
-
-                fact [label="{FACT_PROPERTIES|PK fact_id\\lFK city_id\\lFK neighborhood_id\\lFK property_type_id\\lFK source_id\\lFK time_id\\lFK luxury_segment_id\\lsource_record_id\\lload_timestamp\\lprice_eur\\larea_m2\\lbedrooms\\lbathrooms\\lprice_per_m2\\lluxury_threshold_country\\l}", fillcolor="#dbeafe"]
-
-                city [label="{DIM_CITY|PK city_id\\lcity\\lcountry\\l}", fillcolor="#dcfce7"]
-                neighborhood [label="{DIM_NEIGHBORHOOD|PK neighborhood_id\\lneighborhood\\lcity_id\\l}", fillcolor="#ffedd5"]
-                property_type [label="{DIM_PROPERTY_TYPE|PK property_type_id\\lproperty_type\\l}", fillcolor="#f3e8ff"]
-                source [label="{DIM_SOURCE|PK source_id\\lsource\\l}", fillcolor="#fee2e2"]
-                time [label="{DIM_TIME|PK time_id\\lscraping_date\\lyear\\lquarter\\lmonth\\lday\\lday_name\\lis_weekend\\l}", fillcolor="#fef3c7"]
-                luxury [label="{DIM_LUXURY_SEGMENT|PK luxury_segment_id\\lluxury_label\\l}", fillcolor="#e0e7ff"]
-
-                city -> fact
-                neighborhood -> fact
-                property_type -> fact
-                source -> fact
-                time -> fact
-                luxury -> fact
-            }
-            """
-        )
-
-    st.divider()
-
-    tables = {
-        "fact_properties": "SELECT * FROM fact_properties LIMIT 1000",
-        "dim_city": "SELECT * FROM dim_city",
-        "dim_neighborhood": "SELECT * FROM dim_neighborhood",
-        "dim_property_type": "SELECT * FROM dim_property_type",
-        "dim_source": "SELECT * FROM dim_source",
-        "dim_time": "SELECT * FROM dim_time",
-        "dim_luxury_segment": "SELECT * FROM dim_luxury_segment"
-    }
-
-    selected_table = st.selectbox(
-        "Selecciona una tabla del modelo",
-        list(tables.keys())
-    )
-
-    table_df = run_sql_query(tables[selected_table])
-
-    st.dataframe(
-        table_df,
-        use_container_width=True
-    )

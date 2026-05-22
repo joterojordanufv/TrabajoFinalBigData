@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETL Pipeline — European Luxury Real Estate DW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #0B1622;
+  --surface:   #111d2c;
+  --surface2:  #162336;
+  --border:    #1e3248;
+  --text:      #e2e8f0;
+  --muted:     #7a8fa6;
+  --faint:     #3a4f66;
+  --accent:    #3b82f6;
+  --arrow:     #90CAF9;
+
+  --teal-bg:   #0a2a28; --teal-hdr: #0d3d38; --teal-acc: #34d399;
+  --purple-bg: #1a0a38; --purple-hdr:#270f52; --purple-acc:#c084fc;
+  --red-bg:    #2a0a18; --red-hdr:  #3d0f22; --red-acc:  #f472b6;
+  --blue-bg:   #0a1a38; --blue-hdr: #0f2652; --blue-acc: #60a5fa;
+  --gold-bg:   #2a1a04; --gold-hdr: #3d2606; --gold-acc: #fbbf24;
+  --green-bg:  #0a2210; --green-hdr:#0f3318; --green-acc:#4ade80;
+  --slate-bg:  #111820; --slate-hdr:#18232e; --slate-acc:#94a3b8;
+  --indigo-bg: #0e0f2a; --indigo-hdr:#14163d; --indigo-acc:#818cf8;
+  --cyan-bg:   #041e24; --cyan-hdr: #072c35; --cyan-acc: #22d3ee;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 40px 24px 80px;
+  line-height: 1.5;
+}
+
+/* ── Page header ─────────────────────────────────── */
+.page-header {
+  text-align: center;
+  margin-bottom: 56px;
+  padding: 40px 24px 32px;
+  background: linear-gradient(180deg, #0d2040 0%, transparent 100%);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+.page-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-weight: 700;
+  color: #e3f2fd;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.page-header p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--arrow);
+  letter-spacing: 0.05em;
+}
+.header-badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.header-badge {
+  background: #1e3a5f;
+  color: var(--arrow);
+  border: 1px solid #2d5280;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Main pipeline column ────────────────────────── */
+.pipeline {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* ── Stage card ──────────────────────────────────── */
+.stage {
+  border-radius: 14px;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+}
+.stage-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  color: #fff;
+}
+.stage-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+.stage-subtitle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 2px;
+}
+
+.stage-body {
+  padding: 16px 20px 20px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Source cards inside Extract */
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.source-card {
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.source-card .src-name {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.source-card .src-detail {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
+.source-card .src-badge {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 6px;
+}
+
+/* Tag pills */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.tag {
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.2);
+  color: rgba(255,255,255,0.8);
+}
+.tag.t { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.3); color: #93c5fd; }
+
+/* Info rows */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.info-box {
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.info-box .ib-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 4px;
+}
+.info-box .ib-value {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+}
+
+/* Star schema mini */
+.schema-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+.schema-fact {
+  background: #1565C0;
+  border: 2px solid #42a5f5;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+.schema-dims {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.schema-dim {
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.8);
+}
+.schema-arrow { color: var(--arrow); font-size: 1.1rem; flex-shrink: 0; }
+
+/* Footer note */
+.stage-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.38);
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  line-height: 1.7;
+}
+
+/* Summary badge */
+.summary-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 12px;
+}
+
+/* ── Connector arrow ─────────────────────────────── */
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0;
+  gap: 0;
+  position: relative;
+}
+.connector-line {
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(to bottom, var(--arrow), var(--arrow));
+  opacity: 0.5;
+}
+.connector-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--arrow);
+  background: var(--bg);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(144,202,249,0.2);
+  opacity: 0.8;
+  white-space: nowrap;
+}
+.connector-arrow {
+  color: var(--arrow);
+  font-size: 1rem;
+  opacity: 0.7;
+  line-height: 1;
+}
+
+/* ── Side panels ─────────────────────────────────── */
+.outer-layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.side-panel {
+  width: 160px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.side-panel-header {
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.side-panel-body {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.side-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(0,0,0,0.2);
+  color: rgba(255,255,255,0.7);
+}
+.side-item.highlight {
+  background: rgba(59,130,246,0.12);
+  border-color: rgba(59,130,246,0.25);
+  color: #93c5fd;
+}
+
+/* ── Legend ──────────────────────────────────────── */
+.legend {
+  max-width: 900px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.legend-title {
+  width: 100%;
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 4px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.legend-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .side-panel { display: none; }
+  .outer-layout { justify-content: center; }
+  .info-grid { grid-template-columns: 1fr; }
+  .source-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .source-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>European Luxury Real Estate · ETL Pipeline</h1>
+  <p>Big Data Project — UFV · Curso 2025-2026 · github.com/joterojordanufv/TrabajoFinalBigData</p>
+  <div class="header-badges">
+    <span class="header-badge">Python 3.10+</span>
+    <span class="header-badge">pandas · SQLAlchemy</span>
+    <span class="header-badge">SQLite DW</span>
+    <span class="header-badge">PySpark · Colab</span>
+    <span class="header-badge">Streamlit · Docker</span>
+    <span class="header-badge">1.026 + 180 registros</span>
+  </div>
+</div>
+
+<div class="outer-layout">
+
+  <!-- LEFT PANEL -->
+  <div class="side-panel" style="background:var(--surface);">
+    <div class="side-panel-header" style="background:#0d2a26; color:#34d399;">📂 src/ Módulos</div>
+    <div class="side-panel-body">
+      <div class="side-item">extract.py</div>
+      <div class="side-item">clean.py</div>
+      <div class="side-item">transform.py</div>
+      <div class="side-item">load.py</div>
+      <div class="side-item">tracker.py</div>
+      <div class="side-item highlight">main.py ← full</div>
+    </div>
+    <div style="padding:0 14px 14px; border-top:1px solid rgba(255,255,255,0.05); margin-top:8px; padding-top:10px;">
+      <div class="side-panel-header" style="background:transparent; color:#fbbf24; padding:0 0 8px 0; font-size:0.65rem;">📓 Notebooks</div>
+      <div class="side-panel-body" style="padding:0; gap:5px;">
+        <div class="side-item" style="font-size:0.62rem;">01_eda_inicial</div>
+        <div class="side-item" style="font-size:0.62rem;">02_etl_pipeline</div>
+        <div class="side-item highlight" style="font-size:0.62rem;">03_pyspark_colab</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN PIPELINE -->
+  <div class="pipeline">
+
+    <!-- STAGE 1 — EXTRACT -->
+    <div class="stage" style="background:var(--teal-bg); border-color:#1a4a44;">
+      <div class="stage-header" style="background:var(--teal-hdr);">
+        <div class="stage-num" style="background:#0d9488;">1</div>
+        <div>
+          <div class="stage-title">EXTRACT — Fuentes de Datos</div>
+          <div class="stage-subtitle">extract.py · data/raw/ · tracker.py auto-log</div>
+        </div>
+        <div class="summary-badge" style="margin:0 0 0 auto; border-color:#1a5a50; color:#34d399; background:rgba(13,148,136,0.1);">
+          ▶ 1.206 registros brutos
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="source-grid">
+          <div class="source-card">
+            <div class="src-badge" style="background:#0f4a30; color:#4ade80;">Scraping</div>
+            <div class="src-name">Idealista — Madrid</div>
+            <div class="src-detail">400 propiedades premium<br>CSV · data/raw/<br>Barrios: Salamanca, Chamberí<br>Tipo: Apartamentos, Áticos</div>
+          </div>
+          <div class="source-card">
+            <div class="src-badge" style="background:#0f2a4a; color:#60a5fa;">Scraping</div>
+            <div class="src-name">Rightmove — Londres</div>
+            <div class="src-detail">376 propiedades premium<br>CSV · data/raw/<br>Barrios: Kensington, Chelsea<br>Tipo: Flats, Houses</div>
+          </div>
+          <div class="source-card">
+            <div class="src-badge" style="background:#3a1a04; color:#fb923c;">Scraping</div>
+            <div class="src-name">Funda — Ámsterdam</div>
+            <div class="src-detail">250 propiedades premium<br>CSV · data/raw/<br>Barrios: Jordaan, De Pijp<br>Tipo: Appartementen</div>
+          </div>
+          <div class="source-card">
+            <div class="src-badge" style="background:#2a0a3a; color:#c084fc;">API / Dataset</div>
+            <div class="src-name">Eurostat HPI</div>
+            <div class="src-detail">180 registros temporales<br>House Price Index · CSV<br>España · UK · NL<br>Series Q 2010 – 2024</div>
+          </div>
+        </div>
+        <div class="stage-note">
+          tracker.py registra por fuente: fase · fuente · registros_entrada · registros_salida · descartados · motivo · timestamp UTC
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-label">RAW DATA → data/raw/</div><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 2 — QUALITY PROFILE -->
+    <div class="stage" style="background:var(--purple-bg); border-color:#3a1a5a;">
+      <div class="stage-header" style="background:var(--purple-hdr);">
+        <div class="stage-num" style="background:#7c3aed;">2</div>
+        <div>
+          <div class="stage-title">QUALITY PROFILE — Análisis Inicial</div>
+          <div class="stage-subtitle">01_eda_inicial.ipynb · pandas · df.info() · df.describe()</div>
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="info-grid">
+          <div class="info-box">
+            <div class="ib-label">Métricas de estructura</div>
+            <div class="ib-value" style="font-size:0.75rem; line-height:1.8;">Nº registros (df.shape[0])<br>Nº variables (df.shape[1])<br>Tipos de dato (df.dtypes)<br>Cardinalidad categóricas</div>
+          </div>
+          <div class="info-box">
+            <div class="ib-label">Métricas de calidad</div>
+            <div class="ib-value" style="font-size:0.75rem; line-height:1.8;">Nulos % (df.isnull().sum())<br>Blancos (str.strip == "")<br>Duplicados (df.duplicated)<br>Consistencia referencial</div>
+          </div>
+          <div class="info-box">
+            <div class="ib-label">Métricas numéricas</div>
+            <div class="ib-value" style="font-size:0.75rem; line-height:1.8;">Outliers IQR · z-score<br>Rangos min / max<br>Media · mediana · σ<br>Boxplot visual</div>
+          </div>
+          <div class="info-box">
+            <div class="ib-label">Métricas de formato</div>
+            <div class="ib-value" style="font-size:0.75rem; line-height:1.8;">Fechas mal formateadas<br>Monedas con símbolo<br>Formatos de texto mixto<br>Ref. cruzadas entre fuentes</div>
+          </div>
+        </div>
+        <div class="stage-note">
+          Output: tabla resumen de calidad por fuente · Línea base que justifica todas las decisiones ETL posteriores
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 3 — TRANSFORM & CLEAN -->
+    <div class="stage" style="background:var(--red-bg); border-color:#5a1a30;">
+      <div class="stage-header" style="background:var(--red-hdr);">
+        <div class="stage-num" style="background:#be185d;">3</div>
+        <div>
+          <div class="stage-title">TRANSFORM & CLEAN — ETL · T01 – T10</div>
+          <div class="stage-subtitle">clean.py · 10 transformaciones obligatorias · properties_clean.csv</div>
+        </div>
+        <div class="summary-badge" style="margin:0 0 0 auto; border-color:#5a1a30; color:#f472b6; background:rgba(190,24,93,0.1);">
+          ✓ 0 duplicados · nulos &lt;2%
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="tags">
+          <span class="tag t">T01 Deduplicación</span>
+          <span class="tag t">T02 Nulos</span>
+          <span class="tag t">T03 Blancos</span>
+          <span class="tag t">T04 Tipos</span>
+          <span class="tag t">T05 Fechas ISO-8601</span>
+          <span class="tag t">T06 Normalización texto</span>
+          <span class="tag t">T07 Corrección rangos</span>
+          <span class="tag t">T08 Outliers IQR/z-score</span>
+          <span class="tag t">T09 Seudonimización PII</span>
+          <span class="tag t">T10 Validación referencial</span>
+        </div>
+        <div class="info-box" style="margin-bottom:12px;">
+          <div class="ib-label">Segmentación Luxury (bonus)</div>
+          <div class="ib-value" style="font-size:0.78rem;">Clasificación automática por <strong>percentil 90 del precio/m² por país</strong> → luxury_label asignado por país (ES · UK · NL)</div>
+        </div>
+        <div class="stage-note">
+          Tracking completo: registros_entrada → registros_salida · descartados · motivo por cada T · pipeline_tracking.json<br>
+          Calidad mínima exigida: nulos &lt;2% en campos críticos · 0 duplicados en PK · tipos correctamente casteados
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-label">CLEAN DATA → data/processed/properties_clean.csv</div><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 4 — EDA FINAL -->
+    <div class="stage" style="background:var(--blue-bg); border-color:#1a3a6a;">
+      <div class="stage-header" style="background:var(--blue-hdr);">
+        <div class="stage-num" style="background:#1d4ed8;">4</div>
+        <div>
+          <div class="stage-title">EDA FINAL — Análisis Exploratorio</div>
+          <div class="stage-subtitle">generate_eda_figures.py · matplotlib · seaborn · outputs/figures/</div>
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="info-grid">
+          <div class="info-box">
+            <div class="ib-label">Visualizaciones (G01–G04)</div>
+            <div class="ib-value" style="font-size:0.75rem; line-height:1.8;">G01 Heatmap nulos/correlaciones<br>G02 Histogramas + KDE<br>G03 Boxplots por ciudad<br>G04 Barras frecuencia barrios</div>
+          </div>
+          <div class="info-box">
+            <div class="ib-label">Visualizaciones (G05–G08)</div>
+            <div class="ib-value" style="font-size:0.75rem; line-height:1.8;">G05 Serie temporal precios<br>G06 Scatter precio vs. superficie<br>G07 Heatmap geográfico (opt.)<br>G08 Funnel tracking pipeline</div>
+          </div>
+        </div>
+        <div class="tags" style="margin-bottom:12px;">
+          <span class="tag">Madrid</span>
+          <span class="tag">Londres</span>
+          <span class="tag">Ámsterdam</span>
+          <span class="tag">Salamanca · Chamberí</span>
+          <span class="tag">Kensington · Chelsea</span>
+          <span class="tag">+150K propiedades reales</span>
+        </div>
+        <div class="stage-note">
+          Clasificación de variables: cuantitativa continua · discreta · cualitativa nominal · ordinal · temporal · booleana<br>
+          Cada gráfica acompañada de párrafo de interpretación de negocio (obligatorio para puntuar)
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 5 — STAR SCHEMA -->
+    <div class="stage" style="background:var(--gold-bg); border-color:#5a3a04;">
+      <div class="stage-header" style="background:var(--gold-hdr);">
+        <div class="stage-num" style="background:#d97706;">5</div>
+        <div>
+          <div class="stage-title">STAR SCHEMA — Modelo Dimensional</div>
+          <div class="stage-subtitle">transform.py · Claves sustitutas (SK) · Granularidad: 1 propiedad premium europea</div>
+        </div>
+        <div class="summary-badge" style="margin:0 0 0 auto; border-color:#5a3a04; color:#fbbf24; background:rgba(217,119,6,0.1);">
+          1 FACT · 6 DIM
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="schema-mini">
+          <div class="schema-fact">FACT_PROPERTIES<br><span style="font-size:0.65rem;opacity:0.7;font-weight:400">price_eur · area_m2 · bedrooms<br>bathrooms · price_per_m2</span></div>
+          <div class="schema-arrow">←→</div>
+          <div class="schema-dims">
+            <div class="schema-dim" style="background:rgba(52,211,153,0.1); border-color:rgba(52,211,153,0.25); color:#34d399;">DIM_CITY</div>
+            <div class="schema-dim" style="background:rgba(192,132,252,0.1); border-color:rgba(192,132,252,0.25); color:#c084fc;">DIM_NEIGHBORHOOD</div>
+            <div class="schema-dim" style="background:rgba(244,114,182,0.1); border-color:rgba(244,114,182,0.25); color:#f472b6;">DIM_PROPERTY_TYPE</div>
+            <div class="schema-dim" style="background:rgba(251,146,60,0.1); border-color:rgba(251,146,60,0.25); color:#fb923c;">DIM_SOURCE</div>
+            <div class="schema-dim" style="background:rgba(34,211,238,0.1); border-color:rgba(34,211,238,0.25); color:#22d3ee;">DIM_TIME</div>
+            <div class="schema-dim" style="background:rgba(129,140,248,0.1); border-color:rgba(129,140,248,0.25); color:#818cf8;">DIM_LUXURY_SEGMENT</div>
+          </div>
+        </div>
+        <div class="stage-note">
+          Claves sustitutas SK enteras en todas las PK · source_id trazabilidad · load_timestamp auto-generado<br>
+          CSV finales: dim_city.csv · dim_neighborhood.csv · dim_property_type.csv · dim_source.csv · dim_time.csv · dim_luxury_segment.csv · fact_properties.csv
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-label">CSV FINALES → data/final/</div><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 6 — SQL LOAD -->
+    <div class="stage" style="background:var(--green-bg); border-color:#1a4a20;">
+      <div class="stage-header" style="background:var(--green-hdr);">
+        <div class="stage-num" style="background:#16a34a;">6</div>
+        <div>
+          <div class="stage-title">SQL LOAD — Base de Datos SQLite</div>
+          <div class="stage-subtitle">schema.sql · load.py · SQLAlchemy · real_estate_dw.db</div>
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="tags" style="margin-bottom:12px;">
+          <span class="tag">CREATE TABLE</span>
+          <span class="tag">PK · FK · NOT NULL</span>
+          <span class="tag">Dimensiones primero</span>
+          <span class="tag">FACT después</span>
+          <span class="tag">COUNT(*) verificación</span>
+          <span class="tag">Integridad referencial</span>
+        </div>
+        <div class="info-box" style="margin-bottom:12px;">
+          <div class="ib-label">Orden de carga (integridad referencial)</div>
+          <div class="ib-value" style="font-size:0.78rem; font-family:'JetBrains Mono',monospace; line-height:2;">
+            1 → dim_time · dim_city · dim_neighborhood<br>
+            2 → dim_property_type · dim_source · dim_luxury_segment<br>
+            3 → <strong style="color:#4ade80;">fact_properties</strong> (con FK validadas)
+          </div>
+        </div>
+        <div class="stage-note">
+          Motor: SQLite · real_estate_dw.db · data/final/ · SELECT COUNT(*) en cada tabla · sin credenciales en repo
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-label">git push → rama main</div><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 7 — GITHUB -->
+    <div class="stage" style="background:var(--slate-bg); border-color:#2a3a4a;">
+      <div class="stage-header" style="background:var(--slate-hdr);">
+        <div class="stage-num" style="background:#475569;">7</div>
+        <div>
+          <div class="stage-title">EXPORT & GITHUB — Repositorio Público</div>
+          <div class="stage-subtitle">github.com/joterojordanufv/TrabajoFinalBigData · Co-authored-by configurado</div>
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="info-box" style="margin-bottom:12px;">
+          <div class="ib-label">Estructura del repositorio</div>
+          <div class="ib-value" style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; line-height:2; color:#94a3b8;">
+            data/raw/ &nbsp;&nbsp;&nbsp;← fuentes originales<br>
+            data/processed/ ← propiedades_clean.csv<br>
+            data/final/ &nbsp;&nbsp;← dim_*.csv · fact_properties.csv<br>
+            src/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;← módulos Python<br>
+            notebooks/ &nbsp;&nbsp;← 01, 02, 03_pyspark<br>
+            logs/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;← pipeline_tracking.json<br>
+            outputs/figures/ ← PNG del EDA
+          </div>
+        </div>
+        <div class="stage-note">
+          README.md funcional · requirements.txt · .gitignore (*.db · .env · __pycache__) · enlace obligatorio en el PDF entregable
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-label">read from raw GitHub URLs</div><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 8 — PYSPARK -->
+    <div class="stage" style="background:var(--indigo-bg); border-color:#2a2a5a;">
+      <div class="stage-header" style="background:var(--indigo-hdr);">
+        <div class="stage-num" style="background:#4338ca;">8</div>
+        <div>
+          <div class="stage-title">PYSPARK — Google Colab · Cubo Dimensional</div>
+          <div class="stage-subtitle">03_pyspark_cubo_colab.ipynb · SparkSession · ROLLUP · CUBE</div>
+        </div>
+        <div class="summary-badge" style="margin:0 0 0 auto; border-color:#2a2a5a; color:#818cf8; background:rgba(67,56,202,0.1);">
+          5+ consultas · 5+ gráficas
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="info-grid">
+          <div class="info-box">
+            <div class="ib-label">Operaciones PySpark</div>
+            <div class="ib-value" style="font-size:0.75rem; font-family:'JetBrains Mono',monospace; line-height:1.9;">
+              spark.createDataFrame()<br>
+              createOrReplaceTempView()<br>
+              join() · groupBy() · agg()<br>
+              cube() · rollup()
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="ib-label">Preguntas de negocio (Q1–Q5)</div>
+            <div class="ib-value" style="font-size:0.73rem; line-height:1.85;">
+              Q1 Evolución mensual de precios<br>
+              Q2 Ranking barrios premium<br>
+              Q3 Precio/m² por ciudad<br>
+              Q4 Segmento luxury por país<br>
+              Q5 Correlación superficie–precio
+            </div>
+          </div>
+        </div>
+        <div class="stage-note">
+          toPandas() + matplotlib para visualización · plt.savefig() exportación PNG · window functions · spark.sql() analítico
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"><div class="connector-line"></div><div class="connector-arrow">▼</div></div>
+
+    <!-- STAGE 9 — STREAMLIT DASHBOARD -->
+    <div class="stage" style="background:var(--cyan-bg); border-color:#0a3a44;">
+      <div class="stage-header" style="background:var(--cyan-hdr);">
+        <div class="stage-num" style="background:#0891b2;">9</div>
+        <div>
+          <div class="stage-title">BI DASHBOARD — Streamlit + Docker</div>
+          <div class="stage-subtitle">Dashboard interactivo · Dockerizado · Docker Compose · multiplataforma</div>
+        </div>
+      </div>
+      <div class="stage-body">
+        <div class="tags" style="margin-bottom:12px;">
+          <span class="tag">Filtro: País</span>
+          <span class="tag">Filtro: Ciudad</span>
+          <span class="tag">Filtro: Tipo propiedad</span>
+          <span class="tag">Filtro: Luxury segment</span>
+          <span class="tag">Rango precio</span>
+          <span class="tag">Explorador SQL</span>
+          <span class="tag">Galería EDA</span>
+          <span class="tag">Comparativas internacionales</span>
+        </div>
+        <div class="stage-note">
+          Portable · Reproducible · Sin dependencias locales · Distribución mediante Docker Hub
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /pipeline -->
+
+  <!-- RIGHT PANEL -->
+  <div class="side-panel" style="background:var(--surface);">
+    <div class="side-panel-header" style="background:#2a1a04; color:#fbbf24;">📋 Tracking Log</div>
+    <div class="side-panel-body">
+      <div class="side-item" style="font-size:0.62rem;">logs/pipeline_tracking.json</div>
+      <div class="side-item" style="font-size:0.62rem; color:#94a3b8; margin-top:6px;">Campos por fase:</div>
+      <div class="side-item" style="font-size:0.62rem;">fase</div>
+      <div class="side-item" style="font-size:0.62rem;">fuente</div>
+      <div class="side-item" style="font-size:0.62rem;">registros_in</div>
+      <div class="side-item" style="font-size:0.62rem;">registros_out</div>
+      <div class="side-item" style="font-size:0.62rem;">descartados</div>
+      <div class="side-item" style="font-size:0.62rem;">motivo</div>
+      <div class="side-item highlight" style="font-size:0.62rem;">timestamp UTC</div>
+    </div>
+    <div style="padding:10px 14px 14px;">
+      <div style="font-size:0.62rem; font-family:'JetBrains Mono',monospace; color:#3a5a3a; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em;">Calidad mínima</div>
+      <div class="side-item" style="font-size:0.6rem; color:#4ade80; background:rgba(74,222,128,0.05); border-color:rgba(74,222,128,0.15);">nulos &lt;2%</div>
+      <div class="side-item" style="margin-top:5px; font-size:0.6rem; color:#4ade80; background:rgba(74,222,128,0.05); border-color:rgba(74,222,128,0.15);">0 dup. en PK</div>
+      <div class="side-item" style="margin-top:5px; font-size:0.6rem; color:#4ade80; background:rgba(74,222,128,0.05); border-color:rgba(74,222,128,0.15);">tipos OK</div>
+      <div class="side-item" style="margin-top:5px; font-size:0.6rem; color:#4ade80; background:rgba(74,222,128,0.05); border-color:rgba(74,222,128,0.15);">fechas ISO-8601</div>
+    </div>
+  </div>
+
+</div><!-- /outer-layout -->
+
+<!-- LEGEND -->
+<div class="legend" style="max-width:1160px; margin:40px auto 0;">
+  <div class="legend-title">Leyenda del Pipeline</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#0d9488;"></div>Extract (Fuentes)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#7c3aed;"></div>Quality Profile</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#be185d;"></div>Transform & Clean</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1d4ed8;"></div>EDA Final</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#d97706;"></div>Star Schema</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#16a34a;"></div>SQL Load</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#475569;"></div>GitHub Export</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4338ca;"></div>PySpark OLAP</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#0891b2;"></div>BI Dashboard</div>
+  <div class="legend-item" style="margin-left:auto;"><span style="color:var(--arrow); font-size:0.8rem;">▼</span> Flujo de datos</div>
+  <div class="legend-item"><span style="color:#fbbf24; font-size:0.7rem; font-family:'JetBrains Mono',monospace;">T01-T10</span> Transformaciones ETL obligatorias</div>
+  <div class="legend-item"><span style="color:#4ade80; font-size:0.7rem; font-family:'JetBrains Mono',monospace;">Q1-Q5</span> Preguntas de negocio PySpark</div>
+</div>
+
+</body>
+</html>
