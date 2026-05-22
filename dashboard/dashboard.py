@@ -380,17 +380,6 @@ elif section == "Arquitectura ETL":
 
     st.divider()
 
-    st.subheader("Imagen del Pipeline ETL")
-
-    pipeline_image = ASSETS_PATH / "etl_pipeline.png"
-
-    if pipeline_image.exists():
-        st.image(str(pipeline_image), use_container_width=True)
-    else:
-        st.info("Guarda la imagen del pipeline como dashboard/assets/etl_pipeline.png")
-
-    st.divider()
-
     st.subheader("Documento PDF del Pipeline")
 
     pdf_path = ASSETS_PATH / "etl_pipeline.pdf"
